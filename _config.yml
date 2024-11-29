@@ -3,7 +3,9 @@ plugins:
 relative_links:
   enabled: true
   collections: true
-theme: minima
+
+remote_theme: jekyll/minima
+
 include:
   - BuildUbuntu.md
   - Customformats.md
@@ -22,11 +24,8 @@ include:
   - Watermark.md
   - Documentation.md
   - Downloads.md
+
 header_pages:
   - index.md
   - Documentation.md
   - Downloads.md
-minima:
-  social_links:
-    - { platform: github,  user_url: "https://github.com/agriggio/ART-releases" }
-    - { platform: pixls, user_url: "https://discuss.pixls.us/c/software/ART" }
