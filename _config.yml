@@ -1,0 +1,32 @@
+plugins:
+  - jekyll-relative-links
+relative_links:
+  enabled: true
+  collections: true
+theme: minima
+include:
+  - BuildUbuntu.md
+  - Customformats.md
+  - FAQ.md
+  - Hdroutput.md
+  - index.md
+  - Localediting.md
+  - Luts.md
+  - Pipeline.md
+  - Quickstart.md
+  - Reference.md
+  - Session.md
+  - Shapes.md
+  - Shortcuts.md
+  - Usercommands.md
+  - Watermark.md
+  - Documentation.md
+  - Downloads.md
+header_pages:
+  - index.md
+  - Documentation.md
+  - Downloads.md
+minima:
+  social_links:
+    - { platform: github,  user_url: "https://github.com/agriggio/ART-releases" }
+    - { platform: pixls, user_url: "https://discuss.pixls.us/c/software/ART" }
