@@ -29,6 +29,6 @@ title: Downloads
   - Packages for openSUSE:
     - Tumbleweed: the package is part of the main repo-oss repository, so it can be easily installed with `sudo zypper in ART`
     - Leap 15.x: the package resides in the `graphics` OBS repository, so to install it a few extra steps are needed. First you need to install opi, the OBS package manager, with `sudo zypper in opi`, and then you can install ART `sudo opi ART`. Please report any installation/runtime bug [here](bugzilla.suse.com).
-  - Packages for ArchLinux and derivates (via [AUR](https://aur.archlinux.org)): https://clttr.info/art-aur
+  - Packages for ArchLinux and derivates (via [AUR](https://aur.archlinux.org)) are available [here](https://clttr.info/art-aur).
   - Notarized macOS builds are provided by Richard Barber on [iCloud](https://art.r42.us/).
 
