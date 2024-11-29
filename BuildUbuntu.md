@@ -106,7 +106,7 @@ sudo make install
 
 ## Building **ART**
 
-- download the build-art script (raw) from <https://bitbucket.org/agriggio/art/src/master/tools/build-art>
+- download the build-art script (raw) from <https://github.com/artpixls/ART/src/master/tools/build-art>
 
 - you may have to remove an older build first: `rm -r programs/art programs/code-art`
 - Make build-art executable `(chmod +x)` and execute it:

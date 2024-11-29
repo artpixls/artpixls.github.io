@@ -41,11 +41,7 @@ Compared to the latter, ART differs in the following main aspects:
 ## Status
 
 The current version is 1.24.1. It was released on October 10th 2024.
-[Change log](https://bitbucket.org/agriggio/art/branches/compare/1.24.1%0D1.23).
-
-## Contact
-
-[ART discussion group](https://discuss.pixls.us/c/software/ART).
+[Change log](https://github.com/artpixls/ART/compare/1.23...1.24.1).
 
 ## License 
 ART is released under the [GNU General Public License version 3](https://www.gnu.org/licenses/gpl.html).

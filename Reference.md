@@ -59,7 +59,7 @@ The tree can be sorted ascending or descending by clicking the arrow on the Fold
 
 ![thumbnails.png](reference-pics/thumbnails.png)
 
-Images shown as thumbnails can be ranked with ratings, selected individually or en masse for bulk operations, copied, pasted, reset, deleted, etc. Additionally, custom [user commands](https://bitbucket.org/agriggio/art/wiki/Usercommands) can be defined.
+Images shown as thumbnails can be ranked with ratings, selected individually or en masse for bulk operations, copied, pasted, reset, deleted, etc. Additionally, custom [user commands](Usercommands.html) can be defined.
 Right-click on a thumbnail for more options.
 Double-click a thumbnail to open that image in the Editor.
 
@@ -529,8 +529,8 @@ Therefore, mask operations will be described only once, rather than per-tool.
 
 For further reading on ART's masking and local editing tools, see these resources:
 
-- [Area masks: Creating polygonal shapes](https://bitbucket.org/agriggio/art/wiki/Shapes)
-- [Local Editing with Layers and Masks](https://bitbucket.org/agriggio/art/wiki/Localediting)
+- [Area masks: Creating polygonal shapes](Shapes.html)
+- [Local Editing with Layers and Masks](Localediting.html)
 - [Editing an existing mask (from the ART forum)](https://discuss.pixls.us/t/how-to-subtract-from-a-color-simularity-mask/32673/2)
 
 #### Mask precautions
@@ -608,7 +608,7 @@ An area mask can be drawn as a gradient, polygon or rectangular shape then modif
   - Blur: applies a Gaussian blur to the mask
   - Contrast curve: modifies the mask with one of four curve types if desired
 
-Please refer to the [area mask resource](https://bitbucket.org/agriggio/art/wiki/Shapes) for more information and a brief tutorial on creating area masks.
+Please refer to the [area mask resource](Shapes.html) for more information and a brief tutorial on creating area masks.
 
 ##### Brush mask
 

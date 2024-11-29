@@ -230,4 +230,4 @@ fi
 
 ### A repository for custom image handlers
 
-A collection of cross-platform image handlers is available [in this repository](https://bitbucket.org/agriggio/art-imageio/).
+A collection of cross-platform image handlers is available [in this repository](https://github.com/artpixls/ART-imageio/).

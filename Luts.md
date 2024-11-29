@@ -255,7 +255,7 @@ and it is automatically available in the "Film Simulation" module
 
 ![Sigmoid in ART](ctl-example-sigmoid.png)
 
-A collection of other examples are available [in this repository](https://bitbucket.org/agriggio/art-ctlscripts/).
+A collection of other examples are available [in this repository](https://github.com/artpixls/ART-ctlscripts/).
 
 #### Making CTL scripts automatically available
 

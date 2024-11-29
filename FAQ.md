@@ -29,7 +29,7 @@
 
 - **Let's say I want to use it anyway. Is there any support for it?**
   As most open source projects, ART *comes with no warranty* whatsoever.
-  That said, there is a user forum at [pixls.us](https://discuss.pixls.us/c/software/art/), where people can ask questions and/or report bugs. For the latter, there is also a bug tracker on [bitbucket](https://bitbucket.org/agriggio/art/issues/).   Although there is no warranty, we dislike buggy software as much as everybody else, so we do our best to address the issues reported.
+  That said, there is a user forum at [pixls.us](https://discuss.pixls.us/c/software/art/), where people can ask questions and/or report bugs. For the latter, there is also a bug tracker on [GitHub](https://github.com/artpixls/ART/issues/).   Although there is no warranty, we dislike buggy software as much as everybody else, so we do our best to address the issues reported.
 
 - **Ok, maybe I'm interested. How can I contribute?**
   If you are interested in programming, we welcome code contributions, both to fix bugs and to implement new features that fit well within the rest of the program. (This is a vague concept on purpose, as fitness is evaluated on a case-by-case basis, and -- again -- there is no guarantee that code contributions will be accepted).
