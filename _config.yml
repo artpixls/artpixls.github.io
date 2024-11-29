@@ -3,9 +3,7 @@ plugins:
 relative_links:
   enabled: true
   collections: true
-
 remote_theme: jekyll/minima
-
 include:
   - BuildUbuntu.md
   - Customformats.md
@@ -24,7 +22,6 @@ include:
   - Watermark.md
   - Documentation.md
   - Downloads.md
-
 header_pages:
   - index.md
   - Documentation.md
