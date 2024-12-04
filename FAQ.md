@@ -41,4 +41,4 @@
   *Absolutely not*. There are so many better ways to use your savings that listing them here is not necessary.
 
 - **When you say "we", who are you talking about?**
-  Mostly me, at the moment.
+  Mostly me, at the moment, but with significant contributions from Jean-Christophe Frisch (aka Hombre on pixls), all the translators, and help from the larger pixls community.
