@@ -3,6 +3,7 @@
 **Note:** *This table is automatically generated from the ART resource file. You are kindly invited to provide feedback to improve it.*
 
 ## Keyboard Shortcuts in ART
+
 |     Where      |                    Shortcut                     |                                                                                                                  Action                                                                                                                   |
 |----------------|-------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Anywhere       |  **m**                                          | Show/hide all side panels.                                                                                                                                                                                                                |
