@@ -44,13 +44,13 @@ Other documentation sources ("unofficial", not maintained by the project):
 
 ## Video demos
 
-- [Mask creation](ART-masks-demo.mp4)
+- [Mask creation](demos/ART-masks-demo.mp4)
 
-- [Automatic perspective correction](ART-perspective-correction-demo.mp4)
+- [Automatic perspective correction](demos/ART-perspective-correction-demo.mp4)
 
-- [Dynamic range manipulation](ART-dynamic-range-demo.mp4)
+- [Dynamic range manipulation](demos/ART-dynamic-range-demo.mp4)
 
-- [Metadata synchronization (with digiKam)](ART-metadata-demo.mp4)
+- [Metadata synchronization (with digiKam)](demos/ART-metadata-demo.mp4)
 
 - [ART video tutorials (external, in French)](https://www.youtube.com/playlist?list=PLZOdZMT41b7Wr4aPKpQutXQY9ImTl_N1J)
 
