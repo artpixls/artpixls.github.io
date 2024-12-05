@@ -83,7 +83,7 @@ For step 3, assuming we want to use the "Rec.709" version of the output transfor
         </Matrix>
     </ProcessList>
 
-Finally, for step 4, we can use [this simple Python script](combine_clf_luts.py) to obtain our final result (`RESULT.clf`):
+Finally, for step 4, we can use [this simple Python script](resources/combine_clf_luts.py) to obtain our final result (`RESULT.clf`):
 
 ```
   $ python combine_clf_luts.py ACES-2065-1_to_ACEScct.clf LUT.clf Rec709_to_ACES-2065-1.clf -o RESULT.clf
@@ -103,11 +103,11 @@ Note though that supporting gzip compression is an ART extension, so the compres
 
 Here are links to some useful tools for working with CLF LUTs.
 
-- [`ociomakeclf` binary for Windows](ociomakeclf.zip)
+- [`ociomakeclf` binary for Windows](resources/ociomakeclf.zip)
 
-- [`ociomakeclf` binary for Linux x86-64](ociomakeclf.gz)
+- [`ociomakeclf` binary for Linux x86-64](resources/ociomakeclf.gz)
 
-- [`combine_clf_luts.py` Python script (cross-platform)](combine_clf_luts.py)
+- [`combine_clf_luts.py` Python script (cross-platform)](resources/combine_clf_luts.py)
 
 
 ## CTL scripts

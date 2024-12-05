@@ -95,7 +95,7 @@ Double-click on a thumbnail image from either *Filter* pane or the
 ![](quickstart-pics/editor_first.jpg)
 
 This RAW image (of Wollaton Hall in Nottinghamshire, UK, by Barry
-Thomas) is public domain and is available to download [here](IMG_3760.CR2) so
+Thomas) is public domain and is available to download [here](resources/IMG_3760.CR2) so
 you can match these descriptions with the steps you take on your own
 computer.
 
