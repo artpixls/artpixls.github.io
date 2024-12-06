@@ -124,10 +124,10 @@ Extension=heic
 Format=png16
 
 # the command for loading
-ReadCommand=python.exe ./heif-io.py load
+ReadCommand=python ./heif-io.py load
 
 # the command for saving
-WriteCommand=python.exe ./heif-io.py save
+WriteCommand=python ./heif-io.py save
 
 # the label for the GUI
 Label=HEIC (via libheif)
