@@ -5,7 +5,7 @@
 Since version 1.4, ART supports a simple form of plugins, called *user commands*.
 These are simply external programs that are accessible from the contextual menu in the file browser, which are executed on the currently selected files.
 
-![User commands menu](usercommands.png)
+![User commands menu](resources/usercommands.png)
 
 A useful feature of user commands is that they allow to define some *matching criteria*, which will determine when the commands are available: if the currently selected list of files doesn't match the user command criteria, such command will not be available in the menu. This effectively provides a (simple, but still useful) form of input validation.
 
