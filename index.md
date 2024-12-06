@@ -1,5 +1,6 @@
 ---
 title: Home
+layout: post
 ---
 <!-- ![ART](logo.png) -->
 
