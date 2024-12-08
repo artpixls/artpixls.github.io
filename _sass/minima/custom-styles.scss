@@ -13,3 +13,9 @@
 body {
     @include relative-font-size(1.25);
 }
+
+.footer-license {
+    @include relative-font-size(0.75);
+    text-align: center;
+    padding-top: 2em;
+}
