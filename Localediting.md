@@ -1,11 +1,9 @@
-<!-- [![ART](logo.png)](Home) -->
-
 ## Local Editing with Layers and Masks
 *(contributed by Barry Thomas)*
 
 All tools in the **Local editing** group (**Color Correction**, **Smoothing**, **Local Contrast** and **Texture Boost**) work by applying their effects using one or more *adjustment layers*.
 
-![List of adjustment layers](layers-list.png)
+![List of adjustment layers](resources/layers-list.png)
     
 * Each adjustment layer operates independently of any other.
 
@@ -13,7 +11,7 @@ All tools in the **Local editing** group (**Color Correction**, **Smoothing**, *
 
 * Adjustment layers apply an effect to the whole image **unless** the effect is constrained by one or more masks. 
 
-  ![Layer mask](mask-global.png)
+  ![Layer mask](resources/mask-global.png)
 
 * There are four types of mask.
 
@@ -21,11 +19,11 @@ All tools in the **Local editing** group (**Color Correction**, **Smoothing**, *
 
     - *Parametric mask*: Select pixels according to their Hue, Chromaticity and Lightness (independently), and/or according to their contrast wrt. the neighboring pixels.
 
-      ![Parametric mask](parametric-mask.png)
+      ![Parametric mask](resources/parametric-mask.png)
 
     - *Color similarity mask*: Select pixels accoring to how similar their color is to a reference color (expressed by Hue, Chromaticity and Lightness), using the [CIE DeltaE 2000 metric](https://en.wikipedia.org/wiki/Color_difference#CIEDE2000). 
 
-      ![Color similarity mask](deltaE-mask.png)
+      ![Color similarity mask](resources/deltaE-mask.png)
 
     - *Area mask*: Allows a number of user-drawn shapes to be applied which constrain the effect of the adjustment layer. The contrast, feather and blur of each area mask can be adjusted. 
 
@@ -35,11 +33,11 @@ All tools in the **Local editing** group (**Color Correction**, **Smoothing**, *
 
         * Overlapping shapes may be set to **add** (the shapes are added together to make one combined shape), **subtract** (one shape cuts a section from all shapes it overlaps) or **intersect** (the effect applies only to pixels covered by this and all other shapes).
 
-      ![Area mask](area-mask.png)
+      ![Area mask](resources/area-mask.png)
 
     - *Brush mask*: A mask is built from one or more brush strokes. Each stroke may be added using various settings. Other controls allow the adjustment of the style of all strokes.
 
-      ![Brush mask](brush-mask.png)
+      ![Brush mask](resources/brush-mask.png)
 
 * For each adjustment layer, the mask is computed as follows:
 
