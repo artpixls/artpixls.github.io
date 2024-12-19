@@ -1,6 +1,4 @@
-<!-- [![ART](logo.png)](Home) -->
-
-## Working with LUTs
+# Working with LUTs
 
 ART has inherited from RawTherapee the support for creative 3D LUTs in the form of [Hald CLUTS](http://www.quelsolaar.com/technology/clut.html), 
 available in the [Film Simulation tool](https://rawpedia.rawtherapee.com/Film_Simulation). 
@@ -17,7 +15,7 @@ Both kinds of LUTs must be enabled at compile time, by setting respectively `ENA
 When available, they can be used in both the "Film Simulation" and in the the "Color/Tone Corrections" modules.
 
 
-### CLF LUTs
+## CLF LUTs
 
 Despite the name, CLF LUTs are not simply look-up tables, 
 but can encode a sequence of different pixel-level operations, 
@@ -31,7 +29,7 @@ or even color grade pictures using look+output LUTs developed for high-end profe
 The only thing needed is to convert such LUTs to CLF and combine them with the appropriate color space conversions to/from [ACES 2065-1](https://en.wikipedia.org/wiki/Academy_Color_Encoding_System#ACES2065-1) (which is the color space used by ART to apply CLF LUTs), 
 all of which can be done with OCIO tools and a little bit of scripting.
 
-#### Generating ART-compatible CLF LUTs
+### Generating ART-compatible CLF LUTs
 
 The OCIO distribution comes with [`ociomakeclf`](https://docs.acescentral.com/guides/clf/#ociomakeclf), a command-line tool to convert many LUT formats to CLF. Conveniently, `ociomakeclf` can also perform color space conversions from the space required by the LUT to ACES 2065-1, which is what ART assumes, via the `--csc` parameter.
 
@@ -99,7 +97,7 @@ Alternatively, you can also pass the `-c` flag to `combine_clf_luts.py` to gener
 Note though that supporting gzip compression is an ART extension, so the compressed LUTs will probably not work with other OCIO-based apps.
 
 
-#### Useful tools
+### Useful tools
 
 Here are links to some useful tools for working with CLF LUTs.
 
@@ -123,7 +121,7 @@ that can be changed directly from the ART GUI
 (and whose values are stored in `.arp` sidecar files). 
 This provides a simple but powerful way of extending ART with user-written filters.
 
-#### Writing ART-compatible CTL scripts
+### Writing ART-compatible CTL scripts
 
 In order to be usable within ART, a CTL script must define a function called `ART_main`, 
 which is the entry point called by ART.
@@ -222,7 +220,7 @@ void ART_main(varying float r, varying float g, varying float b,
 ```
 
 
-#### Example
+## Example
 
 Here is a simple ART-compatible CTL script to perform exposure compensation.
 The script takes one parameter that gives the Ev value of the exposure correction to apply. The CTL code looks like this:
@@ -243,21 +241,21 @@ void ART_main(varying float r, varying float g, varying float b,
 
 The corresponding GUI when loaded in ART (in the "Color/Tone Correction" tool) looks like this:
 
-![Example exposure compensation CTL script](ctl-example-expcomp.png)
+![Example exposure compensation CTL script](resources/ctl-example-expcomp.png)
 
 
-#### More complex examples
+## More complex examples
 
 Starting from version 1.21, ART ships with a (slightly simplified) implementation of the Sigmoid tone mapper of [darktable](http://www.darktable.org) as a CTL script. 
 This can be used as an alternative tone mapper for ART, 
 and it is automatically available in the "Film Simulation" module 
 (if CTL support was enabled at compile time):
 
-![Sigmoid in ART](ctl-example-sigmoid.png)
+![Sigmoid in ART](resources/ctl-example-sigmoid.png)
 
 A collection of other examples are available [in this repository](https://github.com/artpixls/ART-ctlscripts/).
 
-#### Making CTL scripts automatically available
+## Making CTL scripts automatically available
 
 CTL scripts placed in the `ctlscripts` subdirectory of the ART config folder 
 (typically `$HOME/.config/ART` on Linux and `%LOCALAPPDATA%\ART` on Windows)
@@ -266,7 +264,7 @@ and available as additional operation modes in the "Color/Tone Correction" tool.
 
 For example, by putting our `expcomp.ctl` example in `$HOME/.config/ART/ctlscripts`, we have it as an additional mode:
 
-![ART CTL plugin](ctl-example-plugin-1.png)
+![ART CTL plugin](resources/ctl-example-plugin-1.png)
 
 By default, the name of the file (without the `.ctl` extension) is used as mode name.
 This can be customized by adding an *ART label tag* to the CTL script,
@@ -284,4 +282,4 @@ For example, by adding:
 
 to `expcomp.ctl`, we now get a nicer name in the GUI:
 
-![ART CTL plugin](ctl-example-plugin-2.png)
+![ART CTL plugin](resources/ctl-example-plugin-2.png)
