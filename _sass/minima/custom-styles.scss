@@ -15,6 +15,11 @@
     border-image-source: linear-gradient(to right, #ffffff, rgb(255,14,13), rgb(255,108,22),rgb(247,172,22), rgb(252,209,25), rgb(107,210,4), rgb(1,191,1), rgb(1,184,218), rgb(5,97,171), rgb(21,31,164), rgb(120,31,175), #ffffff);
 }
 
+.footer-heading {
+    padding-top: 1em;
+    @include relative-font-size(1.5);
+}
+
 body {
     @include relative-font-size(1.25);
 }
