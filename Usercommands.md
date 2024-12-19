@@ -1,4 +1,4 @@
-## User Commands
+# User Commands
 
 Since version 1.4, ART supports a simple form of plugins, called *user commands*.
 These are simply external programs that are accessible from the contextual menu in the file browser, which are executed on the currently selected files.

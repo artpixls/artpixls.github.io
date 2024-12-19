@@ -1,5 +1,3 @@
-<!-- [![ART](logo.png)](Home) -->
-
 # ART Reference Manual
 *(By Len Philpot -- With part of the contents taken from [RawPedia](http://rawpedia.rawtherapee.com/), licensed under [CC BY-SA](http://creativecommons.org/licenses/by-sa/3.0/))*
 

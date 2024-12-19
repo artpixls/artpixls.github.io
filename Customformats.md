@@ -1,4 +1,4 @@
-## Adding Support for Custom (non-raw) Image Formats
+# Adding Support for Custom (non-raw) Image Formats
 
 Since version 1.6, ART provides the ability to add reading and writing support
 for additional (non-raw) image formats via a simple plugin mechanism.
@@ -6,7 +6,7 @@ for additional (non-raw) image formats via a simple plugin mechanism.
 Similarly to [User Commands](Usercommands), the mechanism is based on interacting with external programs defined using configuration files,
 where an external handler is a program that converts to/from files in one of the supported formats (tiff, png or jpeg).
 
-### How to define custom image handlers
+## How to define custom image handlers
 
 Image handlers are simple text files in the same syntax used by the `arp` sidecar files (but with `.txt` extension), 
 placed in the `imageio` subdirectory directory of ART config folder (typically `$HOME/.config/ART` on Linux and `%LOCALAPPDATA%\ART` on Windows),
@@ -50,7 +50,7 @@ that must comply with the following specifications:
 
 **NOTE**: you should also add the appropriate extension to the preferences (in Preferences -> File Browser -> Parsed Extensions) in order for ART to show the pictures in the file browser.
 
-### Example
+## Example
 
 Here is a complete example of a handler for [HEIC](https://en.wikipedia.org/wiki/High_Efficiency_Image_File_Format#HEIC:_HEVC_in_HEIF) images that exploits [libheif](http://www.libheif.org/) and Exiftool. The script works on Linux, and assumes that `heif-thumbnailer`, `heif-convert`, `heif-enc` and `exiftool` installed and in the `$PATH`.
 
@@ -108,7 +108,7 @@ else
 fi
 ```
 
-#### Python Version
+### Python Version
 
 Here is the same example handler above written in Python, which might be more suitable for Windows users. It assumes that all the applications (Python, the libheif tools and exiftool) are in the `%PATH%` (Windows binaries for libheif tools can be downloaded from [here](https://github.com/pphh77/libheif-Windowsbinary)):
 
@@ -168,7 +168,7 @@ if __name__ == "__main__":
     main()
 ```
 
-### Another Example
+## Another Example
 
 Here is another example, using [ImageMagick](https://imagemagick.org/) to perform the conversion. In this case, we can handle multiple custom formats with the same script, simply by defining multiple `.txt` files with the proper parameter. 
 For example, here is one for WebP (let's call it `webp.txt`, and put it in `$HOME/.config/imageio`):
@@ -226,6 +226,6 @@ fi
 
 (**NOTE:** this assumes that you have a version of ImageMagick that is properly configured to handle WebP and EXR, of course.)
 
-### A repository for custom image handlers
+## A repository for custom image handlers
 
 A collection of cross-platform image handlers is available [in this repository](https://github.com/artpixls/ART-imageio/).

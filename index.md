@@ -2,9 +2,8 @@
 title: Home
 layout: post
 ---
-<!-- ![ART](logo.png) -->
 
-<!-- ## About -->
+# About
 
 Welcome to the home page of ART, a [free, open-source](https://www.gnu.org/philosophy/philosophy.html), cross-platform 
 raw image processing program. 

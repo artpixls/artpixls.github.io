@@ -2,7 +2,7 @@
 title: Downloads
 ---
 
-<!-- ## Downloads -->
+# Downloads
 
 ## Source code
 

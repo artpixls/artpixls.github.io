@@ -1,9 +1,7 @@
-<!-- [![ART](logo.png)](Home) -->
-
-## Area masks: creating polygonal shapes
+# Area masks: creating polygonal shapes
 *(By Jean-Christophe Frisch)*
 
-### A step-by-step tutorial
+## A step-by-step tutorial
 
 `[B1]` = Left mouse button
 `[B3]` = Right mouse button
@@ -26,6 +24,6 @@
 15. Now add 4 points in this new shape to create a big square BUT you'll press `Shift + Ctrl + Click[B1]` to create the points. This will create points with roundness value to the maximum, and you'll end up with something more like a circle than a square. Each roundness value can still be edited.
 16. Move over a point and `Ctrl + [B3]` to delete a point. ART won't delete the 3 last points. If you want to delete a shape entirely, you'll have to do that through the Shape list (`-` button).
 
-### Creating "predictable" shapes
+## Creating "predictable" shapes
 
 It's very simple: just alternatively create points with sharp corners (roundness = 0, by using the `Ctrl` modifier key at creation time) and points with totally round corners (roundness = 100, by using the `Ctrl + Shift` modifier key at creation time). You end up with a series of Bezier curves of degree 3. The sharp points should be located on the *border* you want to draw, and the *round points* are used to control the curvature, so it won't usually be on the border.

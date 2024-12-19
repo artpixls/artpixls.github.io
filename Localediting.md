@@ -1,4 +1,4 @@
-## Local Editing with Layers and Masks
+# Local Editing with Layers and Masks
 *(contributed by Barry Thomas)*
 
 All tools in the **Local editing** group (**Color Correction**, **Smoothing**, **Local Contrast** and **Texture Boost**) work by applying their effects using one or more *adjustment layers*.

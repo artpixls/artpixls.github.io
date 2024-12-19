@@ -1,7 +1,4 @@
-<!-- [![ART](logo.png)](Home) -->
-
 # Ubuntu build recipe for **ART**
-
 *(contributed by Danny Heijl)*
 
 May 21 2023: Updated for ART 1.20 and exiv2 main branch:

@@ -1,6 +1,4 @@
-<!-- [![ART](logo.png)](Home) -->
-
-## The ART FAQ
+# The ART FAQ
 
 - **What is ART?** 
   ART is an acronym, standing for *Another RawTherapee*. It is definitely not art.

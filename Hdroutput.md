@@ -1,11 +1,9 @@
-<!-- [![ART](logo.png)](Home) -->
-
-## Generating HDR output images
+# Generating HDR output images
 
 When properly configured, ART can produce images suitable for [HDR displays](https://en.wikipedia.org/wiki/High-dynamic-range_television) as output.
 Starting from version 1.16.4, the procedure has been greatly simplified, and it is a matter of a couple of clicks.
 
-### Exporting as HDR
+## Exporting as HDR
 
 We can enable HDR output by installing the relevant [custom image format plugins](Customformats) from the [ART-imageio repository](https://github.com/artpixls/ART-imageio/), following the instructions about the needed dependencies. 
 If the plugins are properly configured, you should see three different HDR entriesin the list of available output formats (either in the batch queue or in the file save dialog): "AVIF (HDR PQ)", "JPEG-XL (HDR PQ)", and "HEIC (PQ HDR-TV 1000 nits)". 
@@ -15,7 +13,7 @@ Which format to use depends on the target viewing device, and is briefly discuss
 In all cases, the processing steps needed for producing HDR output are the same.
 
 
-### Processing for HDR output
+## Processing for HDR output
 
 By default, the Tone Curve module of ART will clamp pixel values to force them to be in the range `[0, 1]`. 
 This is not want you want for HDR output, since the whole point of HDR is to be able to display luminance values beyond diffuse white (which corresponds to a value of `1`). 
@@ -42,7 +40,7 @@ We can do that by saving the above in a partial profile `white-point-1000nits.ar
 ![avif-export-profile](avif-export-profile.png)
 
 
-### Viewing HDR files
+## Viewing HDR files
 
 In order to enjoy the benefits of HDR pictures, you need a HDR-capable display and a viewer that can perform the required tone mapping. At the time of writing, the easiest way to do so is to use Google Chrome on a recent Apple device (MacBook, iPad, or iPhone), using either AVIF or JPEG-XL as output format. 
 Note however that unfortunately I do not have any of such devices, so I can't confirm that this works as intended.

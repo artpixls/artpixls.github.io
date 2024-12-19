@@ -1,6 +1,4 @@
-<!-- [![ART](logo.png)](Home) -->
-
-## The processing pipeline in ART
+# The processing pipeline in ART
 
   Module                               |  Color space          |   Notes
   ------------------------------------ | --------------------- | ---------------------------------------

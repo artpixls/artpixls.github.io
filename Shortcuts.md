@@ -1,8 +1,6 @@
-<!-- [![ART](logo.png)](Home) -->
-
 **Note:** *This table is automatically generated from the ART resource file. You are kindly invited to provide feedback to improve it.*
 
-## Keyboard Shortcuts in ART
+# Keyboard Shortcuts in ART
 
 |     Where      |                    Shortcut                     |                                                                                                                  Action                                                                                                                   |
 |----------------|-------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

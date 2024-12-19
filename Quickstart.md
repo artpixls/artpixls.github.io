@@ -1,11 +1,7 @@
-<!-- [![ART](logo.png)](Home) -->
-
-ART Quick Start
-===============
+# ART Quick Start
 *(contributed by Barry Thomas)*
 
-Quick Start
------------
+## Quick Start
 
 When you first open ART, you see the *File Browser* screen:
 

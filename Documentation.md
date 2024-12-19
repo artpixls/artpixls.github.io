@@ -2,7 +2,7 @@
 title: Documentation
 ---
 
-<!-- ## Documentation -->
+# Documentation
 
 "Official" documentation:
 

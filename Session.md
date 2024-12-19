@@ -1,4 +1,4 @@
-## Session Mode
+# Session Mode
 
 Since version 1.18, the ART file browser supports the concept of *session*,
 i.e. a user-defined temporary collection of files not necessarily on the same
