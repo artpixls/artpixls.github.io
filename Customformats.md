@@ -1,5 +1,3 @@
-<!-- [![ART](logo.png)](Home) -->
-
 ## Adding Support for Custom (non-raw) Image Formats
 
 Since version 1.6, ART provides the ability to add reading and writing support

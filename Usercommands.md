@@ -1,5 +1,3 @@
-<!-- [![ART](logo.png)](Home) -->
-
 ## User Commands
 
 Since version 1.4, ART supports a simple form of plugins, called *user commands*.
@@ -9,7 +7,7 @@ These are simply external programs that are accessible from the contextual menu 
 
 A useful feature of user commands is that they allow to define some *matching criteria*, which will determine when the commands are available: if the currently selected list of files doesn't match the user command criteria, such command will not be available in the menu. This effectively provides a (simple, but still useful) form of input validation.
 
-### How to define user commands
+## How to define user commands
 
 User commands are simple text files in the same syntax used by the `arp` sidecar files (but with `.txt` extension), 
 placed in the `usercommands` subdirectory directory of ART config folder (typically `$HOME/.config/ART` on Linux and `%LOCALAPPDATA%\ART` on Windows),
@@ -38,7 +36,7 @@ that must comply with the following specifications:
     * `MatchFocalLen`: match on the focal length;
     * `MatchDimensions`: match on the image dimensions.
 
-### Example
+## Example
 
 Here is a complete example of a user command that invokes Hugin on the currently selected raw files, after converting them to tiff. The script works on Linux, and assumes that `hugin`, `ART-cli` and `zenity` are installed an in the `$PATH`.
 

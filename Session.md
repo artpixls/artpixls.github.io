@@ -5,7 +5,7 @@ i.e. a user-defined temporary collection of files not necessarily on the same
 folder in the file system. 
 Sessions are meant to ease the integration with external DAM tools such as [Digikam](http://digikam.org).
 
-### The ART Session
+## The ART Session
 
 The places browser now includes a new predefined place, called *Session*:
 

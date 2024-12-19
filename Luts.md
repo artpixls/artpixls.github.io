@@ -1,4 +1,4 @@
-# Working with LUTs
+## Working with LUTs
 
 ART has inherited from RawTherapee the support for creative 3D LUTs in the form of [Hald CLUTS](http://www.quelsolaar.com/technology/clut.html), 
 available in the [Film Simulation tool](https://rawpedia.rawtherapee.com/Film_Simulation). 
