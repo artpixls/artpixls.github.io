@@ -1,6 +1,4 @@
-<!-- [![ART](logo.png)](Home) -->
-
-## Adding watermarks on export
+# Adding watermarks on export
 
 Although ART has no built-in module to add watermarks to picture, 
 a simple way of doing this is to exploit the capability of [adding custom image formats](Customformats). 
@@ -12,7 +10,7 @@ From the user interface point of view, we will define an additional output forma
 
 ![JPEG with watermark output](jpeg-with-watermark.png)
 
-### Defining the watermark picture
+## Defining the watermark picture
 
 In this simple example, we will use a fixed watermark image. More elaborate solutions are possible, e.g. to support watermarks that depends on the image metadata, but they are beyond the scope of this tutorial.
 
@@ -23,7 +21,7 @@ We can create a png image with our watermark text and a transparent background u
 We create a watermark that is big enough to be applied to full-size pictures. In this example, we assume that the above watermark is suitable for 24Mpix pictures, i.e. about 6000 pixels wide.
 The watermark will then be automatically resized by our injection script defined below, based on the output image size.
 
-### The watermark injection script
+## The watermark injection script
 
 The bulk of the work is performed by the following `watermark.py` Python script, using [Pillow](https://pillow.readthedocs.io/en/stable/) to perform the image operations and [PyExiv2](https://pypi.org/project/pyexiv2/) to handle metadata and ICC profiles.
 
@@ -96,7 +94,7 @@ if __name__ == '__main__':
 ```
 
 
-### Connection to ART
+## Connection to ART
 
 Finally, we can make ART call our script automatically by making it available as an additional output format.
 We do that by defining the following handler `jpeg-watermark.txt`, putting in in `$HOME/.config/ART/imageio` (creating the directory if it doesn't exist):
