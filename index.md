@@ -20,15 +20,17 @@ Compared to the latter, ART differs in the following main aspects:
 
 - Various new tools for performing local edits have been added, with support for various masking modes (both drawn and parametric).
 
-- A new automatic perspective correction tool (taken from [darktable](http://darktable.org)) has been added.
-
 - Better metadata handling (thanks to the [exiv2](http://exiv2.org) and [exiftool](http://exiftool.org) libraries), with (optional) support for reading and writing XMP sidecar files.
+
+- Support for various [input and output custom image formats](Customformats) via a simple plugin system, including various [true HDR output formats](Hdroutput).
 
 - Support for using [LibRaw](https://www.libraw.org) for decoding raw files.
 
 - Support for [ACES CLF LUTs](https://docs.acescentral.com/specifications/clf/) using [OpenColorIO](https://opencolorio.org/).
 
 - Support for [CTL scripts](https://acescentral.com/knowledge-base-2/ctl/) using the [ACES CTL interpreter](https://github.com/ampas/CTL).
+
+- A new automatic perspective correction tool (adapted from [darktable](http://darktable.org)) has been added.
 
 - Star ratings and colour labels can be loaded and stored from/to XMP sidecar files.
 
