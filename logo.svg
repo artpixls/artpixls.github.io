@@ -13,7 +13,7 @@
    inkscape:export-xdpi="163.42"
    inkscape:export-filename="/home/alb/src/ART-wiki/logo.png"
    sodipodi:docname="logo.svg"
-   inkscape:version="1.0 (4035a4f, 2020-05-01)"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
    id="svg783"
    version="1.1"
    viewBox="0 0 99.472352 33.591626"
@@ -1452,10 +1452,10 @@
      inkscape:measure-end="422.317,192.368"
      inkscape:measure-start="416.334,192.525"
      inkscape:window-maximized="1"
-     inkscape:window-y="30"
+     inkscape:window-y="27"
      inkscape:window-x="0"
-     inkscape:window-height="1013"
-     inkscape:window-width="1920"
+     inkscape:window-height="1376"
+     inkscape:window-width="2560"
      inkscape:snap-global="false"
      inkscape:snap-nodes="true"
      inkscape:object-nodes="false"
@@ -1477,7 +1477,7 @@
      inkscape:snap-bbox="true"
      units="px"
      showgrid="false"
-     inkscape:current-layer="layer3"
+     inkscape:current-layer="layer1"
      inkscape:document-units="px"
      inkscape:cy="186.80452"
      inkscape:cx="-307.17666"
@@ -1576,12 +1576,12 @@
        id="rect218"
        style="fill:#2a2a2a;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.16841719;enable-background:new" />
     <rect
-       style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.264583;enable-background:new"
+       style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.26458299;enable-background:new"
        id="rect4747"
        width="121.16376"
        height="38.44038"
        x="1.5874996"
-       y="205.98331" />
+       y="112.85098" />
     <flowRoot
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0.01%;font-family:OxygenSans;-inkscape-font-specification:OxygenSans;text-align:justify;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#f9f9f9;fill-opacity:1;stroke:none;stroke-width:1.06667;enable-background:new"
        id="flowRoot3757"
@@ -1604,8 +1604,7 @@
          id="flowPara177"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2296px;line-height:1.25;font-family:OxygenSans;-inkscape-font-specification:OxygenSans;text-align:justify;text-anchor:start;fill:#f9f9f9;fill-opacity:1;stroke-width:1.06667">&quot;Therapee&quot;: font Eras Medium ITC, 60pt, +1px spacing between characters.</flowPara><flowPara
          id="flowPara179"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2296px;line-height:1.25;font-family:OxygenSans;-inkscape-font-specification:OxygenSans;text-align:justify;text-anchor:start;fill:#f9f9f9;fill-opacity:1;stroke-width:1.06667">Version: font Eras Bold ITC, 64pt, skewed -3°.</flowPara></flowRoot>
-    <text
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2296px;line-height:1.25;font-family:OxygenSans;-inkscape-font-specification:OxygenSans;text-align:justify;text-anchor:start;fill:#f9f9f9;fill-opacity:1;stroke-width:1.06667">Version: font Eras Bold ITC, 64pt, skewed -3°.</flowPara></flowRoot>    <text
        id="text11593"
        y="336.89627"
        x="6.052238"
