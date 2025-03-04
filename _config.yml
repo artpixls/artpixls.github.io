@@ -4,7 +4,7 @@ plugins:
 relative_links:
   enabled: true
   collections: true
-remote_theme: jekyll/minima@v2.5.2
+remote_theme: jekyll/minima@6b9b78dad3e5c9f733c901e10287465735b36169
 include:
   - BuildUbuntu.md
   - Customformats.md
