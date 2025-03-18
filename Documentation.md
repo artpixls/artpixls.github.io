@@ -32,6 +32,8 @@ title: Documentation
 
 - [Generating HDR output images](Hdroutput)
 
+- [Spectral film simulations in ART](AgXEmulsionLutHowto)
+
 Other documentation sources ("unofficial", not maintained by the project): 
 
 - [An introduction to ART (external blog post)](https://yap.bozart.eu/articles/art/intro/index.html)
