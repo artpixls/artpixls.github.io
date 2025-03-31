@@ -1,95 +1,119 @@
 # Spectral film simulations in ART with *agx-emulsion*
-*(contributed by Leopoldo Saggin)*
 
-Recently *[arctic](https://discuss.pixls.us/u/arctic/summary)* released [***agx-emulsion***](https://github.com/andreavolpato/agx-emulsion), a physics-based simulation of color film photography processing.
+*(contributed by Leopoldo Saggin and Sébastien Guyader)*
 
-[*agriggio*](https://discuss.pixls.us/u/agriggio) decided to extend **[ART](https://art.pixls.us/)** and make possible to *integrate agx-emulsion* as an additional type of **3dLUT**, similarly in concept to what is already possible with *CTL scripts*.
+Recently [*arctic*](https://discuss.pixls.us/u/arctic/summary) released [***agx-emulsion***](https://github.com/andreavolpato/agx-emulsion), a physics-based simulation of color film photography processing.
 
-Here, we describe the *installation of agx-emulsion* and its *integration in ART* using **Microsoft Windows** so you can play with it, in case you are interested.
+[Alberto Griggio](https://discuss.pixls.us/u/agriggio) decided to extend [**ART**](https://art.pixls.us/) and make possible to integrate *agx-emulsion* as an additional type of **3dLUT**, similarly in concept to what is already possible with *CTL scripts*.
 
-**A.** ***agx-emulsion* installation**
+Here, we describe the *installation of agx-emulsion* and its *integration in ART* using **Microsoft Windows** and **Linux** so you can play with it, in case you are interested.
 
-I was successfully to install ***agx-emulsion*** under *MS Windows*, by using [***uv***](https://github.com/astral-sh/uv).
-The agx-emulsion module which I used was dated **2025-03-08**.
-Please note that a previous version dated **2025-02-07** gave me *many problems* both trying to install with **uv** and a *venv* **Python**, while I did not tested *conda*.
-1. Run *powershell* (as admin)
-2. Inside its shell, give the following command, which you only need to execute the **first time**:  
-   `powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"`
-3. This way **uv** (and *uvx*) are installed in a new subdirectory of the "active" user which is:
-   `C:\users\%username%\.local\bin`
-   ***N.B***: Please check that command for the **uv/uvx** installation have added the directory:
-   `C:\users\%username%\.local\bin`
-   to the ***%username%*** *environment path*.
-4. Download the ***agx-emulsion*** python module from its site, ie:
-[https://github.com/andreavolpato/agx-emulsion/](https://github.com/andreavolpato/agx-emulsion/archive/refs/tags/v0.1.0-alpha.zip)
-5. Move to the folder where you downloaded and *unzip/untar* it.
-6. Suppose you have expanded **agx-emulsion.zip** to:
-   `D:\Workspace\agx-emulsion`
-7. Run a *cmd* shell (not necessarily *as admin*), move inside to the directory of the project and run **uv** to install all the requirements for *agx-emulsion*. For example:
- ```
-   C:\Users\%username%\> D:
-   D:\> cd Workspace\agx-emulsion
-   D:\Workspace\agx-emulsion\> uv run --python 3.11 --with-requirements requirements.txt --no-project --with-editable .
+## Installing *uv* {#uv-install}
+
+Since *agx-emulsion* relies on Python, the use of *uv* as a package manager is a nice solution, as it is both easy, fast and cross-platform.
+
+On Windows, *uv* can be installed by typing the following command in a terminal:
+
+``` bash
+# ! you only need to execute this command the first time to install uv !
+powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
 ```
 
- Please note the "**dot**" at the end of the command line which means: "*here, in this directory*".
-   ***N.B.***: The execution of this command will take some time because it needs to cache all the dependencies. Luckly, you need to execute it only once!
-	 
-8. Now you need to test if your installation is correct. So, if you're already inside the directory:
-		`D:\\Workspace\\agx-emulsion`
-   use the following command to launch **agx-emulsion** *from inside* that directory:   
-```
-   D:\Workspace\agx-emulsion\> uv run --python 3.11 --with-requirements requirements.txt --no-project --with-editable . agx_emulsion/gui/main.py
-```
-	 
-9. For running the above command in a more general way, if we let's assume the *agx-emulsion* is located in:
-   `D:\Workspace\agx-emulsion`
-   (as previously reported), then you can use the following command: 
+Installation methods are provided at *uv*'s website for [Linux and MacOS](https://docs.astral.sh/uv/getting-started/installation/#__tabbed_1_1). In addition, you may check your Linux distribution's package manager and see if a binary package already exists.
 
- ```
-[wherever_you_are]\> uv run --python 3.11 --with-requirements D:\Workspace\agx-emulsion\requirements.txt --no-project --with-editable D:\Workspace\agx-emulsion agx_emulsion/gui/main.py
+This way *uv/uvx* binaries are installed in a new subdirectory of the active user by default, which is: `C:\users\%username%\.local\bin` on Windows, or `~/.local/bin` on Linux and MacOS. Notice that if you used a package manager on Linux, the *uv/uvx* binaries may be installed in `/usr/bin`.
+
+***N.B.***: Please check that command for the **uv/uvx** installation have added the directory: `C:\users\%username%\.local\bin` to the ***%username%*** *environment path*.
+
+## Installing *Python 3.11* {#python-install}
+
+Installing Python 3.11 with *uv* is as simple as typing the following command in the terminal:
+
+``` bash
+uv python install 3.11
 ```
 
-**B.** ***agx-emulsion integration in ART***
-1. Install *agx-emulsion* as reported above, checking it could run correctly following the given instructions. 
-   In particular make sure that you can run the **GUI** from the terminal.
-2. Download from:
-   <https://github.com/artpixls/ART/tree/master/tools/extlut>
-   the scripts ***agx_emulsion_mklut.py*** and ***ART_agx_film.json*** which are the "links" between agx-emulsion and ART as provided by *agriggio*.
-3. Save both of them *in the same directory*.
-4. Open with a text editor the file **ART_agx_film.json** and edit its  **line 12** to point to the *Python interpreter* you used to install ***agx-emulsion***.
-5. The default content of line 12, as provided in the script by *agriggio* is: 
-   `"command" : "python3 agx_emulsion_mklut.py --server",`
-6. If you used **uv** and you installed **agx-emulsion** in:
-   `D:\Workspace\agx-emulsion`   
-   **(as reported in the example above), then you need to substitute the original line with the **following one**:   
+This will install CPython 3.11 in `C:\users\%username%\.local\share\uv\python\cpython-3.11{...}\` (Windows) or ``` ~/.local/share/uv/python/``cpython-3.11{...}\ ``` (Linux and MacOS)
 
+## Installing and preparing *agx-emulsion* and required Python packages
+
+### ***agx-emulsion*** **installation** {#agx-emulsion-installation}
+
+If you haven't installed *agx-emulsion* already, the simplest way of doing so is through *uvx*:
+
+``` bash
+uvx --from git+https://github.com/andreavolpato/agx-emulsion.git agx-emulsion
 ```
-   "command\" : "c:\\users\\<username>\\.local\\bin\\uv.exe run --python 3.11 --with-requirements d:\\Workspace\\agx-emulsion\\requirements.txt --no-project --with-editable d:\\Workspace\\agx-emulsion agx_emulsion_mklut.py --server",
- ```
 
-Please also note the presence of a "**comma**" at the end of the line!
+If you previously downloaded an older zip/tarball snapshot of *agx-emulsion* from its [github repository](https://github.com/andreavolpato/agx-emulsion/), we suggest you delete it and refer to the installation method above to ensure you get an up-to-date version.
 
-7. Now you can load **ART_agx_film.json** as a **LUT** inside the  **ART** "*Color/Tone Correction*" tool.
-8. If you want a more permanent integration (and also a better positioning of the tool in the *ART pipeline*), you can set the directory where you put those two files as the "**CLUT directory**" in ART preferences.
-9. For example if you put the scripts into:
-`C:\Users\%username%\AppData\Local\ART\FilmSimulation`
-    than you can specify the *Film Simulation* directory* *in:
-   *Preferences > Image Processing > Directories > CLUT directory*		
-10. At this point you can test if everything works. Open an image in ART.
-11. Activate the "*Color/Tone Correction*" tool and, from its *Mode* dropdown menu select **LUT** (note that default mode is generally *Standard* or *Perceptual*)
-12. The program will ask for a *LUT file*.
-13. Select *ART_agx_film.json.*
-14. At this point a large set of parameters appears, as reported in the image below, and you can play and choose the film simulation you wish to simulate etc\...
+Alternatively, if you cloned the *agx-emulsion* repository using *git*, you should first refresh the local repo (`git pull`) and then type:
 
-![agx-emulsion](resources/agx-emulsion-lut.png)
+``` bash
+uvx path/to/local/agx-emulsion
+```
+
+If everything went well, a napari GUI window should pop up which will let you experiment with *agx-emulsion*. For instance, you can load one of the provided test images (or any image of your choice), and play with the film and print emulsions to ensure the module works.
+
+![*agx-emulsion* native GUI](resources/agx-napari-GUI.png)
+
+### *agx-emulsion* integration in ART {#agx-emusion-art-integration}
+
+Integration of *agx-emulsion* in ART has started since [commit 22fe47d](https://github.com/artpixls/ART/commit/22fe47d2a4b5f72c7895ddd0cf7cfddaaabf3cfe) and is available since [release 1.25.3](https://github.com/artpixls/ART/releases/tag/1.25.3).
+
+In order to use the module in ART, you need to download 2 support files (***agx_emulsion_mklut.py*** and ***ART_agx_film.json)*** from <https://github.com/artpixls/ART/tree/master/tools/extlut> and to save them *both in the same directory* of your choice. **It is crucial that both files reside in the same directory**.
+
+***Note:*** the most convenient place to save both files is the 3D LUT directory declared in ART's **Preferences \> Image Processing \> Directories \> CLUT directory**.
+
+***ART_agx_film.json*** is a configuration file which sets the command to run the Python script ***agx_emulsion_mklut.py*** which by default is:
+
+``` json
+    "command" : "python3 agx_emulsion_mklut.py --server",
+```
+
+Since this command will likely vary according to your operating system and Python install, you need to open it with a text editor and edit **line 12** to point to the *Python interpreter* you used to install *agx-emulsion*.
+
+If you followed the instructions above to install *uv* and Python 3.11, you will need to update this command with:
+
+(for Windows:)
+
+``` json
+    "command" : "C:\\users\\<username>\\.local\\bin\\uv.exe run --python 3.11 --with-editable C:\\path\\to\\local\\agx-emulsion agx_emulsion_mklut.py --server",
+```
+
+(for Linux and MacOS:)
+
+``` json
+    "command" : "uv run --python 3.11 --with-editable /path/to/local/agx-emulsion agx_emulsion_mklut.py --server",
+```
+
+and save the file. Please also note the presence of a "**comma**" at the end of the line!
+
+Now when you start ART you should be able to load ***ART_agx_film.json*** as a **LUT** from the "*Color/Tone Correction*" tool in the "Local editing" tab, or from the "Film Simulation" tool in the "Special Effects" tab.
+
+At this point you can test if everything works:
+
+1.  Open an image in ART
+2.  Activate the "*Color/Tone Correction*" tool and, from its "*Mode"* dropdown menu select **LUT** (note that default mode is generally *Standard* or *Perceptual*)
+3.  The program will ask for a *LUT file*
+4.  Select ***ART_agx_film.json***
+5.  At this point a large set of parameters appears, as reported in the image below, and you can play and choose the film simulation you wish to simulate etc...
+
+![*agx-emulsion* module in ART](resources/agx-emulsion-lut.png)
+
+### Updating *agx-emulsion* {#agx-emulsion-updating}
+
+In order to keep both the ***agx-emulsion*** Python code base and its support in ART up to date:
+
+1.  update your local agx-emulsion repo (though *git* or by extracting a zip/tarball) and refer to the second command in the [agx-emulsion section](#agx-emulsion-installation) above
+2.  download the ***agx_emulsion_mklut.py*** and ***ART_agx_film.json*** files from <https://github.com/artpixls/ART/tree/master/tools/extlut> again, and replace the existing files in ART's **CLUT directory** with the new ones.
 
 **Disclaimer**
 
-All the information provided on this document is provided on an "*as-is*" basis and you agree that you use such information entirely at *your own risk*.
-I give *no warranty* and accepts *no responsibility or liability for the accuracy or the completeness of the information contained in this document*. Under no circumstances I will be held responsible or liable in any way for any claims, damages, losses, expenses, costs or liabilities whatsoever (including, without limitation, any direct or indirect damages for loss of profits, business interruption or loss of information) resulting or arising directly or indirectly from your use of or inability to use this document.
+All the information provided on this document is provided on an "*as-is*" basis and you agree that you use such information entirely at *your own risk*. We give *no warranty* and accept *no responsibility or liability for the accuracy or the completeness of the information contained in this document*. Under no circumstances will we be held responsible or liable in any way for any claims, damages, losses, expenses, costs or liabilities whatsoever (including, without limitation, any direct or indirect damages for loss of profits, business interruption or loss of information) resulting or arising directly or indirectly from your use of or inability to use this document.
 
-Leopoldo Saggin aka **Topoldo**
-[leopoldo.saggin@yahoo.com](mailto:leopoldo.saggin@yahoo.com)
+Leopoldo Saggin aka **Topoldo** [leopoldo.saggin\@yahoo.com](mailto:leopoldo.saggin@yahoo.com)
 
-Version 0.1 **15/3/2025**
+[Sébastien Guyader](https://discuss.pixls.us/u/sguyader)
+
+Version 0.2 **2025/03/31**
