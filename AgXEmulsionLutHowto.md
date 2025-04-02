@@ -77,7 +77,7 @@ If you followed the instructions above to install *uv* and Python 3.11, you will
 (for Windows:)
 
 ``` json
-    "command" : "C:\users\<username>\miniconda3\envs\agx-emulsion\bin\python3.11.exe agx_emulsion_mklut.py --server",
+    "command" : "C:\\users\\<username>\\miniconda3\\envs\\agx-emulsion\\bin\\python3.11.exe agx_emulsion_mklut.py --server",
 ```
 
 (for Linux and MacOS:)
