@@ -14,7 +14,7 @@ Since *agx-emulsion* is written in Python, it requires a Python interpreter to b
 
 To install *Miniconda*, follow the instructions provided on the [Anaconda website](https://www.anaconda.com/docs/getting-started/miniconda/install) for the three main operating systems (Windows, MacOS and Linux). It is best to install *Miniconda* from the command line, so it gets installed for the local user (it doesn't require administrator permissions and is the most robust type of installation). This way *Miniconda* will be installed in a new sub-directory of the active user by default: `C:\%userprofile%\miniconda3` on Windows, `~/miniconda3` on MacOS and Linux.
 
-> If you followed the instructions, after closing the shell terminal you should see `(base)` in the new command line prompt. This tells you that you’re in your *base* conda environment.
+> If you followed the instructions, after closing the shell terminal and opening a new one you should see `(base)` in the new command line prompt. On Windows, you may need to use **Anaconda Prompt**. This tells you that you’re in your *base* conda environment.
 
 ## Installing and preparing *agx-emulsion* and required Python packages
 
@@ -77,7 +77,7 @@ If you followed the instructions above to install *uv* and Python 3.11, you will
 (for Windows:)
 
 ``` json
-    "command" : "C:\\users\\<username>\\miniconda3\\envs\\agx-emulsion\\bin\\python3.11.exe agx_emulsion_mklut.py --server",
+    "command" : "C:\\users\\<username>\\miniconda3\\envs\\agx-emulsion\\python.exe agx_emulsion_mklut.py --server",
 ```
 
 (for Linux and MacOS:)
