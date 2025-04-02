@@ -88,7 +88,7 @@ If you followed the instructions above to install *uv* and Python 3.11, you will
 
 and save the file. Please also note the presence of a "**comma**" at the end of the line!
 
-Now when you start ART you should be able to load ***ART_agx_film.json*** as a **LUT** from the "*Color/Tone Correction*" tool in the "Local editing" tab, or from the "Film Simulation" tool in the "Special Effects" tab.
+Now when you start ART you should be able to load ***ART_agx_film.json*** as a **LUT** from the "*Color/Tone Correction*" tool in the "Local editing" tab, or from the "*Film Simulation*" tool in the "Special Effects" tab.
 
 At this point you can test if everything works:
 
@@ -111,6 +111,6 @@ In order to keep both the ***agx-emulsion*** Python code base and its support in
 
 All the information provided on this document is provided on an "*as-is*" basis and you agree that you use such information entirely at *your own risk*. We give *no warranty* and accept *no responsibility or liability for the accuracy or the completeness of the information contained in this document*. Under no circumstances will we be held responsible or liable in any way for any claims, damages, losses, expenses, costs or liabilities whatsoever (including, without limitation, any direct or indirect damages for loss of profits, business interruption or loss of information) resulting or arising directly or indirectly from your use of or inability to use this document.
 
-Leopoldo Saggin aka [**Topoldo**](https://discuss.pixls.us/u/) and [Sébastien Guyader](https://discuss.pixls.us/u/sguyader)
+Leopoldo Saggin aka [**Topoldo**](https://discuss.pixls.us/u/Topoldo) and [Sébastien Guyader](https://discuss.pixls.us/u/sguyader)
 
 Version 0.3 **2025-04-01**
