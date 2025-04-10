@@ -219,6 +219,24 @@ void ART_main(varying float r, varying float g, varying float b,
 }
 ```
 
+Finally, using the `@ART-lut` tag it is possible to specify whether the CTL script should be applied to every pixel of the input image, or whether it should be used to precompute a 3dLUT that is then applied to the image. 
+
+Using `@ART-lut` can significantly improve performance, but it might cause
+artifacts for scripts that compute functions that are hard to approximate with
+a look-up table. By default, if no tag is present, ART will apply the CTL
+script to each pixel of the image on export, and it will use intermediate
+3dLUTs of suitable size during the editing preview (this behaviour can be changed by setting the related flag in "Preferences -> Performance").
+
+The format for the parameter is the following:
+
+```
+ // @ART-lut: <lut-dim>
+```
+
+where `<lut-dim>` is an integer specifying the dimension of the intermediate
+3dLUT. The special value `-1` means that 3dLUTs are never used for this
+script, neither on export nor for previews.
+
 
 ## Example
 
