@@ -8,11 +8,13 @@ Recently [*arctic*](https://discuss.pixls.us/u/arctic/summary) released [***agx-
 
 Here, we describe the *installation of agx-emulsion* and its *integration in ART* using **Microsoft Windows, MacOS** and **Linux** so you can play with it, in case you are interested.
 
-## Installing *pipx* and *virtualenv* {#uv-install}
+## 1. Installing *pipx* and *virtualenv* {#virtualenv-install}
 
 Since *agx-emulsion* relies on Python, the use of a virtual environment for Python is recommended. Here we will describe how to install and use `virtualenv` which a fast, cross-platform tool for managing isolated Python environments which allow installing and running different versions of Python.
 
 In case you don't have Python installed already, install a recent version (from <https://www.python.org/> for example). If your Python version is \< 3.8, please update.
+
+**Note for Windows users:** it seems like the current version of Python at the time of writing (version 3.14) prevents installing Python 3.11 from the `virtualenv`. It is suggested to directly install Python 3.11 as the main Python version on your system.
 
 Now you can install `pipx` for your OS from here: <https://pipx.pypa.io/stable/installation/>.
 
@@ -39,7 +41,7 @@ virtualenv --python 3.11 ~\envs\agx-emulsion
 
 This will create a new `envs` folder in your home user directory, of course you can change it to the path/forlder name you like but don't forget to update the following commands.
 
-## Installing and preparing *agx-emulsion*
+## 2. Installing and preparing *agx-emulsion*
 
 ### **Activating the *agx-emulsion*** environment {#agx-emulsion-installation}
 
@@ -94,7 +96,7 @@ If everything went well, a window should pop up which will let you experiment wi
 
 ![*agx-emulsion* native GUI](resources/agx-napari-GUI.png)
 
-### *agx-emulsion* integration in ART {#agx-emusion-art-integration}
+## 3. *agx-emulsion* integration in ART {#agx-emusion-art-integration}
 
 Integration of *agx-emulsion* in ART has started since [commit 22fe47d](https://github.com/artpixls/ART/commit/22fe47d2a4b5f72c7895ddd0cf7cfddaaabf3cfe) and is available since [release 1.25.3](https://github.com/artpixls/ART/releases/tag/1.25.3).
 
@@ -144,7 +146,7 @@ At this point you can test if everything works:
 
 ![*agx-emulsion* module in ART](resources/agx-emulsion-lut.png)
 
-### Updating *agx-emulsion* {#agx-emulsion-updating}
+## 4. Updating *agx-emulsion* {#agx-emulsion-updating}
 
 In order to keep both the ***agx-emulsion*** Python code base and its support in ART up to date:
 
