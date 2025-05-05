@@ -10,7 +10,7 @@ Here, we describe the *installation of agx-emulsion* and its *integration in ART
 
 ## 1. Installing *pipx* and *virtualenv* {#virtualenv-install}
 
-Since *agx-emulsion* relies on Python, the use of a virtual environment for Python is recommended. Here we will describe how to install and use `virtualenv` which a fast, cross-platform tool for managing isolated Python environments which allow installing and running different versions of Python.
+Since *agx-emulsion* relies on Python, the use of a virtual environment for Python is recommended. Here we will describe how to install and use `virtualenv` which is a fast, cross-platform tool for managing isolated Python environments which allow installing and running different versions of Python.
 
 In case you don't have Python installed already, install a recent version (from <https://www.python.org/> for example). If your Python version is \< 3.8, please update.
 
@@ -18,14 +18,14 @@ In case you don't have Python installed already, install a recent version (from 
 
 Now you can install `pipx` for your OS from here: <https://pipx.pypa.io/stable/installation/>.
 
-To install *virtualenv*, run the following commands in a terminal (for Windows, cmd.exe or PowerShell):
+To install *virtualenv*, run the following commands in a terminal (for Windows, **cmd.exe** or **PowerShell**):
 
 ```         
 pipx install virtualenv
 pipx ensurepath
 ```
 
-Now close your terminal window, open a new terminal and create the virtual environment for agx-emulsion.
+Now close your terminal window, open a new terminal and create the virtual environment for *agx-emulsion*.
 
 For Windows:
 
@@ -41,19 +41,19 @@ virtualenv --python 3.11 ~\envs\agx-emulsion
 
 This will create a new `envs` folder in your home user directory, of course you can change it to the path/forlder name you like but don't forget to update the following commands.
 
-## 2. Installing and preparing *agx-emulsion*
+## 2. Installing and preparing *agx-emulsion* {#agx-emulsion-install}
 
-### **Activating the *agx-emulsion*** environment {#agx-emulsion-installation}
+### **Activating the *agx-emulsion*** environment
 
 For **Windows**:
 
--    if you use cdm.exe type:
+-    if you use **cdm.exe** type:
 
 ```         
 c:\users\<username>\envs\Scripts\activate.bat
 ```
 
--   if you use PowerShell:
+-   if you use **PowerShell**:
 
 ```         
 c:\users\<username>\envs\Scripts\Activate.ps1
@@ -94,7 +94,7 @@ agx-emulsion
 
 If everything went well, a window should pop up which will let you experiment with *agx-emulsion*. For instance, you can load the provided test image (located in `/path/to/local/agx-emulsion/img/test`) or any image of your choice and play with the film and print emulsions to ensure the module works.
 
-![*agx-emulsion* native GUI](resources/agx-napari-GUI.png)
+![*agx-emulsion* native GUI](resources/agx-emulsion-napari-GUI.png)
 
 ## 3. *agx-emulsion* integration in ART {#agx-emusion-art-integration}
 
