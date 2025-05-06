@@ -47,7 +47,7 @@ This will create a new `envs` folder in your home user directory, of course you 
 
 For **Windows**:
 
--    if you use **cdm.exe** type:
+-    if you use **cmd.exe** type:
 
 ```         
 c:\users\<username>\envs\Scripts\activate.bat
