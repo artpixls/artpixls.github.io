@@ -34,6 +34,8 @@ title: Documentation
 
 - [Spectral film simulations in ART](AgXEmulsionLutHowto)
 
+- [The ART book](Book)
+
 Other documentation sources ("unofficial", not maintained by the project): 
 
 - [An introduction to ART (external blog post)](https://yap.bozart.eu/articles/art/intro/index.html)
