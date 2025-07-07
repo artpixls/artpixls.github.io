@@ -1,4 +1,4 @@
-<!-- ![](images/0.jpg) -->
+<!-- ![](book-images/0.jpg) -->
 
 # The ART Book
 
@@ -49,17 +49,17 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[3\.8\.2 Bélyegképek](#382)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[3\.8\.3 Bélyegképek frissítése](#383)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[3\.8\.4 Helyi menü](#384)  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[3\.8\.5 Feldolgozási profil műveletek](#385)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[3\.8\.5 Feldolgozásiprofil-műveletek](#385)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[3\.8\.6 Munkamenetek](#386)  
 &nbsp;&nbsp;&nbsp;[3\.9 Vizsgálat](#39)  
 &nbsp;&nbsp;&nbsp;[3\.10 Szerkesztő](#310)  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[3\.10\.1 Előnézeti kép](#3101)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[3\.10\.1 Előnézet](#3101)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[3\.10\.2 Navigátor](#3102)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[3\.10\.3 Felső eszköztár](#3103)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[3\.10\.4 Hisztogram](#3104)  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[3\.10\.4\.1 Fő hisztogram](#31041)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[3\.10\.4\.1 Hisztogram](#31041)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[3\.10\.4\.2 A kép és hisztogramja](#31042)  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[3\.10\.4\.3 Az előnézeti kép, a Navigátor és a Hisztogram együttműködése](#31043)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[3\.10\.4\.3 Az előnézet, a Navigátor és a Hisztogram együttműködése](#31043)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[3\.10\.4\.4 A vágás okának megállapítása](#31044)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[3\.10\.4\.5 Hullámforma diagram](#31045)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[3\.10\.4\.6 Vektornézet diagramok](#31046)  
@@ -75,6 +75,7 @@
 &nbsp;&nbsp;&nbsp;[3\.13 Feldolgozási profilok készítése](#313)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[3\.13\.1 Alapértelmezett feldolgozási profil készítése](#3131)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[3\.13\.2 Képek átméretezése](#3132)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[3\.13\.3 Képfájl mellé mentett feldolgozási profil alkalmazása](#3133)  
 &nbsp;&nbsp;&nbsp;[3\.14 Csúszkák, görbeszerkesztők](#314)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[3\.14\.1 Csúszkák](#3141)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[3\.14\.2 Görbeszerkesztők](#3142)  
@@ -100,8 +101,8 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[4\.2\.2\.2 RL Dekonvolúció módszer](#4222)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[4\.2\.2\.3 Egyedi RL Dekonvolúció módszer](#4223)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[4\.2\.3 Zajcsökkentés](#423)  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[4\.2\.3\.1 Fényerő](#4231)  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[4\.2\.3\.2 Színezet](#4232)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[4\.2\.3\.1 Világosságzaj](#4231)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[4\.2\.3\.2 Színzaj](#4232)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[4\.2\.3\.3 Végső simítások](#)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[4\.2\.4 Impulzuszaj csökkentése](#424)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[4\.2\.5 Színhibajavítás (defringe)](#425)  
@@ -155,7 +156,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[4\.4\.2\.16 Kivonó színkeverés CTL szkript](#44216)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[4\.4\.2\.17 Lágy fény CTL szkript](#44217)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[4\.4\.2\.18 Poszterizáció CTL szkript](#44218)  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[4\.4\.2\.19 Színárnyalat világosság szerint CTL szkript](#44219)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[4\.4\.2\.19 Színezés fényerő szerint CTL szkript](#44219)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[4\.4\.2\.20 Színegyensúly RGB CTL szkript](#44220)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[4\.4\.2\.21 Színkeverés CTL szkript](#44221)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[4\.4\.2\.22 Színtartomány tömörítése CTL szkript](#44222)  
@@ -177,7 +178,7 @@
 &nbsp;&nbsp;&nbsp;[4\.5 Különleges hatások eszközcsoport](#45)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[4\.5\.1 Fekete-fehér](#451)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[4\.5\.2 Filmszimuláció](#452)  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[4\.5\.2\.1 Szigmoid CTL szkript](#4521)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[4\.5\.2\.1 Szigmoid tónusleképező CTL szkript](#4521)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[4\.5\.3 Lágy fény](#453)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[4\.5\.4 Peremsötétedés szűrő](#454)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[4\.5\.5 Átmenetes szűrő](#455)  
@@ -220,13 +221,13 @@ Ez a könyv szerzői jogvédelem alatt áll. Felhasználása kizárólag a Creat
 
 https://creativecommons.org/licenses/by-nc-sa/4.0/deed.hu
 
-[Creative Commons CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+[Creative Commons CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 A könyv címe: Az ART nyersfájl-feldolgozó program
 
 Copyright Bereczky Péter, 2025
 
-Első kiadás (javított változat), 2025
+Második javított, bővített kiadás, 2025
 
 Címlapfotó: Jit Roy fotója a Pexels oldaláról
 
@@ -303,7 +304,7 @@ A fenti kép sárga keretben látható része nagyítva látható az alábbi áb
 
 A digitális kép képpontokból áll. Az ábrán jól láthatók az egyes képpontok. A digitális képnek a legkisebb, egymástól megkülönböztethető része a képpont. Minden egyes képpontnak a teljes felülete egy bizonyos színű.
 
-Az elemi érzékelők fénymennyiséget érzékelnek, színeket nem látnak. A képérzékelőnek azt a részét kevesebb fénymennyiség éri, ahová a fotótéma sötétebb részét vetíti az objektív. A fotótéma világosabb részeinél több fénymennyiség éri. Az exponálás után megtörténik minden egyes elemi érzékelőből az adatok kiolvasása, és számokká történő átalakítása. A számokká történő átalakítást digitalizálásnak nevezzük.
+Az elemi érzékelők fénymennyiséget érzékelnek, színeket nem látnak. A képérzékelőnek azt a részét kevesebb fénymennyiség éri, ahová a fotótéma sötétebb részét vetíti az objektív. A fotótéma világosabb részeinél több fénymennyiség éri az érzékelőt. Az exponálás után megtörténik minden egyes elemi érzékelőből az adatok kiolvasása, és számokká történő átalakítása. A számokká történő átalakítást digitalizálásnak nevezzük.
 
 ![](book-images/5.jpg)
 
@@ -358,7 +359,7 @@ A képérzékelő színeket nem lát, csak fénymennyiséget érzékel. Ahhoz, h
 ![](book-images/8.jpg)  
 *Balra Bayer-féle színszűrő, jobbra X-Trans színszűrő. A képek forrása: Wikipedia*
 
-Az ábrán egy kis négyzetecske a képérzékelő egy képpontjának (egy elemi érzékelőnek) felel meg. Láthatjuk az elemi érzékelők előtt szigorú rendben elhelyezkedő színszűrőket. Egy képpont csak egyféle szín intenzitását érzékeli. Egy képpont fényképen megjelenő színét számítás segítségével határozzák meg úgy, hogy figyelembe veszik a körülötte elhelyezkedő, különböző színű szűrők alatt lévő elemi érzékelők adatait, és látásunk jellemzőit is. Ezt az eljárást színrekonstrukciónak (angolul demosaicing, vagy color reconstruction) nevezzük. Tehát az egyes képpontok színadatai a színrekonstrukció során keletkeznek.
+Az ábrán egy kis négyzetecske a képérzékelő egy képpontjának (egy elemi érzékelőnek) felel meg. Láthatjuk az elemi érzékelők előtt szigorú rendben elhelyezkedő színszűrőket. Egy képpont csak egyféle szín intenzitását érzékeli. Egy képpont fényképen megjelenő színét számítás segítségével határozzák meg úgy, hogy figyelembe veszik a körülötte elhelyezkedő, különböző színű szűrők alatt lévő elemi érzékelők adatait, és látásunk jellemzőit is. Ezt az eljárást színrekonstrukciónak nevezzük (angolul demosaicing, vagy color reconstruction). Tehát az egyes képpontok színadatai a színrekonstrukció során keletkeznek.
 
 Az ábra jobb oldalán a Fujifilm által kifejlesztett X-Trans mátrix színszűrő kis részlete látható, amely jelentősen eltér a balra látható Bayer-féle színszűrőtől. A Fujifilm fényképezőgépeiben X-Trans mátrix színszűrőt találunk, a többi gyártó Bayer-féle színszűrőt alkalmaz. A Bayer-féle és az X-Trans szűrőhöz nem alkalmazható ugyanaz a színrekonstrukció algoritmus. Mindkét fajta érzékelőhöz kifejlesztettek többféle színrekonstrukció eljárást, amelyek közül választhatunk a feldolgozás során.
 
@@ -384,15 +385,15 @@ A napfénynek egy átlagos látással rendelkező ember által észlelhető hull
 
 ![](book-images/9.jpg)
 
-Felül láthatók a hullámhossz értékek, és alattuk a hozzájuk tartozó szín. Tulajdonképpen a szivárvány színeit látjuk, az ibolyától a vörösig. A szivárványban egymáshoz képest eltolódva jelennek meg a látható fény eltérő hullámhosszú komponensei, ezért egymás mellett láthatjuk a színárnyalatokat, amelyek a szivárványt alkotják. Ugyanezt láthattuk az iskolai kísérletben, amikor üvegprizmával bontottuk komponensekre a napfényt, és a szivárványhoz hasonló eredményt kaptunk. Ez azért lehetséges, mert az üveg törésmutatója függ a fény hullámhosszától, a különböző hullámhosszú elektromágneses sugárzást különböző mértékben téríti el, ezért a különböző hullámhosszú színek egymás mellett lesznek láthatók.
+Felül láthatók a hullámhossz értékek, és alattuk a hozzájuk tartozó szín. Tulajdonképpen a szivárvány színeit látjuk, az ibolyától a vörösig. A szivárványban egymáshoz képest eltolódva jelennek meg a látható fény eltérő hullámhosszú komponensei, ezért egymás mellett láthatjuk a színárnyalatokat, amelyek a szivárványt alkotják. Ugyanezt láthattuk az iskolai kísérletben, amikor üvegprizmával bontottuk komponensekre a napfényt, és a szivárványhoz hasonló eredményt kaptunk. Ez azért lehetséges, mert az üveg törésmutatója függ a fény hullámhosszától, a különböző hullámhosszúságú elektromágneses sugárzást különböző mértékben téríti el, ezért a különböző hullámhosszúságú színek egymás mellett lesznek láthatók.
 
 A napfény prizmával történő komponensekre bontásakor monokróm (egyszínű, egyféle hullámhosszú) komponensek sorozatát kapjuk. Tehát a fenti ábrán látható spektrum monokróm komponensek egymásutánjából áll. A napfény spektruma folyamatos, azaz a teljes hullámhossz-tartományon belül mindenféle hullámhosszú komponens megtalálható benne. Ezeknek a különböző hullámhosszú, különböző intenzitású monokróm komponenseknek az eredőjét "fehér" fényként érzékeljük.
 
 A színterek az ember által érzékelhető színeknek, vagy azok egy részének matematikai modellezéséről szólnak. Színek alatt itt "mindent" értek, amit érzékelni tudunk. Beletartozik a szürke, a fekete, a fehér, a pasztell színek, az erőteljes színek, egyszóval minden. A matematika nyelvén történő leírás a számítógépen történő alkalmazhatóság miatt szükséges. Minden színtér esetében vannak paraméterek, amelyek értékei meghatározzák az adott színt. Egy adott paraméter megváltoztatása megváltoztatja az adott szín valamilyen jellemzőjét. A képszerkesztő programokban (egyebek mellett) közvetlenül vagy közvetetten ezeket a paramétereket is változtathatjuk, amelyek változást eredményeznek a képen. Ezért fontos legalább alapszinten ismernünk a színrendszereket. Értenünk kell, hogy ha valamin változtatunk a programban, az tulajdonképpen mit változtat.
 
-A színterekhez is kapcsolódó fogalom a mellékhatás. Az lenne jó, ha szerkesztés közben, a változtatás során csak a változtatott jellemző (például a kontraszt) változna, és minden más (például színezet, telítettség) változatlan maradna, ez azonban nem minden esetben valósítható meg. Előfordulhat, hogy ha valamin változtatunk, akkor mellékhatásként más jellemzők is megváltoznak. Például ha a kép világosságán állítunk, akkor mellékhatásként kissé változnának a színek is. Ez nem jó, mert ha minden egyszerre változna, akkor kezelhetetlen lenne az egész. Éppen ezért van szükségünk többféle színtérre, többféle módszerre (eljárásra) a képszerkesztés, a nyers fájl feldolgozása során. Az egyik erre a célra alkalmasabb, a másik más célra. Több színtér, és többféle módszer alkalmazásával lehet összehozni egy jól használható, minél kevesebb mellékhatással járó, jó eredményt adó munkakörnyezetet.
+A színterekhez is kapcsolódó fogalom a mellékhatás. Az lenne jó, ha szerkesztés közben, a változtatás során csak a változtatni kívánt jellemző (például a kontraszt) változna, és minden más (például színezet, telítettség) változatlan maradna, ez azonban nem minden esetben valósítható meg. Előfordulhat, hogy ha valamin változtatunk, akkor mellékhatásként más jellemzők is megváltoznak. Például ha a kép világosságán állítunk, akkor mellékhatásként kissé változnának a színek is. Ez nem jó, mert ha minden egyszerre változna, akkor kezelhetetlen lenne az egész. Éppen ezért van szükségünk többféle színtérre, többféle módszerre (eljárásra) a képszerkesztés, a nyers fájl feldolgozása során. Az egyik erre a célra alkalmasabb, a másik más célra. Több színtér, és többféle módszer alkalmazásával lehet összehozni egy jól használható, minél kevesebb mellékhatással járó, jó eredményt adó munkakörnyezetet.
 
-A túl drasztikus változtatás mellékhatással járhat. Ezt elkerülhetjük, ha a szerkesztőeszközöket úgy használjuk, hogy hatásuk ne legyen túl erős.
+A túl drasztikus változtatás mellékhatással járhat. Ezt elkerülhetjük, ha a szerkesztőeszközöket úgy használjuk, hogy hatásuk ne legyen túl erőteljes.
 
 ### <a id="241"></a> 2\.4\.1 Kétféle keretrendszer
 
@@ -403,21 +404,29 @@ Kétféle keretrendszer létezik, amelyeken belül a színtulajdonságok elemezh
 
 Ez a kétféle keretrendszer lehetőséget biztosít számunkra a színek leírásához, és lehetővé teszi, hogy megváltoztassuk a színek bizonyos tulajdonságait úgy, hogy közben egyéb tulajdonságok nem (nagyon) változnak.
 
-A színek sokféle színtérben leírhatók, de színtértől függetlenül minden szín leírásához legalább három jellemzőre van szükség: a fénysűrűség vagy a fényerő (világosság) mérőszámára, és két mérőszámra, amely a színt írja le valamilyen módon (árnyalat és színtelítettség formában, vagy színkoordináták segítségével).
+A színek sokféle színtérben leírhatók, de színtértől függetlenül minden szín leírásához legalább három jellemzőre van szükség: a fényerő (világosság) mérőszámára, és két mérőszámra, amely a színt írja le valamilyen módon (árnyalat és színtelítettség formában, vagy színkoordináták segítségével).
 
 ### <a id="242"></a> 2\.4\.2 A CIE XYZ 1931 színrendszer
 
 ![](book-images/10.jpg)
 
-A háromféle jellemző miatt az észlelhető színek tartománya egy háromdimenziós alakzattal írhatók le. A fenti ábrán a CIE 1931 XYZ színrendszer (a térbeli alakzat) egy vetülete látható. Ezen a vetületen az ember által érzékelhető legtöbb színárnyalat látható. Ez a színek ember által észlelhető legnagyobb tartománya. A már nem észlelhető színek az ábrán látható színes területen kívül helyezkednek el.
+A háromféle jellemző miatt az észlelhető színek tartománya egy háromdimenziós alakzattal írható le. A fenti ábrán a CIE 1931 XYZ színrendszer (a térbeli alakzat) egy vetülete látható. Ezen a vetületen az ember által érzékelhető legtöbb színárnyalat látható. Ez a színek ember által észlelhető legnagyobb tartománya. A már nem észlelhető színek az ábrán látható színes területen kívül helyezkednek el.
 
-A fenti diagramon tehát elvileg az ember által egy bizonyos fénysűrűségnél ("világosságnál") érzékelhető összes színárnyalat látható. Ez azonban csak elvileg van így. A valóságban az itt látható kép egy JPEG kép, amely csak az ember által érzékelhető színek kisebb tartományának megjelenítésére alkalmas, ezért sehogyan sem tartalmazhatja valósághűen az észlelhető összes színt. A másik probléma a monitor által megjeleníthető színtartomány. Nagyon-nagyon drága az olyan monitor, amelynek színtartománya képes megközelíteni az ember által észlelhető teljes színtartományt. Az olcsóbb monitorok nagyon elmaradnak ettől, ezért sehogyan sem láthatjuk valósághűen a CIE 1931 XYZ színrendszer fenti ábrán látható vetületének színeit.
+A fenti diagramon tehát elvileg az ember által egy bizonyos fényerőnél ("világosságnál") érzékelhető összes színárnyalatot láthatjuk. Ez azonban csak elvileg van így. A valóságban az itt látható kép egy JPEG kép, amely csak az ember által érzékelhető színek kisebb tartományának megjelenítésére alkalmas, ezért sehogyan sem tartalmazhatja valósághűen az észlelhető összes színt. A másik probléma a monitor által megjeleníthető színtartomány. Nagyon-nagyon drága az olyan monitor, amelynek színtartománya képes megközelíteni az ember által észlelhető teljes színtartományt. Az olcsóbb monitorok nagyon elmaradnak ettől, ezért sehogyan sem láthatjuk valósághűen a CIE 1931 XYZ színrendszer fenti ábrán látható vetületének színeit.
 
-Az ábrán a színes terület szélénél fel vannak tüntetve a napfény komponensekre bontásával kapott monokróm fény hullámhosszának értékei. Ezek a fentebbi ábrán (napfény spektruma) is látható monokróm komponensek. Ez alól kivétel a diagram alsó szélénél látható egyenes rész. Két vagy több monokróm komponens (bizonyos intenzitásarányú) összekeverésével állíthatjuk elő a keverékszíneket. Ha a fenti ábra színes területének szélénél elhelyezkedő bármely két monokróm színt összekötünk egy szakasszal (egyenes vonallal), akkor a szakasz mentén láthatjuk, hogy annak a két monokróm színnek különböző arányú összekeverésével milyen keverékszíneket állíthatunk elő. Ha a két monokróm szín intenzitása azonos, akkor a keverékszín a szakasz felezőpontjánál helyezkedik el. Megállapíthatjuk, hogy két vagy több látható monokróm szín összekeverésével kapott keverékszínt más és más színként érzékeljük. Ehhez hasonlóan a színes terület belsejének bármely két pontját is összeköthetjük egy szakasszal. A szakasz mindkét végpontjánál keverékszín található. A szakasz mentén láthatjuk, hogy annak a két színnek különböző arányú összekeverésével milyen színeket állíthatunk elő. Azonos intenzitás esetén a szakasz felezőpontjánál látható színt kapjuk. A színes terület alsó szélénél látható egyenes mentén elhelyezkedő színek keverékszínek, mégpedig a két végpontban látható 380 és a 700 nm hullámhosszú színek különböző intenzitásarányú összekeverésével keletkeznek. Tehát a diagram patkó alakú részének szélénél elhelyezkedő színek a spektrális (a nappali fény spektrumában megtalálható) monokróm színeket jelképezik, amelyek egyetlen hullámhosszal jellemezhetők. A patkó alakú rész belsejében és az alsó egyenes vonal mentén található színek csak a spektrális monokróm komponensek, vagy két keverékszín különféle arányú keverékeként állíthatók elő, amely azt jelenti, hogy nem létezik olyan egyetlen hullámhosszú fény, amelyet ugyanolyan színűnek látnánk.
+Az ábrán a színes terület szélénél fel vannak tüntetve a napfény komponensekre bontásával kapott monokróm fény hullámhosszának értékei. Ezek a fentebbi ábrán (napfény spektruma) is látható monokróm komponensek. Ez alól kivétel a diagram alsó szélénél látható egyenes rész.
 
-Az ábrán azt is láthatjuk, hogy egy bizonyos keverékszín nemcsak egyféle módon állítható elő. Gondolatban kössük össze a patkó alakú rész egy bal és egy jobb oldali szélső pontját egy szakasszal. A szakasz közepe táján jelöljünk ki gondolatban egy közbülső pontot. Ennél a pontnál látunk egy bizonyos keverékszínt. Most már láthatjuk, hogy számtalan módon össze tudunk kötni egy szakasszal a patkó alakú rész szélső pontjait úgy, hogy az egyenes szakasz átmenjen a gondolatban kiválasztott ponton, azaz ugyanolyan keverékszínt eredményezzen. Ehhez hasonlóan a patkó alakú rész belsejében is számtalan módon választhatunk ki két olyan pontot, amelyet ha összekötünk egy egyenessel, az egyenes átmegy a kiválasztott ponton. Tehát egy keverékszínt számtalan módon állíthatunk elő monokróm színekből vagy keverékszínekből.
+Két vagy több monokróm komponens (bizonyos intenzitásarányú) összekeverésével állíthatjuk elő a keverékszíneket. Ha a fenti ábra színes területének szélénél elhelyezkedő bármely két monokróm színt összekötünk egy szakasszal (egyenes vonallal), akkor a szakasz mentén láthatjuk, hogy annak a két monokróm színnek különböző arányú összekeverésével milyen keverékszíneket állíthatunk elő. Ha a két monokróm szín intenzitása azonos, akkor a keverékszín a szakasz felezőpontjánál helyezkedik el. Megállapíthatjuk, hogy két vagy több látható monokróm szín összekeverésével kapott keverékszínt más és más színként érzékeljük.
 
-Az ábrán a színárnyalatok x és y színkoordinátáit olvashatjuk le, azonban a monitor (amelyen nézzük az ábrát) síkjára merőlegesen el kell képzelnünk egy harmadik (z) tengely is, amelyen a világosságértékek vannak ábrázolva. Ha megnéznénk ennek a színtérnek egy nagyobb fénysűrűségű ("világosságú") metszetét, akkor a gamut (az észlelhető színek tartománya) kisebb lenne a fenti ábrán láthatónál. Ez azt jelenti, hogy bizonyos színárnyalatok világosabb változatát már nem érzékeljük. Tehát egy színt az x, y, z koordinátákkal írhatunk le. Ebben a színrendszerben a világosság elvileg független a színárnyalattól. Ez azt jelenti, hogy a világosság változtatásakor a szín elvileg nem változik.
+Ehhez hasonlóan a színes terület belsejének bármely két pontját is összeköthetjük egy szakasszal. A szakasz mindkét végpontjánál keverékszín található. A szakasz mentén láthatjuk, hogy annak a két színnek különböző arányú összekeverésével milyen színeket állíthatunk elő. Azonos intenzitás esetén a szakasz felezőpontjánál látható színt kapjuk.
+
+A színes terület alsó szélénél látható egyenes mentén elhelyezkedő színek keverékszínek, mégpedig a két végpontban látható 380 és a 700 nm hullámhosszú színek különböző intenzitásarányú összekeverésével keletkeznek.
+
+Tehát a diagram patkó alakú részének szélénél elhelyezkedő színek a spektrális (a nappali fény spektrumában megtalálható) monokróm színeket jelképezik, amelyek egyetlen hullámhosszal jellemezhetők. A patkó alakú rész belsejében és az alsó egyenes vonal mentén található színek csak a spektrális monokróm komponensek, vagy két keverékszín különféle arányú keverékeként állíthatók elő, amely azt jelenti, hogy nem létezik olyan egyetlen hullámhosszú fény, amelyet ugyanolyan színűnek látnánk.
+
+Az ábrán azt is láthatjuk, hogy egy bizonyos keverékszín nemcsak egyféle módon állítható elő. Gondolatban kössük össze a patkó alakú rész egy bal és egy jobb oldali szélső pontját egy szakasszal. A szakasz közepe táján jelöljünk ki gondolatban egy közbülső pontot. Ennél a pontnál látunk egy bizonyos keverékszínt. Most már láthatjuk, hogy számtalan módon össze tudjuk kötni egy szakasszal a patkó alakú rész szélső pontjait úgy, hogy a szakasz átmenjen a gondolatban kiválasztott ponton, azaz ugyanolyan keverékszínt eredményezzen. Ehhez hasonlóan a patkó alakú rész belsejében is számtalan módon választhatunk ki két olyan pontot, amelyet ha összekötünk egy egyenessel, az egyenes átmegy a kiválasztott ponton. Tehát egy keverékszínt számtalan módon állíthatunk elő monokróm színekből vagy keverékszínekből.
+
+Az ábrán a színárnyalatok x és y színkoordinátáit olvashatjuk le, azonban a monitor (amelyen nézzük az ábrát) síkjára merőlegesen el kell képzelnünk egy harmadik (z) tengely is, amelyen a világosságértékek vannak ábrázolva. Ha megnéznénk ennek a színtérnek egy nagyobb fényerejű ("világosságú") metszetét, akkor a gamut (az észlelhető színek tartománya) kisebb lenne a fenti ábrán láthatónál. Ez azt jelenti, hogy bizonyos színárnyalatok világosabb változatát már nem érzékeljük. Tehát egy színt az x, y, z koordinátákkal írhatunk le. Ebben a színrendszerben a világosság elvileg független a színárnyalattól. Ez azt jelenti, hogy a világosság változtatásakor a szín elvileg nem változik.
 
 Tehát az adott világossághoz tartozó színárnyalatokat tartalmazó fenti ábrát nézve egy színárnyalat az x és az y színkoordinátákkal írható le. A színes területen kívüli "színeket" nem érzékeljük.
 
@@ -467,7 +476,7 @@ Az sRGB színrendszernél jóval nagyobb az Adobe RGB 1998 által lefedett rész
 
 ### <a id="244"></a> 2\.4\.4 CYMK színrendszer
 
-Nyomdai munkák, nyomtatások során használják a CYMK színrendszert, amelynek színábrázoló képessége az ember színlátásához képest meglehetősen korlátozott. A CYMK rendszerben a színeket türkizkék (C - Cyan), bíborvörös (M - Magenta), sárga (Y - Yellow), fekete (K - Key, kulcsszín) színek segítségével állítják elő, azaz a nyomtatáshoz ilyen színű festékeket használnak. Ma már ez nem teljesen igaz, mert használhatnak több színt is a jobb eredmény érdekében. Ez a modell a festékek színelnyelésén alapul. Ha a festéket fehér fénnyel világítjuk meg, akkor bizonyos hullámhosszú fények elnyelődnek, mások visszaverődnek, a szemünkbe jutnak, és a festéket a visszaverődött fénynek megfelelő színűnek látjuk. A C, M, és Y festékek megfelelő arányú keveréke elvileg a teljes látható spektrum elnyelésére alkalmas, azaz eredményül feketét kapunk. E tulajdonság miatt ezt a színkeverési módot kivonó (szubsztraktív) színkeverésnek nevezzük. A gyakorlatban azonban mégsem kapunk a három festék összekeverésével feketét (barnás színű lesz az eredmény), ezért fekete festéket is használnak a nyomtatáshoz. Ha egy sRGB színrendszerű képet szeretnénk nyomdában, például egy folyóiratban történő megjelenés céljából kinyomtatni, akkor elvileg a nyomaton egzakt módon csak a két rendszer közös területére eső színű pontok jelenhetnek meg, az azon kívül eső színű sRGB képpontok színe valamilyen módon konvertálásra kerül valamilyen hasonló, a CYMK rendszerben megjeleníthető színre.
+Nyomdai munkák, nyomtatások során használják a CYMK színrendszert, amelynek színábrázoló képessége az ember színlátásához képest meglehetősen korlátozott. A CYMK rendszerben a színeket türkizkék (C - Cyan), bíborvörös (M - Magenta), sárga (Y - Yellow), fekete (K - Key, kulcsszín) színek segítségével állítják elő, azaz a nyomtatáshoz ilyen színű festékeket használnak. Ma már ez nem teljesen igaz, mert használhatnak több színt is a jobb eredmény érdekében. Ez a modell a festékek színelnyelésén alapul. Ha a festéket fehér fénnyel világítjuk meg, akkor bizonyos hullámhosszú fények elnyelődnek, mások visszaverődnek, a szemünkbe jutnak, és a festéket a visszaverődött fénynek megfelelő színűnek látjuk. A C, M, és Y festékek megfelelő arányú keveréke elvileg a teljes látható spektrum elnyelésére alkalmas, azaz eredményül feketét kapunk. E tulajdonság miatt ezt a színkeverési módot kivonó (szubsztraktív) színkeverésnek nevezzük. A gyakorlatban azonban mégsem kapunk a három festék összekeverésével feketét (barnás színű lesz az eredmény), ezért fekete festéket is használnak a nyomtatáshoz. Ha egy sRGB színrendszerű képet szeretnénk nyomdában, például egy folyóiratban történő megjelenés céljából kinyomtatni, akkor elvileg a nyomaton egzakt módon csak a két színrendszer közös területére eső színű pontok jelenhetnek meg, az azon kívül eső színű sRGB képpontok színe valamilyen módon konvertálásra kerül valamilyen hasonló, a CYMK rendszerben megjeleníthető színre.
 
 ### <a id="245"></a> 2\.4\.5 HSV színrendszer
 
@@ -475,12 +484,12 @@ Ez tulajdonképpen az RGB színrendszer más, a hétköznapi életben használt 
 
 ![](book-images/14.png)
 
-A fenti ábrán a HSV színkúpot láthatjuk, a felénk eső oldalán egy cikket kimetszve belőle. Megfigyelhetjük a H, S, és V paraméterek jelentését is. Középen, a kúp csúcsától az alapjának közepéig terjedő szakasz (az ábrán a "V") mentén a szürke árnyalatai helyezkednek el. A csúcsnál a legsötétebb (fekete), illetve az alapkör közepén a legvilágosabb (fehér). A "V" érték a világosság értékét mutatja százalékban, 0% a fekete, 100% a legvilágosabb. A "H" értéke fokban van megadva, és a színezetet választhatjuk ki segítségével. Értéke 0-360 fok között lehet, a 0 foknál a vörös, 60 foknál a sárga, 120 foknál a zöld, 180 foknál a zöldeskék (cián), 240 foknál a kék, 300 foknál a magenta (a bordó és a lila közötti szín) helyezkedik el. Az "S" telítettség a kúp magasságvonalától a palástja felé a kör sugara mentén növekszik, bármely, az alapkörével párhuzamos metszeti körét is vesszük a kúpnak. Középen nincs telítettség (0%), ezért szürkét kapunk, a palástnál pedig a telítettség 100%, ott helyezkednek el a legtelítettebb színek.
+A fenti ábrán a HSV színkúpot láthatjuk, a felénk eső oldalán egy cikket kimetszve belőle. Megfigyelhetjük a H, S, és V paraméterek jelentését is. Középen, a kúp csúcsától az alapjának közepéig terjedő szakasz (az ábrán a "V") mentén a szürke árnyalatai helyezkednek el. A csúcsnál a legsötétebb (fekete), illetve az alapkör közepén a legvilágosabb (fehér). A "V" érték a világosság értékét mutatja százalékban, 0% a fekete, 100% a legvilágosabb. A "H" értéke fokban van megadva, és a színezetet választhatjuk ki segítségével. Értéke 0-360 fok között lehet, a 0 foknál a vörös, 60 foknál a sárga, 120 foknál a zöld, 180 foknál a zöldeskék (cián), 240 foknál a kék, 300 foknál a magenta (a bordó és a lila közötti szín, más szóval bíborvörös) helyezkedik el. Az "S" telítettség a kúp magasságvonalától a palástja felé a kör sugara mentén növekszik, bármely, az alapkörével párhuzamos metszeti körét is vesszük a kúpnak. Középen nincs telítettség (0%), ezért szürkét kapunk, a palástnál pedig a telítettség 100%, ott helyezkednek el a legtelítettebb színek.
 
 ![](book-images/15.jpg)  
 *Balra ugyanannak a színnek a telítettebb, jobbra a kevésbé telített változata látható*
 
-A kissé telített (1-10%) színeket szürkének látjuk, de már meg tudjuk különböztetni, hogy "meleg" (vöröses, sárgás) vagy "hideg" ("kékes") szürkét látunk-e. A pasztellszínek 10-30% telítettségűek, a gyakorlatban a környezetünkben tapasztalható erőteljesebb színek telítettsége általában 30-65%. A 65-90% telítettség a telített színeket jellemzi. A 90-100% telítettséghez a túltelített színek tartoznak, ezekkel óvatosan kell bánni, mert a színkorrekciók kevéssé változtatják ezeket a színeket, így nem lehet jól dolgozni velük. Az alábbi ábrán a kúp alapkörét láthatjuk felülnézetben, ezt színkörnek is nevezzük.
+A kissé telített (1-10%) színeket szürkének látjuk, de már meg tudjuk különböztetni, hogy "meleg" (vöröses, sárgás) vagy "hideg" ("kékes") szürkét látunk-e. A pasztellszínek 10-30% telítettségűek, a gyakorlatban a környezetünkben tapasztalható erőteljesebb színek telítettsége általában 30-65%. A 65-90% telítettség a telített színeket jellemzi. A 90-100% telítettséghez a túltelített színek tartoznak, ezekkel óvatosan kell bánni, mert a színkorrekciók kevéssé változtatják ezeket a színeket, így nem lehet jól dolgozni velük. Az alábbi ábrán a kúp alapkörét láthatjuk felülnézetben, ezt színkörnek is nevezzük. A körvonal mentén a színezet változik. A kör középpontjában a telítettség 0%, a kör sugara mentén nő, a körvonalnál eléri a 100%-ot.
 
 ![](book-images/16.jpg)
 
@@ -489,6 +498,10 @@ A kissé telített (1-10%) színeket szürkének látjuk, de már meg tudjuk kü
 ### <a id="246"></a> 2\.4\.6 LCH színrendszer
 
 Ez egy észlelési színrendszer, amely kissé hasonlít a HSV színrendszerhez. Az elnevezése a Lightness (világosság), Chroma (színesség), Hue (színezet) angol szavak kezdőbetűiből ered. A világosság és a színezet hasonlít a HSV színrendszer Value és Hue tulajdonságaihoz, a Chroma pedig ugyanúgy színtelítettség-szerű jellemző, mint a Saturation. Tehát a színeket ebben a színrendszerben is a HSV színrendszerben használatosakhoz hasonló három tulajdonsággal írjuk le.
+
+### <a id="246"></a> 2\.4\.6 HSL színrendszer
+
+A Hue (színezet), Saturation (telítettség), és Lightness (világosság) a három jellemző. A színeket ebben a színrendszerben is a HSV színrendszerben használatosakhoz hasonló három tulajdonsággal írjuk le.
 
 ### <a id="247"></a> 2\.4\.7 CIELAB vagy L\*a\*b\*
 
@@ -507,7 +520,7 @@ Ismét nézzük meg a napfény spektrumát. A napfény prizmával történő kom
 ![](book-images/17.png)  
 *Színezet színkör*
 
-A színkörben ezt a csak monokróm színeket tartalmazó spektrumot ábrázoljuk kör vagy gyűrű alakban, és a vörös, valamint az ibolya szín között a folyamatosság érdekében kiegészítjük a bíbor színnel (és annak átmeneteivel a vörös és az ibolya felé). Így az átmenet ugrás nélküli, folyamatos lesz. A bíbor nem monokróm szín, hanem keverékszín. A fenti ábrát óraszámlapnak tekintve körülbelül 2 óránál láthatjuk a bíbor színt.
+A színkörben ezt a csak monokróm színeket tartalmazó spektrumot ábrázoljuk kör vagy gyűrű alakban, és a vörös, valamint az ibolya szín között a folyamatosság érdekében kiegészítjük a bíbor (más szóval bíborvörös) színnel (és annak átmeneteivel a vörös és az ibolya felé). Tulajdonképpen a CIE XYZ 1931 színtér ábráján alul, az egyenes rész mentén látható keverékszínekkel egészítjük ki. Így az átmenet ugrás nélküli, folyamatos lesz. A bíbor nem monokróm szín, hanem keverékszín. A fenti ábrát óraszámlapnak tekintve körülbelül 2 óránál láthatjuk a bíbor színt.
 
 A napfény spektrumának monokróm színeit kiegészítve a bíbor színnel nevezzük színezetnek (Hue). A fenti színkörön tehát a színezetet láthatjuk. Figyeljük meg, hogy ezen a színkörön csak színezetet látunk, középen nincs fehér, és a színek telítettsége sem változik a kör sugara mentén (ha nem így lenne, akkor nemcsak színezetet, hanem színárnyalatokat is látnánk a színkörben). A színezet színeit nevezzük tiszta színeknek. A színkörben valamennyi színezet egyenrangú.
 
@@ -521,25 +534,25 @@ Az egyes színrendszerekben a színeknek, azok világosságának szabatos leír�
 
 **Színezet (Hue)**: Színkörben ábrázolt, folyamatos színátmenetű, tiszta színekről van szó. A színezet ennek a színkörnek egy színe.
 
-**Színesség (Chromaticity, Chroma)**: A szín minőségének objektív meghatározása, a világosságától függetlenül. Kicsit a telítettséghez hasonló fogalom.
+**Színesség (Chromaticity, Chroma)**: A szín minőségének objektív meghatározása, a világosságától függetlenül. A telítettséghez hasonló fogalom.
 
 **Telítettség (Saturation)**: Egy terület színessége a világosságát is figyelembe véve.
 
-**Fénysűrűség (Luminance)**: A fénysűrűség a látvány vonatkozású keretrendszerek tulajdonsága, köznyelvi értelemben a világossághoz hasonló fogalom.
+**Fényerő (Luminance)**: A fényerő a látvány vonatkozású keretrendszerek tulajdonsága, köznyelvi értelemben a világossághoz hasonló fogalom.
 
-**Fényerősség (Brightness)**: Ez is a világossághoz hasonló fogalom.
+**Fényesség (Brightness)**: Ez is a világossághoz hasonló fogalom.
 
-**Világosság (Lightness)**: A világosság a fénysűrűség észlelési, nem lineáris megfelelője.
+**Világosság (Lightness)**: A világosság a fényerő észlelési, nem lineáris megfelelője.
 
 **Ragyogás (Brillance)**: Egy terület fényereje a környezete fényességéhez viszonyítva.
 
-Az egyes fogalmak pontos tudományos meghatározása jelentős eltéréseket tartalmaz, könyvem azonban fotósokhoz és nem fizikusokhoz szól, ezért általában is jelentős egyszerűsítéseket és pontatlanságokat tartalmaz. Itt is teszek egy nagy egyszerűsítést. A fénysűrűség, a fényerősség, a világosság, megközelítőleg arról szól, amelyet a köznyelvben egyszerűen világosságnak nevezünk, én sokszor ezt fogom használni. A nyers fájlok feldolgozására alkalmas programok magyar fordítói hol ragaszkodnak a szabatosabb fordításhoz, hol nem, de jó, ha tudjuk, hogy mindhárom fogalom lényegében világosságot jelent. A ragyogás arra jellemző érték, hogy egy adott témarészlet mennyire emelkedik, ragyog ki a környezetéből. A színezet a vörös, narancs, sárga, zöld, kékeszöld, kék, ibolya és bíbor tiszta színek, és azok átmenetei a színkörön. A telítettség és a színesség kissé hasonló fogalmak, a telítettség fogalmat használhatjuk egyszerűsítésként. A lényeg az, hogy nagyjából értsük ezeket a fogalmakat, és tudjuk, hogy milyen hétköznapi, színekkel kapcsolatos fogalmunkra hasonlítanak, mert akkor a nyers kép feldolgozása közben tudni fogjuk, hogy egy adott megnevezésű kezelőszerv milyen tulajdonságát változtatja a képnek. A cél nem a tudományos igényű pontosság, hanem a közérthetőség.
+Az egyes fogalmak pontos tudományos meghatározása jelentős eltéréseket tartalmaz, könyvem azonban fotósokhoz és nem fizikusokhoz szól, ezért általában is jelentős egyszerűsítéseket és pontatlanságokat tartalmaz. Itt is teszek egy nagy egyszerűsítést. A fényerő, a fényesség, a világosság, a ragyogás megközelítőleg arról szól, amelyet a köznyelvben egyszerűen világosságnak nevezünk, én sokszor ezt fogom használni. A nyers fájlok feldolgozására alkalmas programok magyar fordítói hol ragaszkodnak a szabatosabb fordításhoz, hol nem, de jó, ha tudjuk, hogy mind a négy fogalom lényegében világosságot jelent. A ragyogás arra jellemző érték, hogy egy adott témarészlet mennyire emelkedik, ragyog ki a környezetéből. A színezet a vörös, narancs, sárga, zöld, kékeszöld, kék, ibolya és bíbor tiszta színek, és azok átmenetei a színkörön. A telítettség és a színesség kissé hasonló fogalmak, a telítettség fogalmat használhatjuk egyszerűsítésként. A lényeg az, hogy nagyjából értsük ezeket a fogalmakat, és tudjuk, hogy milyen hétköznapi, színekkel kapcsolatos fogalmunkra hasonlítanak, mert akkor a nyers kép feldolgozása közben tudni fogjuk, hogy egy adott megnevezésű kezelőszerv milyen tulajdonságát változtatja a képnek. A cél nem a tudományos igényű pontosság, hanem a közérthetőség.
 
 A még jobb érthetőség kedvéért nézzük meg az alábbi ábrát.
 
 ![](book-images/18.png)
 
-Az ábrán a világosság (lightness), a színesség (chroma), a telítettség (saturation) és a ragyogás (brillance) a JzAzBz színtérben van ábrázolva, amely nagy dinamikatartományú (HDR) képinformációkhoz is alkalmas érzékelési színtér.
+Az ábrán a világosság (lightness), a színesség (chroma), a telítettség (saturation) és a ragyogás (brillance) a JzAzBz színtérben van ábrázolva, amely nagy dinamikatartományú (HDR) képinformációkhoz is alkalmas észlelési színtér.
 
 Az ábrán középen alul egy fekete színű négyzet látható. A felfelé mutató nyíl jelzi, hogy a fekete négyzetből kiindulva felfelé növekszik a világosság, azaz a fekete négyzet felett egyre világosabb semleges szürke (elszíneződéstől mentes) négyzetet láthatunk. Az ábra minden oszlopára igaz az, hogy alulról felfelé növekszik a világosság értéke.
 
@@ -553,29 +566,31 @@ A lightness és a chroma együttesen ugyanazt a valóságot írják le, mint egy
 
 ![](book-images/19.jpg)
 
-Nézzük meg a fenti ábrát, amelyen a luminance, lightness, chroma, saturation, brillance változásait figyelhetjük meg.
+Nézzük meg a fenti ábrát, amelyen a luminance, lightness, chroma, saturation, brillance változásait figyelhetjük meg. Figyeljük meg, hogy a luminance (fényerő), a lightness (világosság), és a brillance (ragyogás) mennyire hasonló módon változnak, valamint a chroma (színesség) és a saturation (telítettség) változásának jellege is mennyire hasonló.
 
 ## <a id="25"></a> 2\.5 Árnyalatok (tónusok)
 
-A kép tónusai a világosságértékekről szólnak, nincs semmi közük a színekhez.
+A kép tónusai a világosságértékekről szólnak, nem a színekről. A színeknek (beleértve a szürkét is) is vannak világosságértékei, vannak világosabb és sötétebb árnyalatai. Ezeket a világosságértékeket nevezzük tónusoknak.
 
 ![](book-images/5.jpg)  
-*Tónusskála a legsötétebbtől a legvilágosabb árnyalatig*
+*A teljes tónusskála (teljes tónustartomány) a legsötétebbtől a legvilágosabb tónusig*
 
-Csúcsfények: a téma vagy a fénykép legvilágosabb részei.
+A fényképezésben (képfeldolgozásban) a teljes tónustartományt általában öt részre osztják:
 
-Árnyékok: a téma vagy a fénykép legsötétebb területei. Akkor is így nevezzük a legsötétebb részeket, ha valójában nem árnyékokról van szó.
-
-Középtónusok: az árnyékok és a csúcsfények között elhelyezkedő tónusok.
+-   Árnyékok: a legsötétebb tónusok. Akkor is így nevezzük a legsötétebb részeket, ha valójában nem árnyékokról van szó.
+-  Sötét tónusok: az árnyékok és a középtónusok közötti tartomány.
+-  Középtónusok: a középső tónustartomány.
+-  Világos tónusok: a középtónusok és a csúcsfények közötti tartomány.
+-  Csúcsfények: a legvilágosabb tónusok.
 
 ![](book-images/20.jpg)  
 *Csúcsfények, középtónusok, árnyékok*
 
 A fenti képen nyilakkal jelöltem meg néhány területet. Zöld nyilakkal csúcsfényeket, kék nyilakkal középtónusokat, sárga nyilakkal árnyékokat.
 
-## <a id="26"></a> 2\.6 Dinamikatartomány (árnyalatterjedelem)
+## <a id="26"></a> 2\.6 Dinamikatartomány (árnyalatterjedelem), kontraszt
 
-A dinamikatartomány (árnyalatok tartománya, árnyalatterjedelem) nagyon fontos a nyers fájlok szerkesztése szempontjából, ezért részletesebben kell foglalkoznunk vele. Beavatkozásaink jelentős része az árnyalatokkal kapcsolatos, az árnyalatok módosítására, tömörítésére, nyújtására irányul.
+A dinamikatartomány (árnyalatok tartománya, árnyalatterjedelem) nagyon fontos a nyers fájlok szerkesztése szempontjából, ezért részletesebben kell foglalkoznunk vele. Beavatkozásaink jelentős része a tónusokkal kapcsolatos, a tónusok módosítására, tömörítésére, nyújtására irányul.
 
 *A dinamikatartomány*
 
@@ -587,13 +602,15 @@ A dinamikatartomány (árnyalatok tartománya, árnyalatterjedelem) nagyon fonto
 
 *A maximális dinamikatartomány a legvilágosabb és legsötétebb részek lehetséges maximális világosságkülönbsége fényértékben kifejezve.*
 
+*Lényegében a dinamikatartományhoz (árnyalattartományhoz) hasonló fogalom a kontraszt is, amely a kép bizonyos részén, vagy a kép egészén a legvilágosabb és legsötétebb részek világosságkülönbsége. Ha a világosságkülönbség nagy, akkor a képnek azon a részén, vagy a kép egészén nagy a kontraszt, ellenkező esetben kicsi.*
+
 A fotózandó táj maximális dinamikatartománya elérheti a 20 fényértéknyit. A fényképezőgépek által nyers formátumban rögzíthető maximális dinamikatartomány technikai értelemben 12-14 fényértéknyi. Az általánosan használt, színcsatornánként 8 bites JPEG képfájlban rögzíthető maximális dinamikatartomány technikai értelemben körülbelül 9 fényértéknyi.
 
 A valóságos fotótémák dinamikatartománya sok esetben nem túl nagy, számos esetben pedig nagyon nagy. A kis dinamikatartomány nem jelent technikai problémát, a nagy dinamikatartomány azonban jóval meghaladhatja azt az dinamikatartományt, amelyet fényképezőgépünk rögzíteni képes.
 
-A színcsatornánként 8 bites JPEG kép a gyakorlatban kisebb (kb. 9 fényértéknyi) dinamikatartomány átvitelére képes, a nyers fájl dinamikatartománya elvileg ennél nagyobb is lehet, sokkal nagyobb (12 vagy 14 bites) felbontás mellett, azaz sokkal kisebb világosságbeli különbségek is megkülönböztethetők lehetnek. Ez azt jelenti, hogy a nyers fájl sokkal több információ tárolására alkalmas a JPEG képnél. Fontos megértenünk, hogy a nyers fájlban eltárolható nagyobb dinamikatartomány csak elvi lehetőség. Ha a téma dinamikatartománya kicsi, akkor a nyers fájlban is csak kis dinamikatartomány lesz eltárolva, azonban az is nagyon kis lépésközökkel, nagy felbontásban tárolódik.
+A színcsatornánként 8 bites JPEG kép a gyakorlatban kisebb (kb. 9 fényértéknyi) dinamikatartomány átvitelére képes, a nyers fájl dinamikatartománya elvileg ennél nagyobb is lehet, sokkal nagyobb (12 vagy 14 bites) felbontás mellett, azaz nagyon kicsi világosságbeli különbségek is megkülönböztethetők lehetnek. Ez azt jelenti, hogy a nyers fájl sokkal több információ tárolására alkalmas a JPEG képnél. Fontos megértenünk, hogy a nyers fájlban eltárolható nagyobb dinamikatartomány csak elvi lehetőség. Ha a téma dinamikatartománya kicsi, akkor a nyers fájlban is csak kis dinamikatartomány lesz eltárolva, azonban az is nagyon kis lépésközökkel, nagy felbontásban tárolódik.
 
-Az alábbi táblázatban nézzük meg a [dxomark.com](https://www.dxomark.com/) mérései alapján a Canon EOS 5D Mk IV (full frame), és a Canon EOS 750D (APS-C) váz maximális dinamikatartományát a névleges ISO érzékenység függvényében, fényértékben kifejezve:
+Az alábbi táblázatban nézzük meg a [dxomark.com](https://www.dxomark.com/) mérései alapján a Canon EOS 5D Mk IV (full-frame), és a Canon EOS 750D (APS-C) váz maximális dinamikatartományát a névleges ISO érzékenység függvényében, fényértékben kifejezve:
 
 | ISO | Canon EOS 5D Mk IV | Canon EOS 750D |
 | --- | --- | --- |
@@ -609,7 +626,7 @@ Az alábbi táblázatban nézzük meg a [dxomark.com](https://www.dxomark.com/) 
 | 51200 | 7,03 | - |
 | 102400 | 6,18 | - |
 
-ISO 100 névleges érzékenységnél a Canon EOS 5D Mk IV fényképezőgép maximális dinamikatartománya 13,59 fényérték, amely ISO 25600-nál lecsökken 7,83 fényértékre, végül ISO 102400-nál már csak 6,18 fényértéknyi. A Canon EOS 750D fényképezőgép maximális dinamikatartománya ISO 100-nál 11,96, ISO 25600-nál 6,62 fényérték. Láthatjuk, hogy azonos névleges érzékenységnél a full frame váz magasabb maximális dinamikatartománnyal rendelkezik. A dinamikatartomány az ISO érzékenység növelésével jelentősen lecsökken.
+ISO 100 névleges érzékenységnél a Canon EOS 5D Mk IV fényképezőgép maximális dinamikatartománya 13,59 fényérték, amely ISO 25600-nál lecsökken 7,83 fényértékre, végül ISO 102400-nál már csak 6,18 fényértéknyi. A Canon EOS 750D fényképezőgép maximális dinamikatartománya ISO 100-nál 11,96, ISO 25600-nál 6,62 fényérték. Láthatjuk, hogy azonos névleges érzékenységnél a full-frame váz magasabb maximális dinamikatartománnyal rendelkezik. A dinamikatartomány az ISO érzékenység növelésével jelentősen lecsökken.
 
 Most foglalkozzunk a fényképezőgép valós dinamikatartományával.
 
@@ -624,11 +641,11 @@ A fényképezőgép gyakorlatban hasznosítható dinamikatartományának megáll
  ![](book-images/21.jpg)  
  *Forrás: https://www.photonstophotos.net/Charts/PDR.htm*
  
-A fenti ábrán két full frame (Canon EOS 5D Mark IV - kék, és Nikon D800E - narancssárga), valamint két APS-C (Canon EOS 1100D - fekete, és Canon EOS 750D - zöld) váz dinamikatartományát láthatjuk a photonstophotos.net szerzője által meghatározott feltételek szerint.
+A fenti ábrán két full-frame (Canon EOS 5D Mark IV - kék, és Nikon D800E - narancssárga), valamint két APS-C (Canon EOS 1100D - fekete, és Canon EOS 750D - zöld) váz dinamikatartományát láthatjuk a photonstophotos.net szerzője által meghatározott feltételek szerint.
 
-Itt is megfigyelhetjük a full frame vázak előnyét. Az ISO érzékenység növelésével jelentősen csökken a hasznosítható dinamikatartomány.
+Itt is megfigyelhetjük a full-frame vázak előnyét. Az ISO érzékenység növelésével jelentősen csökken a hasznosítható dinamikatartomány.
 
-[Ebben a videóban Andy Astbury](https://www.youtube.com/watch?v=aKNLOxER34s)  megmutatja, hogy hogyan tudjuk nagyon egyszerű módszerrel megmérni saját fényképezőgépünk valóban kihasználható maximális dinamikatartományát. Ő maga a videóban megmérte a Nikon D800E 36 MP-es full frame fényképezőgép valóban kihasználható dinamikatartományát.
+[Ebben a videóban Andy Astbury](https://www.youtube.com/watch?v=aKNLOxER34s)  megmutatja, hogy hogyan tudjuk nagyon egyszerű módszerrel megmérni saját fényképezőgépünk valóban kihasználható maximális dinamikatartományát. Ő maga a videóban megmérte ezt a Nikon D800E 36 MP-es full-frame fényképezőgép esetében.
 
 Andy Astbury a mérést a legalacsonyabb ISO értéknél végezte. A valóban kihasználható dinamikatartomány felső határának azt az expozíciót tekintette, amelynél még egyáltalán nem következett be vágás a nyers adatokban, alsó határának pedig azt, amelynél még egyáltalán nem jelent meg képzaj nagy nagyításnál sem. Meg kell állapítani az alsó és felső határhoz tartozó expozíciót, majd ki kell számolni, hogy hány fényértéknyi a különbség a két expozíció között, és ennyi a valóban hasznosítható dinamikatartomány. A fényképezőgépnek a legalacsonyabb ISO értéknél kell a legjobban teljesítenie, ezért Andy Astbury szigorú feltételei nem túlzók.
 
@@ -651,13 +668,13 @@ Egy elméleti példában nézzük meg, hogy ISO 100 érzékenységet feltételez
 9. Csúcsfények tömörítése
 10. JPEG képen megjelenő árnyalatterjedelem (amely legyen 7 fényértéknyi)
 
-A fenti ábrán azt az esetet láthatjuk, amikor a téma nagy dinamikájú, dinamikája meghaladja a fényképezőgép képérzékelője által átvihető árnyalatterjedelmet. Az átvihető maximális árnyalatterjedelmet természetesen csak nyers formátumban hasznosíthatjuk. A mai képérzékelők technikai értelemben 12-14 fényértéknyi árnyalatterjedelem átvitelére képesek, ennél azonban kevesebb hasznosítható valójában. Az ábrán maximálisan 9 fényértéknyi dinamika átvitelére alkalmas képérzékelőt láthatunk, be is számoztam fényértékenként az árnyalatterjedelmet. A téma azonban 12 fényérték dinamikájú, a JPEG kép pedig példánkban mindössze 7 fényértéknyi árnyalatterjedelem megjelenítésére alkalmas. Az alapvető kérdés az, hogy mi és hogyan kerüljön a nyers fájl 9 fényértéknyi dinamikát tartalmazó adataiból a JPEG kép 7 fényértéknyi árnyalatterjedelmébe, és mi történjen a fényképezőgép árnyalatterjedelmét meghaladó 10., 11., 12. fényértékekkel.
+A fenti ábrán azt az esetet láthatjuk, amikor a téma nagy dinamikájú, dinamikája meghaladja a fényképezőgép képérzékelője által átvihető árnyalatterjedelmet. Az átvihető maximális árnyalatterjedelmet természetesen csak nyers formátumban hasznosíthatjuk. A mai képérzékelők technikai értelemben 12-14 fényértéknyi árnyalatterjedelem átvitelére képesek, ennél azonban kevesebb hasznosítható valójában. Az ábrán maximálisan 9 fényértéknyi dinamika átvitelére alkalmas képérzékelőt láthatunk, be is számoztam fényértékenként az árnyalatterjedelmet. A téma azonban 12 fényértéknyi dinamikájú, a JPEG kép pedig példánkban mindössze 7 fényértéknyi árnyalatterjedelem megjelenítésére alkalmas. Az alapvető kérdés az, hogy mi és hogyan kerüljön a nyers fájl 9 fényértéknyi dinamikát tartalmazó adataiból a JPEG kép 7 fényértéknyi árnyalatterjedelmébe, és mi történjen a fényképezőgép árnyalatterjedelmét meghaladó 10., 11., 12. fényértékekkel.
 
 Az ábrán láthatjuk a nyers fekete szintet. A nyers fekete szint azt a legkisebb világosságértéket határozza meg, amelytől kezdve hasznosíthatók a nyers fájlban található adatok. Az ez alatti értékeket nem hasznosítjuk a feldolgozás során, azokat a nyers fekete szint értékével azonosaknak tekintjük (hiába kisebbek annál), más szóval levágjuk azokat. 
 
 Az ábrán a nyers fehér szintet a 9. fényérték végénél látható függőleges piros vonal jelképezi. A nyers fehér szint a még hasznosítható legvilágosabb árnyalatértéket határozza meg. Láthatjuk, hogy a téma árnyalatterjedelme 12 fényértéknyi, amely meghaladja az érzékelő által átvihető dinamikát. A nyers fehér szintet meghaladó értékek a nyers fehér szint értékét veszik fel, ezért vágás történik.
 
-Elvileg bárhogyan előállíthatjuk a 12 fényértéknyi adatokat tartalmazó nyers fájlból a JPEG képben megjelenő, 7 fényértéknyi adatot. Az ábrán egy lehetséges esetet látunk, mégpedig a téma 3. és 7. fényértéke között egy az egyben átvisszük az adatokat a JPEG képbe (kék nyilak). A csúcsfényeknél és a legsötétebb árnyalatoknál azonban tömörítés történik, amely azt jelenti, hogy a nyers fájlból több fényértéknyi adatot a JPEG kép kevesebb (az ábrán egy) fényértéknyi tartományába képezünk le (zöld nyilak). A sötét árnyalatoknál több, mint 1 fényértéknyi, a csúcsfényeknél 2 fényértéknyi adatot tömörítünk. Az nem lenne jó módszer, ha a JPEG kép árnyalatterjedelmén kívül eső világosságértékeket levágnánk, illetve a JPEG kép árnyalatterjedelmének szélső értékeire konvertálnánk. A tömörítés által a JPEG kép árnyalatterjedelmén kívül eső tónusok is megjelennek a képen, azonban ezen a szakaszon a tömörítés miatt az egyes témarészek közötti világosság-különbségek kisebbek lesznek a valóságosnál (kontrasztvesztés).
+Elvileg bárhogyan előállíthatjuk a 9 fényértéknyi adatokat tartalmazó nyers fájlból a JPEG képben megjelenő, 7 fényértéknyi adatot. Az ábrán egy lehetséges esetet látunk, mégpedig a téma 3. és 7. fényértéke között egy az egyben átvisszük az adatokat a JPEG képbe (kék nyilak). A csúcsfényeknél és a legsötétebb árnyalatoknál azonban tömörítés történik, amely azt jelenti, hogy a nyers fájlból több fényértéknyi adatot a JPEG kép kevesebb (az ábrán egy) fényértéknyi tartományába képezünk le (zöld nyilak). A sötét árnyalatoknál több, mint 1 fényértéknyi, a csúcsfényeknél 2 fényértéknyi adatot tömörítünk. Az nem lenne jó módszer, ha a JPEG kép árnyalatterjedelmén kívül eső világosságértékeket levágnánk, illetve a JPEG kép árnyalatterjedelmének szélső értékeire konvertálnánk. A tömörítés által a JPEG kép árnyalatterjedelmén kívül eső tónusok is megjelennek a képen, azonban ezen a szakaszon a tömörítés miatt az egyes témarészek közötti világosság-különbségek kisebbek lesznek a valóságosnál (kontrasztvesztés).
 
 Az ábrán láthatjuk a Cél szürke pontot (középszürke) is, amely elvileg 18%-os világosságú középszürke. A Cél szürke ponttal azt állítjuk be, hogy a nyers fájl középszürke világosságú adatai a kimeneten (pl. a JPEG képen) milyen világosságúként jelenjenek meg.
 
@@ -666,37 +683,36 @@ A nyers fájl feldolgozásának végén a megszokott látványt nyújtó, normá
 Az ART-ban be lehet állítani a (nem nyers) fekete és a fehér szinteket is, amellyel befolyásolhatjuk, hogy a képen milyen világosságértékeknél történjen meg a vágás. Feldolgozás közben sajnos könnyen előidézhetünk vágást. Amennyiben ezt tapasztaljuk, meg tudjuk találni, hogy mely feldolgozási lépés idézte azt elő, és tudunk tenni ellene.
 
 ![](book-images/23.jpg)  
-*Részlettelen fehér (kiégett) és részlettelen fekete (bebukott) részletek (A fényképet a szerző készítette)*
+*Részlettelen fehér (kiégett) és részlettelen fekete (bebukott) részletek (a fényképet a szerző készítette)*
 
 A fenti képen a téma árnyalatterjedelme túl nagy. Sárga nyilakkal jelöltem meg néhány bebukott, részlettelenül fekete részt. Piros nyíllal jelöltem meg két részlettelenül fehér, kiégett területet.
 
-Szemünk sokkal inkább elviseli a vágást a sötét árnyalatoknál (a részlettelen feketéket), mint a legvilágosabbaknál (a részlettelen fehéreket). Emiatt sok fényképezőgép 1/3 - 1 1/3 fényértékkel szándékosan alulexponálja a képet. Mi is megtehetjük azt, hogy (ha szükséges) nyers formátumban fotózva némileg szándékosan alulexponáljuk a témát úgy, hogy a csúcsfények lehetőleg ne legyenek a nyers fájlban túlexponálva (levágva). Arra kell törekednünk, hogy olyan nyers állományt hozzunk létre, amelyből a legtöbbet tudjuk kihozni a feldolgozás során.
+Szemünk sokkal inkább elviseli a vágást a sötét árnyalatoknál (a részlettelen feketéket), mint a legvilágosabbaknál (a részlettelen fehéreket). Emiatt sok fényképezőgép 1/3 - 1 1/3 fényértékkel szándékosan alulexponálja a képet. Mi is megtehetjük azt, hogy (ha szükséges) nyers formátumban fotózva némileg szándékosan alulexponáljuk a témát úgy, hogy a csúcsfények lehetőleg ne legyenek a nyers fájlban túlexponálva (levágva). Arra kell törekednünk, hogy olyan nyers fájlt hozzunk létre, amelyből a legtöbbet tudjuk kihozni a feldolgozás során.
 
-Most foglalkozzunk egy kicsit a színes képpel. Gondoljunk az RGB színrendszerre. Nemcsak egyszerre mindhárom színcsatornánál következhet be vágás, hanem egy vagy két csatornánál is. Gondoljunk arra, hogy van egy \[120,130,230\] világosabb kék színünk. A három színcsatorna bizonyos aránya eredményezi az észlelt színt. Ha ezt világosítjuk, akkor mindhárom színcsatorna értéke nőni kezd, és elérkezünk oda, hogy a kék színcsatorna értéke eléri a maximális, 255 értéket. Ha tovább világosítjuk, akkor a kék csatorna értéke tovább már nem tud nőni, a másik kettő azonban nőni fog, megváltozik a három színcsatorna aránya, amely színeltolódáshoz vezet. Tipikus példa erre az égbolton a világos felhők, amelyek vágás esetén például rózsaszínűek lehetnek a színeltolódástól. Ez ellen úgy védekeznek a szerkesztőprogramok, hogy a másik két csatornát is levágják, hogy inkább fehéret kapjunk, mert még az is jobb a rózsaszínnél. Virágok szirmain is megfigyelhetjük a jelenséget. Az alábbi ábrán a szirmok kivilágosodott, fakóbb részeit (a szirmok végénél) a vörös színcsatorna vágása okozza.
+Most foglalkozzunk egy kicsit a színes képpel. Gondoljunk az RGB színrendszerre. Nemcsak egyszerre mindhárom színcsatornánál következhet be vágás, hanem egy vagy két csatornánál is. Gondoljunk arra, hogy van egy \[120,130,230\] világosabb kék színünk. A három színcsatorna bizonyos aránya eredményezi az észlelt színt. Ha ezt expozíció-kompenzációval világosítjuk, akkor mindhárom színcsatorna értéke nőni kezd, és elérkezünk oda, hogy a kék színcsatorna értéke eléri a maximális, 255 értéket. Ha tovább világosítjuk, akkor a kék csatorna értéke tovább már nem tud nőni, a másik kettő azonban nőni fog, megváltozik a három színcsatorna aránya, amely színeltolódáshoz vezet. Tipikus példa erre az égbolton a világos felhők, amelyek vágás esetén például rózsaszínűek lehetnek a színeltolódástól. Ez ellen úgy védekeznek a szerkesztőprogramok, hogy a másik két csatornát is levágják, hogy inkább fehéret kapjunk, mert még az is jobb a rózsaszínnél. Virágok szirmain is megfigyelhetjük a jelenséget. Az alábbi ábrán a szirmok kivilágosodott, fakóbb részeit (a szirmok végénél) a vörös színcsatorna vágása okozza.
 
 ![](book-images/24.jpg)
 
 ## <a id="27"></a> 2\.7 Átlátszatlanság
 
-Sok szerkesztőeszközben beállíthatunk átlátszatlanságot, ezért foglalkoznunk kell vele. Sőt még olyan szerkesztőeszközöknél is jelen van, amelynél nem találkozunk ezzel a kifejezéssel (ilyen például a küszöbgörbe az Élesítés eszközben). Tekintsük át az átlátszatlanságot az Élesítés eszköz példája alapján.
+Sok szerkesztőeszközben beállíthatunk átlátszatlanságot, ezért foglalkoznunk kell vele. Sőt még olyan szerkesztőeszközöknél is jelen van, amelynél nem találkozunk ezzel a kifejezéssel (ilyen például a küszöbgörbe az Élesítés eszközben, vagy az "Erősség" csúszka bizonyos szerkesztőeszközökben). Tekintsük át az átlátszatlanságot az Élesítés eszköz példája alapján.
 
 A végső képfájl létrehozásakor a szerkesztőeszközök a beállított paramétereknek megfelelően, egymás után fejtik ki hatásukat. Minden szerkesztőeszköznél van két képünk:
 
--   Az egyik az eszköz bemenő képe, amelyet az előző eszköztől kap további feldolgozásra. 
-
+-   Az egyik az eszköz bemeneti képe, amelyet az előző eszköztől kap további feldolgozásra. 
 -   A másik az a kép, amelyen az eszköz már kifejtette hatását, nevezzük ezt módosított képnek.
 
-Az eszköz a kép minden részére egyformán hat, például az élesítés eszköz egyformán élesíti a teljes képet. Az élesítés esetében a bemenő kép az előző eszköztől kapott, még nem élesített kép, a módosított kép az élesítés után kapott kép, amely mindenhol egyformán élesítve van.
+Az eszköz a kép minden részére egyformán hat, például az élesítés eszköz egyformán élesíti a teljes képet. Az élesítés esetében a bemeneti kép az előző eszköztől kapott, még nem élesített kép, a módosított kép az élesítés után kapott kép, amely mindenhol egyformán élesítve van.
 
 Számos szerkesztőeszköznél valamilyen egyéb paramétertől függően szabályozni lehet, hogy mennyire érvényesüljön az adott szerkesztőeszköz hatása a kép különböző részein (például a kontrasztosabb területeken erősebben, máshol kevésbé). Ezt az átlátszatlansággal szabályozhatjuk. Az átlátszatlanság a szerkesztőeszköz által módosított képnek az átlátszatlanságát jelenti, %-ban adjuk meg, és ennek mértékét sok esetben közvetlenül be tudjuk állítani a szerkesztőeszközben, más esetben például egy görbével szabályozhatjuk a kép bizonyos tulajdonságának függvényében a kép egyes területeinek átlátszatlanságát. Nagyon fontos kitétel, hogy az átlátszatlanság mértéke különböző lehet a kép különböző részein.
 
 Úgy képzeljük el, hogy a szerkesztőeszköz bemeneti képére rátesszük a megfelelő átlátszatlanságú módosított képet, és azt nézzük, hogy milyen képet kapunk ha erre a két egymásra helyezett képre ránézünk:
 
--   Ha a felső kép bizonyos területének átlátszatlansága 0%, akkor ezen a részen a felső kép teljesen átlátszó, mintha ott sem lenne, ezért az alsó (bemenő, még nem élesített) képet fogjuk látni.
+-   Ha a felső kép bizonyos területének átlátszatlansága 0%, akkor ezen a részen a felső kép teljesen átlátszó, mintha ott sem lenne, ezért az alsó (bemeneti, még nem élesített) képet fogjuk látni.
 -   A felső kép azon területein, ahol az átlátszatlansága 100%, semmi sem fog látszódni az alsó (bemenő) képből, csak a felső (módosított, élesített) képet látjuk, mintha az alsó ott sem lenne.
 -   A két szélső érték között pedig minél nagyobb az átlátszatlanság értéke, annál inkább a felső, élesített kép hatása érvényesül.
 
-A feldolgozóeszköz végső kimenő képe a két egymásra helyezett kép eredőjeként kapott kép lesz.
+A szerkesztőeszköz végső kimeneti képe a két egymásra helyezett kép eredőjeként kapott kép lesz.
 
 *Azt a műveletet, amelynek során a bemenő kép és a módosított kép felhasználásával (bizonyos paraméterek, pl. átlátszatlanság figyelembevételével) létrehozzuk az eredő képet, keverésnek nevezzük.*
 
@@ -740,22 +756,22 @@ A Wavelet dekompozíció (Wavelet szétbontás) egy bonyolult matematikai eljár
 
 A Wavelet dekompozíció a kép elemeit az L\*a\*b\* színtér összetevőire (L\*, a\* és b\*) bontja, és a színárnyalatban bekövetkező eltérések is megjelennek az egyes részletszinteken.
 
-Mivel minden szinten csak a színárnyalatban vagy a fénysűrűségben bekövetkező eltéréseket (gradienseket vagy különbségeket) elemzi a rendszer, a szintek nem tartalmaznak semmilyen információt, ha a kép világossága és színe teljesen egyenletes. Ebben az esetben az egyes szintekből kinyert eltérések a digitális zajból és a kontraszt (vagy színárnyalat) változásából származnak, amelyek az éleffektusok, köd, vagy más, a témával kapcsolatos optikai jelenségek miatt következnek be.
+Mivel minden szinten csak a színárnyalatban vagy a fényerőben bekövetkező eltéréseket (gradienseket vagy különbségeket) elemzi a rendszer, a részletszintek nem tartalmaznak semmilyen információt, ha a kép világossága és színe teljesen egyenletes. Ebben az esetben az egyes szintekből kinyert eltérések a digitális zajból és a kontraszt (vagy színárnyalat) változásából származnak, amelyek az éleffektusok, köd, vagy más, a témával kapcsolatos optikai jelenségek miatt következnek be.
 
-A maradékkép úgy keletkezik, hogy az eredeti képről a bontott szintek részleteit eltávolítjuk, és ami megmarad, az lesz a maradékkép. Ebből következik, hogy az adott részletszinten végrehajtott módosítások (kontraszt, színárnyalat stb.) nincs hatással a maradékképre, és fordítva. Nemcsak az egyes részletszinteken, hanem a maradékképen is végrehajthatunk műveleteket. Az is lehetséges, hogy ha bizonyos szinteken változtattunk valamin, akkor utána a többi szinten (és a maradékképen) teljesen más változtatásokat eszközöljünk.
+A maradékkép úgy keletkezik, hogy az eredeti képről a bontott szintek részleteit eltávolítjuk, és ami megmarad, az lesz a maradékkép. Ebből következik, hogy az adott részletszinten végrehajtott módosítások (kontraszt, színárnyalat stb.) nincs hatással a maradékképre, és fordítva. Nemcsak az egyes részletszinteken, hanem a maradékképen is végrehajthatunk műveleteket. Az is lehetséges, hogy ha bizonyos szinteken változtattunk valamit, akkor utána a többi szinten (és a maradékképen) teljesen más változtatásokat eszközöljünk.
 
-A részletszintek és a maradékkép újraegyesítésével visszakaphatjuk a teljes képet. A szintekre bontás lehetővé teszi, hogy bizonyos beavatkozásokat csak bizonyos részletszinten illetve részletszinteken végezzünk el, a többi szintet, és a maradékképet változatlanul hagyva.
+A részletszintek és a maradékkép újraegyesítésével visszakapjuk a teljes képet. A szintekre bontás lehetővé teszi, hogy bizonyos beavatkozásokat csak bizonyos részletszinten illetve részletszinteken végezzünk el, a többi szintet, és a maradékképet változatlanul hagyva.
 
 A Wavelet dekompozíció többféle célra felhasználható, például képzaj eltávolítására, az egyes szintek kontrasztjának, tónusainak beállítására, a nem kívánt részletek elmosására vagy eltávolítására, a telítettség vagy a színek megváltoztatására, élesítésre stb.
 
 Ha egy szerkesztőeszköz nevében vagy leírásában szerepel a "részletek szerint" kitétel, akkor szinte biztosak lehetünk abban, hogy Wavelet dekompozícióról van szó.
 
-Nézzünk meg egy példát a darktable felhasználói kézikönyve alapján. Az alábbi ábrán az eredeti kép részletét láthatjuk, a problémát az arcon lévő bőrhibák jelentik.
+Nézzünk meg egy példát a darktable felhasználói kézikönyve alapján. Az alábbi ábrán az eredeti kép részletét láthatjuk, a problémát az arcon lévő bőrhibák jelentik, amelyeket csökkenteni szeretnénk.
 
 ![](book-images/33.png)  
 *Az eredeti kép (forrás: darktable)*
 
-![](book-images/34.png)  
+![](book-images/30.png)  
 *Az 5\. szint, ezen látszanak legjobban a bőrhibák. Ha ezen a szinten elmosódást hozunk létre, akkor a bőrhibák sokkal kevésbé lesznek láthatók. (forrás: darktable)*
 
 ![](book-images/482.png)  
@@ -794,7 +810,7 @@ Az élek élesítésén kívül a mikrokontrasztot is növeli. A mikrokontraszt 
 *Élesítés a mikrokontraszt növelésével (forrás: RawTherapee)*
 
 ![](book-images/39.jpg)  
-*A kontraszt részletszintek szerinti növelése (Wavelet dekompozíciót alkalmaz) (forrás: RawTherapee)*
+*A kontraszt részletszintek szerinti növelése (Wavelet szétbontást alkalmaz) (forrás: RawTherapee)*
 
 A következő élesítési eljárás az RL dekonvolúció.
 
@@ -823,19 +839,19 @@ A másik gyakran alkalmazandó eljárás a képzaj csökkentésére szolgál. K�
 ![](book-images/42.jpg)  
 *Jelentős mértékű a színzaj (Canon 1100D, ISO 6400). Különösen feltűnő a fekete pénztárcán a vörös színzaj, de a zöld terítőn is jól látható*
 
-A nyers fájlokat feldolgozó programokban a kétféle zajt legtöbbször külön kell kezelnünk. Külön eszköz szolgál a világosságzaj és a színzaj kezelésére. A fenti ábrákon láthatjuk, hogy a fejlettebb képérzékelőjű Canon 750D képein elsősorban a világosságzajt kell kezelni, míg a régebbi Canon 1100D esetén mindkettőt.
+A nyers fájlokat feldolgozó programokban a kétféle zajt legtöbbször külön kell kezelnünk. A fenti ábrákon láthatjuk, hogy a fejlettebb képérzékelőjű Canon 750D képein elsősorban a világosságzajt kell kezelni, míg a régebbi Canon 1100D esetén mindkettőt.
 
 Számottevő mértékű képzaj leginkább akkor keletkezik, amikor magas ISO érzékenységet alkalmazunk kevés fény esetén, azonban alacsony érzékenységgel készült kép legsötétebb területein is előfordulhat zaj.
 
 Háromféle eljárás terjedt el:
 
--   Helyi módszer, amelynél minden egyes pixelnél a környező pixelek figyelembevételével történik meg a pixel jellemzőinek módosítása. Ez erőforrás-igényes módszer.
+-   Helyi módszer, amelynél minden egyes pixelnél a környező pixelek figyelembevételével történik meg a pixel jellemzőinek módosítása zajcsökkentés céljából. Ez erőforrás-igényes módszer.
 -   Wavelet szintek segítségével történő zajcsökkentés. Ez gyorsabb működésű.
 -   A Nem helyi eszközök (Non-local means) nevű algoritmus a kép összes pixelének átlagolásán alapul. Ez sokkal nagyobb tisztaságot, és kisebb részletvesztést eredményez a helyi módszerhez képest.
 
 A gyakorlatban alkalmazott zajcsökkentő eszközök ezeknek a módszereknek a továbbfejlesztéséből, más eljárásokkal történő kombinálásából keletkeztek.
 
-Erős zaj esetén érdemes lehet akár kétféle zajcsökkentést is alkalmazni, ha lehetséges. A zajcsökkentési eljárások a kép részleteinek bizonyos fokú elvesztésével járnak. Meg kell találni az egyensúlyt a zaj csökkentése és a részletek elvesztése között. Általános szabályként elfogadhatjuk, hogy ha képzaj csökkentésére kényszerülünk, akkor óvatosan bánjunk az élesítéssel, nehogy a képzajt is élesítsük.
+Erős zaj esetén érdemes lehet akár kétféle zajcsökkentést is alkalmazni egymás után, ha lehetséges. A zajcsökkentési eljárások a kép részleteinek bizonyos fokú elvesztésével járnak. Meg kell találni az egyensúlyt a zaj csökkentése és a részletek elvesztése között. Általános szabályként elfogadhatjuk, hogy ha képzaj csökkentésére kényszerülünk, akkor óvatosan bánjunk az élesítéssel, nehogy a képzajt is élesítsük.
 
 ## <a id="212"></a> 2\.12 Műtermékek a képen
 
@@ -851,21 +867,21 @@ Az ábrán túlzott élesítéssel létrehozott fényudvarokat (halo) láthatunk
 
 ![](book-images/44.jpg)
 
-A mid.tif képet Alberto Griggio az ART fórumán tette közzé, és [erről a linkről tölthető le](https://discuss.pixls.us/uploads/short-url/qYoPNYBD23KtAvOwxhkBgy4qSPf.tif). Néhány, árnyalatokra ható szerkesztőeszköz hatását ennek a képnek a segítségével mutatom be. A fájlt érdemes letölteni, mert számos eszköz működése jobban megérthető segítségével. 
+A mid.tif képet Alberto Griggio az ART fórumán tette közzé, és [erről a linkről tölthető le](https://discuss.pixls.us/uploads/short-url/qYoPNYBD23KtAvOwxhkBgy4qSPf.tif). Néhány, tónusokra ható szerkesztőeszköz hatását ennek a képnek a segítségével mutatom be. A fájlt érdemes letölteni, mert számos eszköz működése jobban megérthető segítségével. 
 
-A kép lineáris Rec.2020 színtérben felülről lefelé egyre világosabb sávokat tartalmaz, amelyek pontosan 1 fényértéknyire vannak egymástól. Ez azt jelenti, hogy felülről lefelé az i-edik sáv értékeiből 2-vel történő szorzással kapjuk meg az i+1-edik sáv értékeit. Összesen 20 sáv van, a kép összesen 20 fényértéknyi árnyalatterjedelmet tartalmaz, felülről a 11. sáv a 18%-os középszürke árnyalat. Ha ezt a fájlt megnyitjuk szerkesztésre, akkor természetesen megjelenítésre alkalmas, sRGB színrendszerben látjuk az előnézeti képen. A 18%-os középszürke árnyalat az sRGB színrendszerben \[119,119,119\].
+A kép lineáris Rec.2020 színtérben felülről lefelé egyre világosabb sávokat tartalmaz, amelyek pontosan 1 fényértéknyire vannak egymástól. Ez azt jelenti, hogy felülről lefelé az i-edik sáv értékeiből 2-vel történő szorzással kapjuk meg az i+1-edik sáv értékeit. Összesen 20 sáv van, a kép összesen 20 fényértéknyi árnyalatterjedelmet tartalmaz, felülről a 11. sáv a 18%-os középszürke árnyalat. Ha ezt a fájlt megnyitjuk szerkesztésre, akkor természetesen megjelenítésre alkalmas, sRGB színrendszerben látjuk az előnézeten. A 18%-os középszürke árnyalat az sRGB színrendszerben \[119,119,119\].
 
 ## <a id="214"></a> 2\.14 Ajánlott számítógép-konfiguráció
 
 Az ART futtatható 64 bites Windows, Linux, és macOS operációs rendszeren.
 
-Az ART-ban szerkesztés közben az előnézeti képen figyelhetjük meg változtatásaink hatását. Ennek frissítése erőforrás-igényes. A nagy felbontású fényképezőgépek nyers fájljainak mérete nagy, az abból kinyert adatok lebegőpontos formátumban történő tárolása memóriaigényes, főleg úgy, hogy egyidejűleg akár több példányt is szükséges tárolni.
+Az ART-ban szerkesztés közben az előnézeten figyelhetjük meg változtatásaink hatását. Ennek frissítése erőforrás-igényes. A nagy felbontású fényképezőgépek nyers fájljainak mérete nagy, az abból kinyert adatok lebegőpontos formátumban történő tárolása memóriaigényes, főleg úgy, hogy egyidejűleg akár több példányt is szükséges tárolni.
 
 Ha kevés (4 GB) a memória, akkor jelentős lassulást tapasztalhatunk. A minimálisan szükséges RAM 8 GB (nagy méretű nyers fájlokkal talán még így is lehet problémánk).
 
 Minimális ajánlott konfigurációként talán legalább 4 magos, nyolc szálat párhuzamosan futtatni képes processzor ajánlott, minimum 8 GB RAM-mal. Ma azonban már könnyen elérhetők 6 magos processzorok is, ha tehetjük, inkább válasszunk ilyet. Azt is feltétlenül nézzük meg az interneten, hogy a választani kívánt processzor hogyan szerepelt a tesztekben. 16 GB memória választása előnyösebb.
 
-Jelenlegi gépem 32 GB RAM mellett AMD Ryzen 7 5700G processzorral rendelkezik. A processzor 8 magos, 16 szál futtatására alkalmas. Processzorba integrált GPU-t tartalmaz. Fontos szempont volt a kiválasztásnál, hogy normál energiafelhasználású legyen. A processzor legfeljebb 60-87 W-ot fogyaszt. Nem szerettem volna nagy fogyasztású, vízhűtéses gépet. Ez még kiválóan elmegy léghűtéssel (de nem a processzor saját hűtőventilátorával, hanem Be quiet! Pure Rock 2 Silver hűtőt vásároltam hozzá, mert nem szeretem, ha túl meleg a processzor, és túlmelegedés miatt esetleg határolja a teljesítményt). Ez a hűtő kellően alacsonyan tartja a processzor hőmérsékletét. Nem vagyok híve a számítógépek túlhajtásának, és ilyen teljesítményű gépet erre a célra teljesen felesleges túlhajtani.
+Jelenlegi gépem 32 GB RAM mellett AMD Ryzen 7 5700G processzorral rendelkezik. A processzor 8 magos, 16 szál futtatására alkalmas. Processzorba integrált GPU-t tartalmaz. Fontos szempont volt a kiválasztásnál, hogy normál energiafelhasználású legyen. A processzor legfeljebb 60-87 W-ot fogyaszt. Nem szerettem volna nagy fogyasztású, vízhűtéses gépet. Ez még kiválóan elmegy léghűtéssel (de nem a processzor saját hűtőventilátorával, hanem Be quiet! Pure Rock 2 Silver hűtőt vásároltam hozzá, mert nem szeretem, ha túl meleg a processzor, és túlmelegedés miatt esetleg határolja a teljesítményt). Ez a hűtő kellően alacsonyan tartja a processzor hőmérsékletét. Nem vagyok híve a számítógépek túlhajtásának, és ilyen teljesítményű gépet erre a célra teljesen felesleges túlhajtani, anélkül is gyors.
 
 Ennek a gépnek a birtokában (bizonyos határig) nem kell foglalkozni azzal, hogy hány program fut a gépen, a böngészőben hány lap van megnyitva stb. Ha gyengébb gépünk van, és csak 8 GB memóriánk, akkor nagy méretű nyers fájl szerkesztésekor esetleg szükség lehet minden felesleges program, minden felesleges böngészőlap bezárására.
 
@@ -909,11 +925,11 @@ A Lensprofiles mappában lévő 1.0 mappában, gyártónként külön almappába
 
 A CameraProfiles mappában lévő Adobe Standard mappában rengeteg fajta fényképezőgép és telefon normál színprofilját találjuk. Ez a Normál (alapértelmezett) képstílushoz tartozó színprofil. A fájlok kiterjesztése .dcp.
 
-A CameraProfiles mappában lévő Camera mappában fényképezőgép-típusonként külön mappában találhatók az egyes (normáltól eltérő, például tájkép, portré) képstílusokhoz tartozó profilfájlok. A fájlok kiterjesztése .dcp.
+A CameraProfiles mappában lévő Camera mappában fényképezőgép-típusonként külön mappában találhatók a normáltól eltérő, (például tájkép, portré) képstílusokhoz tartozó profilfájlok. A fájlok kiterjesztése .dcp.
 
 Ezeknek a könyvtáraknak a tartalmát mentsük el, de legalább a fényképezőgépeink, és objektívjeink profilfájljait.
 
-A DNG Converter 12.4-es verziója 2020-ban jelent meg, ezért az újabb fényképezőgépekhez, objektívekhez nem találunk profilfájlokat. Ha újabb felszerelésünk van, akkor az alábbi lehetőségek segíthetnek.
+Az alábbi lehetőségek is rendelkezésünkre állnak.
 
 Létezik egy Lensfun nevű, közösség által fejlesztett adatbázis, amely sokféle objektívhez tartalmazza a korrekciós adatokat. Ezt az ART tartalmazza.
 
@@ -941,7 +957,7 @@ A RawTherapee-nak (és a darktable-nak is) az a nagy hátránya, hogy bár nagy 
 
 Mivel az ART fejlesztése alapvetően a RawTherapee-ból indult ki, nagy hasznát vehetjük a RawTherapee online felhasználói kézikönyvének is.
 
-Az egyszerűség kedvéért továbbra is "kép"-en főleg nyers fájlt értek, hiszen annak szerkesztéséről lesz szó ebben a könyvben. Annak ellenére ezt teszem, hogy a nyers adatokat tartalmazó fájl nem kép. Természetesen "kép"-nek nevezem az eredményül kapott JPEG, TIFF, PNG stb. képet is.
+Az egyszerűség kedvéért "kép"-en továbbra is főleg nyers fájlt értek, hiszen annak szerkesztéséről lesz szó ebben a könyvben. Annak ellenére ezt teszem, hogy a nyers adatokat tartalmazó fájl nem kép. Természetesen "kép"-nek nevezem az eredményül kapott JPEG, TIFF, PNG stb. képet is.
 
 ## <a id="32"></a> 3\.2 Az ART weboldala
 
@@ -957,7 +973,7 @@ Az ART operációs rendszerünknek megfelelő, legújabb, stabil változatát in
 
 [ART stabil](https://github.com/artpixls/ART/releases)
 
-Csak Linuxra történő telepítésről írok néhány szót, mert az talán nem annyira nyilvánvaló. Le kell tölteni a ART-x.xx.x-linux64.tar.xz (az "x.xx.x" helyén a verziószám szerepel) tömörített fájlt, majd ki kell csomagolni abba a könyvtárba, ahol a helye lesz. Ennek nem kell rendszerkönyvtárnak lennie, elvileg bárhol lehet. Én magam az operációs rendszert is tartalmazó SSD RAM meghajtó felhasználó rendelkezésére álló részére tettem (tehát nem az operációs rendszer területére), hogy gyorsabban töltődjön be. A létrehozott könyvtárba bemásoltam a letöltött fájlt. Kicsomagoltam, mégpedig úgy, hogy rajta jobb egérgombbal kattintottam, és a helyi menüből a Kibontás ide lehetőséget választottam. Ekkor létrejött például egy ART-1.19.3-linux64 könyvtár, benne a program alkönyvtáraival és fájljaival. Ezt a könyvtárat ART-ra neveztem át. A letöltött fájlt ezután törölhetjük.
+Csak a Linuxra történő telepítésről írok néhány szót, mert az talán nem annyira nyilvánvaló. Le kell tölteni a ART-x.xx.x-linux64.tar.xz (az "x.xx.x" helyén a verziószám szerepel) tömörített fájlt, majd ki kell csomagolni abba a könyvtárba, ahol a helye lesz. Ennek nem kell rendszerkönyvtárnak lennie, elvileg bárhol lehet. Én magam az operációs rendszert is tartalmazó SSD RAM meghajtó felhasználó rendelkezésére álló részére tettem (tehát nem az operációs rendszer területére), hogy gyorsabban töltődjön be a memóriába. A létrehozott könyvtárba bemásoltam a letöltött fájlt. Kicsomagoltam, mégpedig úgy, hogy rajta jobb egérgombbal kattintottam, és a helyi menüből a Kibontás ide lehetőséget választottam. Ekkor létrejött például egy ART-1.19.3-linux64 könyvtár, benne a program alkönyvtáraival és fájljaival. Ezt a könyvtárat ART-ra neveztem át. A letöltött fájlt ezután törölhetjük.
 
 ![](book-images/47.jpg)
 
@@ -973,26 +989,30 @@ A Beállításokba a felhasználói felület bal alsó sarkában alulról a más
 
 ## <a id="34"></a> 3\.4 Roncsolásmentes feldolgozás
 
-Az ART roncsolásmentes eljárással dolgozza fel a képeket. Ez azt jelenti, hogy a program semmit sem módosít a szerkesztésre megnyitott fájlon. Mindössze csak a szerkesztés közben alkalmazott feldolgozási lépéseket, illetve azok beállítási paramétereit tárolja el, és később ezek alkalmazásával hozza létre az eredményül kapott képet.
+Az ART roncsolásmentes eljárással dolgozza fel a képeket. Ez azt jelenti, hogy a program semmit sem módosít a szerkesztésre megnyitott fájlon. Mindössze a szerkesztés közben alkalmazott szerkesztőeszközök beállításait tárolja el, és később ezek alkalmazásával hozza létre az eredményül kapott képet.
 
-Aktuális kép mentésekor vagy a Feldolgozási sor feldolgozásakor a keletkező JPEG, TIFF, vagy PNG képfájlokat alapértelmezés szerint a szerkesztett fájlt tartalmazó mappán belül lévő "converted" nevű almappába menti. Amennyiben az almappa már tartalmaz egy korábbi feldolgozás során keletkezett ugyanolyan nevű képet, akkor azt nem írja felül, hanem alapértelmezés szerint a fájlnevet megtoldja a "-1", "-2" stb. utótaggal (amelyik következik). Például ha volt már IMG\_0322.jpg kép, akkor az új változat IMG\_0322-1.jpg lesz. A Beállításokban beállítható, hogy felülírja a célfájlt, azonban ezt nem célszerű alkalmazni.
+Az Aktuális kép mentésekor vagy a Feldolgozási sor feldolgozásakor a keletkező JPEG, TIFF, vagy PNG képfájlokat alapértelmezés szerint a szerkesztett fájlt tartalmazó mappán belül lévő "converted" nevű almappába menti. Amennyiben az almappa már tartalmaz egy korábbi feldolgozás során keletkezett ugyanolyan nevű képet, akkor azt nem írja felül, hanem alapértelmezés szerint a fájlnevet megtoldja az "-1", "-2" stb. utótaggal (amelyik következik). Például ha volt már IMG\_0322.jpg kép, akkor az új változat IMG\_0322-1.jpg lesz. A Beállításokban az is beállítható, hogy felülírja a célfájlt, azonban ezt nem célszerű alkalmazni.
 
 ## <a id="35"></a> 3\.5 Kísérőfájlok
 
 ![](book-images/50.jpg)  
-*Az IS2_3049.nef a nyers fájl, az IS2_3049.nef.arp a kísérőfájl*
+*Az IS2_3049.nef a nyers fájl, az IS2_3049.nef.arp a szerkesztési beállításokat tartalmazó kísérőfájl, az IS2_3049.nef.jpg.xmp a kép osztályozási adatait (pl. csillagozás, színcímkék) tartalmazó kísérőfájl*
 
-A szerkesztőeszközök beállításait az ART kísérőfájlokban tárolja, amelyeknek .arp a kiterjesztésük, és amelyeket az ART a szerkesztett fájl mellé ment. A .arp kiterjesztésű kísérőfájlban tárolt szerkesztési paraméterek gyűjteményét más néven a kép feldolgozási profiljának nevezzük. A szerkesztett (általában nyers) fájl mellett mindig csak a kísérlőfájl legutolsó változata lesz megtalálható, a korábbi változatok nem.
+A szerkesztőeszközök beállításait az ART kísérőfájlokban (angolul sidecar file) tárolja, amelyeknek .arp a kiterjesztésük, és amelyeket az ART a szerkesztett fájl mellé ment. A .arp kiterjesztésű kísérőfájlban tárolt szerkesztési paraméterek gyűjteményét más néven a kép feldolgozási profiljának nevezzük. A szerkesztett (általában nyers) fájl mellett mindig csak a kísérlőfájl legutolsó változata lesz megtalálható, a korábbi változatok nem.
 
 Arra is van lehetőség, hogy az ART minden egyes eredményül kapott képfájl mellé is elmentse a hozzá tartozó kísérőfájlt, ezáltal minden szerkesztési változat mellett is lesz kísérőfájl. Ez nagyon ajánlott. A Beállítások Képfeldolgozás lapján tudjuk beállítani.
 
-A kísérőfájloknak az a jelentősége, hogy az abban tárolt szerkesztőeszköz-beállításokat (feldolgozási profilt) hajtja végre az ART a képfájl (JPEG, TIFF, vagy PNG) előállítása során, vagy ha ismét megnyitunk egy korábban már szerkesztett képet szerkesztésre, akkor az ART automatikusan beállítja a szerkesztőeszközöket a kísérőfájlban tárolt információknak megfelelően, és az utolsó szerkesztési állapotból folytathatjuk a kép feldolgozását. A kísérőfájlok nagyon fontosak, ha azokat elveszítjük, akkor elveszítjük azokat a szerkesztési paramétereinket, amelyek a nekünk tetsző képváltozat létrehozásához vezettek. Lényegében a befektetett munkánkat veszítjük el.
+A kísérőfájloknak az a jelentősége, hogy az abban tárolt szerkesztőeszköz-beállításokat (feldolgozási profilt) hajtja végre az ART a képfájl (JPEG, TIFF, vagy PNG) előállítása során, vagy ha ismét megnyitunk egy korábban már szerkesztett képet szerkesztésre, akkor az ART automatikusan beállítja a szerkesztőeszközöket a kísérőfájlban tárolt információk alapján, és az utolsó szerkesztési állapotból folytathatjuk a kép feldolgozását. A kísérőfájlok nagyon fontosak, ha azokat elveszítjük, akkor elveszítjük azokat a szerkesztési paramétereket, amelyek a nekünk tetsző képváltozat létrehozásához vezettek. Lényegében a befektetett munkánkat veszítjük el.
+
+A képek osztályozási adatait (pl. csillagozás, színcímkék) egy .xmp kiterjesztésű kísérőfájlban tárolja az ART, amelyet a nyers fájl vagy a képfájl mellé ment. A feldolgozás eredményeként keletkező képfájl mellé a .xmp fájlt nem menti.
+
+A továbbiakban ha kísérőfájlt említek, akkor nem a .xmp, hanem a .arp kiterjesztésű, feldolgozási paramétereket tartalmazó kísérlőfájlra kell gondolni.
 
 ## <a id="36"></a> 3\.6 Az ART csővezetéke
 
-Amikor szerkesztünk egy képet, a kísérőfájlban tárolásra kerül, hogy a szerkesztés során milyen szerkesztőeszközöket milyen beállításokkal használtunk. Mindig a szerkesztőeszközök beállításainak utolsó állapota tárolódik a kísérőfájlban. A mentendő képfájl létrehozásakor történik meg a nyers fájlból kiindulva, a feldolgozáskor alkalmazott szerkesztőeszközöknek (a kísérőfájlban eltárolt paraméterekkel) egymás után történő alkalmazása, és ennek eredménye lesz a JPEG, TIFF, vagy PNG formátumú mentett képfájl. Egymás után minden eszköz elvégzi a maga feladatát. Az aktív (bekapcsolt) szerkesztőeszközök közötti adatáramlás a képfájl létrehozása során képzeletbeli csővezetékben történő áramláshoz hasonlít. Az első szerkesztőeszköz bemenő adata maga a nyers fájl, kimenő adata a következő eszköz bemenő adata lesz, annak kimenő adata lesz a harmadik eszköz bemenő adata, és így tovább. Az utolsó eszköz kimenő adata a kész kép, amely a felhasználó által kiválasztott formátumban mentésre kerül. A képadatok tehát szerkesztőeszközről szerkesztőeszközre mindig azonos irányban áramlanak, hasonlóan ahhoz, ahogyan a víz áramlik a vízvezetékben.
+Amikor szerkesztünk egy képet, a kísérőfájlban eltárolásra kerül, hogy a szerkesztés során milyen szerkesztőeszközöket milyen beállításokkal használtunk. Mindig a szerkesztőeszközök beállításainak utolsó állapota tárolódik a kísérőfájlban. A mentendő képfájl létrehozásakor történik meg a nyers fájlból kiindulva, a feldolgozáskor alkalmazott szerkesztőeszközöknek (a kísérőfájlban eltárolt paraméterekkel) egymás után történő alkalmazása, és ennek eredménye lesz a mentett képfájl. Egymás után minden eszköz elvégzi a maga feladatát. A szerkesztőeszközök közötti adatáramlás a képfájl létrehozása során képzeletbeli csővezetékben történő áramláshoz hasonlít. Az első szerkesztőeszköz bemenő adata maga a nyers fájl, kimenő adata a következő eszköz bemenő adata lesz, annak kimenő adata lesz a harmadik eszköz bemenő adata, és így tovább. Az utolsó eszköz kimenő adata a kész kép, amely a felhasználó által kiválasztott formátumban mentésre kerül. A képadatok tehát szerkesztőeszközről szerkesztőeszközre mindig azonos irányban áramlanak, hasonlóan ahhoz, ahogyan a víz áramlik a vízvezetékben.
 
-A szerkesztőeszközök végrehajtási sorrendje kötött, mindig azonos sorrendben történik meg a csővezetékben a végrehajtásuk. Az eszközök sorrendjének megállapítása úgy történt, hogy a lehető legjobb minőségű eredményt adja. A lehető legtovább lineáris adatokon történik meg a feldolgozás, ez nagyszerű képminőséget, és kevesebb műterméket eredményez. A végrehajtási sorrenden változtatni nem lehet. Az eszközök végrehajtási sorrendje nem függ attól, hogy az egyes eszközöket milyen sorrendben használtuk a feldolgozás során.
+A szerkesztőeszközök végrehajtási sorrendje kötött, mindig azonos sorrendben történik meg a csővezetékben a végrehajtásuk. Az eszközök sorrendjének megállapítása úgy történt, hogy a lehető legjobb minőségű eredményt adja. A lehető legtovább lineáris adatokon történik meg a feldolgozás, ez nagyszerű képminőséget, és kevesebb műterméket eredményez. A végrehajtási sorrenden változtatni nem lehet. Az eszközök végrehajtási sorrendje nem függ attól, hogy az egyes eszközöket milyen sorrendben használtuk a szerkesztés során.
 
 A szerkesztőeszközök csővezetékben elfoglalt helye az alábbi listán figyelhető meg. A végrehajtás felülről lefelé történik, be is sorszámoztam ennek megfelelően az eszközöket. Minden szerkesztőeszköz neve mellett láthatjuk azt a színteret, amelyben az adott eszköz működik.
 
@@ -1004,7 +1024,7 @@ Az ART csővezetéke a jelenleg rendelkezésre álló információk szerint a k�
   4. Peremsötétedés-korrekció - RAW  
   5. Forró/Halott képpont szűrő - RAW  
   6. Zöld egyensúly/Vonalzaj szűrő - RAW  
-  7. RAW színhiba korrekció - RAW  
+  7. RAW színhiba-korrekció - RAW  
   8. Filmnegatív - RAW  
   9. Színrekonstrukció - RAW  
 10. Csúcsfény rekonstrukció - Fényképezőgép  
@@ -1049,7 +1069,7 @@ Az ART funkcionalitása három alapvető nézetre oszlik: Állományböngésző,
 
 ![](book-images/51.jpg)
 
-Általában az állományböngészőt használjuk először. Lehetőségünk van képeink válogatására, minősítésére, szűrésére, és nagy nagyítással történő vizsgálatára. Ha egy nyers fájlra duplán kattintunk, akkor megnyílik szerkesztésre, és Szerkesztő nézetbe jutunk.
+Általában az állományböngészőt használjuk először. Lehetőségünk van képeink válogatására, minősítésére, szűrésére, és nagy nagyítással történő vizsgálatára. Ha egy nyers fájlra duplán kattintunk, akkor megnyílik szerkesztésre, és a Szerkesztőbe jutunk.
 
 **Szerkesztő**
 
@@ -1061,25 +1081,25 @@ A Szerkesztőben feldolgozhatjuk (szerkeszthetjük) képeinket. Bár van lehető
 
 ![](book-images/53.jpg)  
 
-Ha minden kép szerkesztésével végeztünk, és a szerkesztés végén minden egyes képet elhelyeztünk a Feldolgozási sorba, akkor kell erre a nézetre váltanunk. Ekkor csak el kell indítani a feldolgozást, és megtörténik a képek előállítása.
+Ha minden kép szerkesztésével végeztünk, és a szerkesztés végén minden egyes képet elhelyeztünk a Feldolgozási sorba, akkor kell erre a nézetre váltanunk. Csak el kell indítani a feldolgozást, és megtörténik a képek előállítása.
 
 ## <a id="38"></a> 3\.8 Állományböngésző
 
-Ebben a részben az Állományböngésző nézettel foglalkozunk, amely lehetővé teszi a számítógépen lévő nyers fájljaink, valamint képeink közvetlen böngészését, és feldolgozását. Ezt a nézetet úgy képzeljük el, mintha diáinkat egy világító asztallapra helyeznénk abból a célból, hogy azokat megtekintsük, minősítsük, csoportosítsuk, a rossz képeket selejtezzük. Például csillagozással minősíthetjük, színcímkék segítségével csoportosíthatjuk képeinket. Itt választhatjuk ki azt is, hogy mely kép nyers állományát szeretnénk szerkeszteni.
+Ebben a részben az Állományböngészővel foglalkozunk, amely lehetővé teszi a számítógépen lévő nyers fájljaink, valamint képeink közvetlen böngészését, és feldolgozását. Úgy képzeljük el, mintha diáinkat egy világító asztallapra helyeznénk abból a célból, hogy azokat megtekintsük, minősítsük, csoportosítsuk, a rossz képeket selejtezzük. Például csillagozással minősíthetjük, színcímkék segítségével csoportosíthatjuk képeinket. Itt választhatjuk ki azt is, hogy mely kép nyers állományát szeretnénk szerkeszteni.
 
 ### <a id="381"></a> 3\.8\.1 Az Állományböngésző felhasználói felülete
 
-Az ART felhasználói felülete a RawTherapee-hoz képest egyszerűsödött, könnyebben kezelhetővé vált. Az alábbi ábrán láthatjuk az Állományböngésző nézet felhasználói felületét:
+Az ART felhasználói felülete a RawTherapee-hoz képest egyszerűsödött, könnyebben kezelhetővé vált. Az alábbi ábrán láthatjuk az Állományböngésző felhasználói felületét:
 
 ![](book-images/54.jpg)
 
-1. Állományböngésző nézet
-2. Feldolgozási sor nézet
-3. Szerkesztő nézet
+1. Állományböngésző
+2. Feldolgozási sor
+3. Szerkesztő
 4. Megjelenített mappa elérési útja, elérési út megadása megjelenítéshez
 5. Bal oldali panel elrejtése/megjelenítése
 6. Összes szűrőfeltétel kikapcsolása
-7. Szűrőfeltételek: Színcímkék, nem mentett képek, mentett képek, kuka tartalmának megjelenítése, csak a nem törölt képek megjelenítése, csak az "eredeti" képek megjelenítése
+7. Szűrőfeltételek: színcímkék, nem mentett képek, mentett képek, kuka tartalmának megjelenítése, csak a nem törölt képek megjelenítése, csak az "eredeti" képek megjelenítése
 8. Képinformációk megjelenítése/elrejtése
 9. Bélyegképek nagyítása/kicsinyítése
 10. Bélyegképek rendezése
@@ -1090,30 +1110,32 @@ Az ART felhasználói felülete a RawTherapee-hoz képest egyszerűsödött, kö
 15. Teljes képernyő mód
 16. Beállítások
 
-Az ART felhasználói felülete több panelra tagozódik. A bal és jobb oldali panel szélessége a belső oldalának húzásával megváltoztatható.
+Az ART felhasználói felülete több panelre tagozódik. A bal oldali és a jobb oldali panel szélessége a belső oldalának húzásával megváltoztatható.
 
 Az ART három fő nézetét a bal szélső, keskeny függőleges panelen látható (1, 2, 3) fülekre kattintva válthatjuk. A zárójelben látható számok mindig az ábrán látható sorszámozásra utalnak. Ugyanezen a panelen alul láthatjuk a Teljes képernyős mód (15), és a Beállítások (16) nyomógombját. Ha az egérmutatót egy gomb fölé mozgatjuk, akkor a legtöbb esetben egy magyarázat jelenik meg a gomb funkciójáról.
 
-A mellette lévő szélesebb panel a "bal oldali" panel, amelyen az Állományböngésző látható. Segítségével böngészhetjük számítógépünk fájlrendszerét, és bármely mappa (könyvtár) tartalmát, azaz a benne lévő nyers fájlokat, illetve képfájlokat megjeleníthetjük a középső nagy panelen bélyegképek formájában. Felül a Helyek közül választhatunk, míg alatta a mappák faszerkezetét láthatjuk. Ha egy mappára duplán kattintunk, annak tartalma megjelenik a középső panelen, de csak közvetlenül az abban a könyvtárban lévő fájlok, az almappák tartalma nem. Középen, a felső panelen annak a könyvtárnak az elérési útját (4) láthatjuk, amelynek bélyegképei a középső nagy panelen láthatók. Itt meg is adhatjuk egy mappa elérési útját. Mellette láthatjuk a Keresőmezőt (11), amelybe egy fájl nevét, vagy nevének részletét kell beírni a kereséshez. Ezek az elemek és panelek szolgálnak a fájlok és mappák közötti navigálásra.
+A mellette lévő szélesebb panel a "bal oldali" panel, amelyen az Állományböngésző látható. Segítségével böngészhetjük számítógépünk fájlrendszerét, és bármely mappa (könyvtár) tartalmát, azaz a benne lévő nyers fájlokat, illetve képfájlokat jeleníthetjük meg a középső nagy panelen bélyegképek formájában. Felül a Helyek közül választhatunk, míg alatta a mappák faszerkezetét láthatjuk. Ha egy mappára duplán kattintunk, annak tartalma megjelenik a középső panelen, de csak közvetlenül abban a mappában lévő fájlok, az almappák tartalma nem. Középen, a felső panelen annak a könyvtárnak az elérési útját (4) láthatjuk, amelynek bélyegképei a középső nagy panelen láthatók. Itt meg is adhatjuk egy mappa elérési útját. Mellette láthatjuk a Keresőmezőt (11), amelybe egy fájl nevét, vagy nevének részletét kell beírni a kereséshez.
 
 A keresőmező alatt láthatjuk az eszköztárat, amelyen balról jobbra a következő lehetőségek közül választhatunk:
 
--   A bal oldali panelt a mellette lévő keskeny panellel együtt elrejthetjük/megjeleníthetjük (5).
+-   A bal oldali panelt elrejthetjük/megjeleníthetjük (5), mellette a keskeny panel látható marad.
 -   Az összes szűrőfeltételt kikapcsolhatjuk (6).
 -   Megjelenítendő képeinket szűrhetjük csillagozás és színcímkék szerint, aszerint, hogy már szerkesztettük-e vagy sem, mentettük-e vagy sem, megjeleníthetjük a kuka tartalmát, csak a nem törölt képeket, és csak az "eredeti" képeket (7). A csillagozásnak és a színcímkéknek képeink minősítése (csillagozással) és csoportosítása (színcímkék) szempontjából van jelentősége. Ha több fájl létezik azonos fájlnévvel de eltérő kiterjesztéssel, akkor az tekintendő "eredetinek", amelynek a kiterjesztése a lista tetejéhez a legközelebb van a Beállítások > Fájlböngésző > Felismert kiterjesztések listában.
 -   Kikapcsolhatjuk a bélyegkép alatti képinformációk megjelenítését (8) (expozíciós adatok, a kép készítésének ideje, a fájl neve).
 -   Bélyegképek nagyítása/kicsinyítése (9).
 -   Bélyegképek rendezése (10), rákattintva választhatunk a listából.
 
+A képek osztályozási adatai (pl. csillagozás, színcímkék) egy .xmp kiterjesztésű kísérőfájlban tárolódnak a nyers fájl vagy a képfájl mellett.
+
 Ha monitorunk felbontása nem elég nagy ahhoz, hogy az eszköztárak minden eleme elférjen rajta, akkor ha az egérmutatót az eszköztár fölé visszük, az egér görgőjével jobbra-balra mozgathatjuk az eszköztár elemeit, és így minden lehetőséghez hozzáférünk.
 
 Az ART (az operációs rendszer kukájától teljesen független) saját kukát használ. Ebbe elhelyezhetünk képeket, megjeleníthetjük a kuka tartalmát, kivehetünk képeket a kukából, és a kukában lévő képeket véglegesen törölhetjük.
 
-A felhasználói felület jobb szélénél egy keskeny függőleges panelt láthatunk, amelyen lévő "fülek" segítségével válthatjuk a tőle balra lévő "jobb oldali" panelen megjelenő Szűrő nézetet (13), vagy Vizsgálat (14) nézetet. A keskeny függőleges panelt a jobb oldali panellel együtt elrejthetjük/megjeleníthetjük (12).
+A felhasználói felület jobb szélénél egy keskeny függőleges panelt láthatunk, amelyen lévő fülek segítségével válthatjuk a tőle balra lévő jobb oldali panelen megjelenő Szűrő nézetet (13), vagy Vizsgálat (14) nézetet. A keskeny függőleges panelt a jobb oldali panellel együtt elrejthetjük/megjeleníthetjük (12).
 
 ![](book-images/55.jpg)
 
-A Szűrő fülre (13) kattintva szűrőfeltételek jelennek meg a jobb oldali panelen. A fenti ábrán ezt láthatjuk. A metaadatok alapján szűrhetünk, mégpedig állománytípus, rekeszérték-tartomány, záridőtartomány, ISO-tartomány, fókusztávolság-tartomány, a felvétel készítésének dátumtartománya, az expozíció-kompenzáció értéke, a fényképezőgép típusa, és az objektív típusa szerint.
+A Szűrő fülre (13) kattintva szűrőfeltételek jelennek meg a jobb oldali panelen. A fenti ábrán ezt láthatjuk. Metaadatok alapján szűrhetünk, mégpedig állománytípus, rekeszérték-tartomány, záridőtartomány, ISO-tartomány, fókusztávolság-tartomány, a felvétel készítésének dátumtartománya, az expozíció-kompenzáció értéke, a fényképezőgép típusa, és az objektív típusa szerint.
 
 ### <a id="382"></a> 3\.8\.2 Bélyegképek
 
@@ -1126,10 +1148,16 @@ Nézzük meg a bélyegképeknél rendelkezésre álló lehetőségeket.
 3. Színcímkék kezelése
 4. Kukába helyezés, eltávolítás a kukából
 5. Feldolgozott kép
-6. Mentett kép
+6. Feldolgozási sorba helyezett/Mentett kép
 7. Információk: fájl neve, készítés ideje, rekeszérték, záridő, ISO érzékenység, gyújtótávolság
 
-A feldolgozott kép azt jelenti, hogy tartozik hozzá kísérőfájl. A mentett kép azt jelenti, hogy a képfájl mentése (például a Feldolgozási soron keresztül) megtörtént. A színcímkék kezelése gombra kattintva egy kis ablak jelenik meg, ennek segítségével kezelhetjük a színcímkéket. Egy képhez többféle színcímkét is választhatunk.
+A feldolgozott kép azt jelenti, hogy tartozik hozzá kísérőfájl.
+
+![](book-images/498.jpg)
+
+A fenti ábrán Feldolgozási sorba helyezett, és Mentett képet láthatunk. A mentett kép azt jelenti, hogy a képfájl mentése (például a Feldolgozási soron keresztül) megtörtént.
+
+A színcímkék kezelése gombra kattintva egy kis ablak jelenik meg, ennek segítségével kezelhetjük a színcímkéket. Egy képhez többféle színcímkét is választhatunk.
 
 ![](book-images/57.jpg)
 
@@ -1153,9 +1181,9 @@ A képeket a háttértárról a kuka használata nélkül is törölhetjük. Kat
 
 Amikor megnyitunk egy mappát, amelyet még nem nyitottunk meg ART-ban, az ART a központi panelre bélyegképeket generál a mappában lévő fényképekről. Nyers fájlnál a beágyazott JPEG-kép alapján hozza létre a bélyegképet, képfájl esetén magából a képből állítja elő. Ez eltarthat egy ideig több száz fényképet tartalmazó mappában, de ez csak a mappa első megnyitásakor történik meg. Minden későbbi alkalommal, amikor egy korábban már megnyitott mappába lépünk, az ART a gyorsítótárból olvassa be a bélyegképeket, ha vannak, és ez sokkal gyorsabb lesz, mint a mappa első megnyitásakor.
 
-A kép szerkesztésének megkezdése után a bélyegkép a Szerkesztő nézetben látható előnézeti képre cserélődik, és minden változtatás megjelenik a bélyegképen is.
+A kép szerkesztésének megkezdése után a bélyegkép a Szerkesztő nézetben látható előnézetre cserélődik, és minden változtatás megjelenik a bélyegképen is.
 
-A bélyegképek méretét nem érdemes megváltoztatni, mert a túl nagy bélyegképek fogyasztják a memóriát.
+A bélyegképek méretét nem célszerű megváltoztatni, mert a túl nagy bélyegképek fogyasztják a memóriát.
 
 ### <a id="384"></a> 3\.8\.4 Helyi menü
 
@@ -1163,8 +1191,9 @@ Ha egy bélyegképre jobb egérgombbal kattintunk, akkor egy helyi menü jelenik
 
 ![](book-images/60.jpg)
 
-A menüből gyorsan és egyszerűen érhetjük el a fontosabb műveleteket, amelyek a következők:
+A menüből gyorsan és egyszerűen érhetjük el a műveleteket, amelyek a következők:
 
+-   Megnyitás szerkesztésre
 -   Feldolgozási sorba helyezés
 -   Feldolgozási sorba helyezés (gyors exportálás)
 -   Összes kijelölése
@@ -1172,11 +1201,15 @@ A menüből gyorsan és egyszerűen érhetjük el a fontosabb műveleteket, amel
 -   Színcímke
 -   Fájlműveletek
 -   Feldolgozási profil műveletek
--   Dark frame (Fekete referenciakép)
+-   Dark-frame (Fekete referenciakép)
 -   Flat-field referenciakép
 -   Gyorsítótár
 
-### <a id="385"></a> 3\.8\.5 Feldolgozási profil műveletek
+Amennyiben több képen szeretnénk ugyanazt a menüpontot alkalmazni, a bélyegképeket ki kell jelölni. A kijelölés szabványos billentyűkombinációkkal történik: Shift+kattintás egy tartomány kijelölése, Ctrl+kattintás egyes képek kijelölése, Ctrl+a pedig az összes kép kijelölése. A kijelölt bélyegképek keretének színe kissé világosabb lesz, jobb alsó sarkánál pedig egy kis narancssárga háromszög lesz látható.
+
+![](book-images/497.jpg)
+
+### <a id="385"></a> 3\.8\.5 Feldolgozásiprofil-műveletek
 
 Az ART lehetővé teszi egy feldolgozási profil (eszközbeállítások gyűjteménye) részleges vagy teljes vágólapra másolását és beillesztését tetszőleges számú képre. Azt is lehetővé teszi, hogy tetszőleges számú képen egyszerre alkalmazzunk egy előre csomagolt (a programmal együtt kapott), általunk létrehozott, vagy semleges feldolgozási profilt. Ez nagyszerű lehetőségeket biztosít számunkra. Nézzük meg ezeket közelebbről.
 
@@ -1184,9 +1217,9 @@ Az ART lehetővé teszi egy feldolgozási profil (eszközbeállítások gyűjtem
 
 Mindkét módszer (vágólapra másolt vagy elmentett profil alkalmazása) állományböngésző nézetben hajtható végre. Mindkét módszernél ki kell jelölnünk azokat a képeket, amelyekre alkalmazni szeretnénk a feldolgozási profilt.
 
-A feldolgozási profil vágólapra másolása és beillesztése a kijelölt képekhez nagyon gyakori feladat. Tételezzük fel, hogy fényképsorozatot készítettünk, például stúdiófelvételeket, vagy esküvői portrékat, vagy fókuszeltolásos makrófotókat. A sorozat egyes képei nagyon hasonlóak lesznek egymáshoz, valószínűleg ugyanazzal az objektívvel, ISO értékkel, fehéregyensúllyal készültek, és a felvételeket ugyanarra a célra, ugyanarra a felhasználásra szántuk. Ez azt jelenti, hogy valószínűleg mindegyikhez ugyanazokra a feldolgozási beállításokra lesz szükség, ugyanazt a zajcsökkentést, ugyanazt az élesítést stb. kell rajtuk végrehajtani.
+A feldolgozási profil vágólapra másolása és beillesztése a kijelölt képekhez nagyon gyakori feladat. Tételezzük fel, hogy fényképsorozatot készítettünk, például stúdiófelvételeket, vagy esküvői portrékat, vagy fókuszeltolásos makrófotókat. A sorozat egyes képei nagyon hasonlóak lesznek egymáshoz, valószínűleg ugyanazzal az objektívvel, ugyanazzal az ISO értékkel, ugyanazzal a fehéregyensúllyal készültek, és a felvételeket ugyanarra a célra, ugyanarra a felhasználásra szántuk. Ez azt jelenti, hogy valószínűleg mindegyikhez ugyanazokra a feldolgozási beállításokra lesz szükség, ugyanazt a zajcsökkentést, ugyanazt az élesítést stb. kell rajtuk végrehajtani.
 
-Úgy járunk el, hogy megnyitunk egy képet a sorozatból Szerkesztő nézetben, és ízlésünknek megfelelően feldolgozzuk. Ezután alkalmazzuk a kép feldolgozási profilját a sorozat összes többi képére. Ehhez Állományböngésző nézetbe lépünk, jobb egérgombbal kattintunk a feldolgozott fényképre, és kiválasztjuk a helyi menüből a Feldolgozási profil műveletek > Feldolgozási profil másolása menüpontot, majd kijelöljük azokat a képeket, amelyekre alkalmazni szeretnénk ezt a profilt, végül jobb egérgombbal valamelyik kijelölt képre kattintunk, és a helyi menüből kiválasztjuk a Feldolgozási profil műveletek > Feldolgozási profil beillesztése menüpontot. Ezzel mindegyik kijelölt képhez ugyanazt a feldolgozási profilt (ugyanazokat a szerkesztőeszköz-beállításokat) rendeltük hozzá.
+Úgy járunk el, hogy megnyitunk egy képet a sorozatból Szerkesztő nézetben, és ízlésünknek megfelelően feldolgozzuk. Ezután alkalmazzuk a kép feldolgozási profilját a sorozat összes többi képére. Ehhez Állományböngésző nézetbe lépünk, jobb egérgombbal kattintunk a feldolgozott képre, és kiválasztjuk a helyi menüből a Feldolgozási profil műveletek > Feldolgozási profil másolása menüpontot, majd kijelöljük azokat a képeket, amelyekre alkalmazni szeretnénk ezt a profilt, végül jobb egérgombbal valamelyik kijelölt képre kattintunk, és a helyi menüből kiválasztjuk a Feldolgozási profil műveletek > Feldolgozási profil beillesztése menüpontot. Ezzel mindegyik kijelölt képhez ugyanazt a feldolgozási profilt (ugyanazokat a szerkesztőeszköz-beállításokat) rendeltük hozzá.
 
 Az ART azt is lehetővé teszi, hogy a vágólapra másolt feldolgozási profilnak csak egy részét alkalmazzuk (illesszük be) a kijelölt képeken, és ne az összeset. Például csak az átméretezés eszközt szeretnénk alkalmazni, hogy mindegyik képet ugyanakkorára méretezzen át az ART. Ennek elérésére a Feldolgozási profil műveletek > Feldolgozási profil beillesztése helyett a Feldolgozási profil műveletek > Részleges beillesztés menüpontot kell alkalmaznunk. A megjelenő ablakban kijelölhetjük, hogy mely szerkesztőeszközök beállításait szeretnénk alkalmazni.
 
@@ -1200,11 +1233,11 @@ A feldolgozási profil műveletek a filmszalagon keresztül is elvégezhetők (a
 
 ### <a id="386"></a> 3\.8\.6 Munkamenetek
 
-Az ART támogatja munkamenetek alkalmazását is. Ennek az a fő célja, hogy megkönnyítse a Digikammal és más hasonló alkalmazásokkal történő integrációt. A munkamenet a felhasználó által meghatározott ideiglenes képgyűjtemény, amelynek képei nem feltétlenül azonos mappában találhatók.
+Az ART támogatja munkamenetek alkalmazását is. Ennek az a fő célja, hogy megkönnyítse a Digikammal és más hasonló alkalmazásokkal történő integrációt, azonban egyéb célból is létrehozhatunk munkamenetet. A munkamenet a felhasználó által létrehozott ideiglenes képgyűjtemény, amelynek képei nem feltétlenül azonos mappában találhatók.
 
 ![](book-images/63.jpg)
 
-A bal oldali panelen látható Helyek részen belül láthatjuk a Munkamenet lehetőséget. Ha erre kattintunk, akkor az eszköztár felett megjelenik négy új gomb, amelyek segítségével betölthetünk egy elmentett munkamenetet, elmenthetünk egy létrehozott munkamenetet, hozzáadhatunk/eltávolíthatunk képet a munkamenethez/munkamenetből. Az ábrán felül láthatjuk a négy gombot.
+A bal oldali panelen látható Helyek részen belül találjuk a Munkamenet lehetőséget. Ha erre kattintunk, akkor az eszköztár felett megjelenik négy új gomb, amelyek segítségével betölthetünk egy elmentett munkamenetet, elmenthetünk egy létrehozott munkamenetet, hozzáadhatunk/eltávolíthatunk képet a munkamenethez/munkamenetből. Az ábrán felül láthatjuk a négy gombot.
 
 Ha a + gombra kattintunk, akkor egy fájlválasztó ablak jelenik meg, és a Ctrl nyomva tartásával akár több hozzáadandó képet is kijelölhetünk.
 
@@ -1214,17 +1247,19 @@ Az állományböngészőben kijelölt képeket az egyikre jobb egérgombbal tör
 
 ## <a id="39"></a> 3\.9 Vizsgálat
 
-A Vizsgálat (14) fülre kattintva a jobb oldali panelen azt a képet vizsgálhatjuk, amelynek bélyegképére rákattintunk.
+A Vizsgálat (14) fülre kattintva a jobb oldali panelen azt a képet vizsgálhatjuk, amelynek bélyegképére rákattintottunk.
 
 ![](book-images/64.jpg)
 
-A fenti ábrán a Vizsgálat nézetet láthatjuk. A nagyobb előnézeti kép érdekében a bal oldali panelt elrejtettem, a jobb oldali panelt belső oldalának húzásával annyira szélesítettem, hogy a középső panelen a bélyegképek csak egy oszlopban helyezkedjenek el. Az ART az aktuális kinézetet az Állományböngésző, Feldolgozási sor, Szerkesztés, Szűrő, Vizsgálat nézetekhez külön-külön tárolja el. Ez azt jelenti, hogy ha például később ismét a Vizsgálat fülre kattintanánk, akkor azonnal visszakapnánk a fenti ábrán látható kinézetet. Tehát nem kellene Vizsgálat nézetben ismét elrejteni a bal oldali paneleket, és nem kellene ismét szélesíteni a jobb oldali panelt, mert az ART megjegyzi a beállításokat.
+A fenti ábrán a Vizsgálat nézetet láthatjuk. A nagyobb előnézet érdekében a bal oldali panelt elrejtettem, a jobb oldali panelt belső oldalának húzásával annyira szélesítettem, hogy a középső panelen a bélyegképek csak egy oszlopban helyezkedjenek el.
 
-Az ábrán az előnézeti kép 100%-os nagyítású, alul az eszköztáron a fényképezőgép gomb bekapcsolt állapotú, amely azt jelenti, hogy a nyers fájlba beágyazott JPEG képet látjuk. Az előnézeti kép az egérrel megfogható és vonszolható, 100% nagyítás esetén így tudjuk a kép minden részletét megtekinteni.
+Az ART az aktuális kinézetet az Állományböngésző, Feldolgozási sor, Szerkesztés, Szűrő, Vizsgálat nézetekhez külön-külön tárolja el. Ez azt jelenti, hogy ha például később ismét a Vizsgálat fülre kattintanánk, akkor azonnal visszakapnánk a fenti ábrán látható kinézetet. Nem kellene ismét elrejteni a bal oldali panelt, és nem kellene ismét szélesíteni a jobb oldali panelt, mert az ART megjegyzi a beállításokat.
+
+Az ábrán az előnézet 100%-os nagyítású, alul az eszköztáron a "fényképezőgép" gomb bekapcsolt állapotú, amely azt jelenti, hogy a nyers fájlba beágyazott JPEG képet látjuk. Az előnézet az egérrel megfogható és vonszolható, 100% nagyítás esetén így tudjuk a kép minden részletét megtekinteni.
 
 ![](book-images/65.jpg)
 
-A vizsgált kép alatt egy eszköztár látható, amelynek segítségével befolyásolhatjuk a megjelenő információkat. Az egyes gombok funkciói balról jobbra:
+A vizsgált kép alatt egy eszköztár látható, amelynek segítségével kiválaszthatjuk a megjelenő információkat. Az egyes gombok funkciói balról jobbra:
 
 -   Osztott nézet be-/kikapcsolása
 -   Információ be-/kikapcsolása
@@ -1233,17 +1268,17 @@ A vizsgált kép alatt egy eszköztár látható, amelynek segítségével befol
 -   Beágyazott előnézeti kép
 -   Gyors nyers renderelés lineáris tónusgörbével
 -   Gyors nyers renderelés filmszerű tónusgörbével
--   Gyors nyers renderelés árnyéknövelő (árnyékokat kissé világosító) tónusgörbével
--   Levágott nyers képpontok
+-   Gyors nyers renderelés árnyékokat kissé világosító tónusgörbével
+-   Levágott nyers képpontok megjelenítése/elrejtése
 -   Ablakhoz illesztés
 -   Nagyítás 100%-ra
--   Színkezelés engedélyezése
+-   Színkezelés engedélyezése (színskála gomb)
 
 A Vizsgálat a képek ellenőrzéséhez, minősítéséhez, selejtezéséhez nyújt segítséget.
 
 ![](book-images/66.jpg)
 
-A fenti ábrán az osztott nézetet láthatjuk. Ha rákattintunk az Osztott nézet gombra, akkor két ablak jelenik meg egymás mellett, az aktuális ablakot fehér keret jelzi. Az ablakot rákattintással tehetjük aktuálissá. Ha rákattintunk egy bélyegképre, akkor az megjelenik az aktuális ablakban. Az osztott nézet lehetővé teszi képek összehasonlítását.
+A fenti ábrán az osztott nézetet láthatjuk. Ha rákattintunk az Osztott nézet gombra, akkor két ablak jelenik meg egymás mellett, az aktuális ablakot fehér keret jelzi. Az ablakot rákattintással tehetjük aktuálissá. Ha rákattintunk egy bélyegképre, az megjelenik az aktuális ablakban. Az osztott nézet lehetővé teszi képek összehasonlítását.
 
 A fenti ábrán két teljesen különböző képet jelenítettem meg osztott nézetben, azonban inkább azonos témáról készült képek összehasonlítására érdemes használni. 
 
@@ -1261,29 +1296,29 @@ Az alábbi ábrán az ART Szerkesztő nézetét láthatjuk.
 2. Felső eszköztár
 3. Hisztogram
 4. Előzmények
-5. Előnézeti kép
+5. Előnézet
 6. Feldolgozási profilok
 7. Szerkesztőeszközök csoportjai
-8. A kiválasztott csoport szerkesztőeszközei
+8. Kiválasztott csoport szerkesztőeszközei
 9. Pillanatképek
 10. Filmszalag
 11. Alsó eszköztár
 
 Tekintsük át röviden az ART alapértelmezett Szerkesztő nézetének elemeit.
 
-### <a id="3101"></a> 3\.10\.1 Előnézeti kép
+### <a id="3101"></a> 3\.10\.1 Előnézet
 
-A középső nagy panelen a szerkesztett kép előnézete (5) látható. Ezen követhetjük nyomon a szerkesztés során tett módosításaink képre gyakorolt hatását. Az előnézeti képet az egér görgőjével nagyíthatjuk-kicsinyíthetjük, ha az egérmutató felette van.
+A középső nagy panelen a szerkesztett kép előnézete (előnézeti kép) (5) látható. Ezen követhetjük nyomon a szerkesztés során tett módosításaink képre gyakorolt hatását. Az előnézetet az egér görgőjével nagyíthatjuk/kicsinyíthetjük, ha az egérmutató felette áll.
 
 ### <a id="3102"></a> 3\.10\.2 Navigátor
 
-A bal oldali panelen felül a Navigátor (1) található. A Navigátoron nyomon követhetjük, hogy a teljes kép mely részlete látható az előnézeti képen, és láthatjuk az egérmutatónál lévő képpontok színadatait RGB, HSV, és L\*a\*b\* színrendszerben.
+A bal oldali panelen felül a Navigátor (1) található. A Navigátoron nyomon követhetjük, hogy a teljes kép mely részlete látható az előnézeten, és láthatjuk az egérmutatónál lévő képpontok színadatait RGB, LCH, és L\*a\*b\* színrendszerben.
 
 ![](book-images/68.jpg)
 
 A Navigátorban az L\*a\*b\* kivételével a számértékekre kattintva válthatunk a kijelzés formátuma között. Az RGB értékek vagy \[0...255\], vagy \[0...1\] tartományban, vagy \[%\]-ban kifejezve kerülhetnek kijelzésre. Az LCH értékek vagy \[0...255\], vagy \[0...1\] tartományban, vagy a H érték fokban, a másik kettő pedig %-ban kifejezve.
 
-Ha nem fér el a rendelkezésre álló helyen a teljes előnézeti kép (mert felnagyítottuk), akkor a navigátoron lévő képen egy piros keret jelzi az előnézeti képen látható képrészletet. Ezt a piros keretet az egérrel a kép kívánt helyére húzhatjuk, és a piros keretben látható képrészlet lesz látható az előnézeti képen.
+Ha nem fér el az előnézeten rendelkezésre álló helyen a teljes kép (mert felnagyítottuk), akkor a navigátoron lévő képen egy piros keret jelzi az előnézeten látható képrészletet. Ezt a piros keretet az egérrel a kép kívánt helyére húzhatjuk, és a piros keretben látható képrészlet lesz látható az előnézeten.
 
 ### <a id="3103"></a> 3\.10\.3 Felső eszköztár
 
@@ -1313,16 +1348,16 @@ Mellette a színválasztó ki-/bekapcsoló gombját láthatjuk.
 
 ![](book-images/73.jpg)
 
-Bekapcsolása után egérkattintással helyezhetünk el a kép különböző helyeire színválasztókat, amelyeket az egérgomb nyomva tartása mellet a kívánt helyre húzhatunk, akár utólag is. A kis kör alakú terület alatti színt választjuk ki segítségével. Egy színválasztót rajta jobb egérgombbal kattintva törölhetünk. Az egyik színválasztón történő Ctrl+Shift+jobb kattintás törli az összes színválasztót. A színválasztókon kívüli területen a jobb egérgombbal kattintva visszatérünk a nyíl módhoz. Ugyanez történik akkor is, ha a színválasztó ki-/bekapcsoló gombjára kattintunk. A színválasztó a kiválasztott szín aktuális RGB értékeit mutatja. A színválasztókkal figyelemmel kísérhetjük a kiválasztott színek változását szerkesztés közben.
+Bekapcsolása után egérkattintással helyezhetünk el a kép különböző helyeire színválasztókat, amelyeket az egérrel a kívánt helyre húzhatunk, akár utólag is. A kis kör alakú terület alatti színt választjuk ki segítségével. Egy színválasztót rajta jobb egérgombbal kattintva törölhetünk. Az egyik színválasztón történő Ctrl+Shift+jobb kattintás törli az összes színválasztót. A színválasztókon kívüli területen a jobb egérgombbal kattintva visszatérünk a nyíl módhoz. Ugyanez történik akkor is, ha a színválasztó ki-/bekapcsoló gombjára kattintunk. A színválasztó a kiválasztott szín aktuális RGB értékeit mutatja. A színválasztókkal figyelemmel kísérhetjük a kiválasztott színek változását szerkesztés közben.
 
-A következő a kivágás gomb. Rákattintva az előnézeti képen az egérrel létrehozhatjuk a kivágást, és a jobb oldali panelen a Kivágás eszköz nyílik meg.
+A következő a kivágás gomb. Rákattintva az előnézeten az egérrel létrehozhatjuk a kivágást, és a jobb oldali panelen a Kivágás eszköz nyílik meg.
 
 Ezt követi a vízszintes/függőleges vonal kijelölése gomb. Rákattintva aktivizálódik. Utána rá kell kattintani például a horizont egyik végére, lenyomva tartás mellett végighúzzuk a vonalat, majd amikor a végét is pontosan a kívánt helyre illesztettük, felengedjük az egérgombot. Ha ferde horizonton alkalmazzuk, az ART úgy forgatja el a képet, hogy a horizont vízszintes legyen. Az elforgatás miatt a szükséges részt le is vágja a képről. Függőleges objektum esetén teljesen hasonlóan működik. Segítségével például egy ferdére sikerült tornyot korrigálhatunk.
 
 ![](book-images/74.jpg)  
 *A fényképet a szerző készítette*
 
-A fenti ábrán a horizonton látszik az eszközzel történő kijelölés. Leolvashatjuk annak ferdeségét is fokokban. Az alábbi ábrán láthatjuk az eredményt.
+A fenti ábrán a horizonton látszik az eszközzel történt kijelölés. Leolvashatjuk annak ferdeségét is fokokban. Az alábbi ábrán láthatjuk az eredményt.
 
 ![](book-images/75.jpg)
 
@@ -1332,11 +1367,11 @@ Az eszköztár következő csoportját az alábbi ábrán láthatjuk:
 
 ![](book-images/76.jpg)
 
-A bal oldalon lévő három "kapcsolóval" az előnézeti kép hátterének színét változtathatjuk meg. Lehet fekete, szürke, vagy fehér. Segítségével többféle háttérrel nézhetjük meg, hogy képünk hogyan néz ki. A szerkesztéshez a szürkét célszerű használni.
+A bal oldalon lévő három "kapcsolóval" az előnézet hátterének színét változtathatjuk meg. Lehet fekete, szürke, vagy fehér. Segítségével többféle háttérrel nézhetjük meg, hogy képünk hogyan néz ki. A szerkesztéshez a szürkét célszerű használni.
 
-A jobb oldali négy kapcsolóval az előnézeti kép R, G, és B színcsatornáinak világosságértékeit jeleníthetjük meg, illetve fényerő előnézeti módban tekinthetjük meg a képet. Fekete-fehér képeket látunk, mert a világosságértékek nem a színekről szólnak.
+A jobb oldali négy kapcsolóval az előnézet R, G, és B színcsatornáinak világosságértékeit jeleníthetjük meg, illetve fényerő előnézeti módban tekinthetjük meg a képet. Fekete-fehér képeket látunk, mert a világosságértékek nem a színekről szólnak.
 
-Az egyes csatornák előnézete hasznos lehet az RGB-görbék szerkesztésénél, a fekete-fehér konverzió tervezésénél, a képzaj kiértékelésénél stb. Ha a képen esetleg problémát észlelünk, megtudhatjuk, melyik csatorna levágása okozhatja azt. A fényerősség előnézeti mód segíthet a kép azonnali fekete-fehérben történő megtekintésében a szerkesztési paraméterek megváltoztatása nélkül.
+Az egyes csatornák előnézete hasznos lehet az RGB-görbék szerkesztésénél, a fekete-fehér konverzió tervezésénél, a képzaj kiértékelésénél stb. Ha a képen esetleg problémát észlelünk, megtudhatjuk, melyik csatorna vágása okozhatja azt. A fényerősség előnézeti mód segíthet a kép azonnali fekete-fehérben történő megtekintésében a szerkesztési paraméterek megváltoztatása nélkül.
 
 ![](book-images/77.jpg)
 
@@ -1346,21 +1381,21 @@ Az eszköztár következő csoportját az alábbi ábrán láthatjuk:
 
 ![](book-images/78.jpg)
 
-A bal oldali gomb az expozíciót jeleníti meg hamis színekkel. Ha bekapcsoljuk, akkor a gomb színesre vált, mutatja, hogy milyen expozíciós szinthez milyen szín tartozik az előnézeti képen.
+A bal oldali gomb az expozíciót jeleníti meg hamis színekkel. Ha bekapcsoljuk, akkor a gomb színesre vált, mutatja, hogy milyen expozíciós szinthez milyen szín tartozik az előnézeten.
 
 ![](book-images/79.jpg)
 
-A fenti ábrán a hamis színek IRE értékei láthatók. Az előnézeti képen a különböző fényerősségű értékeket különböző színek jelölik, amelynek az a célja, hogy a kép minden részének expozíciós szintjéről pontos információt kaphassunk.
+A fenti ábrán a hamis színek IRE értékei láthatók. Az előnézeten a különböző fényerősségű értékeket különböző színek jelölik, amelynek az a célja, hogy a kép minden részének expozíciós szintjéről pontos információt kaphassunk.
 
 A fehér szín a feketéket, a vörös szín a csúcsfényeket, a közepes szürke a középszürkét jelképezi.
 
 ![](book-images/80.jpg)
 
-Mellette a fókuszmaszk előnézetének kapcsolója látható. Ha bekapcsoljuk, az előnézeti képen zölddel jelzi a legélesebb területeket. Ajánlatos az előnézeti kép 10-30%-os nagyítása mellett használni.
+Mellette a fókuszmaszk előnézetének kapcsolója látható. Ha bekapcsoljuk, az előnézeten zölddel jelzi a legélesebb területeket. Ajánlatos az előnézet 10-30%-os nagyítása mellett használni.
 
 ![](book-images/81.jpg)
 
-A fókuszmaszk előnézeti képe alapján ne selejtezzünk képet, mert ez arra nem alkalmas, és esetleg olyan képet is leselejtezünk, (törlünk), amely valójában elég éles.
+A fókuszmaszk előnézete alapján ne selejtezzünk képet, mert ez arra nem alkalmas, és esetleg olyan képet is leselejtezünk, (törlünk), amely valójában elég éles.
 
 A következő gombra kattintva az élesítési kontraszt maszkot kapcsolhatjuk be.
 
@@ -1368,17 +1403,17 @@ A következő gombra kattintva az élesítési kontraszt maszkot kapcsolhatjuk b
 
 Ez csak akkor működik, ha az Élesítés szerkesztőeszközt engedélyeztük a Részletek eszközcsoportban. A maszkot az Élesítés eszközben finomítani lehet. A maszk dönti el, hogy a kép mely részleteit érinti az élesítés. A fehér részek lesznek élesítve. Például a szép háttérelmosás homályos területeit nem kell élesíteni, mert ott csak a képzajt emelnénk ki még jobban.
 
-A következő gombra kattintva láthatóvá válnak az alulexponált területek. Kiemeli azokat a területeket, ahol mindhárom színcsatorna értéke a küszöbérték alatti, illetve legfeljebb elérte a küszöbértéket. Az alapértelmezett küszöbérték 8.
+A következő gombra kattintva láthatóvá válnak az alulexponált (vágott) területek. Kiemeli azokat a területeket, ahol mindhárom színcsatorna értéke a küszöbérték alatti, illetve legfeljebb elérte a küszöbértéket. Az alapértelmezett küszöbérték 8.
 
 ![](book-images/83.jpg)
 
 Majdnem három fényértéknyi negatív expozíció-kompenzációt alkalmaztam a képen, hogy be tudjam mutatni a gomb hatását. A fenti ábrán az alulexponált területek fehér foltokkal kerültek kiemelésre.
 
-Végül az utolsó gombra kattintva a túlexponált területeket láthatjuk. Azokat a területeket emeli ki, ahol legalább az egyik színcsatorna értéke elérte vagy meghaladta a küszöbértéket. Az alapértelmezett küszöbérték 253. Ha csak azokat a területeket szeretnénk látni, ahol az összes színcsatorna értéke elérte vagy meghaladta a küszöbértéket, akkor engedélyezni kell a fényerő előnézeti módot is.
+Végül az utolsó gombra kattintva a túlexponált (vágott) területeket láthatjuk. Azokat a területeket emeli ki, ahol legalább az egyik színcsatorna értéke elérte vagy meghaladta a küszöbértéket. Az alapértelmezett küszöbérték 253. Ha csak azokat a területeket szeretnénk látni, ahol az összes színcsatorna értéke elérte vagy meghaladta a küszöbértéket, akkor engedélyezni kell a fényerő előnézeti módot is.
 
 ![](book-images/84.jpg)
 
-Pozitív expozíció-kompenzációt kellett alkalmaznom a képen a hatás bemutatásához. Az ábra bal oldali képén csak a túlexpozíció-jelzőt kapcsoltam be (ez felül látható is). A túlexpozíció-jelző fekete színnel jelzi az előnézeti képen a fenti feltételeknek megfelelő területeket. Ezen a képen fenn az égbolton, a lány vállánál, és a virágokon láthatjuk a fekete foltokat, amelyek azt jelzik, hogy azokon a helyeken legalább az egyik színcsatorna elérte vagy meghaladta a küszöbértéket. A jobb oldali képen engedélyeztem a fényerő előnézeti módot is, ezért csak azokat a helyeket jelzi vörös foltokkal, ahol mindhárom színcsatorna elérte vagy meghaladta a küszöbértéket. Láthatjuk, hogy több helyen csökkent a jelzés területe, csak kisebb területeken érte el vagy haladta meg mindhárom színcsatorna a küszöbértéket. 
+Pozitív expozíció-kompenzációt kellett alkalmaznom a képen a hatás bemutatásához. Az ábra bal oldali képén csak a túlexpozíció-jelzőt kapcsoltam be (ez felül látható is). A túlexpozíció-jelző fekete színnel jelzi az előnézeten a fenti feltételeknek megfelelő területeket. Ezen a képen fenn az égbolton, a lány vállánál, és a virágokon láthatjuk a fekete foltokat, amelyek azt jelzik, hogy azokon a helyeken legalább az egyik színcsatorna elérte vagy meghaladta a küszöbértéket. A jobb oldali képen engedélyeztem a fényerő előnézeti módot is, ezért csak azokat a helyeket jelzi vörös foltokkal, ahol mindhárom színcsatorna elérte vagy meghaladta a küszöbértéket. Láthatjuk, hogy több helyen csökkent a jelzés területe, csak kisebb területeken érte el vagy haladta meg mindhárom színcsatorna a küszöbértéket. 
 
 A küszöbértékek a Beállítások Általános lapján, a Vágás jelzése részben megváltoztathatók.
 
@@ -1394,12 +1429,12 @@ Végül az eszköztár utolsó gombja segítségével a Filmszalagot elrejthetj�
 
 ### <a id="3104"></a> 3\.10\.4 Hisztogram
 
-A jobb oldali panelen felül látható a hisztogram (3). A hisztogram helyén a fő hisztogramon kívül többféle diagramot meg lehet jeleníteni, például hullámforma diagramot, és vektornézet diagramokat. 
+A jobb oldali panelen felül látható a hisztogram (3). A hisztogram helyén a hisztogramon kívül többféle diagramot meg lehet jeleníteni, hullámforma diagramot, és vektornézet diagramokat.
 
 ![](book-images/86.jpg)  
 *Az ART RGB hisztogramja*
 
-1. Fő hisztogram megjelenítése
+1. Hisztogram megjelenítése
 2. Nyers hisztogram megjelenítése (vörös, zöld, és kék színcsatornák, a forrás nyers fájlon történő Színrekonstrukció végrehajtása előtt)
 3. RGB egymás mellett diagram
 4. Hullámforma diagram megjelenítése
@@ -1409,11 +1444,11 @@ A jobb oldali panelen felül látható a hisztogram (3). A hisztogram helyén a 
 8. Vörös színcsatorna megjelenítése/elrejtése
 9. Zöld színcsatorna megjelenítése/elrejtése
 10. Kék színcsatorna megjelenítése/elrejtése
-11. L\*a\*b\* fénysűrűség (L\*) hisztogram megjelenítése/elrejtése
+11. L\*a\*b\* világosság (L\*) hisztogram megjelenítése/elrejtése
 12. Színesség (chromaticity) hisztogram megjelenítése/elrejtése
 13. Váltja a hisztogram lineáris-lineáris, logaritmikus-lineáris, és logaritmikus-logaritmikus skála szerinti megjelenítését
 14. Jelzősáv megjelenítése/elrejtése
-15. Jelzősáv (annak a képpontnak az értékeit mutatja, amelyre az  egérmutató mutat)
+15. Jelzősáv (annak a képpontnak az értékeit mutatja, amelyre az  egérmutató mutat az előnézeten)
 16. Csúcsfényvágásjelző
 17. Árnyékvágásjelző
 18. Bal szélső oszlop, részlettelen feketék
@@ -1425,7 +1460,7 @@ A jobb oldali panelen felül látható a hisztogram (3). A hisztogram helyén a 
 24. Az egérmutató alatt lévő képpont zöld csatornája
 25. Az egérmutató alatt lévő képpont vörös csatornája
 
-#### <a id="31041"></a> 3\.10\.4\.1 Fő hisztogram
+#### <a id="31041"></a> 3\.10\.4\.1 Hisztogram
 
 *A hisztogramon azt láthatjuk, hogy képünk technikai értelemben helyesen exponált-e, valamint mennyire kontrasztos.*
 
@@ -1435,60 +1470,72 @@ A hisztogram egy oszlopdiagram. Szorosan egymás mellett 256 darab függőleges 
 
 A hisztogram a bemeneti kép bitmélységétől (felbontásától) függetlenül mindig 256 oszlopos. A bemeneti kép lehetséges árnyalattartománya mindig 256 részre van osztva, és emiatt egy oszlopban sohasem egy konkrét árnyalatú, hanem egy árnyalattartományba eső képpontok száma látható a hisztogramon.
 
-A bal oldali szélső oszlop jelképezi a legsötétebb árnyalatokat (18), a jobb oldali szélső oszlop a legvilágosabbakat(22), a többi a köztes értékeket. Az egyes oszlopok magassága azzal arányos, hogy az adott világosságú képpontból hányat tartalmaz a kép. Ha nem tartalmaz egyet sem, akkor az az oszlop üres lesz, ha keveset tartalmaz akkor alacsonyabb, ha sokat, akkor magasabb lesz az oszlop.
+A bal oldali szélső oszlop jelképezi a legsötétebb árnyalatokat (18), a jobb oldali szélső oszlop a legvilágosabbakat(22), a többi a köztes értékeket. Az egyes oszlopok magassága azzal arányos, hogy az adott világosságú képpontból hányat tartalmaz a kép. Ha nem tartalmaz egyet sem, akkor az az oszlop üres lesz, ha keveset tartalmaz, akkor alacsonyabb, ha sokat, akkor magasabb lesz az oszlop.
 
-Ha a jobb szélső oszlop (22) nagyon magas, az azt jelenti, hogy nagyon sok képpont maximális világosságértékű, amely a csúcsfények vágására utalhat. A csak maximális világosságértékű képpontokat tartalmazó területek részlettelen fehérek lesznek (kiégett területek). Az csúcsfények vágására figyelmeztet a hisztogram jobb felső sarkában látható Csúcsfényvágásjelző is (16), az ábrán mindhárom csatorna vágását jelzi.
+Ha a jobb szélső oszlop (22) nagyon magas, az azt jelenti, hogy nagyon sok képpont maximális világosságértékű, amely a csúcsfények vágására utalhat. A csak maximális világosságértékű képpontokat tartalmazó területek részlettelen fehérek lesznek (kiégett területek). A csúcsfények vágására figyelmeztet a hisztogram jobb felső sarkában látható Csúcsfényvágásjelző is (16), az ábrán mindhárom csatorna vágását jelzi.
 
 Ha a bal szélső oszlop (18) nagyon magas, az azt jelenti, hogy nagyon sok képpont minimális világosságértékű, amely az árnyékok vágására utalhat. A csak minimális világosságértékű képpontokat tartalmazó területek részlettelen feketék lesznek (bebukott területek). Az árnyékok vágására figyelmeztet a hisztogram bal felső sarkában látható Árnyékvágásjelző is (16), az ábrán a zöld és kék csatorna vágását jelzi.
 
-A legsötétebb, és a legvilágosabb árnyalatok is részei lehetnek a képnek. A problémát az jelenti, ha ezeknek a képpontoknak száma túlságosan nagy, mert az vágásra utalhat. Ha kevés képpontnak van maximális vagy minimális értéke, és nem látunk zavaróan kiégett vagy bebukott területeket a képen, akkor nincs probléma.
+A legsötétebb, és a legvilágosabb árnyalatok is részei lehetnek a képnek. A problémát az jelenti, ha ezeknek a képpontoknak a száma túlságosan nagy, mert az vágásra utalhat. Ha kevés képpontnak van maximális vagy minimális értéke, és nem látunk zavaróan kiégett vagy bebukott területeket a képen, akkor nincs probléma.
 
-Ha a hisztogram diagramján jelentős számban található képpont az első oszlopban is (a diagram "nekifekszik" a hisztogram bal szélének), és a diagram jobb oldala üres, nincsenek azokhoz a világosságértékekhez tartozó képpontok, akkor a kép technikai értelemben alulexponált. Ilyenkor a bal szélső oszlop magassága által reprezentált képrészek részlettelen feketék lesznek. Minél magasabb a szélső oszlop, a kép annál nagyobb része lesz ilyen.
+Ha a hisztogram diagramján jelentős számban található képpont az első oszlopban is (a diagram "nekifekszik" a hisztogram bal szélének), és a diagram jobb oldala üres, nincsenek azokhoz a világosságértékekhez tartozó képpontok, akkor a kép technikai értelemben alulexponált. Ilyenkor a bal szélső oszlopba tartozó képrészek részlettelen feketék lesznek. Minél magasabb a szélső oszlop, a kép annál nagyobb része lesz ilyen.
 
 Ha a diagram "nekifekszik" a hisztogram jobb oldalának, és a bal oldali oszlopok üresek, akkor a kép technikai értelemben túlexponált.
 
 Ha az oszlopok vízszintesen jól kitöltik a hisztogramot, azaz egyaránt vannak a bal szélső oszlophoz és a jobb szélső oszlophoz közeli oszlopok is, akkor képünk kontrasztja nagy. Ha az oszlopok vízszintesen csak a hisztogram egy részét töltik ki, és a kitöltött rész mellett egyik vagy mindkét oldalon a hisztogram széléig csak üres oszlopok vannak, akkor képünk kontrasztja kisebb.
 
+![](book-images/486.jpg)
+
+A fenti ábrán bal oldalon egy kis kontrasztú kép világosság hisztogramját láthatjuk. A nem üres oszlopok a hisztogram közepén helyezkednek el, vízszintesen csak egy kisebb részt foglalnak el. A kép összes képpontja a teljes tónustartománynak egy kisebb tartományában helyezkedik el. A kép kontrasztja kicsi, mert a legsötétebb és legvilágosabb képpontok világosságkülönbsége kicsi (alul az x tengelyen). Az oszlopok magasak, mert a kép összes képpontja a tónusoknak ebben a szűkebb tartományában helyezkedik el.
+
+Az ábrán jobb oldalon a kontraszt megnövelése után kapott hisztogramot láthatjuk. Az oszlopok most már sokkal jobban kitöltik vízszintesen a hisztogramot, a legsötétebb és a legvilágosabb tónus között sokkal nagyobb lett a világosságkülönbség. A képpontok világossága jóval több oszlop között került szétosztásra, ezért egy adott oszlopba tartozó (adott világosságú) képpontok száma kevesebb lett, az oszlopok alacsonyabbak lettek.
+
 Az, hogy milyen világosságú képpontból mennyi található a képen, a lefényképezett témától nagymértékben függ. Sötét téma esetén sok képpontnak lesz kis világosságértéke (magas bal oldali oszlopok), és fordítva. Éppen ezért nincs olyan, hogy "ideális alakú hisztogram". Az lenne az ideális, ha se túlexponált, se alulexponált részek nem lennének, és minden a megszokott vagy a megkívánt világosságú lenne a képen.
 
 Szemünk sokkal inkább elviseli a bebukott (vágott) sötét árnyalatokat, mint a kiégett (vágott) csúcsfényeket, ezért ha választani kell, inkább a kiégett csúcsfényeket kerüljük el.
 
-A Jelzősávon (15) annak a képpontnak az értékeit láthatjuk, amelyre az egérmutató mutat az előnézeti képen. A fenti ábrán RGB hisztogramot láthatunk, a Jelzősáv ennek megfelelően a képpont R (25), G (24), és B (23) világosságértékeinek helyét jelzi. Segítségével például meg tudjuk állapítani, hogy a hisztogramon egy csúcsot a kép mely részei okozzák, hol vannak a kép legsötétebb és legvilágosabb árnyalatai stb.
+A Jelzősávon (15) annak a képpontnak az értékeit láthatjuk, amelyre az egérmutató mutat az előnézeten. A fenti ábrán RGB hisztogramot láthatunk, a Jelzősáv ennek megfelelően a képpont R (25), G (24), és B (23) világosságértékeinek helyét jelzi. Segítségével például meg tudjuk állapítani, hogy a hisztogramon egy csúcsot a kép mely részei okozzák, hol vannak a kép legsötétebb és legvilágosabb árnyalatai stb.
 
 Logaritmikus/Lineáris megjelenítés a (13) gombra kattintva váltható, amely az alábbi háromféle lehet:
 
--   Lineáris-lineáris mód: A hisztogram méretétől függően a rácsvonalak a felénél, negyedénél, nyolcadánál és tizenhatodánál találhatók.
+![](book-images/499.jpg)
 
--   Lineáris-logaritmikus mód: Az x tengely lineáris, az y tengely és a vízszintes rácsvonalak logaritmikus skálázásúak. A rácsvonalak helyzete továbbra is megfelel a feleknek, negyedeknek stb.
+-   Lineáris mód: A függőleges rácsvonalak (x tengely) nem lineáris skálázásúak, hanem fényértékeknek felelnek meg - balról jobbra minden rácsvonallal megduplázódik az érték, ezért van függőleges rácsvonal az 1, 3, 7, 15, 31, 63 és 127 értékeknél. A vízszintes rácsvonalak (y tengely) lineáris skálázásúak.
 
--   Logaritmikus-logaritmikus mód: Mind az x-, mind az y-tengely logaritmikus skálázású. A rácsvonalak nem logaritmikus skálázásúak, hanem fényértékeknek felelnek meg - balról jobbra minden rácsvonallal megduplázódik az érték, ezért van függőleges rácsvonal az 1, 3, 7, 15, 31, 63 és 127 értékeknél.
+![](book-images/500.jpg)
+
+-   Logaritmikus-lineáris mód: Az x tengely és a függőleges rácsvonalak logaritmikus skálázásúak. A vízszintes rácsvonalak (y tengely) lineáris skálázásúak.
+
+![](book-images/501.jpg)
+
+-   Logaritmikus-logaritmikus mód: Mind az x-, mind az y-tengely logaritmikus skálázású.
 
 A háromféle megjelenítési mód közül azt válasszuk, amelynél legjobban áttekinthető a diagram.
 
-A fő hisztogram egyidejűleg a következők közül egyet vagy többet mutathat:
+A hisztogram egyidejűleg a következők közül egyet vagy többet mutathat:
 
 -   Vörös színcsatorna (8)
 -   Zöld színcsatorna (9)
 -   Kék színcsatorna (10)
--   L\*a\*b\* fénysűrűség (L\*) (11)
+-   L\*a\*b\* világosság (L\*) (11)
 -   Színesség (12)
 -   Nyers hisztogram (2)
 
-A fénysűrűség (világosság) hisztogram valóban a hisztogram oszlopait mutatja, a vörös, zöld, kék csatornák, és a színesség diagram nem mutatja az oszlopokat, hanem csak az oszlopok tetejét összekötő színes grafikonvonalakat láthatjuk. 
+A világosság hisztogram valóban a hisztogram oszlopait mutatja. A vörös, zöld, kék csatornák hisztogramjánál, valamint a színesség hisztogramnál nem az oszlopokat láthatjuk, hanem csak az egyes oszlopok tetejét összekötő színes grafikonvonalakat.
 
-A hisztogram a felsorolt diagramokat mutatja a gamma-korrigált kimeneti profil használatával, ha a Színskála gomb le van tiltva (alapértelmezett), vagy a munkaprofil szerint mutatja, ha a gomb engedélyezett. Ennek a gombnak az állapota a Navigátoron megjelenő értékekre, valamint a bebukott árnyékok, és kiégett csúcsfények jelzőire is hatással van. Nincs hatással a nyers hisztogramra.
+A hisztogram a felsorolt diagramokat mutatja a gamma-korrigált kimeneti profil használatával, ha a Színskála gomb le van tiltva (alapértelmezett), vagy a munkaprofil szerint mutatja, ha a gomb engedélyezett. Ennek a gombnak az állapota a Navigátoron megjelenő értékekre, valamint a bebukott árnyékok, és kiégett csúcsfények jelzőire is hatással van, de nincs hatással a nyers hisztogramra.
 
-Az ART csővezetékénél láttuk, hogy a képadatok szerkesztőeszközről szerkesztőeszközre egy irányban áramlanak. A legtöbb szerkesztőeszköz befolyásolja a színadatokat, a kép tónusait. Alapértelmezés szerint a hisztogram a feldolgozás végén megjelenő adatokat jeleníti meg. Az ART-ban lehetséges az Előzmények tetszőleges sorára kattintva, a szerkesztés közbülső állapotaiban is megnézni a hisztogramot. A Színskála gomb engedélyezésével már a korai szakaszban elérhetjük az adatokat, amikor azokat Munkaprofil színterébe konvertálja az ART. A nyers hisztogram segítségével megnézhetjük a Színrekonstrukció alkalmazása előtti nyers adatokat is.
+Az ART csővezetékénél láttuk, hogy a képadatok szerkesztőeszközről szerkesztőeszközre egy irányban áramlanak. A legtöbb szerkesztőeszköz befolyásolja a színadatokat, a kép tónusait. Alapértelmezés szerint a hisztogram a feldolgozás végén megjelenő adatokat jeleníti meg. Az ART-ban lehetséges az Előzmények tetszőleges sorára kattintva, a szerkesztés közbülső állapotaiban is megnézni a hisztogramot. A Színskála gomb engedélyezésével már a korai szakaszban elérhetjük az adatokat, amikor azokat a Munkaprofil színterébe konvertálja az ART. A nyers hisztogram segítségével megnézhetjük a Színrekonstrukció alkalmazása előtti nyers adatokat is.
 
 A nyers hisztogramok a Fekete szint kivonása után mutatják az értékeket. A hisztogram jobb vége a Fehér szinten van rögzítve. A nyers hisztogramokat az észlelt fekete és fehér szintek, valamint a fekete és fehér szint felhasználó által történt beállításai befolyásolják.
 
-A nyers hisztogram vizsgálatakor érdemes a Színrekonstrukció módszert "Nincs (érzékelőmintázatot mutat)" értékre állítani, így nézhetjük meg a Színrekonstrukció alkalmazása előtti adatokat. Ez felfedi az elemi érzékelők előtti színszűrőket az előnézeti képen. Ha nem történik Színrekonstrukció, akkor a nyers hisztogramok a nyers fájl adatai alapján a vörös, a zöld, és a kék színcsatornák adatait mutatják, a nyers fájlon történő Színrekonstrukció végrehajtása előtt. A Színrekonstrukció előtt még nincsenek színek, csak a különböző színű színszűrők alatti elemi érzékelőkből kiolvasott, az exponáláskor az elemi érzékelőt ért fénymennyiséggel arányos értékek vannak. A vörös (Bayer vagy X-Trans) színszűrők alatti elemi érzékelők értékei alkotják a vörös nyers hisztogramot, a zöld színszűrők alattiak értékei a zöld hisztogramot, a kék színszűrők alattiak értékei pedig a kék hisztogramot.
+A nyers hisztogram vizsgálatakor érdemes a Színrekonstrukció módszert "Nincs (érzékelőmintázatot mutat)" értékre állítani, így nézhetjük meg a Színrekonstrukció alkalmazása előtti adatokat. Ez felfedi az elemi érzékelők előtti színszűrőket az előnézeten. Ha nem történik Színrekonstrukció, akkor az R, G, B nyers hisztogramok a nyers fájl adatai alapján a vörös, a zöld, és a kék színcsatornák adatait mutatják, a nyers fájlon történő Színrekonstrukció végrehajtása előtt. A Színrekonstrukció előtt még nincsenek színek, csak a különböző színű színszűrők alatti elemi érzékelőkből kiolvasott, az exponáláskor az elemi érzékelőt ért fénymennyiséggel arányos értékek vannak. A vörös (Bayer vagy X-Trans) színszűrők alatti elemi érzékelők értékei alkotják a vörös nyers hisztogramot, a zöld színszűrők alattiak értékei a zöld hisztogramot, a kék színszűrők alattiak értékei pedig a kék hisztogramot.
 
 Ilyenkor a Navigátor panelen annak a képpontnak a nyers RGB-értékei jelennek meg, amelyre az egérmutató mutat. Ha például zöld szűrő alatti elemi érzékelő adatait nézzük, akkor csak a zöld csatornának van nullától különböző értéke, a másik kettő színcsatorna értéke nulla, és ez így van a vörös vagy kék színszűrők alatti elemi érzékelőknél is. Ezeket az értékeket befolyásolják az észlelt fekete-fehér szintek, valamint a felhasználó által az ART-ban végzett feketeszint-beállítások, de nem befolyásolják a felhasználó által az ART-ban végzett fehérszint-beállítások (fehérpont-korrekciók).
 
 ![](book-images/87.jpg)
 
-A fenti ábrán azt láthatjuk, hogy a Raw eszközcsoportban a Színrekonstrukció módszert a "Nincs (érzékelőmintázatot mutat)" kiválasztásával kikapcsoltam, és az előnézeti képet felnagyítottam 1600x-osra. Az alábbi megállapításokat tehetjük ezzel kapcsolatban:
+A fenti ábrán azt láthatjuk, hogy a Raw eszközcsoportban a Színrekonstrukció módszert a "Nincs (érzékelőmintázatot mutat)" kiválasztásával kikapcsoltam, és az előnézetet felnagyítottam 1600x-osra. Az alábbi megállapításokat tehetjük ezzel kapcsolatban:
 
 -   Közvetlenül a nyers fájl adatait láthatjuk.
 -   Láthatóvá vált a Bayer-féle színszűrő mintázata, az ábrán a vörös, zöld, és kék színszűrők ugyanúgy helyezkednek el a képpontok előtt, ahogyan a képérzékelő elemi érzékelői előtt elhelyezkedtek a felvétel elkészítésekor.
@@ -1496,7 +1543,7 @@ A fenti ábrán azt láthatjuk, hogy a Raw eszközcsoportban a Színrekonstrukci
 -   Az elemi érzékelő csak az előtte lévő színszűrő szerinti színt érzékelte, és a érzékelt fénymennyiséggel arányos jel volt kiolvasható belőle. Ezt a kiolvasott értéket digitalizált formában tárolja minden egyes képpont tekintetében a nyers fájl.
 -   Az ábrán az egérmutató egy olyan képpontra mutat, amely előtt kék szűrő volt, és ebből azt is lehet tudni, hogy a nyers fájlban ehhez a képponthoz tárolt érték a kék csatorna értéke. A Navigátoron látható is, hogy a kék csatorna 220 értékű, a másik két csatorna értéke nulla.
 -   A nyers RGB hisztogram a vörös, zöld, és kék szűrővel rendelkező képpontok R, G, B értékeit ábrázolja (a másik két csatorna értéke mindig nulla) (az ábrán a hisztogram nem látható).
--   Az előnézeti képen az egyes képpontok a nyers fájlban tárolt világosságértékükkel arányos világosságú vörös, zöld, vagy kék színnel jelennek meg. A navigátoron láthatjuk, hogy az előnézeti kép zöld színű. Ez azért van, mert kétszer annyi zöld szűrő van, mint vörös, vagy kék.
+-   Az előnézeten az egyes képpontok a nyers fájlban tárolt világosságértékükkel arányos világosságú vörös, zöld, vagy kék színnel jelennek meg. A navigátoron láthatjuk, hogy az előnézet zöld színű. Ez azért van, mert kétszer annyi zöld szűrő van, mint vörös, vagy kék.
 
 #### <a id="31042"></a> 3\.10\.4\.2 A kép és hisztogramja
 
@@ -1527,31 +1574,33 @@ Ez a felvétel technikai értelemben jól exponált, a bal és a jobb szélső o
 ![](book-images/93.jpg)  
 *A fényképet a szerző készítette*
 
-A téma vízszintesen majdnem teljesen kitölti a hisztogramot, tehát a kontraszt nagy. A fényerő hisztogram alapján úgy tűnik, hogy hogy a kép nincs túlexponálva.
+A téma vízszintesen majdnem teljesen kitölti a hisztogramot, tehát a kontraszt nagy. A fényerő hisztogram alapján úgy tűnik, hogy a kép nincs túlexponálva.
 
 ![](book-images/94.jpg)
 
-Az ART azonban feketével jelzi a kiégett (túlexponált) területeket. Meglepően sok van belőlük. Ilyenkor meg kell nézni a kép egyes színcsatornáit.
+Az ART azonban feketével jelzi a kiégett (túlexponált, vágott) területeket. Meglepően sok van belőlük. Ilyenkor meg kell nézni a kép egyes színcsatornáit.
 
 ![](book-images/95.jpg)
 
-A zöld és a kék színcsatornánál nincs probléma. A fenti ábrán a vörös színcsatornát láthatjuk. Itt van a probléma, amelyet a vörös színcsatorna túlexpozíciója okoz. A vörös színcsatorna túlexponált területeit vörös színnel jelzi az ART. Ha valamely színcsatorna túlexponálódott, akkor a túlexponált területeken színeltolódást tapasztalhatunk. Nézzük meg, hogy miben nyilvánul ez meg. A legelöl lévő nagy virágon sok túlexponált terület van, a mögötte lévő kis virágon alig van ilyen.
+A zöld és a kék színcsatornánál nincs probléma. A fenti ábrán a vörös színcsatornát láthatjuk. Itt van a probléma, amelyet a vörös színcsatorna túlexpozíciója (vágása) okoz. A vörös színcsatorna túlexponált területeit vörös színnel jelzi az ART. Ha valamely színcsatorna túlexponálódott, akkor a túlexponált területeken színeltolódást tapasztalhatunk. Nézzük meg, hogy miben nyilvánul ez meg. A legelöl lévő nagy virágon sok túlexponált terület van, a mögötte lévő kis virágon alig van ilyen.
 
 ![](book-images/96.jpg)
 
-Nézzük meg a fenti ábrán ezt a két virágot. Azt láthatjuk, hogy a nagy virág színe a túlexponált részeken fakóbb, kevésbé erőteljes narancssárga, míg a mögötte lévő nem túlexponált kis virágon erőteljesebb, sötétebb. Ugyanez megfigyelhető a bal oldali virágokon is. Azokon a területeken, ahol az előző ábrán vörössel jelölt terület van, ott ezen az ábrán a virágszirom világosabb, fakóbb, közvetlen mellette, ahol már az előző képen nincs vörös jelzés, ott ezen a képen a szín erőteljesebb, kevésbé fakó. Ezt a színeltolódást eredményezte a vörös csatorna túlexponáltsága.
+Nézzük meg a fenti ábrán ezt a két virágot. Azt láthatjuk, hogy a nagy virág színe a túlexponált részeken fakóbb, kevésbé erőteljes narancssárga, míg a mögötte lévő nem túlexponált kis virágon erőteljesebb, sötétebb. Ugyanez megfigyelhető a bal oldali virágokon is. Azokon a területeken, ahol az előző ábrán vörössel jelölt terület található, ott ezen az ábrán a virágszirom világosabb, fakóbb, közvetlen mellette, ahol már az előző képen nincs vörös jelzés, ott a szirom színe erőteljesebb, kevésbé fakó. Ezt a színeltolódást eredményezte a vörös csatorna túlexponáltsága, vágása.
 
-Ezen a képen láthatjuk, hogy ha a fénysűrűség hisztogram mellett megjelenítjük a három színcsatorna hisztogramját is, akkor láthatjuk a túlexpozíciót, hiszen a vörös csatorna grafikonja a jobb szélen nagyon magasra tör.
+Ezen a képen láthatjuk, hogy ha a világosság hisztogram mellett megjelenítjük a három színcsatorna hisztogramját is, akkor láthatjuk a túlexpozíciót, hiszen a vörös csatorna grafikonja a jobb szélen nagyon magasra tör.
 
-Ennek a képnek a hisztogramján megfigyelhetjük, hogy nemcsak a vörös színcsatorna magas a jobb szélső oszlopban, hanem a hisztogram bal szélénél a kék színcsatorna is igencsak magas, azaz vannak a kék színcsatorna szempontjából alulexponált képpontok nem is kis számban. Ebből arra következtethetünk, hogy hiába nem mutatott a fénysűrűség hisztogram se túl- se alulexpozíciót, a kék és a vörös színcsatornát tekintve ezen a képen vágás történik. Ez katasztrofális hibát nem okoz, azonban némi színeltolódást eredményez a kép bizonyos részein.
+Ennek a képnek a hisztogramján megfigyelhetjük, hogy nemcsak a vörös színcsatorna magas a jobb szélső oszlopban, hanem a hisztogram bal szélénél a kék színcsatorna is igencsak magas, azaz vannak a kék színcsatorna szempontjából alulexponált, vágott képpontok nem is kis számban.
 
-#### <a id="31043"></a> 3\.10\.4\.3 Az előnézeti kép, a Navigátor és a Hisztogram együttműködése
+Arra következtethetünk, hogy hiába nem mutatott a világosság hisztogram se túl- se alulexpozíciót, a kék és a vörös színcsatornát tekintve ezen a képen vágás történik. Ezt a színcsatornánkénti hisztogramon tudjuk jól megfigyelni. A vágás katasztrofális hibát nem okoz, azonban színeltolódást eredményez a kép bizonyos részein.
 
-Nézzük meg az előnézeti kép, a Navigátor és a Hisztogram együttműködését.
+#### <a id="31043"></a> 3\.10\.4\.3 Az előnézet, a Navigátor és a Hisztogram együttműködése
+
+Nézzük meg az előnézet, a Navigátor és a Hisztogram együttműködését.
 
 ![](book-images/97.jpg)
 
-A fenti ábrán látható esetben az R, G, B színcsatornák hisztogramja, és a fényerő hisztogram kijelzése is be van kapcsolva. A bal oldalon a hisztogram alatt sárga nyíl mutatja a jelzősávot, amelyen jelen esetben négy kis vonalat látunk, egy vöröset, egy zöldet, egy kéket és egy fehéret. Az egérmutatót az előnézeti kép egy pontjára állítottam, amelyet piros nyíl mutat. A Navigátor ennek a pontnak az adatait jelzi ki, többek között az adott pontra vonatkozó R, G, B színcsatornák értékeit, a HSV, és az L\*a\*b\* értékeket, amelyek közül az L\* az adott pont világosságának értéke. A hisztogramon 256 oszlop jeleníthető meg. A vörös, zöld, és kék csatorna az RGB értékek szerinti helyen jelenik meg a jelzősávon. Az L\* esetében 0 a minimum érték, és a 100-at tekinthetjük maximumnak. Ezt figyelembe véve jelenik meg a jelzősávon az L\* értékét jelképező fehér vonalka.
+A fenti ábrán az R, G, B színcsatornák hisztogramja, és a fényerő hisztogram kijelzése is be van kapcsolva. A bal oldalon a hisztogram alatt sárga nyíl mutatja a jelzősávot, amelyen jelen esetben négy kis vonalat látunk, egy vöröset, egy zöldet, egy kéket és egy fehéret. Láthatjuk az egérmutatót az, amelyet az előnézeten a sárga virágra állítottam. A Navigátor ennek a pontnak az adatait jelzi ki, többek között az adott pontra vonatkozó R, G, B színcsatornák értékeit, az LCH, és az L\*a\*b\* értékeket, amelyek közül az L\* az adott pont világosságának értéke. A hisztogramon 256 oszlop jeleníthető meg. A vörös, zöld, és kék csatorna az RGB értékek szerinti helyen jelenik meg a jelzősávon. Az L\* legkisebb értéke 0, legnagyobb értéke 100. Ezt figyelembe véve jelenik meg a jelzősávon az L\* értékét jelképező fehér vonalka.
 
 Ne feledjük, hogy a Színskála gomb állapota befolyásolja az eredményt. Ha kikapcsolt állapotban van, akkor gamma-korrigált kimeneti profil szerinti adatok jelennek meg a Hisztogramon és a Navigátor modulon, ha engedélyezzük, akkor pedig a munkaprofil szerinti adatok.
 
@@ -1566,14 +1615,14 @@ A hullámforma diagram a kép vízszintes oldalán elfoglalt helyének függvén
 ![](book-images/98.jpg)
 
 1. x tengely: a kép vízszintes oldala. A diagram bal szélén a kép bal széle, a jobb szélénél a kép jobb széle van ábrázolva.
-2. y tengely: világosságértékek. Alul a feketék, felül a legvilágosabb tónusok vannak ábrázolva.
+2. y tengely: világosságértékek. Alul a feketék, felül a legvilágosabb tónusok helyezkednek el.
 3. Jelzősáv
 4. A csúszka a diagram fényerejét szabályozza.
 5. Vágott területek a kép jobb szélénél.
 
 *A diagram egyes pontjainak fényessége az adott helyen (x tengely) lévő, adott világosságú (y tengely) képpontok darabszámával arányos.*
 
-A hullámforma diagramon láthatunk néhány szaggatott vízszintes vonalat. Ezek az 1, 3, 7, 15, 31, 63 és 127 értékeket jelentik (ezek ugyanazok, mint a hisztogram függőleges szaggatott vonalai).
+A hullámforma diagramon láthatunk néhány szaggatott vízszintes vonalat. Ezek az 1, 3, 7, 15, 31, 63 és 127 értékeket jelentik (ezek ugyanazok, mint a hisztogram függőleges szaggatott vonalai). Ezek fényértékeknek felelnek meg, azért feleződnek/duplázódnak az értékek.
 
 A fenti ábrán be volt kapcsolva mindhárom színcsatorna és a fényerő (világosság) kijelzése is.
 
@@ -1581,19 +1630,19 @@ Az alábbi ábrán az **RGB egymás mellett** diagramon láthatjuk ugyanezt. Min
 
 ![](book-images/99.jpg)
 
-Mind a négy diagramocska jobb felső szélénél jól megfigyelhetjük a kép jobb széle közelében lévő túlexponált területet. Mindhárom színcsatorna túlexponált, azaz jelen esetben levágott. Azt, hogy történt-e vágás, elsősorban a maximálisan fehér képpontok számából állapíthatjuk meg. A maximális világosságú fehér is lehet a kép része, hiszen az ugyanolyan szín, mint a többi. Ha kevés ilyen képpont van, az nem probléma. Ha sok ilyen képpont van, illetve nagy területek ilyenek, mint a fenti ábrán, azt mindenképpen vágás okozza.
+Mind a négy diagram jobb felső szélénél jól megfigyelhetjük a kép jobb szélénél lévő túlexponált területet. Mindhárom színcsatorna túlexponált, azaz jelen esetben levágott. Azt, hogy történt-e vágás, elsősorban a maximálisan fehér képpontok számából állapíthatjuk meg. A maximális világosságú fehér is lehet a kép része, hiszen az ugyanolyan szín, mint a többi. Ha kevés ilyen képpont van, az nem probléma. Ha sok ilyen képpont van, illetve nagy területek ilyenek, mint a fenti ábrán, azt mindenképpen vágás okozza.
 
 ![](book-images/100.jpg)
 
-A diagram jobb felső sarkában a fehér vízszintes vonal a kép jobb felső sarkában lévő égbolt kiégettségét (vágását) jelzi.
+Ennek a képnek a hullámforma diagramjait láttuk a fenti ábrákon. A diagram jobb felső sarkában a fehér vízszintes vonal a kép jobb felső sarkában lévő égbolt kiégettségét (vágását) jelzi.
 
 #### <a id="31046"></a> 3\.10\.4\.6 Vektornézet diagramok
 
-A vektornézet diagram a képpontok színeinek grafikus ábrázolása. Minden képpont fehér pontként jelenik meg a diagramon, és a színezetének és telítettségének megfelelő pozícióban látható. Minél világosabbak a pontok, annál több képpont van a képen olyan színezetű, olyan telítettségű képpontokból. A diagram fehér pontjai minél közelebb helyezkednek el a külső körvonalhoz, annál telítettebb a szín. A kimeneti színprofil (a mentésre kerülő kép színei) alapján történik a kiszámítása.
+A vektornézet diagram a képpontok színeinek grafikus ábrázolása. Minden képpont fehér pontként jelenik meg a diagramon, és a színezetének és telítettségének megfelelő pozícióban látható. Minél fényesebbek a pontok, annál több képpont van a képen olyan színezetű, olyan telítettségű képpontokból. A diagram fehér pontjai minél közelebb helyezkednek el a külső körvonalhoz, annál telítettebb a szín. A kimeneti színprofil (a mentésre kerülő kép színei) alapján történik a kiszámítása.
 
 A HSL és az LCH közötti különbség az, hogy az utóbbi a színeket olyan módon ábrázolja, amely közelebb áll ahhoz, ahogy mi látjuk őket.
 
-Ha az előnézeti kép egy pontja fölé helyezzük az egérmutatót, akkor láthatjuk, hogy az a pont a diagramon hol helyezkedik el.
+Ha az előnézet egy pontja fölé helyezzük az egérmutatót, akkor láthatjuk, hogy az a pont a diagramon hol helyezkedik el.
 
 **Színezet-telítettség vektornézet**
 
@@ -1605,7 +1654,7 @@ A HSL színmodell alapján mutatja a képpontok színezetét, telítettségét. 
 
 ![](book-images/102.jpg)
 
-Az LCH színtér alapján (érzékelésünknek megfelelően) mutatja a képpontok színezetét, színességét. A színesség a telítettséghez hasonló fogalom. A szaggatott vonalú körök 32, 64, 128, és 256 értékű színességet jeleznek.
+Az LCH színtér alapján (érzékelésünknek megfelelően) mutatja a képpontok színezetét, színességét. A szaggatott vonalú körök 32, 64, 128, és 256 értékű színességet jeleznek.
 
 ### <a id="3105"></a> 3\.10\.5 Feldolgozási profilok panel
 
@@ -1617,7 +1666,7 @@ A feldolgozási profilok panel lehetővé teszi a feldolgozási profilok részle
 
 ### <a id="3106"></a> 3\.10\.6 Szerkesztőeszközök csoportjai
 
-Az ART-ban a szerkesztőeszközök funkciójuk szerint csoportosítva vannak. A feldolgozási profilok alatt lévő gombokkal (7) a szerkesztőeszközök csoportjai között válthatunk. Ha rákattintunk az egyikre, akkor az alatta lévő ablakban ("lapon") (8) jelennek meg a csoporthoz tartozó szerkesztőeszközök.
+Az ART-ban a szerkesztőeszközök funkciójuk szerint csoportosítva vannak. A feldolgozási profilok panel alatt lévő gombokkal (7) a szerkesztőeszközök csoportjai között válthatunk. Ha rákattintunk az egyikre, akkor az alatta lévő ablakban ("lapon") (8) jelennek meg a csoporthoz tartozó szerkesztőeszközök.
 
 ![](book-images/104.jpg)
 
@@ -1627,12 +1676,11 @@ A könyv 4. fejezete részletesen szól a szerkesztőeszközök csoportjairól, 
 
 ### <a id="3107"></a> 3\.10\.7 Szerkesztőeszközök fejléce
 
-Az ART számos szerkesztőeszközt kínál. Ezek a jobb oldali panelen találhatók, funkciójuk szerint csoportosítva. A legtöbb eszközt aktiválni (bekapcsolni) kell, mert enélkül hatástalanok. Vannak olyan eszközök, amelyek mindig aktívak, mert mindig szükség van rájuk, ezeket ki sem lehet kapcsolni. A modul fejlécének bal szélén található bekapcsoló gombra kattintva kapcsolhatjuk be vagy ki a szerkesztőeszközt.
+Az ART számos szerkesztőeszközt kínál. Ezek a jobb oldali panelen találhatók, funkciójuk szerint csoportosítva. A legtöbb eszközt be kell kapcsolni (aktiválni) kell, mert enélkül hatástalanok. Vannak olyan eszközök, amelyek mindig aktívak, mert mindig szükség van rájuk, ezeket ki sem lehet kapcsolni. A modul fejlécének bal szélén található bekapcsoló gombra kattintva kapcsolhatjuk be vagy ki a szerkesztőeszközt.
 
-![](book-images/105.jpg)  
-*Az élesítés eszköz fejléce*
+![](book-images/105.jpg)
 
-A fenti ábrán az Élesítés eszköz fejlécét láthatjuk bekapcsolt állapotban. A bekapcsoló gomb mellett a szerkesztőeszköz neve található. Jobb oldalon az 1:1 ikon azt jelzi, hogy ennek az eszköznek a hatása csak akkor látható jól az előnézeti képen, ha annak nagyítása legalább 100%. Természetesen nem feltétlenül kell az egész képet ennyire felnagyítani, az is elég, ha legalább 100%-os nagyítású Részletablakot helyezünk el a kép számunkra fontos pontjaira. Ennek gombja az alsó eszköztáron található.
+A fenti ábrán az Élesítés eszköz fejlécét láthatjuk bekapcsolt állapotban. Ha az eszköz nincs bekapcsolva, akkor a fejlécén lévő feliratok és gombok halványan jelennek meg. A bekapcsoló gomb mellett a szerkesztőeszköz neve található. Jobb oldalon az 1:1 ikon azt jelzi, hogy ennek az eszköznek a hatása csak akkor látható jól az előnézeten, ha annak nagyítása legalább 100%. Természetesen nem feltétlenül kell az egész képet ennyire felnagyítani, az is elég, ha legalább 100%-os nagyítású Részletablakot helyezünk el a kép számunkra fontos pontjaira. Ennek gombja az alsó eszköztáron található. A fejléc jobb szélén a visszaállítás gombot láthatjuk.
 
 Ha egy szerkesztőeszköz nevére kattintunk, akkor lenyitjuk azt, kezelőszervei láthatóvá válnak. Ha jobb egérgombbal kattintunk egy eszköz nevére, akkor úgy nyílik le az eszköz, hogy az adott csoportban lévő többi lenyitott eszköz összecsukódik, és csak az az egy lesz nyitva. Ha lenyitunk egy eszközt, attól az még nem aktiválódik, nem kapcsolódik be.
 
@@ -1644,7 +1692,7 @@ A Navigátor alatt az Előzményeket (4) láthatjuk. Minden egyes szerkesztési 
 
 ### <a id="3109"></a> 3\.10\.9 Pillanatképek
 
-Az előzmények alatt a Pillanatképeket (9) láthatjuk. Pillanatképet a szerkesztés bármely pillanatában készíthetünk, ha a Pillanatképeknél látható "+" gombra kattintunk. A kiválasztott pillanatképet a mellette lévő "-" gombra kattintva törölhetjük. A pillanatképeket előtte/utána nézetben (ha bekapcsoljuk a felső eszköztáron), vagy az előnézeti kép helyén nézhetjük meg. A pillanatképek a kísérőfájlban eltárolásra kerülnek, ezért ha később ismét megnyitjuk szerkesztésre a képet, ismét rendelkezésre állnak.
+Az előzmények alatt a Pillanatképeket (9) láthatjuk. Pillanatképet a szerkesztés bármely pillanatában készíthetünk, ha a Pillanatképeknél látható "+" gombra kattintunk. A kiválasztott pillanatképet a mellette lévő "-" gombra kattintva törölhetjük. A pillanatképeket előtte/utána nézetben (ha bekapcsoljuk a felső eszköztáron), vagy az előnézet helyén nézhetjük meg. A pillanatképek a kísérőfájlban eltárolásra kerülnek, ezért ha később ismét megnyitjuk szerkesztésre a képet, ismét rendelkezésre állnak.
 
 ### <a id="31010"></a> 3\.10\.10 Filmszalag
 
@@ -1654,7 +1702,7 @@ A Filmszalagon egyszerre több képet is kijelölhetünk, amelyekre egyszerre al
 
 ### <a id="31011"></a> 3\.10\.11 Alsó eszköztár
 
-Az alsó eszköztár (11) gombjai segítségével számos hasznos funkciót kapcsolhatunk be-/ki.
+Az alsó eszköztár (11) gombjai segítségével számos hasznos funkció áll rendelkezésünkre.
 
 ![](book-images/107.jpg)
 
@@ -1666,23 +1714,23 @@ Ha az Aktuális kép mentését választjuk, akkor az alábbi ábrán látható 
 
 ![](book-images/108.jpg)
 
-Az alapértelmezett értékek általában megfelelnek, csak indokolt esetben változtassunk rajtuk. Ha szeretnénk, akkor választhatunk más Fájlformátumot. A 92-es JPEG minőség jó minőséget jelent elfogadható fájlméret mellett. Az Almintavételezés lehetőségnél indokolt esetben választhatjuk a Legjobb minőséget, de ez a feldolgozási idő növekedését vonja maga után. A "Feldolgozási paraméterek mentése a kép mellé" lehetőséget ajánlatos bejelölni. Az Alkalmazza a következő profilt az exportálásnál opció engedélyezésével választhatunk egy saját profilt is az exportáláshoz. Ilyen lehet például egy általunk készített, a képet átméretező profil. A jobb oldalon választhatunk, hogy azonnal menteni szeretnénk a képet, vagy a Feldolgozási sor elejére vagy a végére szeretnénk helyezni. Az "Utótag automatikus hozzáadása, ha a fájl már létezik" lehetőséget nagyon ajánlatos bejelölni, mert ezzel megakadályozzuk, hogy egy már előzőleg mentett képet felülírhassunk.
+Az alapértelmezett értékek általában megfelelnek, csak indokolt esetben változtassunk rajtuk. Ha szeretnénk, akkor választhatunk más Fájlformátumot. A 92-es JPEG minőség jó minőséget jelent elfogadható fájlméret mellett. Az Almintavételezés lehetőségnél indokolt esetben választhatjuk a Legjobb minőséget, de ez a feldolgozási idő növekedését vonja maga után. A Feldolgozási paraméterek mentése a kép mellé lehetőséget ajánlatos bejelölni. Az Alkalmazza a következő profilt az exportálásnál opció engedélyezésével választhatunk egy saját profilt is az exportáláshoz. Ilyen lehet például egy általunk készített, a képet átméretező profil. A jobb oldalon választhatunk, hogy azonnal menteni szeretnénk a képet, vagy a Feldolgozási sor elejére vagy a végére szeretnénk helyezni. Az "Utótag automatikus hozzáadása, ha a fájl már létezik" lehetőséget nagyon ajánlatos bejelölni, mert ezzel megakadályozzuk, hogy egy már előzőleg mentett képet felülírhassunk.
 
-Az Aktuális kép mentése ablak alapértelmezés szerint azt a helyet nyitja meg, ahová a legutóbbi használatakor mentettünk. A forrásképet tartalmazó mappa automatikusan hozzáadódik a mentés ablak bal oldalán található könyvjelzők panelhez (a fenti ábrán az "idegen képek" mappa). Ha a képet a forrásmappába szeretnénk menteni, csak a könyvjelzőre kell kattintani.
+Az Aktuális kép mentése ablak alapértelmezés szerint azt a helyet nyitja meg, ahová a legutóbbi használatakor mentettünk. A forrásképet tartalmazó mappa automatikusan hozzáadódik a mentés ablak bal oldalán található könyvjelzőkhöz (a fenti ábrán az "idegen képek" mappa). Ha a képet a forrásmappába szeretnénk menteni, csak a könyvjelzőre kell kattintani.
 
-Az Aktuális kép mentése funkciónak nemcsak a kép azonnali mentése szempontjából van fontos szerepe. Segítségével úgy helyezhetünk a Feldolgozási sor elejére vagy végére képet, hogy azt ne az ott érvényben lévő beállításokkal dolgozza fel az ART, hanem az itt megadottakkal. Ez azt jelenti, hogy például a kötegelt feldolgozási sorban 8 bites JPEG fájl előállítása van beállítva, ebben az ablakban az aktuális képre vonatkoztatva beállíthatunk például TIFF (16-bit) fájlformátumot, és az almintavételezésnél akár Legjobb minőséget is. Amit itt beállítunk, az a feldolgozási sorban erre a képre érvényesülni fog.
+Az Aktuális kép mentése funkciónak nemcsak a kép azonnali mentése szempontjából van fontos szerepe. Segítségével úgy helyezhetünk a Feldolgozási sor elejére vagy végére képet, hogy azt ne az ott érvényben lévő beállításokkal dolgozza fel az ART, hanem az itt megadottakkal. Ez azt jelenti, hogy például a Feldolgozási sorban 8 bites JPEG fájl előállítása van beállítva, ebben az ablakban az aktuális képre vonatkoztatva beállíthatunk például TIFF (16-bit) fájlformátumot, és az almintavételezésnél akár Legjobb minőséget is. Amit itt beállítunk, az a feldolgozási sorban erre a képre érvényesülni fog.
 
-Az Aktuális kép mentése gombja melletti sáv jelzi, hogy az aktuális folyamat (például az előnézeti kép frissítése) hol tart.
+Az Aktuális kép mentése gombja melletti sáv jelzi, hogy az előnézet frissítése hol tart.
 
 ![](book-images/109.jpg)
 
-A legördülő listából monitorunk színprofilját választhatjuk ki. Ha kalibrált monitorral dolgozunk, és rendelkezésre áll annak színprofilja, akkor kiválaszthatjuk azt, és így pontos, színhelyes előnézeti képet kapunk.
+A legördülő listából monitorunk színprofilját választhatjuk ki. Ha kalibrált monitorral dolgozunk, és rendelkezésre áll annak színprofilja, akkor kiválaszthatjuk azt, és így pontos, színhelyes előnézetet kapunk.
 
-A Beállítások > Színkezelés lapon "A monitor színprofiljait tartalmazó könyvtár"-nál kell kiválasztani a monitor színprofiljait tartalmazó könyvtárat.
+A Beállítások > Színkezelés lapon "A monitor színprofiljait tartalmazó könyvtár"-nál kell beállítani a monitor színprofiljait tartalmazó könyvtárat.
 
 Mellette Megjelenítési szándékot választhatunk. A Relatív kolorimetrikus lehetőséget válasszuk (hacsak nincs komoly okunk másik választására).
 
-A következő gombra kattintva engedélyezhetjük a Soft proofing előnézetet. Ez egy módja annak, hogy megbecsüljük, hogyan fog kinézni a kép, ha egy másik adathordozón (pl. egy másik monitoron vagy kinyomtatva) jelenik meg. Tehát a Soft proofing a megjelenítő közeg színprofiljára vonatkozik, nem a kimeneti képre.
+A következő gombra kattintva engedélyezhetjük a Soft proofing előnézetet. Ez egy módja annak, hogy megbecsüljük, hogyan fog kinézni a kép, ha egy másik adathordozón (pl. egy másik monitoron vagy kinyomtatva) jelenik meg. Tehát a Soft proofing a megjelenítő közeg színprofiljára vonatkozik, nem a kimeneti képre. Az, hogy milyennek érzékelünk egy képet (nyomatot), függ annak megvilágításától, a megvilágító fény színhőmérsékletétől, a kép hátterének, környezetének színétől stb. A Soft proofing segít abban, hogy úgy állíthassuk be a kép paramétereit, hogy az adott környezetben (pl. egy kiállításon) a legjobb látvány legyen az eredmény.
 
 A következő gomb bekapcsolása kiemeli a színtartományon (gamuton) kívüli színű képpontokat. Ha a Soft proofing engedélyezve van, akkor Soft proofing színprofilján kívül eső színeket jelzi, ha nincs engedélyezve, akkor a kimeneti színprofilon kívül esőket.
 
@@ -1696,11 +1744,11 @@ A következő gombra kattintás a Filmszalagon középen jeleníti meg az éppen
 
 A következő gomb a szerkesztésre megnyitott képhez képest a következő képet nyitja meg szerkesztésre.
 
-A következő gombcsoporttal megváltoztathatjuk az előnézeti kép nagyítását.
+A következő gombcsoporttal megváltoztathatjuk az előnézet nagyítását.
 
 ![](book-images/111.jpg)
 
-Az első és második gomb kicsinyíti, illetve nagyítja az előnézeti képet, a következő a képernyőhöz (rendelkezésre álló helyhez) igazítja, végül az utolsó gombra kattintva 100%-os nagyításban, teljes (1:1) méretben tekinthetjük meg az előnézetet. Vannak olyan feldolgozóeszközök, amelyeknek hatása csak akkor látható jól az előnézeti képen, ha annak nagyítása legalább 100%. Ezek elsősorban a Részletek csoportban találhatók. Minden ilyen eszköz fejlécének jobb oldalán 1:1 ikon jelzi ezt.
+Az első és második gomb kicsinyíti, illetve nagyítja az előnézetet, a következő a képernyőhöz (rendelkezésre álló helyhez) igazítja, végül az utolsó gombra kattintva 100%-os nagyításban, teljes (1:1) méretben tekinthetjük meg az előnézetet. Vannak olyan feldolgozóeszközök, amelyeknek hatása csak akkor látható jól az előnézeten, ha annak nagyítása legalább 100%. Ezek elsősorban a Részletek csoportban találhatók. Minden ilyen eszköz fejlécének jobb oldalán 1:1 ikon jelzi ezt.
 
 A gombok mellett az aktuális nagyítás mértéke látható százalékban megadva.
 
@@ -1708,25 +1756,25 @@ A következő gombra kattintva egy új Részletablakot helyezhetünk el a képen
 
 ![](book-images/112.jpg)
 
-Ha rákattintunk a gombra, akkor egy piros keret jelenik meg, és megnyílik egy kis Részletablak, amelyben az előnézeti kép piros keretben lévő részletét láthatjuk 100% nagyításban. A piros keretet az egérrel a kép bármely részére húzhatjuk, és a Részletablakot is a fejlécénél fogva a középső panelen tetszőleges helyre mozgathatjuk. A képet a Részletablakban is mozgathatjuk, ha megragadjuk az egérrel. A Részletablakok fejlécében három gombot láthatunk: a nagyítást csökkenthetjük, növelhetjük, illetve 1:1 arányú (100%-os) nagyítást állíthatunk be, és természetesen 100%-nál nagyobb nagyítást is beállíthatunk. Ezeknek a Részletablakoknak az az elsődleges céljuk, hogy azoknak a szerkesztőeszközöknek a hatását, amelyek hatása csak legalább 100% nagyítás esetén látható jól az előnézeti képen, egyidejűleg a kép több részletén is megfigyelhessük (gondoljunk például az élesítés eszköz hatásának megfigyelésére). Tehát nem feltétlenül kell a teljes előnézeti képet 100%-ra nagyítani, elegendő ha elhelyezünk néhány Részletablakot. Mindig ahhoz a Részletablakhoz tartozó kis piros keret látható a képen, amely aktív (amelyre rákattintottunk). A Navigátor színértékjelzői akkor is működnek, ha Részletablakok felett van az egérmutató.
+Ha rákattintunk a gombra, akkor egy piros keret jelenik meg, és megnyílik egy kis Részletablak, amelyben az előnézet piros keretben lévő részletét láthatjuk 100% nagyításban. A piros keretet az egérrel a kép bármely részére húzhatjuk, és a Részletablakot is a fejlécénél fogva a középső panelen tetszőleges helyre mozgathatjuk. A képet a Részletablakban is mozgathatjuk, ha megragadjuk az egérrel. A Részletablakok fejlécében három gombot láthatunk: a nagyítást csökkenthetjük, növelhetjük, illetve 1:1 arányú (100%-os) nagyítást állíthatunk be. Természetesen 100%-nál nagyobb nagyítást is beállíthatunk. Ezeknek a Részletablakoknak az az elsődleges céljuk, hogy azoknak a szerkesztőeszközöknek a hatását, amelyek hatása csak legalább 100% nagyítás esetén látható jól az előnézeten, egyidejűleg a kép több részletén is megfigyelhessük (gondoljunk például az élesítés eszköz hatásának megfigyelésére). Tehát nem feltétlenül kell a teljes előnézetet 100%-ra nagyítani, elegendő ha elhelyezünk néhány Részletablakot. Ha a teljes képet nagyítjuk 100%-ra, akkor csak a kép egy kis részén figyelhetjük meg az eszköz hatását, ha pedig Részletablakokat helyezünk el, akkor nagy nagyítás mellett egyidejűleg megfigyelhetjük a kép egymástól távol eső részeit is. Mindig ahhoz a Részletablakhoz tartozó kis piros keret látható a képen, amely aktív (amelyre rákattintottunk). A Navigátor színértékjelzői akkor is működnek, ha Részletablakok felett van az egérmutató.
 
-A következő az összes panel elrejtése/megjelenítése gomb. Ha elrejtjük a paneleket, akkor csak a középső panel marad látható a felső és az alsó eszköztárral.
+A következő az összes panel elrejtése/megjelenítése gomb. Ha elrejtjük a paneleket, akkor csak a középső panel marad látható a felső és az alsó eszköztárral, valamint a bal oldali keskeny panel.
 
 Végül az utolsó gomb a jobb oldali panel elrejtésére/megjelenítésére szolgál.
 
 ## <a id="311"></a> 3\.11 Feldolgozási sor
 
-Ha végeztünk egy kép feldolgozásával, a képet a Feldolgozási sorba helyezhetjük. Ez az ajánlott eljárás. A feldolgozási sorban sorba állítjuk képeinket, amelyek arra várnak, hogy elindítsuk a képfájlok létrehozásának folyamatát, azaz a sorban lévő képek feldolgozását. Ekkor történik meg a nyers fájlból kiindulva, a kísérőfájlban tárolt műveletek és paraméterek felhasználásával a képfájl előállítása. Egymás után minden sorba állított kép feldolgozása megtörténik.
+Ha végeztünk egy kép feldolgozásával, a képet a Feldolgozási sorba helyezhetjük. Ez az ajánlott eljárás. A feldolgozási sorban sorba állítjuk képeinket, amelyek arra várnak, hogy elindítsuk a képfájlok létrehozásának folyamatát, azaz a Feldolgozási sorban lévő képek feldolgozását. Ekkor történik meg a nyers fájlból kiindulva, a kísérőfájlban tárolt műveletek és paraméterek felhasználásával a képfájl előállítása. Egymás után minden sorba állított kép feldolgozása megtörténik.
 
 ![](book-images/113.jpg)
 
-Ha az automatikus indítás opciót bejelöljük, akkor a kép feldolgozási sorba helyezése után azonnal megkezdődik a képfájl előállítása. Azonban nem ez az ajánlott működés. A képfájlok előállítása nagyon erőforrás-igényes, ezért kézzel történő elindítás a célszerű, amikor már minden kép feldolgozásával végeztünk a szerkesztőben. A kötegelt feldolgozást a nagy bekapcsoló gombra (az ábrán a bal felső sarokban látható) történő kattintással indíthatjuk el.
+Ha az Automatikus indítás opciót bejelöljük, akkor a kép Feldolgozási sorba helyezése után azonnal megkezdődik a képfájl előállítása. Azonban nem ez az ajánlott működés. A képfájlok előállítása nagyon erőforrás-igényes, ezért kézzel történő elindítás a célszerű, amikor már minden kép feldolgozásával végeztünk a szerkesztőben. A kötegelt feldolgozást a nagy bekapcsoló gombra (az ábrán a bal felső sarokban látható) történő kattintással indíthatjuk el.
 
 Az alapértelmezett paraméterek jól működnek, azonban indokolt esetben célszerű lehet eltérni tőlük. Ha csak egy-egy képet szeretnénk eltérő paraméterekkel menteni (például nem JPEG hanem TIFF formátumban), akkor azokat az Aktuális kép mentése funkción keresztül helyezzük a feldolgozási sorba a fentebb leírtak szerint.
 
 ![](book-images/114.jpg)
 
-A fenti ábrán a bélyegkép bal felső sarkában látható ikon jelzi, hogy a kép Gyors exportálás funkcióval került a Feldolgozási sorba. A gyors exportálás a bélyegképre jobb egérgombbal kattintva, a helyi menüből érhető el. Gyors exportáláskor a feldolgozás néhány időigényes lépése kimarad, a képminőség csökken, nem az előnézeti képen látott kép lesz az eredmény. A kép legfeljebb a Beállítások > Teljesítmény lapon megadott maximális méretű lehet. A Gyors exportálásnak ritkán van értelme.
+A fenti ábrán a bélyegkép bal felső sarkában látható ikon jelzi, hogy a kép Gyors exportálás funkcióval került a Feldolgozási sorba. A Gyors exportálás a bélyegképre jobb egérgombbal kattintva, a helyi menüből érhető el. Gyors exportáláskor a feldolgozás néhány időigényes lépése kimarad, a képminőség csökken, nem az előnézeten látott kép lesz az eredmény. A kép legfeljebb a Beállítások > Teljesítmény lapon megadott maximális méretű lehet. A Gyors exportálásnak ritkán van értelme.
 
 ## <a id="312"></a> 3\.12 Feldolgozási profilok
 
@@ -1739,10 +1787,10 @@ A feldolgozási profil azonban ennél tágabb fogalom. A kísérőfájl funkció
 Amikor először nyitunk meg egy fotókat tartalmazó mappát az ART állományböngészőjében, akkor egyik képhez sem tartozik kísérőfájl. Egy képhez akkor történik meg a kísérőfájl létrehozása, amikor az alábbi műveletek egyikét végrehajtjuk:
 
 -   Megnyitjuk a képet szerkesztésre.
--   A feldolgozási profilt manuálisan alkalmazzuk az állományböngésző vagy a filmszalag helyi menüjének használatával.
--   Dinamikus feldolgozási profil alkalmazása esetén.
+-   Egy feldolgozási profilt manuálisan alkalmazunk az állományböngésző vagy a filmszalag helyi menüjének használatával.
+-   Amikor végrehajtásra kerül az alapértelmezett feldolgozási profil, amely lehet dinamikus profil is.
 
-Amikor megnyitunk egy nyers fájlt szerkesztésre, vagy ha feldolgozási profilt rendelünk hozzá, az ART a nyers fájl adatait látható képpé alakítja. Ennek érdekében számos beállítást kell alkalmaznia. Ezen beállítások, és azok paraméterei az alábbiaktól függnek:
+Amikor megnyitunk egy nyers fájlt szerkesztésre, az ART a nyers fájl adatait látható képpé alakítja. Ennek érdekében számos beállítást kell alkalmaznia. Ezen beállítások, és azok paraméterei az alábbiaktól függnek:
 
 -   Az alapértelmezett feldolgozási profiltól.
 -   A dinamikus feldolgozási profil szabályaitól, ha vannak ilyenek.
@@ -1750,24 +1798,24 @@ Amikor megnyitunk egy nyers fájlt szerkesztésre, vagy ha feldolgozási profilt
 
 ![](book-images/103.jpg)
 
-Az elemek balról jobbra: Feldolgozási profil hozzáfűzési mód helyi szerkesztőeszközökhöz (hozzáfűzés/felülírás), Profilválasztó, Feldolgozási profil betöltése, Feldolgozási profil mentése, Feldolgozási profil vágólapra másolása, Feldolgozási profil beillesztése a vágólapról.
+A fenti ábrán a Feldolgozási profilok panelt láthatjuk. Az elemek balról jobbra: Feldolgozási profil hozzáfűzési mód helyi szerkesztőeszközökhöz (hozzáfűzés/felülírás), Profilválasztó, Feldolgozási profil betöltése, Aktuális feldolgozási profil mentése, Aktuális feldolgozási profil vágólapra másolása, Feldolgozási profil beillesztése a vágólapról.
 
 Feldolgozási profilok három különböző forrásból származhatnak:
 
--   Az ART egy profilcsomaggal érkezik. Ezeknek az a célja, hogy jó kiindulási alapot biztosítsanak, bemutassák, hogyan használhatók együtt az eszközök. Ezek azok profilok, amelyeket a Profilválasztó legördülő listája "Csomagolt profilok" szakaszában láthatunk.
+-   Az ART egy profilcsomaggal érkezik. Ezeknek az a célja, hogy jó kiindulási alapot biztosítsanak, bemutassák, hogyan használhatók együtt az eszközök. Ezek azok profilok, amelyeket a Profilválasztó legördülő listájának "Csomagolt profilok" részében láthatunk.
 
 ![](book-images/115.jpg)
 
 -   Saját magunk is készíthetünk saját profilokat amelyek a Profiljaim csoportban jelennek meg a legördülő listán. Az ábrán látható, hogy jelenleg nincsenek ilyen profilok.
 
--   Automatikusan generált profilok azok a profilok, amelyek a képek feldolgozása során automatikusan keletkeznek, és a képek mellé történik a mentésük kísérőfájlként.
+-   Automatikusan generált profilok azok a profilok, amelyek a képek feldolgozása során automatikusan keletkeznek, és a kiindulási nyers fájlok vagy képek mellé történik a mentésük kísérőfájlként.
 
 A képhez tartozó feldolgozási profil (kísérőfájl) lemezre írása ekkor történik meg:
 
 -   amikor manuálisan alkalmazunk a képen egy feldolgozási profilt, vagy dinamikus profilt használunk;
 -   ha bezárjuk az aktuális szerkesztő lapot;
 -   ha bezárjuk az aktuálisan szerkesztett képet egy másik kép megnyitásával;
--   amikor manuálisan mentjük el a feldolgozási profilt a Feldolgozási profilok panelen lévő Feldolgozási beállítások mentése funkció segítségével;
+-   amikor manuálisan mentjük el a feldolgozási profilt a Feldolgozási profilok panelen lévő Aktuális feldolgozási profil mentése funkció segítségével;
 -   amikor bezárjuk az aktuális képet az ART bezárásával;
 
 Ezek voltak a fontosabb esetek.
@@ -1786,7 +1834,7 @@ Az alábbi ábrán láthatjuk az alapértelmezett dinamikus feldolgozási profil
 
 ![](book-images/117.jpg)
 
-Mindig alkalmazza az Auto-Matched Curve (Automatikusan illeszkedő tónusgörbe) csomagolt profilt. Ennek alkalmazásakor az ART elemzi a nyers fájlba beágyazott JPEG képet, és úgy állítja be a Tónusgörbék eszközben a tónusgörbét, hogy az közel a beágyazott JPEG képpel megegyező előnézeti képet eredményezzen a szerkesztés kiindulásaként. ISO 0 és ISO 640 között a Sharpening (élesítés) csomagolt profilt is alkalmazza. ISO 640 és 51200 között a Noise Reduction Low (alacsony mértékű zajcsökkentés) csomagolt profilt is alkalmazza. ISO 3200 és 51200 között a Noise Reduction High (magas mértékű zajcsökkentés) csomagolt profilt is alkalmazza. Tehát több csomagolt profilt is alkalmaz egymás után.
+Mindig alkalmazza az Auto-Matched Curve (Automatikusan illeszkedő tónusgörbe) csomagolt profilt. Ennek alkalmazásakor az ART elemzi a nyers fájlba beágyazott JPEG képet, és úgy állítja be a Tónusgörbék eszközben a tónusgörbét, hogy az közel a beágyazott JPEG képpel megegyező előnézetet eredményezzen a szerkesztés kiindulásaként. ISO 0 és ISO 640 között a Sharpening (élesítés) csomagolt profilt is alkalmazza. ISO 640 és 51200 között a Noise Reduction Low (alacsony mértékű zajcsökkentés) csomagolt profilt is alkalmazza. ISO 3200 és 51200 között a Noise Reduction High (magas mértékű zajcsökkentés) csomagolt profilt is alkalmazza. Tehát több csomagolt profilt is alkalmaz egymás után.
 
 Dinamikus profilt csak mint alapértelmezett profilt hozhatunk létre. Dinamikus profilnál a képhez tartozó metaadatoktól függenek a feldolgozás paraméterei. A metaadatok közül a fényképezőgép típusa, az objektív típusa, gyújtótávolsága, a rekeszérték, a záridő, az ISO érzékenység, és az expozíció-kompenzáció vehető figyelembe a szabály megalkotásakor.
 
@@ -1794,13 +1842,18 @@ Létrehozásakor a Beállítások > Képfeldolgozás lapon az Alapértelmezett f
 
 ![](book-images/103.jpg)
 
-Nézzük meg néhány mondatban a részleges feldolgozási profilokat, és a betöltési módokat. Ha a feldolgozási profil választó jobb oldali négy gombjának valamelyikére kattintunk, akkor a teljes profilra vonatkozik a művelet. Ha a Ctrl lenyomásával kattintunk rájuk, akkor csak a szerkesztőeszközök egy részhalmazán hajtódik végre. Van azonban egy kivétel: vágólapra másoláskor a Ctrl hatástalan, csak teljes profilt lehet a vágólapra másolni, és a beillesztésnél lehet kiválasztani, hogy mely szerkesztőeszközök beállításait illessze be. Részleges mentéskor, részleges betöltéskor, vagy részleges beillesztéskor megjelenik egy ablak, és kiválaszthatjuk, hogy a művelet mely szerkesztőeszközökre vonatkozzon.
+Nézzük meg néhány mondatban a részleges feldolgozási profilokat (részprofilok), és a betöltési módokat. Ha a Feldolgozási profilok panel jobb oldali négy gombjának valamelyikére kattintunk, akkor a teljes profilra vonatkozik a művelet. Ha a Ctrl lenyomásával kattintunk rájuk, akkor csak a szerkesztőeszközök egy részhalmazán hajtódik végre. Van azonban egy kivétel: vágólapra másoláskor a Ctrl hatástalan, csak teljes profilt lehet a vágólapra másolni, és a beillesztésnél lehet kiválasztani, hogy mely szerkesztőeszközök beállításait illessze be. Részleges mentéskor, részleges betöltéskor, vagy részleges beillesztéskor megjelenik egy ablak, és kiválaszthatjuk, hogy a művelet mely szerkesztőeszközökre vonatkozzon.
 
 ![](book-images/118.jpg)
 
 Lehetséges például csak a Fehéregyensúly és a Zajcsökkentés eszköz beállításait átmásolni egyik képről a másikra.
 
-A "Hozzáfűzés/Felülírás mód helyi szerkesztőeszközökhöz" gomb lehetővé teszi annak eldöntését, hogy mi történjen egy részleges feldolgozási profil alkalmazásakor, amikor az a helyi szerkesztés eszközeinek beállításait is tartalmazza (korrekciós rétegek, maszkok). Hozzáfűzés mód (gomb lenyomva) esetén a profilban található helyi szerkesztési beállítások hozzá lesznek fűzve az aktuális beállításokhoz. Felülírás módnál (gomb felengedve) a profilban található helyi szerkesztési beállítások felülírják az aktuális beállításokat (azok eltűnnek, csak a profilban lévő beállítások maradnak meg). Ez csak a Helyi szerkesztés eszközcsoport eszközeire igaz, ez a gomb csak a helyi szerkesztési eszközöket tartalmazó profil alkalmazásakor hatásos, egyéb eszközök beállításaira hatástalan. A többi eszközcsoport szerkesztőeszközei esetén mindig felülírás történik.
+A teljes profil és a részleges profil viselkedése között az alábbi eltérések figyelhetők meg:
+
+- A teljes profil az összes eszköz beállításait tartalmazza, azokét is, amelyek ki voltak kapcsolva, amikor a profilt elmentettük. Ha ezt a profilt teljes egészében alkalmazzuk, akkor az összes szerkesztőeszközt beállítja a profilban tárolt beállítások alapján. Amely eszköz a profilban kikapcsolt állapotú, az a profil alkalmazásakor ki lesz kapcsolva. Ha a teljes profilt csak részben alkalmazzuk, akkor csak a kiválasztott eszközök beállításai változnak a profilban tároltakra.
+- Ha részleges profilt mentünk el, akkor csak a kiválasztott szerkesztőeszközök beállításait menti el a profilba, a többi szerkesztőeszközzel kapcsolatban semmi sem tárolódik a profilban. Ha a részleges profilt teljes egészében alkalmazzuk, akkor is csak azokat a szerkesztőeszközök paramétereit állítja be, amelyek a profilban tárolásra kerültek, a többi szerkesztőeszköz beállításain semmit sem változtat. Elvileg lehetőségünk van a részleges profilt csak részben alkalmazni, azonban ez nem valódi lehetőség, mert nem lehet tudni, hogy egy részleges profil mely szerkesztőeszközök beállításait tartalmazza (hacsak nem szerepel a fájl nevében, amikor elmentjük). Ha olyan eszközt is kiválasztunk a részleges profil részleges alkalmazásánál, amelynek beállításai nem szerepelnek a részleges profilban, akkor annak az eszköznek a beállításai nem változnak.
+
+A "Hozzáfűzés/Felülírás mód helyi szerkesztőeszközökhöz" gomb lehetővé teszi annak eldöntését, hogy mi történjen egy részleges feldolgozási profil alkalmazásakor, amikor az a helyi szerkesztés eszközeinek beállításait is tartalmazza (korrekciós rétegek, maszkok beállításait). Hozzáfűzés mód (gomb lenyomva) esetén a profilban található helyi szerkesztési beállítások hozzá lesznek fűzve az aktuális beállításokhoz (az aktuális beállítások is megmaradnak). Felülírás módnál (gomb felengedve) a profilban található helyi szerkesztési beállítások felülírják az aktuális beállításokat (azok eltűnnek, csak a profilban lévő beállítások maradnak meg). Ez csak a Helyi szerkesztés eszközcsoport eszközeire igaz, ez a gomb csak a helyi szerkesztési eszközöket tartalmazó profil alkalmazásakor hatásos, egyéb eszközök beállításaira hatástalan. A többi eszközcsoport szerkesztőeszközeinél mindig felülírás történik.
 
 ## <a id="313"></a> 3\.13 Feldolgozási profilok készítése
 
@@ -1810,9 +1863,9 @@ Feldolgozási profilt úgy hozunk létre, hogy megnyitunk egy nyers fájlt szerk
 
 ### <a id="3131"></a> 3\.13\.1 Alapértelmezett feldolgozási profil készítése
 
-Új feldolgozási profilokat fogunk készíteni, amelyeket nyers fájlok alapértelmezett feldolgozási profiljaként használhatunk. Ez azt jelenti, hogy akár le is cserélhetjük vele az eredeti alapértelmezett feldolgozási profilt. Arra is van lehetőség, hogy meghagyjuk az eredeti alapértelmezett feldolgozási profilt, és az új profilt csak akkor hajtsuk végre, amikor szükségesnek gondoljuk.
+Új feldolgozási profilokat fogunk készíteni, amelyeket nyers fájlok alapértelmezett feldolgozási profiljaként használhatunk. Ez azt jelenti, hogy akár le is cserélhetjük vele az eredeti alapértelmezett feldolgozási profilt. Arra is van lehetőség, hogy meghagyjuk az eredeti profilt, és az új profilt csak akkor hajtsuk végre, amikor szükségesnek gondoljuk.
 
-Az ART alapértelmezett, dinamikus nyers feldolgozási profilja a nyers fájlba beágyazott JPEG képhez hasonló előnézeti képet próbál kiindulási alapként előállítani. Ennek az az előnye, hogy ha tetszik a fényképezőgép által készített JPEG kép, és csak keveset szeretnénk azon változtatni, akkor a szerkesztéshez jó kiindulási alap az ahhoz hasonló előnézeti kép. Ha attól jelentősen eltérőt szeretnénk létrehozni, akkor jobb kiindulás lehet a semlegesebb kép. Sokan jobban szeretik semlegesebb képből elkezdeni a szerkesztést. Csak SDR (normál dinamikájú) kép létrehozására koncentrálunk, és erre alkalmas új profilokat hozunk létre. Aki végigcsinálja ezeket a lépéseket, alapszinten azt is megtanulhatja, hogyan lehet többször felhasználható feldolgozási profilt készíteni.
+Az ART alapértelmezett, dinamikus nyers feldolgozási profilja a nyers fájlba beágyazott JPEG képhez hasonló előnézetet próbál kiindulási alapként előállítani. Ennek az az előnye, hogy ha tetszik a fényképezőgép által készített JPEG kép, és csak keveset szeretnénk azon változtatni, akkor a szerkesztéshez jó kiindulási alap az ahhoz hasonló előnézet. Ha attól jelentősen eltérőt szeretnénk létrehozni, akkor talán jobb kiindulás lehet a semlegesebb kép. Sokan jobban szeretik semlegesebb képből elkezdeni a szerkesztést. Csak SDR (normál dinamikatartományú) kép létrehozására koncentrálunk, és erre alkalmas új profilokat hozunk létre. Aki végigcsinálja ezeket a lépéseket, alapszinten azt is megtanulhatja, hogyan lehet többször felhasználható feldolgozási profilt készíteni.
 
 Induljunk tiszta lappal, és nyissunk meg egy még nem szerkesztett akármilyen nyers fájlt a szerkesztőben (ne legyen mellette kísérőfájl).
 
@@ -1825,9 +1878,9 @@ Mindent hagyjunk alapértelmezésen, és ellenőrizzük, hogy alul a Kimeneti pr
 
 Ugyanebben az eszközcsoportban a Fehéregyensúly legyen bekapcsolva, az összes többi pedig legyen kikapcsolt.
 
-Menjünk a RAW eszközcsoportba. Az Érzékelő Bayer Mátrixszal alcsoportban Bayer-féle színszűrőt tartalmazó fényképezőgépünkhöz választhatunk Színrekonstrukció eljárást. Tehát ez nem vonatkozik Fuji fényképezőgépekre, kizárólag más gyártók gépeire. A Színrekonstrukció eljárás kiválasztása nem mindegy. Az egyes algoritmusok között észlelhető különbség kicsi, leginkább a kép finom részletein érződhet. Van, hogy a jobb eredmény érdekében kétféle algoritmust is használnak, mi is ezt fogjuk tenni. Az alapértelmezett RCD eljárás is jó eredményt ad. Az általunk alkalmazandó kétféle algoritmus együttes alkalmazása ugyan erőforrás-igényesebb, azonban valamivel jobb eredményt ad. A különbség azonban kicsi, leginkább akkor látható, ha legalább 100%-ra nagyítjuk az előnézeti képet. Válasszuk ki az RCD+Bilinear lehetőséget.
+Menjünk a RAW eszközcsoportba. Az Érzékelő Bayer Mátrixszal alcsoportban Bayer-féle színszűrőt tartalmazó fényképezőgépünkhöz választhatunk Színrekonstrukció eljárást. Tehát ez nem vonatkozik Fujifilm fényképezőgépekre, kizárólag más gyártók gépeire. A Színrekonstrukció eljárás kiválasztása nem mindegy. Az egyes algoritmusok között észlelhető különbség kicsi, leginkább a kép finom részletein érződhet. Van, hogy a jobb eredmény érdekében kétféle algoritmust is használnak egymás után, mi is ezt fogjuk tenni. Az alapértelmezett RCD eljárás is jó eredményt ad. Az általunk alkalmazandó kétféle algoritmus együttes alkalmazása ugyan erőforrás-igényesebb, azonban bizonyos esetekben valamivel jobb lesz az eredmény. A különbség azonban kicsi, leginkább akkor látható, ha legalább 100%-ra nagyítjuk az előnézetet. Válasszuk ki az RCD+Bilinear lehetőséget.
 
-Érzékelő X-Trans Mátrixszal alcsoportban a Színrekonstrukciónál a Fuji gépek tulajdonosai is kiválaszthatják a megfelelő eljárást. A legjobb minőséget a 3-menetes (Markesteijn) Színrekonstrukció módszer adja, válasszuk ki ezt.
+Érzékelő X-Trans Mátrixszal alcsoportban a Színrekonstrukciónál a Fujifilm gépek tulajdonosai is kiválaszthatják a megfelelő eljárást. A legjobb minőséget talán a 3-menetes (Markesteijn) Színrekonstrukció módszer adja, válasszuk ki ezt.
 
 ![](book-images/120.jpg)
 
@@ -1837,7 +1890,7 @@ A Színrekonstrukció részt csukjuk össze, és nyissuk le a Kromatikusaberrác
 
 Az Átalakítás, a Különleges hatások, és a Helyi szerkesztés eszközcsoportban minden eszköz legyen kikapcsolva.
 
-Átmegyünk a Részletek eszközcsoportba. Bekapcsoljuk a Zajcsökkentés modult. A Színtér legyen RGB, a Mód pedig Konzervatív. A Fényerő, a Részletek helyreállítása, és a Részletek küszöb csúszkák nullára legyenek állítva. Ezáltal csak színzajcsökkentés lesz a képen, világosságzaj-csökkentés nem. Ez nem baj, mert ha szükséges, akkor a feldolgozás során manuálisan be tudjuk majd állítani a világosságzaj csökkentését is.
+Menjünk át a Részletek eszközcsoportba. Kapcsoljuk be a Zajcsökkentés modult. A Színtér legyen RGB, a Mód pedig Konzervatív. A Világosság, a Részletek helyreállítása, és a Részletek küszöb csúszkák nullára legyenek állítva. Ezáltal csak színzajcsökkentés lesz a képen, világosságzaj-csökkentés nem. Ez nem baj, mert ha szükséges, akkor a feldolgozás során manuálisan be tudjuk majd állítani a világosságzaj csökkentését is.
 
 ![1](book-images/122.jpg)
 
@@ -1845,7 +1898,7 @@ Ugyanitt kapcsoljuk be a Színhibajavítás (defringe) eszközt, és mindent hag
 
 ![](book-images/123.jpg)
 
-Menjünk be az Expozíció eszközcsoportba, ott az Expozíción kívül minden eszköz legyen kikapcsolt állapotban. Nyissuk le az Expozíció eszközt, és a Csúcsfény rekonstrukciónál Kiegyensúlyozott legyen kiválasztva.
+Menjünk át az Expozíció eszközcsoportba, és ott az Expozíción kívül minden eszköz legyen kikapcsolt állapotban. Nyissuk le az Expozíció eszközt, és a Csúcsfény rekonstrukciónál Kiegyensúlyozott legyen kiválasztva.
 
 ![](book-images/124.jpg)
 
@@ -1853,25 +1906,25 @@ Ezzel készen is vagyunk. Most el kell mentenünk az elkészült feldolgozási p
 
 ![](book-images/125.jpg)
 
-Az ART Base profil alkalmazása semleges kiindulási helyzetet eredményez, ezért az előnézeti kép nem hasonlít a fényképezőgép által létrehozott JPEG képhez.
+Az ART Base profil alkalmazása semleges kiindulási helyzetet eredményez, ezért az előnézet nem hasonlít a fényképezőgép által létrehozott JPEG képhez.
 
-Folytathatjuk fényképezőgépünk .dcp profiljának felhasználásával, a fényképezőgépünkkel készített nyers fájlok feldolgozásához használható alapértelmezett feldolgozási profil készítésével. Ennek a profilnak a használatával a fényképezőgép által készített JPEG képhez hasonló előnézeti képből kezdhetjük a feldolgozást.
+Folytathatjuk fényképezőgépünk .dcp profiljának felhasználásával, a fényképezőgépünkkel készített nyers fájlok feldolgozásához használható alapértelmezett feldolgozási profil készítésével. Ennek a profilnak a használatával a fényképezőgép által készített JPEG képhez hasonló előnézetből kezdhetjük a feldolgozást.
 
 Először le kell tölteni mindegyik fényképezőgépünkhöz a .dcp profilt (ha többféle fényképezőgéppel rendelkezünk). DCP fényképezőgép-profilokat Andy Astbury [Fényképezőgép-profilok](https://drive.google.com/drive/folders/19gN__tZ7Z0gnckHGnjDHqfGNRZ3_ozNN) oldaláról tölthetünk le. A profilok letöltéséről a "2\.16 Hogyan juthatunk objektívprofilokhoz és fényképezőgép-profilokhoz?" című fejezetben tájékozódhatunk.
 
 A fenti linkre kattintás után látható oldalon töltsük le a kívánt fényképezőgép-profilokat, és másoljuk a megfelelő könyvtárba.
 
-Ha a másolással készen vagyunk, akkor folytatni kell az ART-ban. Ott hagytuk abba, hogy elmentettük az ART Base.arp profilt. Ebből az állapotból kell folytatnunk, ez fontos (!). Ha esetleg kiléptünk közben a szerkesztőből vagy az ART-ból, az sem probléma. Ha visszalépünk a szerkesztőbe, és az alábbiakban leírtak szerint végrehajtjuk az elmentett "ART Base.arp" profilt, máris folytathatjuk.
+Ha a másolással készen vagyunk, akkor folytatni kell az ART-ban. Ott hagytuk abba, hogy elmentettük az ART Base.arp profilt. Ebből az állapotból kell folytatnunk, ez fontos (!). Ha esetleg kiléptünk közben a szerkesztőből vagy az ART-ból, az sem probléma. Ha visszalépünk a szerkesztőbe, és az alábbiakban leírtak szerint végrehajtjuk az elmentett "ART Base.arp" profilt, akkor máris folytathatjuk.
 
 Ismét menjünk a Színek eszközcsoportba, és nyissuk le a Színkezelés eszközt. Kattintsunk rá az Egyedi mellett látható (Nincs)-re, és válasszuk ki egyik fényképezőgépünk Standard színprofilját.
 
 ![](book-images/126.jpg)
 
-A fenti ábrán látható, hogy Canon EOS 750D fényképezőgépem Standard profilját választottam ki. Kattintsunk a Megnyitás gombra.
+A fenti ábrán látható, hogy Canon EOS 750D fényképezőgép Standard profilját választottam ki. Kattintsunk a Megnyitás gombra.
 
 ![](book-images/127.jpg)
 
-A fenti ábrán láthatjuk, hogy a fényképezőgép profilja kiválasztásra került. A "Fényképezőgép standard" helyett válasszuk ki az "Egyéb" lehetőséget. Jelöljük be a Tónusgörbe, "Look" táblázat, és ha lehetséges, akkor az Alapexpozíció lehetőséget. Ezzel készen vagyunk.
+A fenti ábrán láthatjuk, hogy a fényképezőgép profilja kiválasztásra került. Jelöljük be a Tónusgörbe, "Look" táblázat, és ha lehetséges, akkor az Alapexpozíció lehetőséget. Ezzel készen vagyunk.
 
 Mentsük el ezt is, én például "750D ART Base.arp" néven mentettem el. Ha több fényképezőgépünk van, akkor mindegyikhez készíthetünk alapértelmezett feldolgozási profilt. Ennek érdekében az első fényképezőgéphez hasonlóan ki kell választani a következő fényképezőgép Standard profilját, és be kell jelölnünk az imént említett három lehetőséget, majd el kell menteni a profilt.
 
@@ -1885,7 +1938,7 @@ El kell döntenünk, hogy mit szeretnénk. Többféle lehetőség közül válas
 
 Megtehetjük azt, hogy meghagyjuk az ART nyers fájlokhoz tartozó alapértelmezett feldolgozási profilját, és a most elmentett profilokat csak bizonyos képeken alkalmazzuk, amikor szeretnénk. Talán ez a legjobb módszer.
 
-A profil alkalmazásához a következőket kell tenni. Nyissuk meg a nyers fájlt szerkesztésre. A jobb oldalon felül a Feldolgozási profiloknál a lenyitható listát nyissuk le. A Profiljaim profilcsoportban találjuk a korábban elmentett profilokat, és a nevére kattintva válasszuk ki azt, amelyet alkalmazni szeretnénk. Az egyszerűbb megoldás az, hogy a lenyitható lista melletti mappa gombra kattintunk, és akkor egy ablakban választhatunk profiljaink közül. Ez látható az alábbi ábrán. A fényképezőgép-specifikus profilok közül azt kell választani, amelyik fényképezőgéppel készült a feldolgozandó kép.
+A profil alkalmazásához a következőket kell tenni. Nyissuk meg a nyers fájlt szerkesztésre. A jobb oldalon felül a Feldolgozási profiloknál a lenyitható listát nyissuk le. A Profiljaim profilcsoportban találjuk a korábban elmentett profilokat, és a nevére kattintva válasszuk ki azt, amelyet alkalmazni szeretnénk. Az egyszerűbb megoldás az, hogy a lenyitható lista melletti mappa gombra kattintunk, és akkor egy ablakban választhatunk saját profiljaink közül. Ez látható az alábbi ábrán. A fényképezőgép-specifikus profilok közül azt kell választani, amelyik fényképezőgéppel készült a feldolgozandó kép.
 
 ![](book-images/128.jpg)
 
@@ -1907,11 +1960,11 @@ Tegyük fel, hogy az alapértelmezett feldolgozási profilt a Beállításoknál
 
 ### <a id="3132"></a> 3\.13\.2 Képek átméretezése
 
-Az ART nagyszerű lehetősége, hogy a Feldolgozási sorban egy kiválasztott részprofilt alkalmazhatunk a feldolgozandó képre anélkül, hogy a részprofilban lévő adatok belekerülnének az adott kép kísérőfájljába. Ez például olyankor hasznos, ha a Feldolgozási sorba helyezett képeket azonos méretre szeretnénk átméretezni. Ilyenkor a képek kísérőfájlja nem fogja tartalmazni az átméretezést, azaz más alkalommal akár teljes méretű, vagy bármilyen tetszőleges méretű JPEG vagy TIFF képet készíthetünk.
+Az ART nagyszerű lehetősége, hogy a Feldolgozási sorban egy kiválasztott részleges profilt alkalmazhatunk a feldolgozandó képre anélkül, hogy a részprofilban lévő adatok belekerülnének az adott kép kísérőfájljába. Ez például olyankor hasznos, ha a Feldolgozási sorba helyezett képeket azonos méretre szeretnénk átméretezni. Ilyenkor a képek kísérőfájlja nem fogja tartalmazni az átméretezést, azaz más alkalommal akár teljes méretű, vagy bármilyen tetszőleges méretű JPEG vagy TIFF képet készíthetünk.
 
 ![](book-images/131.jpg)
 
-Készítsünk egy átméretezést tartalmazó részprofilt. Ehhez nyissunk meg egy nyers fájlt szerkesztésre. Menjünk be az Átalakítás eszközcsoportba, aktiváljuk és nyissuk le az Átméretezés eszközt. Alkalmazzuk a 900x900 képpont méretű határolókeretet, a PPI értékét hagyjuk 300-on. A 900x900 képpont méretű határolókeret azt jelenti, hogy a kép hosszabb oldala lesz 900 képpont hosszúságú.
+Készítsünk egy átméretezést tartalmazó részleges profilt. Ehhez nyissunk meg egy nyers fájlt szerkesztésre. Menjünk be az Átalakítás eszközcsoportba, aktiváljuk és nyissuk le az Átméretezés eszközt. Alkalmazzuk a 900x900 képpont méretű határolókeretet, a PPI értékét hagyjuk 300-on. A 900x900 képpont méretű határolókeret azt jelenti, hogy a kép hosszabb oldala lesz 900 képpont hosszúságú.
 
 Ezután a Feldolgozási profilok részen a Ctrl billentyűt lenyomva kattintsunk a floppy gombra, adjuk meg a profil nevét, kattintsunk a Mentés gombra. Én a 900x900.arp nevet adtam.
 
@@ -1919,11 +1972,11 @@ Ezután a Feldolgozási profilok részen a Ctrl billentyűt lenyomva kattintsunk
 
 A megjelenő ablakban jelöljük be az Átméretezést, és kattintsunk az OK gombra.
 
-A részprofil kipróbálásához helyezzünk egy képet a Feldolgozási sorba.
+A részleges profil kipróbálásához helyezzünk egy képet a Feldolgozási sorba.
 
 ![](book-images/133.jpg)
 
-Jelöljük be az Alkalmazza a következő profilt az exportálásnál lehetőséget. A mellette található legördülő listából válasszuk ki az imént elmentett részprofilt. Indítsuk el a feldolgozást, majd nézzük meg az eredményt.
+Jelöljük be az Alkalmazza a következő profilt az exportálásnál lehetőséget. A mellette található legördülő listából válasszuk ki az imént elmentett részleges profilt. Indítsuk el a feldolgozást, majd nézzük meg az eredményt.
 
 ![](book-images/134.jpg)
 
@@ -1931,13 +1984,27 @@ Az eredményül kapott kép magassága 900, szélessége 600 képpont.
 
 A Feldolgozási sorban alkalmazott profil adatai nem tárolódnak el a kísérőfájlban. Olyan profilt célszerű itt alkalmazni, amelynél nem szeretnénk, hogy adatai a kísérőfájlban eltárolódjanak.
 
-Szerkesztő nézetben az Aktuális kép mentésénél (az előnézeti kép alatt balra a floppy gomb) is rendelkezésre áll ugyanez a lehetőség. Ha az egyik helyen beállítottuk a profil alkalmazását, akkor az ART eltárolja a profil alkalmazásának szükségességét, és legközelebb az Aktuális kép mentésénél vagy a Feldolgozási sor nézetben egyaránt alkalmazni fogja a profilt. Erre figyeljünk, és ha nincs szükség a profil alkalmazására, akkor vegyük ki a jelölést az Alkalmazza a következő profilt az exportálásnál lehetőség elől.
+Szerkesztő nézetben az Aktuális kép mentésénél (az előnézet alatt balra a floppy gomb) is rendelkezésre áll ugyanez a lehetőség. Ha az egyik helyen beállítottuk a profil alkalmazását, akkor az ART eltárolja a profil alkalmazásának szükségességét, és legközelebb az Aktuális kép mentésénél vagy a Feldolgozási sor nézetben egyaránt alkalmazni fogja a profilt. Erre figyeljünk, és ha nincs szükség a profil alkalmazására, akkor vegyük ki a jelölést az Alkalmazza a következő profilt az exportálásnál lehetőség elől.
 
 A fentiekhez hasonlóan tetszőleges eszközöket és beállításokat alkalmazva a gyakran használt beállításainkból létrehozhatunk olyan profilokat, amelyeket bármely képnél végrehajthatunk. Ehhez vegyük figyelembe a profilokról a korábbi részekben leírtakat is. Leginkább részprofilokat szoktunk így létrehozni.
 
+### <a id="3133"></a> 3\.13\.3 Képfájl mellé mentett feldolgozási profil alkalmazása
+
+Arról lesz szó, hogy hogyan alkalmazzuk az eredményül kapott képfájl mellé mentett feldolgozási profil (kísérőfájl) beállításait a képen.
+
+Az ART-tal egy kép többféle változatát is létrehozhatjuk. Ha engedélyezzük, akkor az ART nemcsak a kiindulási fájl mellé menti el a kísérőfájlt, hanem minden egyes változathoz a converted mappába, az eredményül kapott képfájl mellé is elmenti. Hogyan tudjuk alkalmazni ezt a kísérőfájlt a nyers fájlon abból a célból, hogy ebből a változatból kiindulva folytathassuk a szerkesztést? Erről szólok itt röviden.
+
+Magától értetődőnek tűnhet, hogy Fájlböngészőben a converted mappába navigálva az eredményül kapott képen jobb gombot nyomva, a helyi menü segítségével a vágólapra másoljuk a feldolgozási profilt, majd a nyers fájlhoz beillesztjük azt. Azonban ez a módszer nem működik, nem másolódik át semmi.
+
+Csak a fájlból történő betöltés, a kísérőfájl közvetlen kiválasztása, és alkalmazása működik. Nyissuk meg a nyers fájlt szerkesztésre, majd a Feldolgozási profilok modulban kattintsunk a Profil betöltése fájlból (mappa) gombra. A megjelenő ablakban navigáljunk a converted mappába, válasszuk ki, és alkalmazzuk a kívánt kísérőfájlt.
+
+![](book-images/496.jpg)
+
+Jó ha tudjuk, hogy ha közben valamely soron jobb gombot nyomunk, akkor egy helyi menü jelenik meg. A Show Hidden Files engedélyezésével a rejtett mappák és rejtett fájlok között is navigálhatunk.
+
 ## <a id="314"></a> 3\.14 Csúszkák, görbeszerkesztők
 
-Minden szerkesztőeszköznél vezérlőelemeket találunk, amellyel az eszköz paramétereit beállíthatjuk. Legtöbbször csúszkákkal és görbeszerkesztőkkel találkozunk. Tekintsük át ezeket.
+Minden szerkesztőeszközben vezérlőelemeket találunk, amelyekkel az eszköz paramétereit állíthatjuk be. Legtöbbször csúszkákkal és görbeszerkesztőkkel találkozunk. Tekintsük át ezeket.
 
 ### <a id="3141"></a> 3\.14\.1 Csúszkák
 
@@ -1952,11 +2019,11 @@ A csúszka értékének beállítása:
 -   **A csúszka gombjával**: A csúszkán lévő gomb egérrel történő elmozdításával is beállíthatjuk a csúszka értékét.
 -   **Rákattintással**: Ha rákattintunk a csúszkára, akkor a kattintás helyére állítjuk a csúszkát.
 -   **Számértékkel megadva**: A csúszka megnevezésével (Expozíció-kompenzáció) egy vonalban jobbra láthatjuk a csúszka pillanatnyilag beállított értékét. Rákattintva az érték átírható, a számérték megadása után Entert kell nyomni.
--   **+/- gombokkal**: A számérték mellett lévő +/- gombokra kattintva is állíthatunk az értéken.
+-   **+/- gombokkal**: A számérték mellett lévő +/- gombokra kattintva, (illetve rajtuk nyomva tartva az egérgombot) is állíthatunk az értéken.
 
-**Finomhangolás mód**: A fenti ábrán két csúszkát láthatunk, a felső normál beállítás módban, az alsó finomhangolás módban. A finomhangolás módot az jelzi, hogy a gomb előtti csúszkavonal szélesebb lesz. Finomhangolás módba juthatunk, ha 
+**Finomhangolás mód**: A fenti ábrán két csúszkát láthatunk, a felső normál beállítás módban, az alsó finomhangolás módban van. A finomhangolás módot az jelzi, hogy a gomb előtti csúszkavonal szélesebb lesz. Finomhangolás módba juthatunk, ha 
 
--   a csúszka gombját egy másodpercig elmozdítás nélkül megnyomjuk (lenyomjuk rajta az egérgombot, és egy másodpercig elmozdulásmentesen lenyomva tartjuk), majd továbbra is lenyomva tartva az egér gombját, az egér mozgatásával a kívánt mértékben elmozdítjuk a csúszkát.
+-   a csúszka gombját megnyomjuk, egy másodpercig elmozdulásmentesen lenyomva tartjuk, majd továbbra is lenyomva tartva az egér gombját, az egér mozgatásával a kívánt mértékben elmozdítjuk a csúszkát.
 
 -   a Shift gomb lenyomva tartásával kattintunk a csúszka gombjára, akkor azonnal finomhangolás módba jutunk, és mindkét gombot (Shift+bal egérgomb) lenyomva tartva finoman állíthatunk a csúszka értékén.
 
@@ -1972,7 +2039,7 @@ Az ART háromféle általános görbetípust használ: tónusgörbét, kiegyenl�
 
 Ezek a görbék arra szolgálnak, hogy a vízszintes (más néven x) tengelyen lévő bemeneti értékek és a függőleges (más néven y) tengelyen lévő kimeneti értékek között teremtsenek kapcsolatot a görbe vonalának segítségével. A bemenő és a kimenő tulajdonság sok esetben (de nem mindig) ugyanaz.
 
-**A görbe működése**: A görbe kap egy bemeneti képet. A bemeneti kép minden egyes képpontjára vonatkoztatva megnézi, hogy az adott képpontnak milyen értékű a görbén a vízszintes tengelyen ábrázolt tulajdonsága (pl. világossága), meghatározza, hogy a görbe szerint ehhez a bemeneti (x) értékhez milyen kimeneti (y) érték tartozik, és ezt beállítja az adott képpontnál úgy, hogy azt is figyelembe veszi, hogy a kimeneti értékkel a képpont milyen tulajdonságát (pl. telítettség) kell módosítani. Tehát egy világosság-telítettség görbe esetén a bemenő kép egy képpontjának világosságértéke (x) szerint a görbe segítségével meghatározza, hogy annak a képpontnak mekkora lesz az új telítettségértéke, és megváltoztatja az adott képpont telítettségének értékét. Ezt a műveletet a bemenő kép minden egyes képpontjára végrehajtja.
+**A görbe működése**: A görbe kap egy bemeneti képet. A bemeneti kép minden egyes képpontjára vonatkoztatva megnézi, hogy az adott képpontnak milyen értékű a görbén a vízszintes tengelyen ábrázolt tulajdonsága (pl. világossága), meghatározza, hogy a görbe szerint ehhez a bemeneti (x) értékhez milyen kimeneti (y) érték tartozik, és ezt beállítja az adott képpontnál úgy, hogy azt is figyelembe veszi, hogy a kimeneti értékkel a képpont milyen tulajdonságát (pl. telítettségét) kell módosítani. Tehát egy világosság-telítettség görbe esetén a bemenő kép egy képpontjának világosságértéke (x) szerint a görbe segítségével meghatározza, hogy annak a képpontnak mekkora lesz az új telítettségértéke, és megváltoztatja az adott képpont telítettségének értékét. Ezt a műveletet a bemenő kép minden egyes képpontjára végrehajtja.
 
 #### <a id="31421"></a> 3\.14\.2\.1 Tónusgörbe-szerkesztő
 
@@ -1994,7 +2061,7 @@ A tónusgörbe (Expozíció > Tónusgörbék eszköz) példáján keresztül né
 11. A görbe megnevezése
 12. A görbe típusa
 13. Visszaállítás
-14. Színválasztó
+14. Beállítási pont választó
 15. Vezérlőpont be-/kimeneti érték szerkesztő
 16. Aktuális görbe másolása a vágólapra
 17. Görbe beillesztése a vágólapról
@@ -2010,7 +2077,7 @@ Mivel példánkban tónusgörbéről van szó, mind a bemeneti, mind a kimeneti 
 1. Bemeneti értékek (x tengely)
 2. Kimeneti értékek (y tengely)
 3. Azonos bemeneti árnyalattartományok
-4. A lineáris görbe miatt a kimeneti árnyalattartomány megegyezik a bemeneti árnyalattartománnyal
+4. A lineáris görbe miatt a kimeneti árnyalattartomány megegyezik a bemeneti árnyalattartománnyal (a görbének nincs hatása a képre)
 5. A lineáris görbénél meredekebb görbe miatt a kimeneti árnyalattartomány nagyobb a bemenetinél, amely kontrasztosabb képet eredményez
 
 A fenti ábrán nézzük meg, hogyan teremt kapcsolatot a görbe a bemenő és a kimenő adatok között. A bal oldalon lineáris görbe látható, amely egy átlós egyenes. Tulajdonképpen a matematikából ismert y=x függvényt valósítja meg, ahol a kimeneti (y) érték ugyanakkora, mint a bemeneti (x). Ha arra vagyunk kíváncsiak, hogy egy adott bemenő értéknél (árnyalatnál) milyen kimenő értéket (árnyalatot) kapunk a görbe hatására, akkor annál a bemenő világosságértéknél egy merőlegest kell állítani a vízszintes (x) tengelyre, és ahol ez az egyenes metszi a görbét, abból a pontból egy merőlegest kell bocsátani a függőleges (y) tengelyre, és a merőleges egyenes valamint a függőleges tengely metszéspontjának megfelelő árnyalat lesz a kimenő árnyalat. Ez bonyolultan hangzik, de egyszerű dolog. A vízszintes tengely egy bizonyos árnyalatnak megfelelő helyén (bemenő árnyalat) sárga merőleges nyilat rajzoltam a görbe vonaláig. Ahol ez a nyíl eléri a görbét, abból a pontból pedig egy, a függőleges tengelyre merőleges sárga nyilat rajzoltam a függőleges tengelyig. Ahol a nyíl hegye eléri a függőleges tengelyt, az ott látható árnyalat lesz a kimenő árnyalat. Lineáris görbe esetén nyilvánvalóan a bemenő árnyalattal megegyezik a kimenő árnyalat, azaz a görbének semmilyen hatása sem lesz a képre, hiszen a kép összes képpontjának világosságértéke a görbe alkalmazása után is ugyanolyan lesz, mint előtte volt.
@@ -2019,25 +2086,27 @@ Az ábra jobb oldalán egyedi görbét láthatunk. Halvány szaggatott vonallal 
 
 Nézzük meg a kontrasztot is. Mindkét ábrán piros nyíllal bejelöltem ugyanazt a sötétebb árnyalatot is. Mindkét ábrán a vízszintes tengelynél (bemenetnél) (3), és a függőleges tengelynél (kimenetnél) (4 és 5) fehér nyíllal bejelöltem a két árnyalat közötti különbséget. A lineáris görbénél nyilvánvaló, hogy a kimenetnél lévő fehér nyíl elvileg ugyanolyan hosszú, mint a bemenetnél lévő. Az egyedi görbénél azonban a kimenetnél ez az árnyalattartomány megnövekedett, a fehér nyíl hosszabb lett a függőleges tengely mellett. Ez azt mutatja, hogy ebben a bemeneti árnyalattartományban (a piros és a sárga nyíl között az x tengelyen) a kimeneten megnövekedett a kontraszt. Azért növekedett meg, mert ebben a tartományban a görbe meredekebb, mint a lineáris egyenes.
 
+![](book-images/502.jpg)
+
 A **Görbetípus-választóval** (20) ötféle lehetőség közül választhatunk: **Kikapcsolt**, **Standard**, **Rugalmas**, **Parametrikus**, **Húrkontroll**.
 
-Ha a Görbe típusa (12) ikon környékére kattintunk, akkor a görbeszerkesztőt **elrejthetjük/megjeleníthetjük**. Ez a görbe működését nem befolyásolja, azonban a képernyőn így kevesebb helyet foglal. Ha egy görbe nem kikapcsolt állapotban van, és a szerkesztőeszköz, amelyen belül van, engedélyezve van, akkor az a görbe hatással lesz a képre, függetlenül a görbeszerkesztő láthatóságától.
+Ha a Görbe típusa (12) ikon környékére kattintunk, akkor a görbeszerkesztőt **elrejthetjük/megjeleníthetjük**. Ez a görbe működését nem befolyásolja, azonban a képernyőn így kevesebb helyet foglal. Ha egy görbe nem kikapcsolt állapotban van, és a szerkesztőeszköz engedélyezve van, amelyen belül van a görbe, akkor az a görbe hatással lesz a képre, függetlenül a görbeszerkesztő láthatóságától.
 
 A görbeszerkesztő használata közben a Ctrl+Z megnyomása az előzményekben lép vissza egy szinttel, nem pedig a görbeszerkesztés során elvégzett műveletet vonja vissza.
 
 A **Visszaállítás gombbal** a görbe visszaállítható az alapértelmezett értékre.
 
-A görbe hátterében a görbe szerkesztése előtti állapotot (a görbeszerkesztő bemeneti képét) tükröző fénysűrűség hisztogram (10) látható. A görbe szerkesztése, alakjának változása során bekövetkező változás ezen a hisztogramon nem követhető nyomon.
+A görbe hátterében a görbe szerkesztése előtti állapotot (a görbeszerkesztő bemeneti képét) tükröző világosság hisztogram (10) látható. A görbe szerkesztése, alakjának változása során bekövetkező változás ezen a hisztogramon nem követhető nyomon.
 
-Bizonyos görbetípusok esetén **vezérlőpontokat** helyez el az ART a görbe két végpontjánál. Ilyen esetben mi magunk is helyezhetünk el vezérlőpontokat a görbe egy pontjára történő kattintással, amelyeket az egérrel a görbevonalon mozgathatunk, és le/fel mozgatva alakíthatunk a görbe alakján. A vezérlőpontoknak csak a görbe alakjának kialakítása szempontjából van jelentőségük, a görbe hatása szempontjából csak a görbe alakja számít. Egy saját magunk által létrehozott vezérlőpont megszüntetéséhez az egérrel húzzuk azt ki a szerkesztési területről, és ott engedjük el.
+Bizonyos görbetípusok esetén **vezérlőpontokat** helyez el az ART a görbe két végpontjánál. Ilyen esetben mi magunk is helyezhetünk el vezérlőpontokat a görbe egy pontjára történő kattintással, amelyeket az egérrel a görbevonalon mozgathatunk, és le/fel mozgatva alakíthatunk a görbe alakján. A vezérlőpontok csak a görbe alakjának kialakítását segítik, a görbe hatása szempontjából csak a görbe alakja számít. Egy saját magunk által létrehozott vezérlőpont megszüntetéséhez az egérrel húzzuk azt ki a szerkesztési területről, és ott engedjük el.
 
 Ha lenyomjuk a vezérlőpont mozgatása közben a Ctrl billentyűt, akkor a mozgás jelentősen lelassul, és **finomabb beállítás** lehetséges. Ha lenyomjuk a vezérlőpont mozgatása közben a Shift billentyűt, akkor a vezérlőpont felveszi valamely **kulcselem** értékét. Ilyen kulcselem lehet például a görbe maximális vagy minimális értéke, a 45 fokos átlós egyenes pontja, az előző vagy a következő vezérlőponttal azonos érték, valamint az előző és a következő vezérlőpontot összekötő egyenes pontja. Az az elem pirosra változik, amelyhez az illesztés megtörtént.
 
-Legtöbbször megjelenik a görbe mellett a **Beállítási pont választó**. A beállítási pont választó lehetővé teszi, hogy egy vezérlőpontot helyezzünk el egy görbén pontosan azon a helyen, amely megfelel annak a területnek, amelyre az előnézeti képen az egérmutató mutat. Ez a lehetőség például a kép színeibe történő beavatkozáskor jön jól, de más esetekben is hasznos lehet. A gombra kattintva kapcsoljuk be a beállítási pont választót. Ha most az egérmutatót az előnézeti kép fölé visszük, a görbe típusától függően egy vízszintes vagy egy függőleges egyenes jelenik meg a görbén. Ez a vonal annak a képpontnak az értékét jelöli, amely fölött van az egérmutató. Ha egy vezérlőpontot szeretnénk elhelyezni a görbén ahhoz az értékhez, amely fölött az egérmutató áll, akkor nyomjuk le, és tartsuk lenyomva a Ctrl billentyűt, majd nyomjuk le és tartsuk lenyomva az egér gombját, ekkor egy vezérlőpont jelenik meg a görbén. Ezután felengedhetjük a Ctrl billentyűt. Ha továbbra is nyomva tartjuk az egérgombot, akkor a vezérlőpontot az előnézeti kép elhagyása nélkül állíthatjuk be az egér fel-le mozgatásával. Ha közben a Ctrl billentyűt is lenyomjuk, akkor nagyon finoman állíthatjuk be a vezérlőpontot. A beállítási pont választó kikapcsolásához ismét kattintsunk a gombra, vagy az előnézeti képen kattintsunk jobb egérgombbal.
+Legtöbbször megjelenik a görbe mellett a **Beállítási pont választó**. A beállítási pont választó lehetővé teszi, hogy egy vezérlőpontot helyezzünk el egy görbén pontosan azon a helyen, amely megfelel annak a területnek, amelyre az előnézeten az egérmutató mutat. Ez a lehetőség például a kép színeibe történő beavatkozáskor jön jól, de más esetekben is hasznos lehet. A gombra kattintva kapcsoljuk be a beállítási pont választót. Ha most az egérmutatót az előnézet fölé visszük, a görbe típusától függően egy vízszintes vagy egy függőleges egyenes jelenik meg a görbén. Ez a vonal annak a képpontnak az értékét jelöli, amely fölött van az egérmutató. Ha egy vezérlőpontot szeretnénk elhelyezni a görbén ahhoz az értékhez, amely fölött az egérmutató áll, akkor nyomjuk le, és tartsuk lenyomva a Ctrl billentyűt, majd nyomjuk le és tartsuk lenyomva az egér gombját, ekkor egy vezérlőpont jelenik meg a görbén. Ezután felengedhetjük a Ctrl billentyűt. Ha továbbra is nyomva tartjuk az egérgombot, akkor a vezérlőpontot az előnézet elhagyása nélkül állíthatjuk be az egér fel-le mozgatásával. Ha közben a Ctrl billentyűt is lenyomjuk, akkor nagyon finoman állíthatjuk be a vezérlőpontot. A beállítási pont választó kikapcsolásához ismét kattintsunk a gombra, vagy az előnézeten kattintsunk jobb egérgombbal.
 
-Minden görbéhez tartozik egy gomb, amely lehetővé teszi a kiválasztott **vezérlőpont be-/kimeneti értékeinek szerkesztését**. Használhatjuk ezt az eszközt például arra, hogy egy vezérlőpont kimenő értékét egy referenciaértékhez igazítsuk.
+Minden görbéhez tartozik egy gomb, amely lehetővé teszi a kiválasztott **vezérlőpont be-/kimeneti értékeinek szerkesztését**. Használhatjuk ezt például arra, hogy egy vezérlőpont kimenő értékét egy referenciaértékhez igazítsuk.
 
-Használatához vezérlőpontokat kell létrehozni. Ezt legegyszerűbben a beállítási pont választóval tehetjük meg. Aktivizáljuk a be-/kimeneti értékeinek szerkesztését és a beállítási pont választót a gombokra történő kattintással. A görbe alatt megjelenik a "Be", azaz a bemeneti értéket, illetve a "Ki", azaz a kimeneti értéket tartalmazó mező. A mezők értékei megfelelnek az egérmutató alatti pontnak, ha az egérmutatót a görbe vagy az előnézeti kép fölé visszük. Ha az egérmutatót az előnézeti kép fölé visszük, akkor a fentebb leírtak szerint a Ctrl+kattintással elhelyezhetünk egy vezérlőpontot a görbén. A vezérlőpont be-/kimeneti értékeinek szerkesztéséhez kattintsunk jobb egérgombbal a vezérlőpontra. Ekkor a vezérlőpont piros színű lesz, és körülötte egy piros gyűrű látható.
+Használatához vezérlőpontokat kell létrehozni. Ezt legegyszerűbben a beállítási pont választóval tehetjük meg. Aktivizáljuk a be-/kimeneti értékeinek szerkesztését és a beállítási pont választót a gombokra történő kattintással. A görbe alatt megjelenik a "Be", azaz a bemeneti értéket, illetve a "Ki", azaz a kimeneti értéket tartalmazó mező. A mezők értékei megfelelnek az egérmutató alatti pontnak, ha az egérmutatót a görbe vagy az előnézet fölé visszük. Ha az egérmutatót az előnézet fölé visszük, akkor a fentebb leírtak szerint a Ctrl+kattintással elhelyezhetünk egy vezérlőpontot a görbén. A vezérlőpont be-/kimeneti értékeinek szerkesztéséhez kattintsunk jobb egérgombbal a vezérlőpontra. Ekkor a vezérlőpont piros színű lesz, és körülötte egy piros gyűrű látható.
 
 ![](book-images/138.jpg)
 
@@ -2056,7 +2125,7 @@ Többféle görbetípus áll rendelkezésre, nézzük meg ezeket.
 
 **Ki**: a görbe kikapcsolt állapotban van, semmi hatása sincs a képre.
 
-**Standard**: a fentiekben tulajdonképpen ezzel foglalkoztunk. Vezérlőpontok segítségével állíthatjuk be a görbe alakját.
+**Standard**: a fentiekben ezzel foglalkoztunk. Vezérlőpontok segítségével állíthatjuk be a görbe alakját.
 
 **Rugalmas**: a rugalmas görbe egy vezérlőpontjának módosítása kevésbé lesz hatással a görbe távolabbi részére, mint standard görbe esetén.
 
@@ -2064,7 +2133,7 @@ Többféle görbetípus áll rendelkezésre, nézzük meg ezeket.
 
 ![](book-images/139.jpg)
 
-Lehetővé teszi csúszkák használatát a görbe közvetlen alakítása helyett. A bemeneti világosságértékek négy tartományra vannak osztva, mégpedig **Árnyékok**, **Sötétek**, **Fények**, és **Csúcsfények**. Ezeken a tartományokon belül a görbét a görbe alatti négy csúszkával állíthatjuk. Ha az egérmutatót az egyik csúszka fölé állítjuk, akkor a görbevonal mellett a fenti ábrán is látható világosabb terület jelzi azt a tartományt, amelyen belül azzal a csúszkával változtatni lehet a görbén. A görbe alatti árnyalatskálán láthatjuk a **Zónaválasztót**, amelyet három vezérlőpont oszt négy részre. Ezeket egér segítséggel jobbra-balra tologathatjuk. Ezen vezérlőpontok helyzetétől függ, hogy az egyes csúszkák hatása milyen árnyalatokra lesz hatással. Mozgatásukra változik a kép bizonyos részeinek világossága, változik az a terület, amelyen belül a csúszkával alakíthatjuk a görbét, és változik a görbe alakja is. A bal oldali vezérlőpont balra történő mozgatása a sötét árnyalatok világosodását eredményezi, jobbra mozgatása azok sötétedését. A középső vezérlőpont balra történő mozgatásának hatására a középárnyalatok világosodnak, jobbra sötétednek. A jobb oldali vezérlőpont balra mozgatása a csúcsfényeket sötétíti, jobbra mozgatása pedig világosítja. A vezérlőpontokkal a kép jellegéhez, világosságértékeihez igazíthatjuk a görbeszerkesztő működését.
+Lehetővé teszi csúszkák használatát a görbe közvetlen alakítása helyett. A bemeneti világosságértékek négy tartományra vannak osztva, mégpedig **Árnyékok**, **Sötétek**, **Fények**, és **Csúcsfények**. Ezeken a tartományokon belül a görbét a görbe alatti négy csúszkával állíthatjuk. Ha az egérmutatót az egyik csúszka fölé állítjuk, akkor a görbevonal mellett a fenti ábrán is látható világosabb terület jelzi azt a tartományt, amelyen belül azzal a csúszkával változtatni lehet a görbén. A görbe alatti árnyalatskálán láthatjuk a **Zónaválasztót**, amelyet három vezérlőpont oszt négy részre. Ezeket egér segítséggel jobbra-balra tologathatjuk. Ezeknek a vezérlőpontoknak a helyzetétől függ, hogy az egyes csúszkák hatása milyen árnyalatokra lesz hatással. Mozgatásukra változik a kép bizonyos részeinek világossága, változik az a terület, amelyen belül a csúszkával alakíthatjuk a görbét, és változik a görbe alakja is. A bal oldali vezérlőpont balra történő mozgatása a sötét árnyalatok világosodását eredményezi, jobbra mozgatása azok sötétedését. A középső vezérlőpont balra történő mozgatásának hatására a középárnyalatok világosodnak, jobbra sötétednek. A jobb oldali vezérlőpont balra mozgatása a csúcsfényeket sötétíti, jobbra mozgatása pedig világosítja. A vezérlőpontokkal a kép jellegéhez, világosságértékeihez igazíthatjuk a görbeszerkesztő működését.
 
 A csúszkák melletti visszaállítás gomb segítségével az egyes csúszkákat lehet alaphelyzetbe állítani. A görbe felett a jobb felső sarokban látható visszaállítás gombbal mind a négy csúszkát és mind a három kontroll pontot alaphelyzetbe állíthatjuk. Ha a zónaválasztón jobb egérgombbal kattintunk, akkor a vezérlőpontok alaphelyzetbe állnak, de a csúszkák értéke nem változik.
 
@@ -2093,7 +2162,7 @@ Az S görbét sokszor használjuk a kép tónusainak beállításához. A görbe
 
 Alul a vízszintes tengelyen, a bemenő tónusoknál kijelöltem három tónustartományt, egyet az árnyékoknál (1), egyet a középtónusoknál (3), egyet a csúcsfényeknél (5). A függőleges tengelyen bejelöltem azokat a kimeneti tónustartományokat, amelyek az egyes bemeneti tónustartományokhoz tartoznak (2, 4, 6).
 
-*Ahol a kimenti tónustartomány kisebb a hozzá tartozó bemeneti tónustartománynál, ott tömörítés (összenyomás) történik, ahol nagyobb, ott nyújtás (széthúzás). A nyújtás a tömörítés ellentéte.*
+*Ahol a kimenti tónustartomány kisebb a hozzá tartozó bemeneti tónustartománynál, ott tömörítés (összenyomás) történik, ahol nagyobb, ott nyújtás (széthúzás). A nyújtás a tömörítés ellentéte. A nyújtás növeli a kontrasztot, a tömörítés csökkenti.*
 
 S-görbe esetén az árnyékoknál és a csúcsfényeknél kisebb a kimeneti tónustartomány, tehát tömörítés történik, amely kontrasztvesztéssel jár, mert csökken a tónusok közötti világosságkülönbség. A középtónusoknál nagyobb a kimeneti tónustartomány, tehát nyújtás történik, amely a kontraszt növekedésével jár, mert növekszik a tónusok közötti világosságkülönbség.
 
@@ -2103,11 +2172,11 @@ Ezt a görbét az ART több eszköze is használja. A Színek eszközcsoport > S
 
 ![](book-images/143.jpg)
 
-1. Bemeneti értékek (színskála)
+1. Bemeneti értékek (színezetskála)
 2. Kimeneti értékek (H, S, vagy L)
 3. Görbe megnevezése
 4. Görbetípus ikonja
-5. Görbetípus-választó (ki/Kiegyenlítő)
+5. Görbetípus-választó (Ki/Kiegyenlítő)
 6. Visszaállítás
 7. Beállítási pont választó
 8. Vezérlőpont be-/kimeneti érték szerkesztő
@@ -2121,22 +2190,24 @@ Ezt a görbét az ART több eszköze is használja. A Színek eszközcsoport > S
 A színkiegyenlítő eszköz felhasználói felületét láthatjuk a fenti ábrán. Ez az eszköz három kiegyenlítőgörbe-szerkesztőt tartalmaz, ennek megfelelően felül, a Csatorna felirat mellett van a H, az S, és az L görbeszerkesztő fejléce. A fejlécek három elemet tartalmaznak:
 
 -   A **görbe megnevezése**, amely ebben a szerkesztőeszközben annak a kimenő tulajdonságnak a nevével egyezik meg, amelyet a görbe segítségével változtathatunk. Jelen esetben a HSL színrendszer csatornái szerinti H (Színezet), S (Telítettség), és L (Világosság) görbéket láthatjuk, amelyek segítségével a kép színeit, telítettségét, és világosságát változtathatjuk meg.
--   A **görbetípus ikonja**, amely a kiválasztott görbetípust jelzi. A hullámos vonal lesz az ikon, ha a Kiegyenlítő lehetőséget választottuk, és vízszintes vonal, ha a Ki(kapcsolt) lehetőséget választottuk. A fenti ábrán az S és L görbék kikapcsolt állapotúak.
+-   A **görbetípus ikonja**, amely a kiválasztott görbetípust jelzi. Hullámos vonal lesz az ikon, ha a Kiegyenlítő lehetőséget választottuk, és vízszintes vonal lesz Ki(kapcsolt) választásakor. A fenti ábrán az S és L görbék kikapcsolt állapotúak.
 -   A lenyitható listában választhatunk **görbetípust**. Ha a **Ki**(kapcsolt) lehetőséget választjuk, akkor kikapcsoljuk a görbét, az nem is lesz szerkeszthető, ha a **Kiegyenlítő** lehetőséget választjuk, akkor pedig szerkeszthetjük a görbét. A kikapcsolt görbének nincs semmilyen hatása a képre.
 
 Fejlécére kattintva tudjuk **aktuálissá tenni** a görbét. Mindig az aktuális görbe szerkesztőjét látjuk (ha a görbe nem kikapcsolt állapotú). Az aktuális görbe fejléce sötétebb színű. A fenti ábrán a H görbe az aktuális, annak a szerkesztőjét látjuk. Ha a már aktuális görbe fejlécére kattintunk, akkor elrejthetjük a görbeszerkesztőt, az nem lesz látható, ismételt kattintásra ismét látható lesz. Ennek csak az a szerepe, hogy amikor nem szerkesztjük a görbét, akkor ne foglalja a helyet a képernyőn. A görbe hatását nem befolyásolja az, hogy a görbeszerkesztő látható-e vagy sem. Csak a görbe alakja számít.
 
-Alul, az x tengelyen a **bemenő tulajdonságot** láthatjuk, amely értékétől függően változik a képen a görbe kimenő tulajdonsága. Alul láthatjuk, hogy jelenleg a bemenő tulajdonság a színezet, láthatjuk a színskálát is. Bal oldalt az y tengelyen a **kimenő tulajdonság** van ábrázolva, amely a bemenő tulajdonság értékétől függően változhat, ez a H görbénél a színezet, az S görbénél a telítettség, és az L görbénél a világosság. A kimenő tulajdonság és annak értékei a kiegyenlítőgörbe-szerkesztőkben általában nincs feltüntetve, azt csak oda kell képzelnünk.
+Alul, az x tengelyen a **bemenő tulajdonságot** láthatjuk, amely értékétől függően változik a képen a görbe kimenő tulajdonsága. Alul láthatjuk, hogy jelenleg a bemenő tulajdonság a színezet, láthatjuk a színezetskálát is. Bal oldalt az y tengelyen a **kimenő tulajdonság** van ábrázolva, amely a bemenő tulajdonság értékétől függően változhat, ez a H görbénél a színezet, az S görbénél a telítettség, és az L görbénél a világosság. A kimenő tulajdonság és annak értékei a kiegyenlítőgörbe-szerkesztőkben általában nincsenek feltüntetve.
+
+Ha színezet a bemenő tulajdonság, akkor a görbe alatti színezetskálán a színkör színei láthatók. A színkörön a színek körbezáródnak, amely azt jelenti, hogy a színezetskála vége után annak elején folytatódnak a színkör színei.
 
 A **lineáris állapot**, amikor a görbének semmi hatása sincs, az ábrán is látható, középen elhelyezkedő vízszintes egyenes. A lineáris, vízszintes egyenes halványan mindig látható a görbeszerkesztőben. Ahol a görbe vonala a lineáris egyenes felett halad, ott nő a kimeneti tulajdonság értéke, annál jobban, minél magasabban fut a görbe. Ahol a görbe vonala a lineáris egyenes alatt halad, ott csökken a kimeneti tulajdonság értéke, annál jobban, minél alacsonyabban fut a görbe.
 
-Látható hat darab különböző színű függőleges vonal. A vonal színe megfelel a bemenő színárnyalatnak (alul az x tengelyen látható szín). Azaz a függőleges vonalak a bemenő színárnyalatokat jelképezik.
+Látható hat darab különböző színű függőleges vonal. A vonal színe megfelel a bemenő színezetnek (alatta az x tengelyen látható szín). Azaz a függőleges vonalak a bemenő színezet bizonyos színeit jelképezik.
 
 A lineáris vízszintes vonal és a színes függőleges vonalak metszéspontjában **vezérlőpontok** találhatók, segítségükkel alakíthatjuk ki a görbe alakját.
 
 A **visszaállítás** gomb az aktuális görbét állítja vissza lineárisra.
 
-A **beállítási pont választó** gombra kattintva az előnézeti képről választhatunk egy pontot, amelyhez igazíthatjuk a görbét. Részletesen lentebb foglalkozunk vele.
+A **beállítási pont választó** gombra kattintva az előnézetről választhatunk egy pontot, amelyhez igazíthatjuk a görbét. Hasonlóan működik, mint a tónusgörbéknél.
 
 A **vezérlőpont be-/kimeneti érték szerkesztő** gombra kattintva számértékekkel adhatjuk mag az értékeket. Részletesen lentebb foglalkozunk vele.
 
@@ -2150,9 +2221,7 @@ A **görbe betöltése** gombra kattintva az előzőleg fájlba mentett görbét
 
 ![](book-images/144.jpg)
 
-A görbe hatását talán az L görbénél a legegyszerűbb megérteni. A fenti ábrán egy L (világosság) görbét látunk. Ez a görbe minden egyes képpont tekintetében azt szabályozza, hogy az adott képpont színezetétől függően hogyan változzon annak világossága. A lineáris "görbe" a középen haladó vízszintes egyenes. Balról jobbra nézve a görbét, azt láthatjuk, hogy a sárga színig a világosságértékek nem változnak, majd növekedni kezd sárgás-zöldes területek (képpontok) világossága a képen, a legjobban a zöld színű területek világossága nő meg, majd fokozatosan visszatér a világosság a cián színnél az eredeti értékre. A cián színű területek világossága nem változik, majd a kék szín felé haladva egyre inkább csökken az adott színű területek világossága, legjobban a kék területek világossága csökken. A kéktől a lila szín felé haladva visszanövekszik a világosság az eredeti értékre, a lila szín, és az attól jobbra lévő színek világossága nem változik.
-
-Láthatjuk, hogy bal oldalon függőlegesen a világosságértékek nincsenek feltüntetve (pl. tónusskála formájában), azt csak oda kell képzelnünk. Ez azonban nem probléma. Azt tudjuk, hogy felfelé nő a világosság, lefelé pedig csökken. A világosság értékét úgyis az előnézeti képet megfigyelve kell beállítani. A leírtak értelemszerűen igazak a másik két görbére is.
+A görbe hatását talán az L görbénél a legegyszerűbb megérteni. A fenti ábrán egy L (világosság) görbét látunk. Ez a görbe minden egyes képpont tekintetében azt szabályozza, hogy az adott képpont színezetétől függően hogyan változzon annak világossága. A lineáris "görbe" a középen haladó vízszintes egyenes. Balról jobbra nézve a görbét, azt láthatjuk, hogy a sárga színig a világosságértékek nem változnak, majd növekedni kezd sárgás-zöldes területek (képpontok) világossága a képen, a legjobban a zöld színű területek világossága nő meg, majd a kékeszöld színnél fokozatosan visszatér a világosság az eredeti értékre. A kékeszöld színű területek világossága nem változik, majd a kék szín felé haladva egyre inkább csökken az adott színű területek világossága, legjobban a kék területek világossága csökken. A kéktől a lila szín felé haladva visszanövekszik a világosság az eredeti értékre, a lila szín, és az attól jobbra lévő színek világossága nem változik. A görbe hatására ez eredeti világosságukhoz képest változik meg a képpontok világossága.
 
 ![](book-images/145.jpg)
 
@@ -2160,7 +2229,7 @@ Ha az egyik metszéspontban lévő vezérlőpontra visszük az egérmutatót, é
 
 ![](book-images/146.jpg)
 
-A diagram tetszőleges, valamely két függőleges vonal közötti területének valamely pontjára kattintva magunk is létrehozhatunk vezérlőpontokat. Ezek ugyanúgy viselkednek, mint a már eredetileg meglévők. Az általunk létrehozott vezérlőpontot úgy tudjuk eltávolítani, hogy az egérrel kihúzzuk a szerkesztési területről, és ott elengedjük. Az ábrán két új vezérlőpontot iktattunk be azért, mert így hirtelenebb átmenetet tudunk létrehozni. Mindjárt meglátjuk, hogy az átmenetet más módon is befolyásolhatjuk.
+A diagram tetszőleges, valamely két függőleges vonal közötti területének valamely pontjára kattintva magunk is létrehozhatunk vezérlőpontokat. Ezek ugyanúgy viselkednek, mint a már eredetileg meglévők. Az általunk létrehozott vezérlőpontot úgy tudjuk eltávolítani, hogy az egérrel kihúzzuk a szerkesztési területről, és ott elengedjük. Az ábrán két új vezérlőpontot iktattunk be azért, mert így hirtelenebb (meredekebb) átmenetet tudunk létrehozni. Mindjárt meglátjuk, hogy az átmenetet más módon is befolyásolhatjuk.
 
 Ha a Ctrl billentyűt lenyomva mozgatjuk az egeret, akkor a vezérlőpont lassan mozog, és nagyon finom beállításra lesz lehetőségünk.
 
@@ -2168,27 +2237,25 @@ Ha a Shift billentyűt lenyomjuk a vezérlőpont mozgatása közben, akkor a vez
 
 ![](book-images/147.jpg)
 
-Ha az egérmutatót a függőleges vonalra helyezzük, de nem a vezérlőpontra, és lenyomva tartjuk az egér gombját, akkor az azon a vonalon lévő vezérlőpontot tudjuk vízszintesen vagy függőlegesen mozgatni attól függően, hogy az egérrel az első mozdulatot milyen irányban tesszük meg. Ha függőleges irányban mozdítjuk meg az egeret, akkor csak függőlegesen tudjuk a vezérlőpontot mozgatni, azaz a vízszintes vonal vastag lesz, együtt mozog a vezérlőponttal, mint az ábrán látható. Ha vízszintesen mozdítjuk meg az egeret, akkor csak vízszintes irányban lesz mozgatható, ilyenkor a függőleges vonal lesz vastag. Mindig a mozgatható vonal lesz vastag. Az egérmutató mutatja a mozgatás irányát. Ezzel a módszerrel biztosítható, hogy csak abba az irányba mozogjon a vezérlőpont, amilyen irányba szeretnénk, a másik irányba nem tudjuk mozgatni. Ha magát a vezérlőpontot fogjuk meg az egérrel, akkor a vezérlőpont mind a négy irányba mozgatható.
+Ha az egérmutatót a függőleges vonalra helyezzük, de nem a vezérlőpontra, és lenyomva tartjuk az egér gombját, akkor az azon a vonalon lévő vezérlőpontot tudjuk vízszintesen vagy függőlegesen mozgatni attól függően, hogy az egérrel az első mozdulatot milyen irányba tesszük meg. Ha függőleges irányba mozdítjuk meg az egeret, akkor csak függőlegesen tudjuk a vezérlőpontot mozgatni, azaz a vízszintes vonal vastag lesz, együtt mozog a vezérlőponttal, mint az ábrán látható. Ha vízszintesen mozdítjuk meg az egeret, akkor csak vízszintes irányba lesz mozgatható, ilyenkor a függőleges vonal lesz vastag. Mindig a mozgatható vonal lesz vastag. Az egérmutató mutatja a mozgatás irányát. Ezzel a módszerrel biztosítható, hogy csak abba az irányba mozogjon a vezérlőpont, amilyen irányba szeretnénk, a másik irányba nem tudjuk mozgatni. Ha magát a vezérlőpontot fogjuk meg az egérrel, akkor a vezérlőpont mind a négy irányba mozgatható.
 
 ![](book-images/148.jpg)
 
-Ha az egérmutatót a vezérlőpont fölé helyezzük, akkor mellette balra és jobbra megjelenik egy sárga és kék jelzőpont. Ha ezek valamelyikére állunk rá az egérmutatóval, az egérmutató balra-jobbra nyíllá változik, és most lenyomva a gombot, a görbe meredekségét (azaz jelen esetben a színváltás átmenetének fokozatosságát) változtatni tudjuk. A görbe meredekre állításával elérhető, hogy a színmódosítás csak a bemenő szín kis tartományát érintse.
+Ha az egérmutatót a vezérlőpont fölé helyezzük, akkor mellette balra és jobbra megjelenik egy sárga és kék jelzőpont. Ha ezek valamelyikére állunk rá az egérmutatóval, az egérmutató balra-jobbra nyíllá változik, és most lenyomva a gombot, a görbe meredekségét (azaz jelen esetben a színváltás átmenetének fokozatosságát) változtatni tudjuk. A görbe meredekre állításával elérhető, hogy a színmódosítás csak a bemenő színezet kis tartományát érintse.
 
 Vezérlőpontok létrehozásával, és a görbe meredekségének beállításával tetszőleges alakú görbe állítható elő.
 
-Ennél a görbetípusnál is van lehetőség a **be-/kimeneti értékek szerkesztésére**. Ehhez a Vezérlőpont be-/kimeneti értékeinek szerkesztése gombra kell kattintanunk, jobbra a görbe mellett. Ezután jobb egérgombbal kell kattintani arra a vezérlőpontra, amelynek értékeit szerkeszteni szeretnénk, ennek hatására a vezérlőpont színe pirosra vált.
+Ennél a görbetípusnál is van lehetőség a **be-/kimeneti értékek szerkesztésére**. Ehhez a vezérlőpont be-/kimeneti értékeinek szerkesztése gombra kell kattintanunk, jobbra a görbe mellett. Ezután jobb egérgombbal kell kattintani arra a vezérlőpontra, amelynek értékeit szerkeszteni szeretnénk, ennek hatására a vezérlőpont színe pirosra vált.
 
 ![](book-images/149.jpg)
 
-**Be** és **Ki** a vezérlőponthoz tartozó bemeneti, illetve kimeneti érték megadására szolgál, az **LT** a vezérlőpont bal oldalán szabályozza a görbe meredekségét, az **RT** a jobb oldalán.
+**Be** és **Ki** mezők a vezérlőponthoz tartozó bemeneti, illetve kimeneti érték megadására szolgál, az **LT** a vezérlőpont bal oldalán szabályozza a görbe meredekségét, az **RT** a jobb oldalán.
 
-Ennél a görbetípusnál is van lehetőség a beállítási pont választó használatára a be-/kimeneti értékek szerkesztése közben, hasonlóan, mint a tónusgörbéknél.
-
-Nézzünk meg egy példát a kiegyenlítőgörbe használatára.
+Nézzünk meg egy egyszerű példát a kiegyenlítőgörbe használatára.
 
 ![](book-images/150.jpg)
 
-Változtassuk meg a lány mögötti levelek színét. Az lenne a jó, ha nem lenne semmi másnak a levelekhez hasonló színe a képen, mert ha más hasonló színű képelem is van, akkor annak is megváltozna a színe. Ez nem teljesen teljesül, mert részben a virágcsokornál lévő zöldek is változnak. Menjünk a Színek eszközcsoportba, aktiváljuk, és nyissuk le a Színkiegyenlítő eszközt. A "H" (Hue, színezet) görbe fejléce jobb oldalánál nyissuk le, és válasszuk ki a Kiegyenlítő lehetőséget.
+Változtassuk meg a lány mögötti levelek színét. Az lenne jó, ha nem lenne semmi másnak a levelekhez hasonló színe a képen, mert ha más hasonló színű képelem is van, akkor annak is megváltozna a színe. Ez nem teljesen teljesül, mert részben a virágcsokornál lévő zöldek is változnak. Menjünk a Színek eszközcsoportba, aktiváljuk, és nyissuk le a Színkiegyenlítő eszközt. A "H" görbe fejlécének jobb oldalánál nyissuk le, és válasszuk ki a Kiegyenlítő lehetőséget.
 
 ![](book-images/151.jpg)
 
@@ -2196,7 +2263,7 @@ Fogjuk meg egérrel a zöld függőleges vonal közepén lévő vezérlőpontot,
 
 #### <a id="31424"></a> 3\.14\.2\.4 Küszöbgörbe-szerkesztő
 
-A küszöbgörbe azt határozza meg, hogy hogyan szeretnénk feldolgozni a képet az adott eszközzel a kép tónusai, színezete, vagy telítettsége függvényében.
+A küszöbgörbe azt határozza meg, hogy hogyan szeretnénk feldolgozni a képet az adott eszközzel a kép tónusainak, vagy egyéb tulajdonságának függvényében.
 
 A Részletek eszközcsoportban található Élesítés eszköz példáján keresztül nézzük meg a küszöbgörbe használatát. Az élesítésen belül az Életlen maszk módszert kell kiválasztanunk, hogy a küszöbgörbe megjelenjen.
 
@@ -2212,21 +2279,21 @@ A Részletek eszközcsoportban található Élesítés eszköz példáján keres
 8. Maximális élesítés
 9. Fokozatosan csökkenő élesítés
 
-A küszöbgörbe alá oda kell képzelnünk a tónusskálát, balra a legsötétebb, jobbra a legvilágosabb árnyalattal. A fenti ábrán oda is tettem. A küszöbgörbén láthatunk négy **vezérlőpontot**, kettőt alul, kettőt felül, és közöttük a "görbe" is be van rajzolva, amely mindig egyenes szakaszokból áll. Új vezérlőpontot nem lehet létrehozni, csak ezt a négyet lehet beállítani. Az ábrán a négy vezérlőpontot feketére színeztem, hogy jobban láthatók legyenek.
+A küszöbgörbe alá oda kell képzelnünk a tónusskálát, balra a legsötétebb, jobbra a legvilágosabb árnyalattal. A fenti ábrán oda is tettem. A küszöbgörbén láthatunk négy **vezérlőpontot**, kettőt alul, kettőt felül, és közöttük a "görbe" is be van rajzolva, amely mindig egyenes szakaszokból áll. Új vezérlőpontot nem lehet létrehozni, csak ezt a négyet lehet beállítani. Az ábrán a négy vezérlőpontot feketére színeztem, hogy jobban lehessen látni őket.
 
-Az Élesítés eszköz esetében a küszöbgörbével azt lehet beállítani, hogy a kép adott helyének tónusától hogyan függjön az élesítés mértéke. A képzaj a legsötétebb képrészeken jelenik meg legelőször, mert azon a részen éri a legkevesebb fény a képérzékelőt. A képzajt nem szeretnénk élesíteni, mert akkor még jobban láthatóvá válna a képen.
+Az Élesítés eszköz esetében a küszöbgörbével azt lehet szabályozni, hogy a kép adott helyének tónusától hogyan függjön az élesítés mértéke. A képzaj a legsötétebb képrészeken jelenik meg legelőször, mert azon a részen éri a legkevesebb fény a képérzékelőt. A képzajt nem szeretnénk élesíteni, mert akkor még jobban láthatóvá válna a képen.
 
-A négy vezérlőpont legfeljebb öt tartomány kialakítását teszi lehetővé, egyet a bal alsó előtt, hármat a négy vezérlőpont között, és egyet a jobb alsó után. A képen látható példában csak négy tartomány van kialakítva, az ötödik akkor keletkezne a jobb alsó vezérlőpont után, ha azt a jobb szélső helyzetből valamennyivel balra húznánk.
+A négy vezérlőpont legfeljebb öt tartomány kialakítását teszi lehetővé, egyet a bal alsó előtt, hármat a négy vezérlőpont között, és egyet a jobb alsó után. A képen látható példában csak négy tartomány látható, az ötödik akkor keletkezne a jobb alsó vezérlőpont után, ha azt a jobb szélső helyzetből balra húznánk.
 
-Ha az egeret a görbe fölé visszük, akkor megmutatja az aktuális beállításértékeket.
+Ha az egeret a görbe fölé visszük, akkor megmutatja az aktuális értékeket.
 
 ![](book-images/153.jpg)
 
 Az ábrán láthatjuk, hogy a bal alsó vezérlőpont értéke 20, a bal felsőé 80, a jobb felsőé 1200, a jobb alsóé pedig a maximális 2000. Ezek az értékek azt jelzik, hogy a vezérlőpontok milyen világosságértékekre vannak állítva. A bal oldali szélső helyzet értéke 0, a jobb oldali szélső helyzet 2000. Ahol a görbe legalul fut, azoknál az árnyalatoknál az eszköz egyáltalán nem fejti ki hatását, ahol legfelül halad, ott maximális az eszköz hatása, ahol ferde, ott fokozatosan nő, illetve csökken az adott árnyalattartományban az élesítés mértéke. Ha konkrétan megnézzük a fenti ábrán a görbét, akkor azt láthatjuk, hogy a legsötétebb területeken nincs élesítés, mert a bal alsó vezérlőpont 20-ra van állítva, és 20 alatt alul fut a görbe. A bal alsó és a bal felső vezérlőpont közötti árnyalatoknál a görbe ferdén felfelé halad, és fokozatosan egyre nagyobb mértékű az élesítés. Ezek még mindig elég sötét képrészek. A bal felső vezérlőpontnál éri el a maximális hatást az élesítés, és ettől kezdve egészen a jobb felső vezérlőpontnak megfelelő világosságú területekig maximális marad. Ezután a jobb alsó vezérlőpontig, jelen esetben a legvilágosabb árnyalatokig fokozatosan csökken az élesítés mértéke.
 
-A visszaállító gomb az alapértelmezett értékeket állítja vissza. A Ctrl-z az előzményekben lép eggyel vissza nem pedig a görbe szerkesztési lépéseiben.
+A visszaállítás gomb az alapértelmezett értékeket állítja vissza. A Ctrl-z az előzményekben lép eggyel vissza nem pedig a görbe szerkesztési lépéseiben.
 
-Az egyes vezérlőpontok egyenként történő mozgatásához tartsuk lenyomva a Shift billentyűt, mielőtt egy vezérlőpontra kattintanánk az egérrel. A Shift billentyű lenyomása nélkül együtt mozgathatjuk a bal alsó és bal felső, illetve a jobb felső és jobb alsó vezérlőpontpárokat. Ha a vezérlőpont mozgatása közben lenyomjuk a Ctrl billentyűt, akkor nagyon finoman mozgathatjuk a vezérlőpontot.
+Az egyes vezérlőpontok egyenként történő mozgatásához tartsuk lenyomva a Shift billentyűt, mielőtt egy vezérlőpontra kattintanánk az egérrel. A Shift billentyű lenyomása nélkül együtt mozgathatjuk a bal alsó és bal felső, illetve a jobb felső és jobb alsó vezérlőpontpárokat. Ha a vezérlőpont mozgatása közben lenyomjuk a Ctrl billentyűt, akkor nagyon finoman mozgathatjuk.
 
 Az Élesítés eszköznél a küszöbgörbével valójában az élesített (módosított) kép átlátszatlanságát szabályozzuk a képpontok világosságától függően.
 
@@ -2246,7 +2313,7 @@ A letöltött fájlt csomagoljuk ki. Kicsomagolás után kapunk egy könyvtárat
 
 A nyelvi fájlok fájlneve az adott nyelv megnevezése (pl. Magyar), amelyet nem szabad megváltoztatni, mert akkor az ART nem fogja megtalálni. A nyelvi fájlok a szkriptek felhasználói felületének fordításait tartalmazzák. Jelenleg magyar, holland, francia, koreai, japán és angol érhető el. Ha a program felhasználói felületéhez kiválasztott nyelvhez nem érhető el CTL szkript nyelvi fájl, akkor a szkriptek felhasználói felülete angol nyelvű lesz.
 
-A szkriptek telepítésének tekintetében kétféle lehetőség közül választhatunk céljainktól függően:
+A szkriptek telepítése céljainktól függően kétféle módon történhet:
 
 Egyik lehetőségként az ART telepítési könyvtárában található üres ctlscripts könyvtárba másoljuk az összes .ctl kiterjesztésű fájlt, és a languages könyvtárat is annak tartalmával együtt. Ezzel a megoldással minden felhasználónak rendelkezésére állnak a CTL szkriptek. A módszer hátránya az, hogy amikor az ART új változatát telepítjük, akkor ismét el kell végezni a másolást.
 
@@ -2296,9 +2363,9 @@ Ezután duplán kell kattintani a szerkesztésre kiszemelt kép bélyegképére,
 
 ![](book-images/161.jpg)
 
-A filmszalag és a bal oldali panel megjelenítését letiltottam, így nagyobb hely áll az előnézeti kép rendelkezésére. Az előnézeti kép hátterét állítsuk szürkére.
+A filmszalag és a bal oldali panel megjelenítését letiltottam, így nagyobb hely áll az előnézet rendelkezésére. Az előnézet hátterét állítsuk szürkére.
 
-Ebben a fázisban jobb, ha az előnézeti kép méretét kisebbre állítjuk, hogy azt a szürke háttér által körülvéve szemlélhessük, mert az alapvető beállításokat így tudjuk legjobban elvégezni. A színek észlelése függ a háttér világosságától, színétől is.
+Ebben a fázisban jobb, ha az előnézet méretét kisebbre állítjuk, hogy azt a szürke háttér által körülvéve szemlélhessük, mert az alapvető beállításokat így tudjuk legjobban elvégezni. A színek észlelése függ a háttér világosságától, színétől is.
 
 Ettől a pillanattól kezdve a fénykép bélyegképe már nem a beágyazott JPEG-en, hanem a tényleges nyers adatokon alapul. Amikor módosítjuk a képet a szerkesztőben, a bélyegkép frissül, hogy tükrözze a változtatásokat.
 
@@ -2324,7 +2391,7 @@ Ezután átmehetünk az Expozíció eszközcsoportba, és ha szükséges, állí
 
 ![](book-images/166.jpg)
 
-Ez a kép jól exponált, ezért erre nincs szükség. Most már megnövelhetjük az előnézeti kép méretét az ablakhoz igazítva. Az Expozíció eszközcsoportban aktiváljuk a Tónuskiegyenlítő eszközt, és nyissuk is le. A kép előterében túl sötét részek vannak, világosítsunk ezen az Árnyékok csúszka értékének 30-ra állításával.
+Ez a kép jól exponált, ezért erre nincs szükség. Most már megnövelhetjük az előnézet méretét az ablakhoz igazítva. Az Expozíció eszközcsoportban aktiváljuk a Tónuskiegyenlítő eszközt, és nyissuk is le. A kép előterében túl sötét részek vannak, világosítsunk ezen az Árnyékok csúszka értékének 30-ra állításával.
 
 ![](book-images/167.jpg)
 
@@ -2344,7 +2411,7 @@ Itt öt eszközt találunk: Folt eltávolítása, Élesítés, Zajcsökkentés, 
 
 ![](book-images/171.jpg)
 
-Háromféle élesítési módszer közül választhatunk, mindegyikhez másfajta vezérlőelemek tartoznak. A fenti ábrán balra az Életlen maszk, középen az RL Dekonvolúció, jobbra az Egyedi RL Dekonvolúció módszer vezérlői láthatók. Mi most az Életlen maszk módszert szeretnénk használni, válasszuk ki azt a legördülő listából. Az Élesítés eszköz fejlécében láthatjuk, hogy hatása csak 100% nagyítás mellett látható az előnézeti képen, ezért az előnézeti kép alatti eszköztáron kattintsunk az 1:1 nagyító gombra. Ekkor 100% nagyítás mellett látjuk az épület részletét.
+Háromféle élesítési módszer közül választhatunk, mindegyikhez másfajta vezérlőelemek tartoznak. A fenti ábrán balra az Életlen maszk, középen az RL Dekonvolúció, jobbra az Egyedi RL Dekonvolúció módszer vezérlői láthatók. Mi most az Életlen maszk módszert szeretnénk használni, válasszuk ki azt a legördülő listából. Az Élesítés eszköz fejlécében láthatjuk, hogy hatása csak 100% nagyítás mellett látható az előnézeten, ezért az előnézet alatti eszköztáron kattintsunk az 1:1 nagyító gombra. Ekkor 100% nagyítás mellett látjuk az épület részletét.
 
 Az alapértelmezett beállítás sok esetben megfelelő, azonban annál kissé erősebb hatást szeretnénk elérni, ezért módosítunk a beállításon. Ennek érdekében a Sugár csúszka értékét 0,5 helyett 0,7-re módosítottam, és az élesítés mértékét szabályozó Mérték csúszkát 200 helyett 260-ra állítottam.
 
@@ -2398,7 +2465,7 @@ Az alábbi ábrán látható táblázat Szerkesztő nézetben, az F1 billentyű 
 
 ![](book-images/181.jpg)
 
-A táblázat a Szerkesztő nézetben alkalmazható gyorsbillentyűket mutatja. Mindegyik gyorsbillentyűvel egy csúszka értékét állíthatjuk be. Csak meg kell nyitnunk a fájlt szerkesztésre, és máris alkalmazhatjuk a gyorsbillentyűket. Semmit sem kell csinálnunk, nem kell bekapcsolni sem a szerkesztőeszközt, lenyitnunk sem kell, semmit sem kell csinálni. Csak lenyomva kell tartani a megfelelő billentyűt, és az egér görgetésével vagy a + és - billentyűkkel beállíthatjuk a csúszka értékét. A csúszka értékét az előnézeti kép alatt láthatjuk is. A szerkesztőeszközt, amelynek valamelyik csúszkáján állítunk, be is kapcsolja. A gyorsbillentyűk használata nagyon meggyorsítja munkánkat, és az alapvető beállításokat nagyon egyszerűen és gyorsan megtehetjük.
+A táblázat a Szerkesztő nézetben alkalmazható gyorsbillentyűket mutatja. Mindegyik gyorsbillentyűvel egy csúszka értékét állíthatjuk be. Csak meg kell nyitnunk a fájlt szerkesztésre, és máris alkalmazhatjuk a gyorsbillentyűket. Semmit sem kell csinálnunk, nem kell bekapcsolni sem a szerkesztőeszközt, lenyitnunk sem kell, semmit sem kell csinálni. Csak lenyomva kell tartani a megfelelő billentyűt, és az egér görgetésével vagy a + és - billentyűkkel beállíthatjuk a csúszka értékét. A csúszka értékét az előnézet alatt láthatjuk is. A szerkesztőeszközt, amelynek valamelyik csúszkáján állítunk, be is kapcsolja. A gyorsbillentyűk használata nagyon meggyorsítja munkánkat, és az alapvető beállításokat nagyon egyszerűen és gyorsan megtehetjük.
 
 Például megnyitunk szerkesztésre egy nyers fájlt. Ha az expozíció-kompenzáción szeretnénk állítani, akkor lenyomva tartjuk az "e" billentyűt, majd az egér görgetésével, vagy a + és a - billentyűkkel beállítjuk az értékét. Ha még az élénkségen is állítani szeretnénk, akkor nyomva tartjuk a "v" billentyűt, és beállítjuk ennek a csúszkának is az értékét stb. Nagyon egyszerű és gyors.
 
@@ -2443,14 +2510,14 @@ Az Expozíció eszközcsoportban található.
 
 ![](book-images/182.jpg)
 
-**Csúcsfény rekonstrukció**: A fénykép túlexponált területein lévő kiégések helyreállíthatók a levágott pixelek környezetében elérhető részinformációk extrapolálásával. Négy lehetőség közül választhatunk:
+**Csúcsfény rekonstrukció**: A fénykép túlexponált, kiégett területei helyreállíthatók a levágott pixelek környezetében elérhető részinformációk extrapolálásával. Négy lehetőség közül választhatunk:
 
 -   **Ki**: Kikapcsolja a kiégett területek helyreállítását.
 -   **Keverés**: Megkísérli kitalálni a levágott színcsatornákat úgy, hogy kitölti azok értékeit a közeli, levágatlan csúcsfény területek alapján.
 -   **Színterjesztés**: Ez a legerősebb helyreállítási módszer. A fényerő visszaállítása mellett megpróbálja visszaállítani a színinformációkat úgy, hogy a környező, nem levágott színt "szivárogtatja" a levágott területre.
 -   **Kiegyensúlyozott**: Ez a módszer egy kicsit kevésbé agresszív módszer, mint a Színterjesztés, és ezért néha segít elkerülni a műtermékeket. A levágott képpontok melletti képpontok átlagát veszi, és ez alapján állapítja meg a csúcsfények színét. Ez a módszer érzékeny a fehéregyensúly beállítására.
 
-**Expozíció-kompenzáció**: Ez a csúszka a legközvetlenebbül befolyásolja a kép globális fénysűrűségi szintjét (világosságát) lineáris térben, vágás nélkül. A csúszkával fényértékekben adhatjuk meg az expozíció-kompenzáció mértékét. A teljes hisztogramot a csúszka elmozdításának irányába tolja el (balra vagy jobbra), a fekete pontot és a fehér pontot ezzel ellentétes irányba mozgatja.
+**Expozíció-kompenzáció**: Ez a csúszka a legközvetlenebbül befolyásolja a kép globális fényerő szintjét (világosságát) lineáris térben, vágás nélkül. A csúszkával fényértékben adhatjuk meg az expozíció-kompenzáció mértékét. A teljes hisztogramot a csúszka elmozdításának irányába tolja el (balra vagy jobbra), a fekete pontot és a fehér pontot ezzel ellentétes irányba mozgatja.
 
 **Feketepont-kompenzáció**: Ez a csúszka emeli vagy csökkenti a hisztogram relatív fekete pontját (nulla expozíciónak megfelelő pontot), ami az árnyékok expozíciójának fordított változását okozza. Ahogy a fekete pont emelkedik, az árnyékok sötétednek, ahogy csökken, világosodnak.
 
@@ -2484,13 +2551,13 @@ Az Expozíció eszközcsoportban található. A Tónuskiegyenlítő eszköz a te
 
 Öt csúszkával lehet megváltoztatni az öt zóna világosságát.
 
-**Pivot (középtónusok eltolása)**: Ezzel tudjuk beállítani, hogy az eszköz milyen tónustartományt tekintsen középtónusnak. Ezáltal a tónuszónákat tudjuk eltolni úgy, hogy azok jobban illeszkedjenek a szerkesztendő képhez. Például ha a kép alapvetően sötét részeket tartalmaz, akkor a középtónusnak tekintendő árnyalattartományt a sötétebb tónusok felé érdemes eltolni. Az eltolást fényértékben állíthatjuk be.
+**Pivot (középtónusok eltolása)**: Ezzel tudjuk beállítani, hogy az eszköz milyen tónustartományt tekintsen középtónusnak, amelynek világosságát a Középtónusok csúszkával szabályozhatjuk. Lényegében a csúszkákkal szabályozható tónuszónákat tolhatjuk el úgy, hogy azok jobban illeszkedjenek a szerkesztendő képhez. Például ha a kép alapvetően sötét részeket tartalmaz, akkor a középtónusnak tekintendő árnyalattartományt a sötétebb tónusok felé érdemes eltolni. Az eltolást fényértékben állíthatjuk be.
 
 **Zónák közötti átmenetek simítása**: Ez a csúszka megpróbálja elsimítani az átmeneteket a zónák között úgy, hogy elkerülhessük a nem kívánt hatásokat, például a helyi kontraszt elvesztését.
 
 ![](book-images/186.jpg)
 
-**Tónustérkép megjelenítése**: Ha ezt engedélyezzük, akkor mind az öt zónához különböző színt rendel, és ezekkel a színekkel megjeleníti a zónaeloszlást az előnézeti képen. A csúszkáknál színes pontok jelennek meg, ezáltal láthatjuk, hogy az egyes csúszkákkal történő változtatás a kép mely részére lesz hatással. Engedélyezésével jól megfigyelhetjük a Pivot (középtónusok eltolása), és a Zónák közötti átmenetek simítása csúszka hatását is.
+**Tónustérkép megjelenítése**: Ha ezt engedélyezzük, akkor mind az öt zónához különböző színt rendel, és ezekkel a színekkel megjeleníti a zónaeloszlást az előnézeten. A csúszkák előtt színes pontok jelennek meg, ezáltal láthatjuk, hogy az egyes csúszkákkal történő változtatás a kép mely részére lesz hatással. Engedélyezésével jól megfigyelhetjük a Pivot (középtónusok eltolása), és a Zónák közötti átmenetek simítása csúszka hatását is.
 
 Az eszköz hatását a mid.tif kép segítségével szemléltetem.
 
@@ -2500,7 +2567,7 @@ A fenti ábrán megnyitottam a képet szerkesztésre. Mivel ez nem nyers fájl, 
 
 ![](book-images/188.jpg)
 
-Aktiváltam a Logaritmikus tónusleképezés eszközt, majd azon belül az Automatikus gombra kattintottam. Hatására megszűnt a vágás, és a tónusok nagyjából egyenletesen oszlanak el a sávok között. Ezzel megjelenítésre alkalmassá tettem a képadatokat.
+Aktiváltam a Logaritmikus tónusleképezés eszközt, majd azon belül az Automatikus gombra kattintottam. Hatására megszűnt a vágás, és a tónusok nagyjából egyenletesen oszlanak el a sávok között. Ezzel megjelenítésre alkalmassá tettem a képadatokat. Azt is mondhatjuk, hogy a mid.tif fájl hatalmas, 20 fényértéknyi árnyalatterjedelme úgy került leképezésre (tömörítés által) a megjelenítésre alkalmas, jóval kisebb árnyalatterjedelmű tartományba, hogy nem történt vágás. Ez természetesen azzal jár, hogy a megjelenítésre alkalmas sávok között már nem 1 fényértéknyi a különbség, hanem kevesebb.
 
 ![](book-images/189.jpg)
 
@@ -2548,17 +2615,17 @@ Végül a Fehérek csúszka értékét 91-re állítottam. A legalsó, legvilág
 
 ### <a id="413"></a> 4\.1\.3 Tónusgörbék
 
-Az Expozíció eszközcsoportban található. Szerkesztés közben többnyire "végtelen" tartományú lineáris adatokkal dolgozunk. Ezeket az adatokat a csővezeték vége felé át kell alakítani megjelenésre alkalmas adatokká. Erre ez a szerkesztőeszköz is alkalmas. Az előnézeti képen a már átalakított képet látjuk. Ebben a szerkesztőeszközben létrehozhatunk tónusgörbéket, beállíthatjuk a végső kép kontrasztját, telítettségét. Beállíthatjuk a fehér pontot is. Más eszköz is alkalmas a végső kép paramétereinek beállítására (pl. a Szigmoid).
+Az Expozíció eszközcsoportban található. Szerkesztés közben többnyire "végtelen" tartományú lineáris adatokkal dolgozunk. Ezeket az adatokat a csővezeték vége felé át kell alakítani megjelenésre alkalmas adatokká. Erre ez a szerkesztőeszköz is alkalmas. Az előnézeten a már átalakított képet látjuk. Ebben a szerkesztőeszközben létrehozhatunk tónusgörbéket, beállíthatjuk a végső kép kontrasztját, telítettségét. Beállíthatjuk a fehér pontot is. Más eszköz is alkalmas a végső kép paramétereinek beállítására (pl. a Szigmoid).
 
 Az ART görbeszerkesztőiről külön fejezet szól, itt röviden nézzük meg a Tónusgörbék szerkesztőeszköz egyedi sajátosságait.
 
 ![](book-images/199.jpg)
 
-A fenti ábrán egy **Automatikusan illeszkedő tónusgörbét** láthatunk. Ezt általában a nyers fájlokhoz alkalmazandó alapértelmezett feldolgozási profil hozza létre. Ennek az a célja, hogy a nyers fájlba beágyazott JPEG képhez hasonló legyen a kiindulási előnézeti kép. Ha az Automatikusan illeszkedő tónusgörbe gombra kattintunk, akkor az ART létrehozza a görbét.
+A fenti ábrán egy **Automatikusan illeszkedő tónusgörbét** láthatunk. Ezt általában a nyers fájlokhoz alkalmazandó alapértelmezett feldolgozási profil hozza létre. Ennek az a célja, hogy a nyers fájlba beágyazott JPEG képhez hasonló legyen a kiindulási előnézet. Ha az Automatikusan illeszkedő tónusgörbe gombra kattintunk, akkor az ART létrehozza a görbét.
 
 Két tónusgörbét hozhatunk létre, ezek a **Tónusgörbe 1**, és a **Tónusgörbe 2**. Az Automatikusan illeszkedő tónusgörbe mindig a Tónusgörbe 1 lesz.
 
-A görbék hátterében megjelenő hisztogram közvetlenül a görbe "bemeneténél" megjelenő adatokból származik. Ez eltér az ART fő hisztogramjától, amely a csővezeték végén a végső kép adataiból jön létre.
+A görbék hátterében megjelenő hisztogram közvetlenül a görbe bemeneténél megjelenő adatokból származik. Ez eltér az ART hisztogramjától, amely a csővezeték végén a végső kép adataiból jön létre.
 
 Miért van szükség két tónusgörbére? Azért, mert így finomabban szabályozhatók a tónusok. Általában a Tónusgörbe 1-et az értékek csökkentéséhez, a Tónusgörbe 2-t az értékek növeléséhez használjuk. A két görbe eredőjeként többnyire egy S-görbéhez hasonló görbét hozunk létre, azonban két görbével kisebb a veszélye az irreális színek kialakulásának.
 
@@ -2568,7 +2635,7 @@ A fenti ábrán láthatjuk a **Fehér pont** csúszkát, amelynek alapértelmeze
 
 Az ART-tal általában SDR (normál dinamikájú) képeket készítünk, ehhez általában megfelelő az 1 érték, amely a \[0, 1\] tartományba kényszeríti a képpontok fényességét. Az 1 érték 100 nit maximális monitorfényerőnek felel meg, amely megfelelő a "szokásos", nem HDR monitorokhoz.
 
-Ha HDR képet készítünk, akkor a fehér pont értékét növelni kell. 1 értékkel történő növelés 100 nit monitorfényerő-növekedést jelent. Ha tehát 1000 nit maximális fényerejű HDR monitorunk van, akkor 10-re kell állítani a Fehér pontot. A csúszka automatikusan "kinyújtja" a görbét, és szükség szerint módosítja a kontrasztképletet is. SDR monitornál ennek semmi értelme sincs, mert elviselhetetlenül világos előnézeti képet kapnánk.
+Ha HDR képet készítünk, akkor a fehér pont értékét növelni kell. 1 értékkel történő növelés 100 nit monitorfényerő-növekedést jelent. Ha tehát 1000 nit maximális fényerejű HDR monitorunk van, akkor 10-re kell állítani a Fehér pontot. A csúszka automatikusan "kinyújtja" a görbét, és szükség szerint módosítja a kontrasztképletet is. SDR monitornál ennek semmi értelme sincs, mert elviselhetetlenül világos előnézetet kapnánk.
 
 A lényeg tehát az, hogy a Fehér pont csúszkával a csúcsfények levágási pontját a megjelenítő eszköz maximális fényerejéhez igazíthatjuk, és az ART a görbét a megfelelő mértékben automatikusan megnyújtja. Tehát ez az eszköz a tónusok levágását okozza. A csővezeték listában azt olvashatjuk az eszköz mellett, hogy "Lineáris RGB határolt", és a "határolt" utal a levágásra.
 
@@ -2582,8 +2649,8 @@ A **Módnál** az alábbi lehetőségek közül választhatunk:
 -   **Standard**: A görbét mindhárom színcsatornára alkalmazza, amely színeltolódást eredményezhet. Az S-görbe általában növeli a színcsatornák elválasztását, és ezáltal növeli a telítettséget.
 -   **Súlyozott Standard**: Ez korlátozhatja a standard görbe színeltolódását, azonban teljesen nem szünteti meg.
 -   **Filmszerű**: Ez a görbe a Standard típushoz nagyon hasonló eredményt ad, de az RGB-HSV színezet állandó marad, vagyis kevesebb a színeltolódási probléma. Ezt a görbetípust az Adobe tervezte a DNG részeként, ezért az Adobe Camera Raw és Lightroom is használja.
--   **Telítettség és érték keverése**: Ez a mód high-key fényképekhez a legalkalmasabb, de kreatív hatás elérésére egyéb fényképeknél is használható. Az eredmény nagyon hasonlít az L\*a\*b\* színtér világosság (fénysűrűség) görbéjéhez (vagyis a kontraszt megváltoztatásához anélkül, hogy befolyásolná a színezetet vagy telítettséget). A kontrasztnövelő görbék esetében a megjelenés általában kissé telítetlen.
--   **Fénysűrűség**: A színezet és a telítettség nem változik. A kontrasztnövelő görbék azonban enyhén telítetlen megjelenéshez vezethetnek.
+-   **Telítettség és érték keverése**: Ez a mód high-key fényképekhez a legalkalmasabb, de kreatív hatás elérésére egyéb fényképeknél is használható. Az eredmény nagyon hasonlít az L\*a\*b\* színtér világosság görbéjéhez (vagyis a kontraszt megváltoztatásához anélkül, hogy befolyásolná a színezetet vagy telítettséget). A kontrasztnövelő görbék esetében a megjelenés általában kissé telítetlen.
+-   **Fényerő**: A színezet és a telítettség nem változik. A kontrasztnövelő görbék azonban enyhén telítetlen megjelenéshez vezethetnek.
 -   **Észlelési**: Ez a mód megtartja a színezetet és a telítettséget, vagyis ha például S-görbét alkalmazunk, a kontraszt valóban megnő, de a színárnyalatok változatlanok maradnak, és a kép az eredetihez hasonló telítettségűnek tűnik. Kifejezetten kellemes alapkontrasztot lehet létrehozni segítségével anélkül, hogy megváltoztatná a kameraprofil (amely nem alkalmaz görbét) által biztosított színeket. Az algoritmus bonyolultsága miatt lényegesen lassabb, mint a többi görbemód.
 
 A kontrasztot növelő görbék esetében a megjelenés általában kissé telítetlen lesz. Ez valójában nem azért van, mert a görbe telítetlenné tenné a színeket, hanem azért, mert az emberi látásban a kontraszt és a telítettség szorosan összefügg, így ugyanaz a kép nagyobb kontraszttal magasabb telítettséget igényel, hogy a képet ugyanolyan a telítettségűnek érzékeljük.
@@ -2642,7 +2709,7 @@ Az Expozíció eszközcsoportban található. Nagyon nagy dinamikatartományú k
 
 ![](book-images/207.jpg)
 
-**Mérték**: Beállíthatjuk a tömörítés mértékét. A magasabb értékek szűkebb dinamikatartományt eredményeznek (a hisztogramon könnyen megfigyelhető a hatása).
+**Mérték**: Beállíthatjuk a tömörítés mértékét. A magasabb értékek szűkebb dinamikatartományt eredményeznek.
 
 **Részletek**: Beállíthatjuk, hogy az eszköz mennyi helyi kontrasztot őrizzen meg. A pozitív értékek csökkentik a tömörítést a kontraszt növelése érdekében, a negatív értékek csökkentik a kontrasztot.
 
@@ -2650,11 +2717,11 @@ Az Expozíció eszközcsoportban található. Nagyon nagy dinamikatartományú k
 
 ### <a id="415"></a> 4\.1\.5 Logaritmikus tónusleképezés
 
-Az Expozíció eszközcsoportban található. Az algoritmus angol neve Log Tone Mapping. A Logaritmikus tónusleképezés eszköz lehetőséget biztosít a kép dinamikatartományának, azaz az árnyékoknak és/vagy a csúcsfényeknek a tömörítésére. Célját tekintve hasonló a Dinamikus tartomány tömörítése eszközhöz, vagy bizonyos mértékig a Tónuskiegyenlítő eszközhöz.
+Az Expozíció eszközcsoportban található. A Logaritmikus tónusleképezés eszköz lehetőséget biztosít a kép dinamikatartományának, azaz az árnyékoknak és/vagy a csúcsfényeknek a tömörítésére. Célját tekintve hasonló a Dinamikus tartomány tömörítése eszközhöz, vagy bizonyos mértékig a Tónuskiegyenlítő eszközhöz.
 
 ![](book-images/208.jpg)
 
-**Cél szürke pont (fényerő)**: Beállíthatjuk, hogy a bemeneti középszürke érték (amely a csúszkán mindig 0,18 értékű lesz) hová legyen leképezve a kimeneten. Használható a kép teljes fényerejének szabályozására a tónusleképezés után.
+**Cél szürke pont (fényesség)**: Beállíthatjuk, hogy a bemeneti középszürke érték (amely a csúszkán mindig 0,18 értékű lesz) hová legyen leképezve a kimeneten. Használható a kép teljes fényességének beállítására a tónusleképezés után.
 
 **Előtte történő Exp. Komp. (Fé)**: A tónusleképezés előtt alkalmazandó expozíció-kompenzáció mértéke.
 
@@ -2668,7 +2735,7 @@ Az Expozíció eszközcsoportban található. Az algoritmus angol neve Log Tone 
 
 **Telítettség szabályozása**: Ha bejelöljük, akkor csökkenti a csúcsfények telítettségének a tömörítés miatt bekövetkező növekedését. Alapértelmezés szerint engedélyezve van.
 
-**Automatikus**: Ha rákattintunk, a kép tulajdonságai alapján kiszámított kiindulási értékekre állítja be a csúszkák értékeit.
+**Automatikus**: Ha rákattintunk, a kép tulajdonságai alapján kiszámított kiindulási értékekre állítja be a csúszkák értékét.
 
 Az eszköz viselkedését az Alberto Griggio által közzétett mid.tif kép segítségével mutatom be.
 
@@ -2678,11 +2745,11 @@ A fenti ábrán megnyitottam a képet szerkesztésre. Mivel ez nem nyers fájl, 
 
 ![](book-images/210.jpg)
 
-Alul rákattintottam az Automatikus gombra, és az ART beállította a Fehér relatív expozíció, és a Fekete relatív expozíció csúszka értékeit. Felülről a 11. sáv továbbra is megmaradt középszürkének (\[117,117,117\]), ezt a sávot megjelöltem egy piros nyíllal. Láthatjuk, hogy a sávok egyenletesen vannak elosztva, nincs vágás. A legalsó sávon nincs színválasztó, az \[247,247,247\] RGB értékű. A középszürkéhez képest a Fehér relatív expozíció 9,58 fényérték, az alsó sáv 9 fényértéknyire van a középszürkétől (\[247,247,247\]), és a következő sávban (ha lenne) érné el a \[255,255,255\] RGB értéket. A középszürkéhez képest a Fekete relatív expozíció 11 fényérték, a felső sáv 10 fényértéknyire van a középszürkétől, RGB értéke \[19,19,19\], és a következő sávnál érné el (ha lenne sáv) a \[0,0,0,\] RGB értéket. Ne feledjük, hogy a \[0,0,0,\] és a \[255,255,255\] értékű képpontok is a kép részei lehetnek, ha nem történt vágás.
+Alul rákattintottam az Automatikus gombra, és az ART beállította a Fehér relatív expozíció, és a Fekete relatív expozíció csúszka értékeit. Ezzel megjelenítésre alkalmassá tette a mid.tif 20 fényértéknyi árnyalatterjedelmét (dinamikatartományát), azaz tömörítette. Ezáltal az egyes monitoron látható sávok között valójában nem egy fényértéknyi a világosságkülönbség. Felülről a 11. sáv továbbra is megmaradt középszürkének (\[117,117,117\]), ezt a sávot megjelöltem egy piros nyíllal. Láthatjuk, hogy a sávok egyenletesen vannak elosztva, nincs vágás. A legalsó sávon nincs színválasztó, az \[247,247,247\] RGB értékű. A középszürkéhez képest a Fehér relatív expozíció 9,58 fényérték, az alsó sáv 9 fényértéknyire van a középszürkétől (\[247,247,247\]), és a következő sávban (ha lenne) érné el a \[255,255,255\] RGB értéket. A középszürkéhez képest a Fekete relatív expozíció 11 fényérték, a felső sáv 10 fényértéknyire van a középszürkétől, RGB értéke \[19,19,19\], és a következő sávnál érné el (ha lenne sáv) a \[0,0,0,\] RGB értéket. Ne feledjük, hogy a \[0,0,0,\] és a \[255,255,255\] értékű képpontok is a kép részei lehetnek, ha nem történt vágás. Fontos megértenünk, hogy az említett fényértékek az eredeti mid.tif fájl fényértékei. Az, hogy "az alsó sáv 9 fényértéknyire van a középszürkétől" azt jelenti, hogy a tömörítés úgy történt, hogy a mid.tif legalsó sávja (amely valóban 9 fényértéknyire van a felülről 11. középszürke sávtól), a megjelenítésre alkalmas (monitoron látható) képen szintén a legalsó sávra lett leképezve (vágás nélkül).
 
 ![](book-images/211.jpg)
 
-A Fehér relatív expozíciót 9,58-ról 5-re állítottam. A középszürke megmaradt a 11. sávban. Ehhez képest lefelé az 5. sávban éri el a \[255,255,255\] RGB értéket, és az ez alatti sávokban vágás történik (azok is \[255,255,255\] RGB értékűek, azonban nagyobb értékűeknek kellene lenniük, de ez nem lehetséges). Az utolsó, még vágás nélküli sávot alul piros nyíllal megjelöltem.
+A Fehér relatív expozíciót 9,58-ról 5-re állítottam. A középszürke megmaradt a 11. sávban. Ehhez képest lefelé az 5. sávban éri el a \[255,255,255\] RGB értéket, és az ez alatti sávokban vágás történik (azok is \[255,255,255\] RGB értékűek, azonban nagyobb értékűeknek kellene lenniük, de ez nem lehetséges). Az utolsó, még vágás nélküli sávot alul piros nyíllal megjelöltem. A világos tónusok kevésbé vannak tömörítve, ezért már a mid.tif középtónusától lefelé az ötödik sáv eléri a megjelenítésre alkalmas képen a világosságértékek lehetséges maximumát. Az ez alatti sávok vágásra kerültek. A két piros nyíl közötti sávoknál megnövekedett az egyes sávok közötti világosságkülönbség, azaz a kontraszt.
 
 ![](book-images/212.jpg)
 
@@ -2694,7 +2761,7 @@ A Cél szürke pont csúszka értékét 18-ról 33,4-re állítottam. A középs
 
 ![](book-images/214.jpg)
 
-A Csúcsfények előtömörítése csúszkát 0-ról 65-re állítottam. A felső piros nyíl, és a sárga nyíl helye, és a sávok RGB értékei lényegében változatlanok, a legvilágosabb tónusok az alsó piros nyíl sávja előtti és utáni sávokban tömörítésre kerültek, már nem történik vágás a legalsó sávban sem.
+A Csúcsfények előtömörítése csúszkát 0-ról 65-re állítottam. A felső piros nyíl, és a sárga nyíl helye, és a sávok RGB értékei lényegében változatlanok, a legvilágosabb tónusok az alsó piros nyíl sávja előtti és utáni sávokban tömörítésre kerültek, már nem történik vágás a legalsó sávban sem. A tömörítés miatt azonban kontrasztvesztés következik be.
 
 ![](book-images/215.jpg)
 
@@ -2729,8 +2796,8 @@ A fenti ábrán láthatjuk a szerkesztőeszköz kezelőszerveit.
 A felső sorban láthatjuk a létrehozott foltok számát, valamint jobbra három gombot, amelyek balról jobbra a következők:
 
 -   **Törli az eddig létrehozott foltokat**
--   **Foltok hozzáadása/módosítása az előnézeti képen**: Az előnézeti képen egérrel hozhatunk létre és módosíthatunk foltokat.
--   **Foltok hozzáadása/módosítása egyszerűsített előnézeti képen**: Csak akkor működik, ha az előző gomb aktív. Ha ezt is bekapcsoljuk, akkor az ART egyszerűsített előnézeti képre vált, mert így kevesebb erőforrást igényel a foltokkal történő munka.
+-   **Foltok hozzáadása/módosítása az előnézeten**: Az előnézeten egérrel hozhatunk létre és módosíthatunk foltokat.
+-   **Foltok hozzáadása/módosítása egyszerűsített előnézeten**: Csak akkor működik, ha az előző gomb aktív. Ha ezt is bekapcsoljuk, akkor az ART egyszerűsített előnézetre vált, mert így kevesebb erőforrást igényel a foltokkal történő munka.
 
 ![](book-images/218.jpg)
 
@@ -2742,11 +2809,11 @@ Nézzük a fenti ábrát, amelyen az alábbi négy lehetőséget figyelhetjük m
 
 **3**: A forrás- vagy célterület tollazatának nagysága is állítható az egérrel. Amely tollazatot jelző (külső) körnek az átmérőjét éppen változtatjuk, annak színe az ábrán látható módon megváltozik. A forrás- és a célterület tollazatának határát jelző kör átmérője együtt változik, ha az egyiken változtatunk, változik a másik is.
 
-**4**: A forrás- illetve célterületet az előnézeti képen az egérrel tetszés szerinti helyre mozgathatjuk.
+**4**: A forrás- illetve célterületet az előnézeten az egérrel tetszés szerinti helyre mozgathatjuk.
 
 Egy foltot úgy törölhetünk, hogy rajta jobb egérgombbal kattintunk.
 
-A nem kiválasztott foltoknál csak a célterület középpontját ("+"), és a zöld pontot láthatjuk az előnézeti képen. Ha egy folt középpontja fölé visszük az egérmutatót és kattintunk, akkor az a folt lesz kiválasztva, és módosíthatjuk.
+A nem kiválasztott foltoknál csak a célterület középpontját ("+"), és a zöld pontot láthatjuk az előnézeten. Ha egy folt középpontja fölé visszük az egérmutatót és kattintunk, akkor az a folt lesz kiválasztva, és módosíthatjuk.
 
 Csúszkákkal is módosíthatjuk a kiválasztott (aktuális) folt azon paramétereit, amelyeket az előzőekben egérrel állítottunk.
 
@@ -2786,7 +2853,7 @@ A fenti ábrán látható a végeredmény. Még lehetne finomítani rajta több 
 
 ### <a id="422"></a> 4\.2\.2 Élesítés
 
-A Részletek eszközcsoportban található. Az élesítés hatásának megfelelő észlelése érdekében legalább 100%-ra (1:1) nagyítsuk az előnézeti képet, vagy helyezzünk el a kép különböző részeire néhány "Részletek" ablakot (az alsó eszköztáron található az gombja).
+A Részletek eszközcsoportban található. Az élesítés hatásának megfelelő észlelése érdekében legalább 100%-ra (1:1) nagyítsuk az előnézetet, vagy helyezzünk el a kép különböző részeire néhány Részlet ablakot (az alsó eszköztáron található az gombja).
 
 Az élesítés elsődleges célja a fényképezőgépben keletkező élességvesztés ellensúlyozása. A fényképezőgépben kétféle módon történhet élességvesztés. Egyrészt az objektív tökéletlensége miatt, másrészt a napjainkban is még sok fényképezőgépben meglévő anti-aliasing szűrő miatt. Az utóbbi esetben szándékosan hoznak létre egy, a képérzékelő előtt elhelyezkedő szűrővel nagyon enyhe elmosódást a képen. Elsősorban ezeknek a hatásoknak a kompenzálására szolgál az élesítés eszköz, azonban mindenki arra használhatja, amire csak szeretné.
 
@@ -2798,7 +2865,7 @@ Alapértelmezés szerint az eszköz elemzi a képet, és kiszámítja a paramét
 
 ![](book-images/224.jpg)
 
-A fenti ábrán láthatjuk az Élességi kontraszt maszkot, ajánlatos az Élesítés eszköz használatakor bekapcsolni. A maszkot fent, az eszköztáron kapcsolhatjuk be, látjuk az gombot is, amelyre kattintani kell. Csak akkor lehet bekapcsolni, ha ez az Élesítés eszköz be van kapcsolva. Csak a maszk fehér színű területei lesznek élesítve.
+A fenti ábrán láthatjuk az Élességi kontraszt maszkot, ajánlatos az Élesítés eszköz használatakor bekapcsolni. A maszkot fent, az eszköztáron kapcsolhatjuk be, az ábrán látjuk az gombot is, amelyre kattintani kell. Csak akkor lehet bekapcsolni, ha ez az Élesítés eszköz be van kapcsolva. Csak a maszk fehér színű területei lesznek élesítve.
 
 **Módszer**: Háromféle lehet: Életlen maszk, RL Dekonvolúció, és Egyedi RL Dekonvolúció.
 
@@ -2806,7 +2873,7 @@ A fenti ábrán láthatjuk az Élességi kontraszt maszkot, ajánlatos az Éles�
 
 Az Életlen maszk egy olyan módszer, amellyel a kép látszólagos élességét (élkontrasztját) növeljük, A módszer valójában nem élesít, nem jelenik meg több részlet a képen, azonban az éleknél (hirtelen átmeneteknél) történő kontrasztnövekedés miatt a képet élesebbnek érzékeljük.
 
-**Sugár**: A fentebb említett hatások ellensúlyozásárhoz szükséges sugárértéket automatikusan beállítja az eszköz. Ezen azonban változtathatunk, ha szükséges. A Sugár az élesített részletek méretét határozza meg, azt, hogy az élek mentén milyen távolságig, milyen sávban történjen élesítés. Általában az élesítés minősége jobb, ha az élesítési sugár kisebb. Alacsony ISO-érzékenységű, fókuszban lévő és elmosódás nélküli képek esetén a 0,5...0,7 érték kielégítő. Ha az érték túl alacsony, akkor nem lesz elegendő élesítés, ha pedig túl magas, akkor erős fényudvarképződéshez vezethet a hirtelen átmenetek ("élek") mentén.
+**Sugár**: A fentebb említett, élességvesztést eredményező hatások ellensúlyozásárhoz szükséges sugárértéket automatikusan beállítja az eszköz. Ezen azonban változtathatunk, ha szükséges. A Sugár az élesített részletek méretét határozza meg, azt, hogy az élek mentén milyen távolságig, milyen sávban történjen élesítés. Általában az élesítés minősége jobb, ha az élesítési sugár kisebb. Alacsony ISO-érzékenységű, fókuszban lévő, és elmosódás nélküli képeknél a 0,5...0,7 érték kielégítő. Ha az érték túl alacsony, akkor nem lesz elegendő élesítés, ha pedig túl magas, akkor erős fényudvarképződéshez vezethet a hirtelen átmenetek ("élek") mentén.
 
 **Küszöb**: A küszöbgörbe alá odaképzelhetjük a tónusskálát. A függőleges tengely az átlátszatlanságnak felel meg, alul 0%, legfelül 100%. A küszöbgörbe-szerkesztővel beállíthatjuk, hogy a kép milyen világosság-tartományában mekkora legyen az élesítés. A fentebbi ábrán azt láthatjuk, hogy bal oldalon, a legsötétebb árnyalatoknál nincs élesítés (a bal alsó vezérlőpont értéke 20), majd elég hirtelen emelkedik az élesítés mértéke, eléri a maximális értéket, amelytől kezdve egy széles tartományban maximális élesítés történik, végül a világos tónusoknál fokozatosan csökken az élesítés mértéke. Az alapértelmezett küszöbgörbe a legtöbb esetben megvéd a túlélesedéstől és a fényudvarképződéstől.
 
@@ -2838,7 +2905,7 @@ Az RL Dekonvolúció módszerét a Gauss elmosás hatásának "visszacsinálás�
 
 **Mérték**: Az élesítés mértéke.
 
-**Élesítés mértékének erősítése a sarkokban**: Az objektív lencsehibái miatt a képek gyakran lágyabbak vagy elmosódottabbak a képsarkokban, mint a képmező közepén. Az itt található két csúszka segítségével a képsarkokban erősebb élesítést állíthatunk be.
+**Élesítés mértékének növelése a sarkokban**: Az objektív lencsehibái miatt a képek gyakran lágyabbak vagy elmosódottabbak a képsarkokban, mint a képmező közepén. Az itt található két csúszka segítségével a képsarkokban erősebb élesítést állíthatunk be.
 
 **Sugár növelése**: A csúszka értékének növelésével növeli az élesítést a kép széleinél.
 
@@ -2850,13 +2917,13 @@ A való életben nem pontosan Gauss elmosással találkozunk képeinken, az RL D
 
 ![](book-images/228.jpg)
 
-Erről a módról nagyon kevés információt lehet találni. Alkalmazásához szükség lenne a felvevő rendszer (gondolom a váz és az objektív együttese) pontszórás függvényére (PNG kép formájában). Ennek előállításának módja számomra ismeretlen.
+Erről a módról nagyon kevés információt lehet találni. Alkalmazásához szükség lenne a felvevő rendszer (gondolom a váz és az objektív együttese) pontszórás függvényére (PNG kép formájában). Ennek előállításának módja számomra ismeretlen. Egyszerű módszerrel nem lehet a pontos pontszóródási függvényt előállítani. A pontatlan pontszóródási függvénynek több a kára, mint a haszna.
 
 Valószínűleg nem éri meg foglalkozni az Egyedi RL Dekonvolúció módszerrel, mert az RL Dekonvolúció tökéletesen működik.
 
 ### <a id="423"></a> 4\.2\.3 Zajcsökkentés
 
-A Részletek eszközcsoportban található. A világosságzajt és a színzajt csökkenthetjük segítségével. A zajcsökkentés hatásának megfelelő észlelése érdekében legalább 100%-ra (1:1) nagyítsuk az előnézeti képet, vagy helyezzünk el a kép különböző részeire néhány "Részletek" ablakot (az alsó eszköztáron található az gombja).
+A Részletek eszközcsoportban található. A világosságzajt és a színzajt csökkenthetjük segítségével. A zajcsökkentés hatásának megfelelő észlelése érdekében legalább 100%-ra (1:1) nagyítsuk az előnézetet, vagy helyezzünk el a kép különböző részeire néhány Részlet ablakot (az alsó eszköztáron található az gombja).
 
 Alapvetően kétféle zajt különböztethetünk meg:
 
@@ -2876,15 +2943,15 @@ Alapvetően kétféle zajt különböztethetünk meg:
 
 ![](book-images/231.jpg)
 
-Az RGB/L\*a\*b\* színtér, és a Konzervatív/Agresszív hatása közötti különbséget akkor figyelhetjük meg jól, ha az előnézeti képet legalább 100%-ra nagyítjuk, vagy a kép különböző részeire néhány "Részletek" ablakot helyezünk el. Ezek a választási lehetőségek nem egyforma eredményt adnak, mindig ki kell választani azt a párosítást, amelyik az adott képhez a legjobb.
+Az RGB/L\*a\*b\* színtér, és a Konzervatív/Agresszív hatása közötti különbséget akkor figyelhetjük meg jól, ha az előnézetet legalább 100%-ra nagyítjuk, vagy a kép különböző részeire néhány Részlet ablakot helyezünk el. Ezek a választási lehetőségek nem egyforma eredményt adnak, mindig ki kell választani azt a párosítást, amelyik az adott képhez a legjobb.
 
 ![](book-images/232.jpg)
 
 **Gamma**: A tónusok szerint változtatja a zajcsökkentés erősségét. A kisebb Gamma értékek lehetővé teszik, hogy a zajcsökkentés minden tónusra hatással legyen, az árnyékokra is, míg a Gamma magasabb értékei csak a képmező világosabb területeire korlátozzák a hatást.
 
-#### <a id="4231"></a> 4\.2\.3\.1 Világosság
+#### <a id="4231"></a> 4\.2\.3\.1 Világosságzaj
 
-Ezekkel a beállításokkal a világosságzajt csökkenthetjük.
+Ezen a részen a világosságzajt csökkenthetjük.
 
 **Világosság**: A Világosság csúszkával a zajcsökkentő hatás erősségét szabályozhatjuk.
 
@@ -2892,7 +2959,7 @@ Ezekkel a beállításokkal a világosságzajt csökkenthetjük.
 
 **Részletek küszöb**: A Részletek helyreállításának küszöbértéke.
 
-#### <a id="4232"></a> 4\.2\.3\.2 Szín
+#### <a id="4232"></a> 4\.2\.3\.2 Színzaj
 
 Ezekkel a beállításokkal a színzajt csökkenthetjük.
 
@@ -2904,7 +2971,7 @@ Ezekkel a beállításokkal a színzajt csökkenthetjük.
 
 ![](book-images/234.jpg)
 
-**Automatikus csökkentés erőssége**: A csúszkával az Automatikus zajcsökkentés erősségét szabályozhatjuk.
+**Automatikus csökkentés erőssége**: A csúszkával a színzaj Automatikus zajcsökkentésének erősségét szabályozhatjuk.
 
 **Manuális**:
 
@@ -2948,7 +3015,7 @@ A végső simítások részben lévő Világosság csúszkának 27-re állítás
 
 ![](book-images/241.jpg)
 
-A másik képrészlet a Fényerő csúszka 27-re állítása után.
+A másik képrészlet a Világosság csúszka 27-re állítása után.
 
 ### <a id="424"></a> 4\.2\.4 Impulzuszaj csökkentése
 
@@ -2964,6 +3031,8 @@ A Részletek eszközcsoportban található. Itt lila, ibolya, vagy zöld szegél
 
 ![](book-images/243.jpg)  
 *Forrás: Rawtherapee, Rawpedia*
+
+A balra a javítás nélküli, jobbra a javított kép látható.
 
 ![](book-images/244.jpg)
 
@@ -2981,8 +3050,7 @@ Az ábrán Nikon D7000 fényképezőgéppel, AF-S Nikkor 50mm f/1.8G objektívve
 
 ![](book-images/246.jpg)
 
-Az ábrán látható beállításokkal jelentősen sikerült csökkenteni a színhibát, 
-azonban az eredmény nem tökéletes. A Sugár maximális, a Küszöb nulla, és a Színárnyalat görbe alkalmazásával a zöld és a lila színhiba jelentősen csökkent.
+Az ábrán látható beállításokkal jelentősen sikerült csökkenteni a színhibát, azonban az eredmény nem tökéletes. A Sugár maximális, a Küszöb nulla, és a Színezet görbe alkalmazásával a zöld és a lila színhiba jelentősen csökkent.
 
 ## <a id="43"></a> 4\.3 Színek eszközcsoport
 
@@ -3012,9 +3080,9 @@ A fehéregyensúly beállítása minden színre hatással van. Úgy a legkönnye
 
 **Módszer**: A fehéregyensúly megállapításának módszere, amely az alábbiak valamelyike lehet:
 
--   **Tárolt**: A nyers fájlban a metaadatoknál tárolt adatokból állapítja meg. A "Tárolt" azt a fehéregyensúlyt jelenti, ahogyan a fényképezőgépben be volt állítva a felvétel készítésének idején.
+-   **Tárolt**: A nyers fájlban tárolt a metaadatokból állapítja meg. A "Tárolt" azt a fehéregyensúlyt jelenti, amely a fényképezőgépen be volt állítva (a fényképezőgép vagy a fotós által) a felvétel készítésének idején.
 -   **Auto**: A képadatok elemzésével automatikusan megbecsüli az egyes színcsatornák együtthatóit.
--   **Egyedi színhőmérséklet**: Egyedi színhőmérsékletet és színárnyalatot lehet beállítani a Színhőmérséklet és a Színárnyalat csúszka segítségével, és/vagy a pipetta eszköz használatával a **Választ** gombra történő kattintással. A megfelelő fehéregyensúly beállításához a kép semleges fehér vagy semleges szürke területéről kell mintát venni. A mintavételezett terület méretét a **Méret** legördülő listából választhatjuk ki. Ha mintát veszünk a képről, akkor a Módszer automatikusan Egyedi színhőmérsékletre változik.
+-   **Egyedi színhőmérséklet**: Egyedi színhőmérsékletet és színárnyalatot lehet beállítani a Színhőmérséklet és a Színárnyalat csúszka segítségével, és/vagy a pipetta eszköz használatával, a **Választ** gombra történő kattintással. A megfelelő fehéregyensúly beállításához a kép semleges fehér vagy semleges szürke területéről kell mintát venni. A mintavételezett terület méretét a **Méret** legördülő listából választhatjuk ki. Ha mintát veszünk a képről, akkor a Módszer automatikusan Egyedi színhőmérsékletre változik.
 
 ![](book-images/248.jpg)
 
@@ -3046,7 +3114,7 @@ A Színek eszközcsoportban található. A színárnyalatok telítettsége áll�
 
 ### <a id="433"></a> 4\.3\.3 Csatornakeverő
 
-A Színek eszközcsoportban található. Az RGB mátrix csatornakeverő, és az Elsődleges színek korrekciója közül választhatunk.
+A Színek eszközcsoportban található. RGB mátrix csatornakeverő, és az Elsődleges színek korrekciója közül választhatunk.
 
 ![](book-images/253.jpg)
 
@@ -3070,13 +3138,13 @@ Ez nem túl felhasználóbarát módszer, mert távol áll attól, ahogyan a sz�
 
 ![](book-images/255.jpg)
 
-A **Vörös elsődlegesek**, a **Zöld elsődlegesek**, és a **Kék elsődlegesek** színezetét és telítettségét módosíthatjuk. A színezetet a szomszédos másodlagos színek irányába változtathatjuk, és minden elsődleges színhez beállíthatjuk a telítettséget. Ezáltal a kép színeit módosíthatjuk, beállíthatjuk.
+A **Vörös elsődleges**, a **Zöld elsődleges**, és a **Kék elsődleges** színezetét és telítettségét módosíthatjuk. A színezetet a szomszédos másodlagos színek irányába változtathatjuk, és minden elsődleges színhez beállíthatjuk a telítettséget. Ezáltal a kép színeit módosíthatjuk, beállíthatjuk.
 
 Az ART-ban a szerkesztés során a változtatások lineáris RGB térben történnek. A Színek/Színkezelés eszközben meg is nézhetjük, hogy a Munkaprofil Rec.2020, amely egy nagyon széles színtartományú színtér.
 
 ![](book-images/256.jpg)
 
-A fenti ábrán láthatjuk a Rec.2020 színteret. A háromszög csúcsainál helyezkedik el a három alapszín (vörös, zöld, kék), ezeket nevezzük elsődleges színeknek. A három alapszín különböző arányú additív keverésével jönnek létre a létrehozható színek. A háromszögön kívüli színek nem hozhatók létre, azok a tartományon (gamuton) kívül helyezkednek el. A színárnyalatok x és y koordinátáikkal jellemezhetők. A különböző színrendszerekben, így a Rec.2020 színrendszerben is pontosan definiálva van a fehér pont, a vörös, a zöld, és a kék elsődleges színek koordinátái. Az elsődleges színek módosításával a háromszög csúcsait mozgathatjuk, és ezáltal változnak a háromszög belsejében elhelyezkedő színek is.
+A fenti ábrán láthatjuk a Rec.2020 színteret. A háromszög csúcsainál helyezkedik el a három alapszín (vörös, zöld, kék), ezeket nevezzük elsődleges színeknek. A különböző színrendszerekben, így a Rec.2020 színrendszerben is pontosan definiálva van a fehér pont, a vörös, a zöld, és a kék elsődleges színek koordinátái. Az elsődleges színek módosításával a háromszög csúcsait mozgathatjuk a háromszög oldalai mentén, és ezáltal változnak a háromszög belsejében elhelyezkedő színek is. A Vörös elsődlegeset a bíborvörös vagy a sárga, a zöld elsődlegeset a sárga vagy a türkiz (zöldeskék), a kék elsődlegeset a türkiz vagy a bíborvörös irányába mozdíthatjuk el.
 
 ### <a id="434"></a> 4\.3\.4 Színkiegyenlítő
 
@@ -3086,17 +3154,17 @@ Három teljesen egyforma működésű kiegyenlítőgörbe-szerkesztőt tartalmaz
 
 ![](book-images/257.jpg)
 
-**Csatorna**: Három teljesen egyforma működésű kiegyenlítőgörbe-szerkesztőt láthatunk, amelyek a HSL színrendszer három csatornája (Hue=Színezet, Saturation=Telítettség, és Lightness=Világosság) szerint változtatják meg a kép színeit, illetve világosságát a bemenő színek függvényében. A bemenő színeket alul láthatjuk. Minden egyes görbét a nevük mellett lenyitva kikapcsolhatunk, illetve választhatjuk a Kiegyenlítő lehetőséget, amelynek hatására megjelenik a görbeszerkesztő. A görbeszerkesztők semleges helyzete (amikor nem változtatnak semmit) a középső vízszintes vonal.
+**Csatorna**: Három teljesen egyforma működésű kiegyenlítőgörbe-szerkesztőt láthatunk, amellyel a HSL színrendszer három csatornáját (Hue=Színezet, Saturation=Telítettség, és Lightness=Világosság) változtathatjuk meg a bemenő színezet függvényében. A bemenő színezetskálát alul láthatjuk. Minden egyes görbét a nevük mellett lenyitva kikapcsolhatunk, illetve választhatjuk a Kiegyenlítő lehetőséget, amelynek hatására megjelenik a görbeszerkesztő. A görbeszerkesztők semleges helyzete (amikor nem változtatnak semmit) a középső vízszintes vonal.
 
-**H görbe**: Az alul kiválasztott színű területek színezetét változtathatjuk meg. Ha a kiválasztott szín felett a görbét lefelé húzzuk, illetve fölfelé toljuk, más és más kimenő színezetet állíthatunk be. Ezzel tehát a kép bizonyos színű területeinek színét változtathatjuk meg.
+**H görbe**: Az alul kiválasztott színezetű területek színezetét változtathatjuk meg. Ha a kiválasztott színezet felett a görbét lefelé húzzuk, illetve fölfelé toljuk, más és más kimenő színezetet állíthatunk be. Ezzel tehát a kép bizonyos színű területeinek színét változtathatjuk meg.
 
-**S görbe**: Az alul kiválasztott szín telítettségét változtathatjuk meg. Ha a kiválasztott szín felett a görbét lefelé húzzuk, akkor a telítettség csökken, illetve ha fölfelé toljuk, akkor növekszik.
+**S görbe**: Az alul kiválasztott színezet telítettségét változtathatjuk meg. Ha a kiválasztott színezet felett a görbét lefelé húzzuk, akkor a telítettség csökken, illetve ha fölfelé toljuk, akkor növekszik.
 
-**L görbe**: Az alul kiválasztott szín világosságát, másképpen mondva fényerejét változtathatjuk meg. Ha a kiválasztott szín felett a görbét lefelé húzzuk, akkor a világosság csökken, illetve ha fölfelé toljuk, akkor növekszik.
+**L görbe**: Az alul kiválasztott színezet világosságát változtathatjuk meg. Ha a kiválasztott szín felett a görbét lefelé húzzuk, akkor a világosság csökken, illetve ha fölfelé toljuk, akkor növekszik.
 
 A háromféle görbe teljesen független egymástól, egyszerre akár mindhármat is használhatjuk.
 
-**Simítás**: Elmossa az érintett területek szélét, a nagyobb értékeknél erőteljesebb az elmosás.
+**Simítás**: Elmossa az érintett területeket, a nagyobb értékeknél erőteljesebb az elmosás.
 
 ### <a id="435"></a> 4\.3\.5 RGB görbék
 
@@ -3108,7 +3176,7 @@ Mindhárom csatorna szerkesztője (a színskálák színétől eltekintve) telje
 
 ### <a id="436"></a> 4\.3\.6 L\*a\*b\* korrekciók
 
-A Színek eszközcsoportban található. Az L\*a\*b\* (L\*: Világosság, a\*: zöld-bíbor és b\*: kék-sárga) színrendszerben működik. Az L\*a\*b\* színrendszer gyakran kevesebb mellékhatással jár, mint az RGB színrendszer, ez indokolja használatát. A kevesebb mellékhatás oka az, hogy az L\*a\*b\* színrendszer a világosságot (fényerősséget) és a színeket külön kezeli.
+A Színek eszközcsoportban található. Az L\*a\*b\* (L\*: világosság, a\*: zöld-bíbor és b\*: kék-sárga) színrendszerben működik. Az L\*a\*b\* színrendszer gyakran kevesebb mellékhatással jár, mint az RGB színrendszer, ez indokolja használatát. A kevesebb mellékhatás oka az, hogy az L\*a\*b\* színrendszer a világosságot és a színeket külön kezeli.
 
 ![](book-images/259.jpg)
 
@@ -3134,19 +3202,19 @@ Itt állíthatjuk be a Bemeneti Profilt, a Munkaprofilt, a Kimeneti Profilt, és
 
 ![](book-images/262.jpg)
 
-**Bemeneti színprofil**
+**Bemeneti Profil**
 
-A nyers feldolgozás elengedhetetlen első lépése a fényképezőgép érzékelőjének adatait konvertálni az ART belső RGB színterébe (a Munkaprofilba). Ehhez az átalakításhoz kifejezetten az adott fényképezőgéphez készült bemeneti profilra van szükség. Egy ilyen profil annak az elemzésnek az eredménye, hogy a konkrét színeket és tónusokat hogyan rögzíti, dolgozza fel és ábrázolja nyers adatként az adott fényképezőgép. Kameraspecifikus bemeneti profil nélkül a pontos színábrázolás lehetetlen.
+A nyers feldolgozás elengedhetetlen lépése a fényképezőgép érzékelőjének adatait konvertálni az ART belső RGB színterébe (a Munkaprofilba). Ehhez az átalakításhoz kifejezetten az adott fényképezőgéphez készült bemeneti profilra van szükség. Egy ilyen profil annak az elemzésnek az eredménye, hogy a konkrét színeket és tónusokat hogyan rögzíti, dolgozza fel és ábrázolja nyers adatként az adott fényképezőgép. Kameraspecifikus bemeneti profil nélkül a pontos színábrázolás lehetetlen.
 
-**Nincs**: Nem történik színkonverzió, ne használjuk ezt szerkesztéshez.
+**Nincs profil**: Nem történik színkonverzió, ne használjuk ezt szerkesztéshez.
 
 **Beágyazott**: Csak nem nyers fájloknál használható. A képfájlba ágyazott színprofilt használja, ha rendelkezésre áll.
 
-**Fényképezőgép standard**: Egy egyszerű, előre meghatározott, kompromisszumos, a kamera típusától függő színmátrixot használ. Ha ez be van jelölve, akkor megjelenik a "Hajtsa végre a kromatikus adaptációt" engedélyezésének lehetősége. (A kromatikus adaptáció az ember látásának azon képessége, hogy úgy alkalmazkodik a megvilágítás változásaihoz, hogy megőrzi a tárgyak színének megjelenését. Egy fehér papírlapot a naplemente fényénél is fehérnek érzékelünk.) 
+**Fényképezőgép standard**: Egy egyszerű, előre meghatározott, kompromisszumos, a kamera típusától függő színmátrixot használ. Ha ez be van jelölve, akkor megjelenik a "Hajtsa végre a kromatikus adaptációt (CAT)" engedélyezésének lehetősége. (A kromatikus adaptáció az ember látásának azon képessége, hogy úgy alkalmazkodik a megvilágítás változásaihoz, hogy megőrzi a tárgyak színének érzékelését. Például egy fehér papírlapot a naplemente fényénél is fehérnek érzékelünk.) 
 
-**Automatikusan illeszkedő fényképezőgép-profil**: Az ART több kiváló minőségű, egyedileg létrehozott, általános célú DCP-profilt tartalmaz, amelyek automatikusan megfeleltethetők a támogatott fényképezőgép nyers fájljának megnyitásakor. Az egyeztetés csak a fényképezőgép pontos megnevezésével működik (kis- és nagybetűkre érzékeny), ahogy az a nyers fájl metaadataiban is megtalálható. Ez pontosabb, mint a Fényképezőgép standard profil. Csak akkor választható ki, ha rendelkezésre áll.
+**Automatikusan illeszkedő fényképezőgép-profil**: Az ART több kiváló minőségű, egyedileg létrehozott, általános célú DCP-profilt tartalmaz, amelyek automatikusan megfeleltethetők a támogatott fényképezőgép nyers fájljának megnyitásakor. Az egyeztetés csak a fényképezőgép pontos megnevezésével működik (kis- és nagybetűkre érzékeny), ahogy az a nyers fájl metaadataiban megtalálható. Ez pontosabb, mint a Fényképezőgép standard profil. Csak akkor választható ki, ha rendelkezésre áll.
 
-**Egyedi**: Egyedi DCP vagy ICC-kamera bemeneti profil kiválasztása. Akkor válasszuk, ha nem működik az Automatikus illeszkedés, illetve ha felül szeretnénk bírálni a Standard vagy Automatikusan illeszkedő profilt.
+**Egyedi**: Egyedi DCP vagy ICC-kamera bemeneti profil kiválasztása. Akkor válasszuk, ha nem működik az Automatikus illeszkedés, illetve ha felül szeretnénk bírálni a Fényképezőgép standard vagy Automatikusan illeszkedő profilt.
 
 ![](book-images/263.jpg)
 
@@ -3155,16 +3223,16 @@ Ha kiválasztottuk, akkor a fenti ábrán látható beállítási lehetőségek 
 **Fényforrás** lehet:
 
 -   **Interpolált**: A kiválasztott fehéregyensúly alapján számítja ki, ha a fehéregyensúly 2850 K és 6500 K közötti, ellenkező esetben a kettő közül a közelebbi kerül kiválasztásra. Ez az alapértelmezett mód, és általában nincs szükség ennek megváltoztatásra.
--   **2850K**: A téma megvilágítója hagyományos izzólámpa.
+-   **2850K**: A téma megvilágítója hagyományos izzólámpa, vagy ilyen színhőmérsékletű, jó színhűséget biztosító LED fényforrás.
 -   **6500K**: A témát napfény világítja meg.
 
-**Tónusgörbe**: Egyes DCP profilok tónusgörbét tartalmaznak, amely kontraszt és fényerő hozzáadására használható a filmszerű megjelenés érdekében. Ezt főként a fényképezőgép által létrehozott JPEG képhez hasonló előnézeti képet eredményező profilokhoz használják. Csak akkor engedélyezhető, ha a profil tartalmaz tónusgörbét.
+**Tónusgörbe**: A DCP profilok tónusgörbét tartalmazhatnak, amely kontraszt és fényerő hozzáadására használható a filmszerű megjelenés érdekében. Ezt főként a fényképezőgép által létrehozott JPEG képhez hasonló előnézetet eredményező profilokhoz használják. Csak akkor engedélyezhető, ha a profil tartalmaz tónusgörbét.
 
 **Alaptábla**: Ez lehetővé teszi a DCP "HueSatMap" táblázat használatát, amely az alapmátrix fölé nemlineáris korrekciók hozzáadására szolgál. Általában hagyjuk bekapcsolva. Ez nem engedélyezhető, ha a betöltött profilból hiányzik a HueSatMap tábla.
 
 **"Look" táblázat**: Ez lehetővé teszi a DCP "LookTable" táblázat alkalmazását, amelynek célja, hogy szubjektív megjelenést adjon általában egy beágyazott tónusgörbével együtt. Hagyjuk bekapcsolva.
 
-**Alapexpozíció**: Ez egy expozíció-kompenzáció, amelynek általában az a célja, hogy az előnézeti kép fényereje megegyezzen a fényképezőgép JPEG képének fényerejével. Ez "a felhasználói felület alatt" kerül alkalmazásra, így nem látható az expozíció-kompenzáció csúszkán. A fényképezőgépek általában szándékoltan alulexponálnak, ennek kompenzálására szolgál az Alapexpozíció.
+**Alapexpozíció**: Ez egy expozíció-kompenzáció, amelynek általában az a célja, hogy az előnézet világossága megegyezzen a fényképezőgép JPEG képének világosságával. Ez "a felhasználói felület alatt" kerül alkalmazásra, így nem látható az expozíció-kompenzáció csúszkán. A fényképezőgépek általában szándékoltan alulexponálnak, ennek kompenzálására szolgál az Alapexpozíció.
 
 ![](book-images/264.jpg)
 
@@ -3185,11 +3253,11 @@ A Renderelési szándék a következők valamelyike lehet:
 -   **Telítettség**: Ez nagyon hasonlít az Észlelési szándékhoz, kivéve, hogy a telítettséget finoman növeli, hogy kompenzálja a telítettség csökkenését.
 -   **Abszolút kolorimetrikus**: Hasonló a Relatív kolorimetrikushoz, de a fehér pont nem lesz korrigálva. Emiatt akkor használatos, ha a papír fehérségét a képernyőhöz kívánjuk igazítani. Érdemes lehet használni próbanyomat készítésekor, de egyébként nem.
 
-**Fekete pont kompenzáció**: Ezt célszerű engedélyezni a vágás elkerülésére. Ha engedélyezve van, a kimenő kép feketepont-szintje a bemenő kép feketepont-szintjére kerül a színátalakítás során (pl. munkaprofilról megjelenítési profilra). Ez azt jelenti, hogy csak a fénysűrűség-csatorna kerül tömörítésre vagy kiterjesztésre. Ez a funkció az árnyékban megtartja a részleteket (elkerüli a részlettelen sötét területeket), a színhelyesség rovására.
+**Feketepont-kompenzáció**: Ezt célszerű engedélyezni a vágás elkerülésére. Ha engedélyezve van, a kimenő kép feketepont-szintje a bemenő kép feketepont-szintjére kerül a színátalakítás során (pl. munkaprofilról megjelenítési profilra). Ez azt jelenti, hogy csak a fényerő-csatorna kerül tömörítésre vagy nyújtásra. Ez a funkció az árnyékban megtartja a részleteket (elkerüli a részlettelen sötét területeket), a színhelyesség rovására.
 
 ## <a id="44"></a> 4\.4 Helyi szerkesztés eszközcsoport
 
-A Helyi szerkesztés eszközei abban különböznek a többi csoportban lévő globális eszközöktől, hogy maszkok alkalmazásával a kép bizonyos részeit is meg tudjuk változtatni, nemcsak a teljes képet. Ha nem hozunk létre maszkot, akkor a Helyi szerkesztés eszközcsoport eszközei a teljes képre ható, globális eszközként viselkednek.
+A Helyi szerkesztés eszközei abban különböznek a többi csoportban lévő globális eszközöktől, hogy maszkok alkalmazásával a kép bizonyos részeit is meg tudjuk változtatni, nemcsak a teljes képet. Ha nem hozunk létre maszkot, akkor a Helyi szerkesztés eszközcsoport eszközei teljes képre ható, globális eszközként viselkednek.
 
 Mivel ezek a szerkesztőeszközök globális eszközként is használhatók, ezért mindenütt a "kép" változtatásáról írok, azonban ha létrehoztunk maszkot, akkor természetesen csak a maszk területén történik változás. Tehát nem írom le minden egyes esetben, hogy "a képen vagy a maszk területén".
 
@@ -3212,7 +3280,7 @@ A fenti ábrán látható képen csak a modell arcát szeretnénk világosítani
 
 ![](book-images/266.jpg)
 
-Létrehozunk egy Területmaszkot a modell arcára, Tollazattal és Elmosódással. A maszk miatt a Helyi szerkesztésen belül lévő Szín/Tónus korrekció eszközben lévő Expozíció-kompenzáció CTL szkript hatása csak a maszk területén érvényesül, a Tollazat és az Elmosódás hatására a maszk szélénél az Expozíció-kompenzáció hatása nagyon szépen, fokozatosan szűnik meg. A maszk sárga színnel jelenik meg a kép felett. A maszk szélénél látható fokozatos átmenet miatt lesz fokozatosan megszűnő az Expozíció-kompenzáció hatása.
+Létrehozunk egy Területmaszkot a modell arcán, Tollazattal és Elmosódással. A maszk miatt a Helyi szerkesztésen belül lévő Szín/Tónus korrekció eszközben lévő Expozíció-kompenzáció CTL szkript hatása csak a maszk területén érvényesül, a Tollazat és az Elmosódás hatására a maszk szélénél az Expozíció-kompenzáció hatása nagyon szépen, fokozatosan szűnik meg. A maszk sárga színnel jelenik meg a kép felett. A maszk szélénél látható fokozatos átmenet miatt lesz fokozatosan megszűnő az Expozíció-kompenzáció hatása.
 
 ![](book-images/267.jpg)
 
@@ -3237,7 +3305,7 @@ Létrehozunk egy Területmaszkot a modell arcára, Tollazattal és Elmosódássa
 13. Maszk vágólapra másolása
 14. Fordított maszk
 
-A szerkesztőeszköz fejléce alatt találjuk a Korrekciós rétegek listáját. Amikor belépünk egy helyi szerkesztőeszközbe, máris automatikusan létrejön egy Korrekciós réteg (1). Egy korrekciós réteget a listán rákattintva jelölhetünk ki.
+A szerkesztőeszköz fejléce alatt találjuk a Korrekciós rétegek listáját. Amikor belépünk egy helyi szerkesztőeszközbe, máris automatikusan létrejön egy Korrekciós réteg (1). Egy korrekciós réteget a listán rákattintva jelölhetünk ki (tehetünk aktuálissá).
 
 -   Mindegyik Korrekciós réteg a többitől függetlenül működik.
 -   Több Korrekciós réteg hatása összeadódik.
@@ -3247,7 +3315,7 @@ Bármikor hozzáadhatunk újabb Korrekciós rétegeket (2), törölhetjük a kij
 
 Másolat létrehozásakor a Korrekciós réteghez tartozó maszkok is átmásolódnak.
 
-A korrekciós rétegek lehetséges száma nincs korlátozva. A Korrekciós rétegek (és ezáltal a maszkok) feldolgozása a listán látható sorrendben, felülről lefelé történik. Más feldolgozási sorrend más eredményt adhat, ezért van szerepe annak, hogy az adott Korrekciós réteg hol helyezkedik el a listán.
+A korrekciós rétegek maximális száma nincs korlátozva. A Korrekciós rétegek (és ezáltal a maszkok) feldolgozása a listán látható sorrendben, felülről lefelé történik. Más feldolgozási sorrend más eredményt adhat, ezért van szerepe annak, hogy az adott Korrekciós réteg hol helyezkedik el a listán.
 
 #### <a id="4412"></a> 4\.4\.1\.2 Maszkok
 
@@ -3256,25 +3324,25 @@ Tetszőleges számú korrekciós réteget hozhatunk létre. Mindig a kiválaszto
 -   Négyféle maszktípus létezik: Parametrikus maszk (7), Színbeli hasonlóság maszk (8), Területmaszk (9), és Ecsetmaszk (10).
 -   Bármely Korrekciós réteg alkalmazhatja a négy típus bármelyikét vagy mindegyikét, de mindegyik típusból csak egyet.
 
-A **Parametrikus maszk** a képpontok színárnyalata, színessége, és világossága és/vagy a szomszédos pixelek kontrasztja szerint választja ki a területet.
+A **Parametrikus maszk** a képpontok színezete, színessége, és világossága és/vagy a szomszédos pixelek kontrasztja szerint választja ki a területet.
 
-A **Színbeli hasonlóság maszk** az alapján választja ki a képpontokat, hogy azok színárnyalat, színesség, és világosság tekintetében mennyire hasonlóak a kiválasztott referenciaszínhez.
+A **Színbeli hasonlóság maszk** az alapján választja ki a képpontokat, hogy azok színezet, színesség, és világosság tekintetében mennyire hasonlóak a kiválasztott referenciaszínhez.
 
 **Területmaszk** esetén felhasználó által létrehozott alakzatokat lehet alkalmazni a maszk területének kijelölésére. Bármennyi alakzat létrehozható. Az egyes alakzatok kontrasztja, tollazata, és elmosódása beállítható. Az egyes alakzatok külön-külön is állhatnak, de át is fedhetik egymást. Az átfedő alakzatokhoz beállíthatjuk, hogy azok összeadódjanak, és ezáltal egy kombinált formát adjanak, vagy kivonódjanak, amely azt jelenti, hogy az alakzat az átfedés területét kivágja, vagy metszetet képezhetnek, amely azt jelenti, hogy az egymást átfedő alakzatokból csak a közös rész, maga az átfedés lesz kiválasztva.
 
 Az **Ecsetmaszk** egy vagy több ecsetvonásból épül fel. Minden ecsetvonás egymástól eltérő beállításokkal adható hozzá. Vannak olyan beállító eszközök is, amelyekkel egyszerre az összes ecsetvonás jellemzőit beállíthatjuk.
 
-Ez a megvalósítás nagy szabadságot ad. Például a Területmaszkon belül tetszőleges számú területet jelölhetünk ki, a Parametrikus maszkon belül a képpontok különböző tulajdonságai egyszerre jelölhetik ki a maszk részeit, az Ecsetmaszk segítségével tetszőleges számú ecsetvonást hozhatunk létre, a Színbeli hasonlóság maszkkal a kép hasonló színű területei alkothatják a maszkot.
+Ez a megvalósítás nagy szabadságot ad. Például a Területmaszkkal tetszőleges számú terület lehet a maszk része, a Parametrikus maszkon belül a képpontok különböző tulajdonságai egyszerre jelölhetik ki a maszk részeit, az Ecsetmaszk segítségével tetszőleges számú ecsetvonást hozhatunk létre, a Színbeli hasonlóság maszkkal a kép hasonló színű területei alkothatják a maszkot.
 
 Be/kikapcsolhatjuk a maszk megjelenítését (11). Az aktuális maszkot a vágólapra másolhatjuk (13), és például egy másik Korrekciós réteghez beilleszthetjük a vágólapról (12). Be/kikapcsolhatjuk a maszk "Fordítottá" tételét (14). Ha bekapcsoljuk, akkor a maszk inverzre vált: amely terület nem volt része a maszknak, az a részévé válik, amely területen az eszköz kevéssé fejtette ki a hatását, ott erőteljesen ki fogja fejteni stb.
 
 ![](book-images/269.jpg)
 
-A fenti ábrán a Korrekciós réteg listán látható, automatikusan létrejött Korrekciós réteghez alul egyik maszktípus sincs aktiválva. Ilyenkor a szerkesztőeszköz a teljes képen, teljes mértékben kifejti hatását, azaz globális eszközként használható. Ha ekkor bekapcsoljuk a Maszk megjelenítése lehetőséget, akkor az előnézeti kép felett megjelenik egy sárga, átlátszatlan réteg.
+A fenti ábrán a Korrekciós réteg listán látható, automatikusan létrejött Korrekciós réteghez alul egyik maszktípus sincs aktiválva. Ilyenkor a szerkesztőeszköz a teljes képen, teljes mértékben kifejti hatását, azaz globális eszközként használható. Ha ekkor bekapcsoljuk a Maszk megjelenítését, akkor az előnézet felett megjelenik egy sárga, átlátszatlan réteg.
 
-A Maszk megjelenítésének bekapcsolásakor az előnézeti kép fekete-fehérre vált, és a maszk sárga színnel jelenik meg rajta. Ha csak a sárga maszk látható (a maszk átlátszatlansága maximális), mint a fenti ábrán, akkor az eszköz a teljes képen teljes mértékben kifejti hatását. Ahol a maszk alól áttűnik a kép (a maszk valamennyire átlátszó), ott az eszköz csak részlegesen fejti ki hatását, minél átlátszóbb a sárga maszk, annál kevésbé.
+A Maszk megjelenítésének bekapcsolásakor az előnézet fekete-fehérre vált, és a maszk sárga színnel jelenik meg rajta. Ha csak a sárga maszk látható (a maszk átlátszatlansága maximális), mint a fenti ábrán, akkor az eszköz a teljes képen teljes mértékben kifejti hatását. Ahol a maszk alól áttűnik a kép (a maszk valamennyire átlátszó), ott az eszköz csak részlegesen fejti ki hatását, minél átlátszóbb a sárga maszk, annál kevésbé. Ahol a maszk teljesen átlátszó, és csak a fekete-fehér előnézet látható, ott az eszköz hatástalan lesz.
 
-A Maszk felirattól jobbra láthatjuk, hogy a kiválasztott Korrekciós réteghez tartozó maszknak nevet is adhatunk.
+A Maszk felirattól jobbra láthatjuk, hogy a kiválasztott Korrekciós réteghez tartozó maszknak nevet is adhatunk (az ábrán látható maszknak nincs neve (Névtelen).
 
 #### <a id="4413"></a> 4\.4\.1\.3 Parametrikus maszk
 
@@ -3284,13 +3352,17 @@ A maszkot színezet (H), színesség (C), világosság (L) kiegyenlítő görbé
 
 Felül a három kiegyenlítőgörbe-szerkesztő fejlécét láthatjuk, mégpedig a színezet (H), színesség (C), világosság (L) görbék szerkesztőit. Jobb szélüknél lenyitva, és a Kiegyenlítőre kattintva aktiválhatjuk őket. Mindhárom görbe egymástól függetlenül működik. Lineáris állapotuk egy legfelül elhelyezkedő vízszintes vonal.
 
+![](book-images/483.jpg)
+
+A fenti ábrán L görbét láthatunk. Amely bemenő értéknél lefelé húzzuk a görbét, azt a világosságtartományt kizárjuk a maszkból, minél inkább lejjebb húzzuk, annál jobban. A lehúzás mértéke a kizárt terület átlátszatlanságát befolyásolja.
+
 ![](book-images/271.jpg)
 
-Az ábrán a színezet (H) görbeszerkesztő látható. Alul a színeket láthatjuk, amely színnél alulra húzzuk a görbét, azt a színt kizárjuk a maszkból.
+Az ábrán a színezet (H) görbeszerkesztő látható. Alul a bemeneti színezetet láthatjuk, amely színnél alulra húzzuk a görbét, azt a színt vagy színtartományt kizárjuk a maszkból.
 
 ![](book-images/272.jpg)
 
-Az ábrán a színesség (C) görbeszerkesztő látható. A színesség egy telítettséghez hasonló jellemző. Amely színességnél alul fut a görbe, az olyan színességű (telítettségű) terület ki lesz zárva a maszkból.
+Az ábrán a színesség (C) görbeszerkesztő látható. Amely színességnél alul fut a görbe, az olyan színességű (telítettségű) terület ki lesz zárva a maszkból.
 
 ![](book-images/273.jpg)
 
@@ -3304,7 +3376,7 @@ A fenti ábrán látható csúszkákkal magát a maszkot befolyásolhatjuk.
 
 ![](book-images/275.jpg)
 
-**Kontrasztküszöb maszk**: Kontrasztküszöb maszkot lehet létrehozni segítségével. A fenti ábrán kontrasztküszöb maszkot láthatunk.
+**Kontrasztküszöb maszk**: Kontrasztküszöb maszkot lehet létrehozni segítségével, amelyet a fenti ábrán láthatunk.
 
 **Elmosódás**: Elmosódást ad hozzá a maszkhoz.
 
@@ -3316,7 +3388,7 @@ A fenti ábrán látható képen a modell ruhájára szeretnénk maszkot készí
 
 ![](book-images/277.jpg)
 
-Kapcsoljuk be a Maszk megjelenítését, ekkor a teljes képet maszk borítja. A H (színezet) görbénél válasszuk ki a Kiegyenlítő lehetőséget, és próbáljuk kizárni a ruhát a maszkból. Ehhez a kéket, és a körülötte lévő színeket kell kizárnunk. A fenti ábrán láthatjuk is a görbét.
+Kapcsoljuk be a Maszk megjelenítését, ekkor a teljes képet maszk borítja. A H (színezet) görbénél válasszuk ki a Kiegyenlítő lehetőséget, és próbáljuk kizárni a ruhát a maszkból. Először a ruha kivételével a többi képelemre próbálunk maszkot készíteni. Ehhez a kéket, és a körülötte lévő színeket kell kizárnunk. A fenti ábrán láthatjuk is a görbét.
 
 ![](book-images/278.jpg)
 
@@ -3346,11 +3418,11 @@ Ez még nem elég jó, finomítani kell rajta. Ha területmaszkkal vesszük kör
 
 A Színbeli hasonlóság maszkok a kép képpontjainak egy kiválasztott referenciaszínhez való hasonlóságán alapulnak.
 
-**Kiválaszt**: Ennek a gombnak a megnyomása után az előnézeti kép megfelelő pontjára történő kattintással jelölhetjük ki a referenciaterületet, amelyen lévő képpontok jellemzőihez hasonlítja a kép képpontjait.
+**Kiválaszt**: Ennek a gombnak a megnyomása után az előnézet megfelelő pontjára történő kattintással jelölhetjük ki a referenciaterületet, amelyen lévő képpontok jellemzőihez hasonlítja a kép képpontjait.
 
 Az itt látható L, C, H, és Tartomány csúszkákkal finomíthatjuk, hogy mennyire pontosan kell egyeznie a képpontnak a referenciaterülettel ahhoz, hogy a maszk része lehessen. Azt is mondhatjuk, hogy azt finomíthatjuk, hogy a referenciaszíntől milyen eltérés engedhető meg ahhoz, hogy az adott képpont még a maszk része legyen.
 
-**L, C, és H csúszkák**: Az L, C, és H az LCH színrendszerre utal. Az L, C, és H csúszkák mindegyike két-két egymástól független csúszkát helyettesít. Van egy-egy felső csúszka, amellyel az L (Világosság), C (Chroma, azaz Színesség), illetve H (Színezet) értékét állíthatjuk be. Az alsó csúszkákkal pedig súlyozást (fontossági szintet) adhatunk hozzá, amely azt szabályozza, hogy a felső csúszka értéke milyen súllyal vegyen részt a maszk kiszámításakor. Más szavakkal ez azt jelenti, hogy a beállított értékektől mennyire eltérő értékű képpontok legyenek a maszk részei, illetve melyek ne legyenek. A súlyozás csúszka bal oldali értékeinél megengedőbb lesz (nagyobb eltérés lesz megengedhető, amely nagyobb maszkterületet eredményez), a jobb oldali értékeinél pedig korlátozóbb lesz (kisebb eltérés lesz megengedhető, amely kisebb maszkterületet eredményez).
+**L, C, és H csúszkák**: Az L, C, és H az LCH színrendszerre utal. Az L, C, és H csúszkák mindegyike két-két egymástól független csúszkát helyettesít. Van egy-egy felső csúszka, amellyel az L (Világosság), C (Színesség), illetve H (Színezet) értékét állíthatjuk be. Az alsó csúszkákkal pedig súlyozást (fontossági szintet) adhatunk hozzá, amely azt szabályozza, hogy a felső csúszka értéke milyen súllyal vegyen részt a maszk kiszámításában. A súlyozás csúszka bal oldali értékeinél megengedőbb lesz (nagyobb eltérés lesz megengedhető, amely nagyobb maszkterületet eredményez), a jobb oldali értékeinél pedig korlátozóbb lesz (kisebb eltérés lesz megengedhető, amely kisebb maszkterületet eredményez).
 
 A beállítást vizuálisan is követhetjük a csúszkákon. Ha az alsó csúszkát bal szélső állásba toljuk, akkor a csúszka színe feketére vált, és a felső csúszkán bármilyen értéket is állítunk be, azt nem fogja figyelembe venni a maszk kiszámításakor. Minél inkább jobbra toljuk az alsó csúszkát, annál nagyobb mértékben veszi figyelembe a felső csúszkán beállított értéket, és a csúszkán látható színek annál világosabban jelennek meg.
 
@@ -3380,7 +3452,7 @@ Ezután a Kiválaszt gombra kell kattintanunk. Az egeret a módosítani kívánt
 
 ![](book-images/286.jpg)
 
-Láthatjuk, hogy valóban megjelent a szín. Kapcsoljuk be a Maszk megjelenítését. Ekkor az előnézeti kép szürkeárnyalatos lesz, és a sárga színű maszk megjelenik. Ahol sárga színt látunk, ott lesz hatása az eszköznek a képre. Az átlátszatlan sárga részeken (egyáltalán nem tűnik át a sárga maszkon keresztül a szürkeárnyalatos kép) teljes mértékben kifejti az eszköz a hatását, Minél inkább láthatóvá válik a szürkeárnyalatos kép, annál kevésbé érvényesül az eszköz hatása. Láthatjuk, hogy a kijelölés nem túl jó, mert azt szeretnénk, ha a maszk teljesen lefedné a ruhát, hiszen a teljes ruhának meg szeretnénk változtatni a színét. Azok a problémás részek, ahol a a ruhán a sárga maszk szélénél fekete részeket látunk. Ezt a problémát a Tartomány csúszkával korrigálhatjuk. Ezzel a csúszkával azt mondjuk meg a programnak, hogy a kiválasztott színhez képest mennyire térhet el az a szín a képen, amelynek még a maszk részének kell lennie. Az alapértelmezett érték 1, ezt nyilván növelni kell, mert ennél nagyobb eltérésű területeket is bele kell vennünk a maszkba annak érdekében, hogy a maszk melletti fekete területek is a maszk részei legyenek. Ha túlságosan megnöveljük a Tartományt, akkor a ruhán kívüli egyéb területeken is megjelenik a maszk sárga színe. Ha ezután csökkenteni kezdjük, akkor a ruhán kívül utoljára a fekete cipőkön láthatjuk. Addig kell csökkenteni, hogy a cipőkről éppen eltűnjön a sárga elszíneződés (az már ne legyen a maszk része). Itt éles határvonalú maszkra van szükség, hiszen azt szeretnénk, ha a teljes ruhát egyformán befedné a maszk, de azon kívül semmi se legyen a maszk része.
+Láthatjuk, hogy valóban megjelent a szín. Kapcsoljuk be a Maszk megjelenítését. Ekkor az előnézet szürkeárnyalatos lesz, és a sárga színű maszk megjelenik. Ahol sárga színt látunk, ott lesz hatása az eszköznek a képre. Az átlátszatlan sárga részeken (egyáltalán nem tűnik át a sárga maszkon keresztül a szürkeárnyalatos kép) teljes mértékben kifejti az eszköz a hatását, minél inkább láthatóvá válik a szürkeárnyalatos kép, annál kevésbé érvényesül az eszköz hatása. Láthatjuk, hogy a kijelölés nem túl jó, mert azt szeretnénk, ha a maszk teljesen lefedné a ruhát, hiszen a teljes ruhának meg szeretnénk változtatni a színét. Azok a problémás részek, ahol a ruhán a sárga maszk szélénél fekete részeket látunk. Ezt a problémát a Tartomány csúszkával korrigálhatjuk. Ezzel a csúszkával azt mondjuk meg a programnak, hogy a kiválasztott színhez képest mennyire térhet el az a szín a képen, amelynek még a maszk részének kell lennie. Az alapértelmezett érték 1, ezt nyilván növelni kell, mert ennél nagyobb eltérésű területeket is bele kell vennünk a maszkba annak érdekében, hogy a maszk melletti fekete területek is a maszk részei legyenek. Ha túlságosan megnöveljük a Tartományt, akkor a ruhán kívüli egyéb területeken is megjelenik a maszk sárga színe. Ha ezután csökkenteni kezdjük, akkor a ruhán kívül utoljára a fekete cipőkön láthatjuk a sárga színt. Addig kell csökkenteni, hogy a cipőkről éppen eltűnjön a sárga elszíneződés (az már ne legyen a maszk része). Itt éles határvonalú maszkra van szükség, hiszen azt szeretnénk, ha a teljes ruhát egyformán befedné a maszk, de azon kívül semmi se legyen a maszk része.
 
 ![](book-images/287.jpg)
 
@@ -3422,7 +3494,7 @@ Téglalap, ellipszis, kör, görbékkel határolt, sokszög alakú, illetve átm
 
 Az alakzatok listája alatt megjelenő **Tollazat** és **Elmosódás** csúszka csak a kiválasztott Alakzatra van hatással, a többire nem hat.
 
-**Kontrasztgörbe**: Egyszerű kontrasztgörbe segítségével módosíthatunk a maszkon. Akkor látható jól a hatása ha nemcsak teljesen átlátszó és teljesen átlátszatlan, hanem átmeneti átlátszatlanságú területek is vannak.
+**Kontrasztgörbe**: Egyszerű kontrasztgörbe segítségével módosíthatunk a maszkon. Akkor látható jól a hatása ha nemcsak teljesen átlátszó és teljesen átlátszatlan, hanem köztes átlátszatlanságú területei is vannak a maszknak.
 
 **Alakzat**: Alakzatok listája. Itt láthatjuk a létrehozott alakzatokat.
 
@@ -3434,7 +3506,7 @@ Az alakzatlista mellett jobbra gombokat látunk, amelyeknek a funkciója felülr
 
 **+**: Új alakzat hozzáadása.
 
-**\-**: A kiválasztott alakzatot eltávolítja.
+**\-**: A kiválasztott alakzat eltávolítása.
 
 **Felfelé nyíl**: Alakzat felfelé mozgatása a listán.
 
@@ -3444,21 +3516,21 @@ Az alakzatlista mellett jobbra gombokat látunk, amelyeknek a funkciója felülr
 
 Felül jobb oldalon négy gombot láthatunk, amelyeknek a funkciói jobbról balra az alábbiak:
 
-1\. Megjeleníti az előnézeti képen az aktuális alakzatot, amelyet szerkeszthetünk is.
+1\. Megjeleníti az előnézeten az aktuális alakzatot, amelyet szerkeszthetünk is.
 
-2\. Téglalap alakú alakzat hozzáadása az előnézeti képre történő rajzolással. A téglalap alakú alakzatok az előnézeti kép határain tetszőlegesen túlnyúlhatnak.
+2\. Téglalap alakú alakzat hozzáadása az előnézetre történő rajzolással. A téglalap alakú alakzatok az előnézet határain tetszőlegesen túlnyúlhatnak.
 
 ![](book-images/296.jpg)
 
-A fekete terület a szerkesztett "kép", és a fehér téglalap az alakzat, amely az előnézeti kép határain jóval túlterjed.
+A fekete terület a szerkesztett "kép", és a fehér téglalap az alakzat, amely az előnézet határain jóval túlterjed.
 
-3\. Sokszög alakú alakzat létrehozása az előnézeti képen pontok hozzáadásával. A sokszög alakú alakzatok az előnézeti kép határain tetszőlegesen túlnyúlhatnak.
+3\. Sokszög alakú alakzat létrehozása az előnézeten pontok hozzáadásával. A sokszög alakú alakzatok az előnézet határain tetszőlegesen túlnyúlhatnak.
 
 4\. Átmenet hozzáadása.
 
 ##### <a id="44151"></a> 4\.4\.1\.5\.1 Téglalap hozzáadása, szerkesztése
 
-Kattintsunk a jobbról második (a fenti listán 2-es) gombra, és az egérrel rajzoljuk az előnézeti képre a téglalapot.
+Kattintsunk a jobbról második (a fenti listán 2-es) gombra, és az egérrel rajzoljuk az előnézetre a téglalapot.
 
 ![](book-images/297.jpg)
 
@@ -3470,23 +3542,23 @@ A téglalap középpontját az egérrel megfogva a téglalapot tetszőleges hely
 
 ![](book-images/298.jpg)
 
-**Kerekség**: Ha növeljük az értékét, akkor a maszk sarkai egyre inkább lekerekednek, a csúszka maximális, 100-as értékénél ellipszist kapunk eredményül. Ha az alakzatunk négyzet alakú, akkor ellipszis helyett kör lesz a végeredmény.
+**Kerekség**: Ha növeljük az értékét, akkor a maszk sarkai egyre inkább lekerekednek, a csúszka maximális, 100-as értékénél ellipszist kapunk eredményül. Ha az alakzatunk négyzet alakú, akkor kör lesz a végeredmény.
 
 ![](book-images/299.jpg)
 
 A kerekség 100-as értékénél kapott ellipszis alakú maszk látható a fenti ábrán. Mint látható, maga az alakzat nem lesz ellipszis alakú, csak a maszk.
 
-Az alakzat helye az előnézeti képen, a téglalap szélessége és magassága, valamint elfordulása nemcsak egérrel, hanem csúszkákkal is állítható.
+Az alakzat helye az előnézeten, a téglalap szélessége és magassága, valamint elfordulása nemcsak egérrel, hanem csúszkákkal is állítható.
 
 **Középpont X**: Az alakzat középpontját vízszintesen mozgatja.
 
 **Középpont Y**: Az alakzat középpontját függőlegesen mozgatja.
 
-**Szélesség**: A téglalap szélességét állíthatjuk.
+**Szélesség**: A téglalap szélességén állíthatunk.
 
-**Magasság**: A téglalap magasságát állíthatjuk.
+**Magasság**: A téglalap magasságán állíthatunk.
 
-**Szög**: Az alakzat középpontja körüli elfordulás szögét állíthatjuk.
+**Szög**: Az alakzat középpontja körüli elfordulás szögén állíthatunk.
 
 **Tollazat**: Tollazatot adhatunk hozzá a kiválasztott (aktuális) alakzathoz.
 
@@ -3500,7 +3572,7 @@ Sokszöggel, illetve görbe vonallal határolt maszkot hozhatunk létre segíts�
 
 ![](book-images/300.jpg)
 
-Kezdjük el a sokszög létrehozását. Kattintsunk rá a sokszög létrehozása gombra. Ekkor aktív lesz a jobb szélső, az alakzat megjelenítésére, szerkesztésére szolgáló jobb szélső gomb is. Ennek egészen addig aktívnak kell lennie, amíg az alakzatot szerkesztjük. Pozicionáljunk az előnézeti képen, és Ctrl + kattintás létrehozza az első pontot. A fenti ábrán ez a bal oldali pont. Ezután pozicionáljunk a második pont helyére, és Ctrl + kattintás létrehozza a második pontot. Ekkor azt kell látnunk, amely az ábrán látható. A fehér vonal szaggatottan látszik, mert még nincs alakzat (ahhoz, hogy legyen, legalább három pont kellene). Megjelent egy narancssárga vonal is, amelyet Beszúrási vonalnak nevezünk. A narancssárga vonal végeinél látható két pont a Beszúrási vonal végeit mutatja. A Beszúrási vonal alapértelmezett helye az alakzat utolsó és első pontja között van, ez zárja le az alakzatot.
+Kezdjük el a sokszög létrehozását. Kattintsunk rá a sokszög létrehozása gombra. Ekkor aktív lesz a jobb szélső, az alakzat megjelenítésére, szerkesztésére szolgáló jobb szélső gomb is. Ennek egészen addig aktívnak kell lennie, amíg az alakzatot szerkesztjük. Pozicionáljunk az előnézeten, és Ctrl + kattintás létrehozza az első pontot. A fenti ábrán ez a bal oldali pont. Ezután pozicionáljunk a második pont helyére, és Ctrl + kattintás létrehozza a második pontot. Ekkor azt kell látnunk, amely az ábrán látható. A fehér vonal szaggatottan látszik, mert még nincs alakzat (ahhoz, hogy legyen, legalább három pont kellene). Megjelent egy narancssárga vonal is, amelyet Beszúrási vonalnak nevezünk. A narancssárga vonal végeinél látható két pont a Beszúrási vonal végeit mutatja. A Beszúrási vonal alapértelmezett helye az alakzat utolsó és első pontja között van, ez zárja le az alakzatot.
 
 ![](book-images/301.jpg)
 
@@ -3524,7 +3596,7 @@ Az alakzat bármely oldalát megfoghatjuk az egérrel, és tetszőlegesen mozgat
 
 ![](book-images/306.jpg)
 
-Ha az egérmutatóval ráállunk valamelyik pontra, lenyomjuk a Shift billentyűt, és az egeret jobbra mozgatjuk, akkor az alakzat sarkait lekerekíthetjük. Balra mozgatva ismét egyre hegyesebb lesz. A lekerekítés mindig a pont két szomszédos pontja között jön létre. Az alakzat két szomszédos oldala szaggatott lesz, a lekerekítés marad folyamatos vonalú, jelezve, hogy az lesz a maszk széle.
+Ha az egérmutatóval ráállunk valamelyik pontra, lenyomjuk a Shift billentyűt, és az egeret jobbra mozgatjuk, akkor az alakzat csúcsait lekerekíthetjük. Balra mozgatva ismét egyre hegyesebb lesz. A lekerekítés mindig a pont két szomszédos pontja között jön létre. Az alakzat két szomszédos oldala szaggatott lesz, a lekerekítés marad folyamatos vonalú, jelezve, hogy az lesz a maszk széle.
 
 Ctrl + kattintással maximálisan hegyes, Shift + Ctrl + kattintással pedig maximálisan lekerekített pontokat hozhatunk létre.
 
@@ -3534,7 +3606,7 @@ Ha két szomszédos lekerekített pont valamelyikénél megváltoztatjuk a leker
 
 ![](book-images/308.jpg)
 
-Az ábrán a téglalap négy sarkán helyezkednek el a lekerekített pontok. Minden oldal közepén elhelyeztem egy-egy maximálisan hegyes pontot. Mivel a lekerekítés mindig a lekerekített pont két szomszédos pontja között jön létre, az oldalak közepén elhelyezkedő pontok megakadályozzák a lekerekítés hatásának a téglalap másik sarka felé történő terjedését. Tehát az oldalak közepén elhelyezett pontok csak azt a célt szolgálják, hogy ha változtatunk az egyik sarok lekerekítettségén, annak ne legyen hatása a téglalap szomszédos sarkainak lekerekítettségére.
+Az ábrán a téglalap négy csúcsán helyezkednek el a lekerekített pontok. Minden oldal közepén elhelyeztem egy-egy maximálisan hegyes pontot. Mivel a lekerekítés mindig a lekerekített pont két szomszédos pontja között jön létre, az oldalak közepén elhelyezkedő pontok megakadályozzák a lekerekítés hatásának a téglalap másik csúcsa felé történő terjedését. Tehát az oldalak közepén elhelyezett pontok csak azt a célt szolgálják, hogy ha változtatunk az egyik sarok lekerekítettségén, annak ne legyen hatása a téglalap szomszédos csúcsainak lekerekítettségére.
 
 ![](book-images/309.jpg)
 
@@ -3542,7 +3614,7 @@ Nézzük meg a maszkot.
 
 ![](book-images/310.jpg)
 
-Az Alakzatlista alatt látható Tollazat csúszkával tollazatot adhatunk maszkunkhoz.
+Az Alakzatlista alatt látható Tollazat csúszkával tollazatot adhatunk (az alakzatlistán kijelölt) maszkhoz.
 
 ![](book-images/311.jpg)
 
@@ -3550,11 +3622,11 @@ A maszk a tollazattal.
 
 ![](book-images/312.jpg)
 
-Az Alakzatlista alatt látható Elmosódás csúszkával elmosódást adhatunk maszkunkhoz. A fenti ábrán a tollazatot és az elmosódást együtt láthatjuk. Az Elmosódás csúszka nem a képre hat, hanem magára a maszkra, alkalmazásával sokkal finomabb lesz az átmenet ahhoz képest, mintha csak Tollazatot alkalmaztunk volna.
+Az Alakzatlista alatt látható Elmosódás csúszkával elmosódást adhatunk a maszkhoz. A fenti ábrán a tollazatot és az elmosódást együtt láthatjuk. Az Elmosódás csúszka sem a képre hat, hanem magára a maszkra, alkalmazásával sokkal finomabb lesz az átmenet ahhoz képest, mintha csak Tollazatot alkalmaztunk volna.
 
 ##### <a id="44153"></a> 4\.4\.1\.5\.3 Átmenet hozzáadása, szerkesztése
 
-Kattintsunk az átmenet hozzáadása céljából a jobbról negyedik gombra, és az előnézeti képen szerkeszthetjük az átmenetet.
+Kattintsunk az átmenet hozzáadása céljából a jobbról negyedik gombra, és az előnézeten szerkeszthetjük az átmenetet.
 
 ![](book-images/313.jpg)
 
@@ -3562,7 +3634,7 @@ A két párhuzamos egyenes egyikét egérrel megfogva beállíthatjuk az átmene
 
 A középponton átmenő egyenesek egyikét egérrel megfogva elfordíthatjuk az átmenetet.
 
-A középpontot egérrel megfogva az átmenetet a kívánt helyre helyezhetjük.
+A középpontot egérrel megfogva az átmenetet a kívánt helyre mozgathatjuk.
 
 ![](book-images/314.jpg)
 
@@ -3592,7 +3664,7 @@ A fenti ábrán látható kép alsó részét szeretnénk világosítani úgy, h
 
 ![](book-images/281.jpg)
 
-A fenti ábrán látható maszkot Parametrikus maszkkal hoztam létre. A probléma az, hogy nem sikerült olyan maszkot létrehozni, hogy a modell ruháján kívül semmi se legyen a maszk része.
+A fenti ábrán látható maszkot Parametrikus maszkkal hoztam létre. A probléma az, hogy nem sikerült a maszkot úgy létrehozni, hogy a modell ruháján kívül semmi se legyen a maszk része.
 
 ![](book-images/317.jpg)
 
@@ -3600,7 +3672,7 @@ A fenti ábrán a modell körül sokszög alakú Területmaszkot hoztam létre, 
 
 #### <a id="4416"></a> 4\.4\.1\.6 Ecsetmaszk
 
-Ecsettel maszkot rajzolhatunk az előnézeti képre, és törölhetjük az előzőleg bármelyik maszktípussal létrehozott maszkunkat vagy annak egy részét.
+Ecsettel maszkot rajzolhatunk az előnézetre, és törölhetjük az előzőleg bármelyik maszktípussal létrehozott maszkunkat, vagy annak egy részét.
 
 ![](book-images/318.jpg)
 
@@ -3618,19 +3690,19 @@ Jobb oldalon egymás alatt gombokat találunk, amelyek fentről lefelé a követ
 
 6\. Csak az aktív területmaszkon belül adja hozzá az ecsettel létrehozott maszkot a többi maszk fölé.
 
-Ha bekapcsoljuk az ecsetet, akkor az ecsettel maszkot rajzolhatunk az előnézeti képre (az egérgomb lenyomva tartásával). A maszkot több ecsetvonással alakíthatjuk ki, az ecsetvonások száma nincs korlátozva. Az egérgomb felengedése nélkül végrehajtott festés egy ecsetvonásnak számít. Egy újabb ecsetvonást úgy kezdeményezhetünk, hogy felengedjük az egér gombját. Ha egy ecsetvonást elrontottunk, akkor közvetlenül utána törölhetjük azt.
+Ha bekapcsoljuk az ecsetet, akkor az ecsettel maszkot rajzolhatunk az előnézetre (az egérgomb lenyomva tartásával). A maszkot több ecsetvonással alakíthatjuk ki, az ecsetvonások száma nincs korlátozva. Az egérgomb felengedése nélkül végrehajtott festés egy ecsetvonásnak számít. Egy újabb ecsetvonást úgy kezdeményezhetünk, hogy felengedjük az egér gombját. Ha egy ecsetvonást elrontottunk, akkor közvetlenül utána törölhetjük azt.
 
-Ha többször átmegyünk ugyanazon a területen egy ecsetvonáson belül, vagy akár több különálló ecsetvonással, akkor az ecsetvonások hatása nem adódik össze, olyan lesz a hatás, mintha csak egyszer festettük volna be a területet. Ez nagyon jó olyankor, amikor kimarad véletlenül egy kis terület. Ilyenkor átmehetünk újra az ecsettel a hiányzó részen, és nem kell attól félnünk, hogy ahol ismét rámentünk az ecsettel a hiányzó rész melletti maszkterületre, akkor ott dupla hatása lesz az ecsetnek. Amikor azonban a Ctrl billentyűt lenyomva tartjuk az ecsetvonások készítése közben, akkor az ecsetvonások hatása összeadódik. Képzeletben 20%-os átlátszatlansággal hozzunk létre egy maszkot, majd engedjük fel az egérgombot. Utána ha a Ctrl gomb lenyomása (és persze az egér gombjának lenyomása) mellett átfestjük az előzőleg létrehozott maszkot vagy annak egy részét, akkor azt tapasztalhatjuk, hogy a korábbi ecsetvonások és az újabb ecsetvonások hatása összeadódik, és az újabb ecsetvonások helyén a maszk átlátszatlanabb lett. Itt is igaz az, hogy egy ecsetvonáson belül történő többszöri átfestés csak egyszeres hatást vált ki. A Ctrl billentyű használata lehetőséget biztosít arra, hogy lágyabb és finomabb hatást érjünk el oly módon, hogy kevésbé átlátszatlan és/vagy nagyobb tollazatú ecsettel kezdünk, majd több ecsetvonást alkalmazunk a kívánt hatás eléréséig.
+Ha többször átmegyünk ugyanazon a területen egy ecsetvonáson belül, vagy akár több különálló ecsetvonással, akkor az ecsetvonások hatása nem adódik össze, olyan lesz a hatás, mintha csak egyszer festettük volna be a területet. Ez nagyon jó olyankor, amikor kimarad véletlenül egy kis terület. Ilyenkor átmehetünk újra az ecsettel a hiányzó részen, és nem kell attól tartanunk, hogy ahol ismét rámentünk az ecsettel a hiányzó rész melletti maszkterületre, akkor ott dupla hatása lesz az ecsetnek. Amikor azonban a Ctrl billentyűt lenyomva tartjuk az ecsetvonások készítése közben, akkor az ecsetvonások hatása összeadódik. Képzeletben 20%-os átlátszatlansággal hozzunk létre egy ecsetmaszkot, majd engedjük fel az egérgombot. Utána ha a Ctrl gomb lenyomása (és persze az egér gombjának lenyomása) mellett átfestjük az előzőleg létrehozott maszkot vagy annak egy részét, akkor azt tapasztalhatjuk, hogy a korábbi ecsetvonások és az újabb ecsetvonások hatása összeadódik, és az újabb ecsetvonások helyén a maszk átlátszatlanabb lett. Itt is igaz az, hogy egy ecsetvonáson belül történő többszöri átfestés csak egyszeres hatást vált ki. A Ctrl billentyű használata lehetőséget biztosít arra, hogy lágyabb és finomabb hatást érjünk el oly módon, hogy kevésbé átlátszatlan és/vagy nagyobb tollazatú ecsettel kezdünk, majd több ecsetvonást alkalmazunk a kívánt hatás eléréséig.
 
 **Ecset beállításai**:
 
-Az Ecset beállításain akár ecsetvonásonként is változtathatunk. Ezek a változtatások a korábban létrehozott ecsetvonásokra hatástalanok, csak a változtatás után létrehozott ecsetvonásokat befolyásolják.
+Az Ecset beállításai részben az Ecset beállításain akár ecsetvonásonként is változtathatunk. Ezek a változtatások a korábban létrehozott ecsetvonásokra hatástalanok, csak a változtatás után létrehozott ecsetvonásokat befolyásolják.
 
 **Sugár**: Az ecset sugarát állíthatjuk be segítségével.
 
 **Átlátszatlanság**: Az ecsetvonások átlátszatlanságát állíthatjuk be az eredeti képpel történő keveréshez (százalékban). Lentebb, az Általános beállításoknál alkalmazott Átlátszatlanságot tekinti 100%-nak, és ehhez képest lesz az eredő átlátszatlanság az Ecset beállításánál alkalmazott Átlátszatlanság szerint kevesebb. Például ha az Általános beállításoknál 50%, és az Ecset beállításainál szintén 50% átlátszatlanságot állítottunk be, akkor eredőül (0,5x0,5=0,25) 25% átlátszatlanságot kapunk.
 
-**Radír mód**: Ha engedélyezzük, akkor az ecsettel törölhetünk részeket az előzőleg bármilyen módon létrehozott maszkunkról. Ha a Maszk megjelenítése mellett a Fordított jelölőnégyzet be van jelölve, akkor a törléshez nem kell engedélyezni a Radír módot, hozzáadáshoz azonban engedélyezni kell.
+**Radír mód**: Ha engedélyezzük, akkor az ecsettel törölhetünk részeket az előzőleg bármilyen módon létrehozott maszkunkról. Ha a Maszk megjelenítése mellett látható Fordított jelölőnégyzet be van jelölve, akkor a törléshez nem kell engedélyezni a Radír módot, hozzáadáshoz azonban engedélyezni kell.
 
 **Általános beállítások**:
 
@@ -3642,15 +3714,15 @@ Az Általános beállítások részben történő változtatások az összes edd
 
 **Simaság**: A maszk környezete felé történő átmenet simaságát állíthatjuk be segítségével. A magasabb értékek simább átmenetet eredményeznek.
 
-**Kontrasztgörbe**: Egyszerű kontrasztgörbe segítségével módosíthatunk a maszkon. Akkor látható jól a hatása ha nemcsak teljesen átlátszó és teljesen átlátszatlan, hanem átmeneti átlátszatlanságú területek is vannak.
+**Kontrasztgörbe**: Egyszerű kontrasztgörbe segítségével módosíthatunk a maszkon. Akkor látható jól a hatása ha nemcsak teljesen átlátszó és teljesen átlátszatlan, hanem köztes átlátszatlanságú területek is vannak.
 
 ##### <a id="44161"></a> 4\.4\.1\.6\.1 Felesleges maszkrészek eltüntetése Fordított maszk esetén
 
-![](book-images/319.jpg)
+![](book-images/278.jpg)
 
 A fenti ábrát a Parametrikus maszknál már láthattuk. Ott engedélyeztük a Maszk megjelenítése melletti Fordított lehetőséget. A modell cipőjének nem kell a maszk részének lenni, ezért Ecsetmaszkkal eltüntetjük róla a maszkot.
 
-![](book-images/278.jpg)
+![](book-images/319.jpg)
 
 Engedélyezni kell az Ecsetmaszkot, majd azon belül az Átlátszatlanság csúszka végénél található "Adja hozzá a maszkot a többi maszk fölé" gombra kell kattintani, melynek hatására ismét megjelenik maszkunk. Mivel maszkunk Fordított maszk, ezért nem kell engedélyeznünk a Radír módot, hanem normál módban be kell festenünk az ecsettel a modell cipőjénél lévő maszkrészt.
 
@@ -3670,7 +3742,7 @@ A **Poszterizáció** 0 és 6 között állítható. Minél nagyobb értéket á
 
 A **Simítás** csúszka értékének növelése fokozatosan simítja az átmenetet a Poszterizáció csúszka által létrehozott tónustartományok között. A Poszterizáció csúszka nulla értékénél nincs hatása.
 
-**Tónusgörbe**: Egyszerű tónusgörbe segítségével módosíthatunk a maszkon. Akkor látható jól a hatása, ha nemcsak teljesen átlátszó és teljesen átlátszatlan, hanem átmeneti átlátszatlanságú területei is vannak a maszknak.
+**Tónusgörbe**: Egyszerű tónusgörbe segítségével módosíthatunk a maszkon. Akkor látható jól a hatása, ha nemcsak teljesen átlátszó és teljesen átlátszatlan, hanem közbülső átlátszatlanságú területei is vannak a maszknak.
 
 **Maszk utófeldolgozás alkalmazása**
 
@@ -3686,7 +3758,7 @@ Színbeli hasonlóság maszk segítségével az ábrán látható maszkot hoztuk
 
 ![](book-images/324.jpg)
 
-Menjünk a Maszk utófeldolgozás részbe. Állítsuk a Poszterizáció csúszkát maximális, 6-os értékre. Figyeljük meg, hogy a maszk árnyalatai eltűntek, és most már vagy teljesen sárga (maximális fedettségű) rész van, vagy teljesen átlátszó, ahol csak a fekete-fehér előnézeti képet látjuk.
+Menjünk a Maszk utófeldolgozás részbe. Állítsuk a Poszterizáció csúszkát maximális, 6-os értékre. Figyeljük meg, hogy a maszk árnyalatai eltűntek, és most már vagy teljesen sárga (maximális fedettségű) rész van, vagy teljesen átlátszó, ahol csak a fekete-fehér előnézetet látjuk.
 
 ![](book-images/325.jpg)
 
@@ -3706,7 +3778,7 @@ Most foglalkozzunk a tónusgörbével. Egy tónusgörbét alkalmazhatunk közvet
 
 ![](book-images/329.jpg)
 
-Ha a bal alsó sarokban lévő vezérlőpontot felfelé tolom, akkor növekszik a maszk átlátszatlansága, legerősebb mértékben a legkevésbé átlátszatlan (azaz leginkább átlátszó) területeken.
+Ha a bal alsó sarokban lévő vezérlőpontot felfelé toljuk, akkor növekszik a maszk átlátszatlansága, legerősebb mértékben a legkevésbé átlátszatlan (azaz leginkább átlátszó) területeken.
 
 ![](book-images/330.jpg)
 
@@ -3730,7 +3802,7 @@ Az ábrán a Mód-nál lehet kiválasztani a műveleteket, amelyek balról jobbr
 -   Kivonás mód
 -   Metszet mód
 
-A "semmiből" nem lehet kivonni, és a "semmivel" nem lehet metszetet képezni sem, ezért ha most ezekre az gombokra kattintunk, akkor üres maszkot kapunk. Most csak a hozzáadásnak van értelme annak érdekében, hogy legyen egy területünk.
+A "semmiből" nem lehet kivonni, és a "semmivel" nem lehet metszetet képezni sem, ezért ha most ezekre az gombokra kattintunk, akkor üres maszkot kapunk. Most csak a hozzáadásnak van értelme annak érdekében, hogy legyen egy területmaszkunk.
 
 ![](book-images/333.jpg)
 
@@ -3748,7 +3820,7 @@ Az Ecsetmaszknál az alábbi módokat láthatjuk:
 
 ![](book-images/336.jpg)
 
-Jobbra egymás alatt láthatjuk a gombokat. A felső a Metszés mód, a középső a Hozzáadás mód, az alsó a "Hozzáadás a többi maszkhoz, de csak az aktív területmaszkon belül" mód gombja.
+Jobbra egymás alatt láthatjuk a gombokat. A felső a Metszet mód, a középső a Hozzáadás mód, az alsó a "Hozzáadás a többi maszkhoz, de csak az aktív területmaszkon belül" mód gombja.
 
 #### <a id="4419"></a> 4\.4\.1\.9 Az eredő maszk létrehozása
 
@@ -3760,11 +3832,11 @@ Az ART a következőképpen hozza létre a négyféle maszk (Parametrikus maszk,
 
 3\. Az 1\. és 2\. pontban létrehozott maszkoktól teljesen függetlenül létrehozza a Területmaszkot. Ezt a különféle alakzatok módja (Hozzáadás, Kivonás, Metszet) szerinti műveletekkel állítja elő az alábbiak szerint:
 
-3.1 üres maszkból indul ki, és az alakzatok listájában felülről lefelé minden egyes alakzat esetén a kép minden képpontja tekintetében végrehajtja az alábbiakat:
+3.1 Üres maszkból indul ki, és az alakzatok listájában felülről lefelé minden egyes alakzat esetén a kép minden képpontja tekintetében végrehajtja az alábbiakat:
 
-3.1.1 Ha a képpont az alakzat belsejében van, akkor Hozzáadás mód esetén a képpontot hozzáadja a maszkhoz, Kivonás mód esetén kivonja a maszkból.
+3.1.1 Ha a képpont az aktuális alakzat belsejében van, akkor Hozzáadás mód esetén a képpontot hozzáadja a maszkhoz, Kivonás mód esetén kivonja a maszkból.
 
-3.1.2 Ha a képpont nincs az alakzat belsejében, és Metszet mód van beállítva, akkor a képpontot eltávolítja a maszkból.
+3.1.2 Ha a képpont nincs az aktuális alakzat belsejében, és Metszet mód van beállítva, akkor a képpontot eltávolítja a maszkból.
 
 4\. Készít egy közbülső maszkot az 1. 2., és 3. maszk Metszetével. Azaz a közbülső maszk az 1. 2. 3. maszkok közös területeit tartalmazza.
 
@@ -3782,7 +3854,7 @@ Az ART a következőképpen hozza létre a négyféle maszk (Parametrikus maszk,
 
 A maszkokkal kapcsolatban néhány dologra figyelni kell.
 
-**Óvintézkedések Területmaszkok és Ecsetmaszkok használatakor**: A Helyi szerkesztés eszközeinek mindegyike a csővezetékben a geometriai képjavítások után helyezkednek el, ezért ha Területmaszk vagy Ecsetmaszk létrehozása után geometriai korrekciót végzünk, akkor ezeket a maszkokat összezavarjuk. A Forgatást, Kivágást, Perspektíva korrekciót, Profilozott objektívhiba javítást, Objektívtorzítás korrekcióját a Területmaszkok és az Ecsetmaszkok létrehozása előtt kell elvégezni.
+**Óvintézkedések Területmaszkok és Ecsetmaszkok használatakor**: A Helyi szerkesztés eszközeinek mindegyike a geometriai képjavítások után helyezkedik el a csővezetékben, ezért ha Területmaszk vagy Ecsetmaszk létrehozása után geometriai korrekciót végzünk, akkor ezeket a maszkokat összezavarjuk. A Forgatást, Kivágást, Perspektíva korrekciót, Profilozott objektívhiba javítást, Objektívtorzítás korrekcióját a Területmaszkok és az Ecsetmaszkok létrehozása előtt kell elvégezni.
 
 **Óvintézkedések Parametrikus maszkok és Színbeli hasonlóság maszkok használatakor**: Mivel a Helyi szerkesztés eszközei a csővezeték végének közelében helyezkednek el, a maszkok létrehozása előtt minden beállítást meg kell tenni, kivéve a következőket, amelyeket a maszk létrehozása után is el lehet végezni:
 
@@ -3794,22 +3866,32 @@ A maszkokkal kapcsolatban néhány dologra figyelni kell.
 
 Gondoljuk át a csővezetékben lévő eszközök hatását a maszkokra.
 
-A fentiek alapján teszek néhány megállapítást:
+Az előzőekben leírtak alapján teszek néhány megállapítást:
 
 -   Maszk létrehozásakor az ART az adott szerkesztőeszköz bemeneti képére alkalmazza a maszk paramétereit, és így állítja elő a maszkot. Ha valamitől megváltozik a szerkesztőeszköz bemeneti képe, akkor maga a maszk is megváltozik.
 -   Csak az a szerkesztőeszköz tudja megváltoztatni egy másik szerkesztőeszköz bemeneti képét, amely a csővezetékben előbb helyezkedik el, és ezért előbb hajtódik végre. Amelyik később hajtódik végre, az a bemeneti képre nem lesz hatással.
--   Ha valamely helyi szerkesztőeszközben be van kapcsolva a Maszk megjelenítése, akkor ez marad az előnézeti kép akkor is, ha másik szerkesztőeszközbe megyünk át. Ez nagyon hasznos funkció, mert lehetőséget ad arra, hogy megnézzük az adott szerkesztőeszköz adott maszkra gyakorolt hatását.
+-   Ha valamely helyi szerkesztőeszközben be van kapcsolva a Maszk megjelenítése, akkor ez marad az előnézet akkor is, ha másik szerkesztőeszközbe megyünk át. Ez nagyon hasznos funkció, mert lehetőséget ad arra, hogy megnézzük az adott szerkesztőeszköz adott maszkra gyakorolt hatását.
 -   Ha vágólapon keresztül átmásoljuk a maszkot, akkor csak a maszk létrehozásakor alkalmazott paraméterek másolódnak át, nem pedig képpontról képpontra maga a maszk.
+
+![](book-images/484.jpg)
+
+A fenti ábrán a Helyi szerkesztés eszközcsoportban lévő Szín/Tónus korrekció  eszközben létrehoztam egy színbeli hasonlóság maszkot. A Maszk megjelenítését bekapcsolva hagytam.
+
+![](book-images/485.jpg)
+
+Átmentem az Expozíció eszközcsoportba, és azon belül az expozíció eszközbe. Ez az eszköz a Szín/Tónus korrekció előtt helyezkedik el a csővezetékben. A maszk továbbra is látható. -0,5 fényértéknyi expozíció-kompenzációt alkalmaztam. Az előző ábrával összehasonlítva megállapíthatjuk, hogy mennyit változott meg a maszk. A maszk megváltozásával együtt természetesen változik a Szín/Tónus korrekció eszközben beállított módosítás (például Színezet-eltolás) hatása is, amely a megváltozott maszk szerint fogja kifejteni hatását.
+
+Tehát megfigyelhettük, hogy mi történik akkor, ha a maszk létrehozása után módosítunk egy olyan eszköz beállításán, amely a csővezetékben az előtt az eszköz előtt helyezkedik el, amelyben a maszkot létrehoztuk. Hatására változik maga a maszk, és annak hatása is.
 
 ##### <a id="441111"></a> 4\.4\.1\.11\.1 Különböző maszkok azonos szerkesztőeszközön belül
 
-Egy helyi szerkesztőeszközön belül mindegyik Korrekciós réteghez egyetlen eredő maszk tartozhat. Itt arról lesz szó, hogy hogyan befolyásolják egy adott Korrekciós rétegen végzett szerkesztési beállítások a listán alatta lévő Korrekciós rétegen kialakított maszkokat. Tehát arról van szó, hogy az első korrekciós rétegen például expozíció-kompenzációt állítunk, és arra vagyunk kíváncsiak, hogy ez befolyásolja-e például a listán alatta lévő korrekciós rétegnél létrehozott maszkot. Tehát magát a maszkot, nem a képet.
+Egy helyi szerkesztőeszközön belül mindegyik Korrekciós réteghez egyetlen eredő maszk tartozhat. Itt arról lesz szó, hogy hogyan befolyásolják egy adott Korrekciós rétegen végzett szerkesztési beállítások a Korrekciós réteg listán alatta lévő Korrekciós rétegeken kialakított maszkokat. Tehát arról van szó, hogy az első korrekciós rétegen például állítottunk az expozíció-kompenzáción, és arra vagyunk kíváncsiak, hogy ez befolyásolja-e a listán alatta lévő korrekciós réteghez létrehozott maszkot. Tehát magát a maszkot, és a maszk változása miatt a képet.
 
-Ezt nagyon könnyű eldönteni. Mivel mindegyik Korrekciós réteg egymástól teljesen függetlenül, a szerkesztőeszköz bemeneti képéből állítja elő az eredő maszkját, az egyes Korrekciós rétegekhez alkalmazott eszközbeállításoknak a másik korrekciós réteg maszkjára egy szerkesztőeszközön belül nincs semmilyen hatása. Ezt ne értsük félre. Magára a képre természetesen hat az első korrekciós rétegnél történt paraméter (pl. expozíció-kompenzáció) megváltoztatása, és ha átváltunk a második korrekciós rétegre, akkor az első korrekciós rétegen történt változtatást látjuk is az előnézeti képen. Ha azonban megjelenítjük az egyes korrekciós rétegekhez tartozó sárga maszkokat, azok változatlanok maradtak, nem változtak az expozíció-kompenzáció változtatásának hatására.
+Ezt nagyon könnyű eldönteni. Mivel mindegyik Korrekciós réteg egymástól teljesen függetlenül, a szerkesztőeszköz bemeneti képéből állítja elő az eredő maszkját, az egyes Korrekciós rétegekhez alkalmazott eszközbeállításoknak a másik korrekciós réteg maszkjára egy szerkesztőeszközön belül nincs semmilyen hatása. Ezt ne értsük félre. Magára a képre természetesen hat az első korrekciós rétegnél történt paraméter (pl. expozíció-kompenzáció) megváltoztatása, és ha átváltunk a második korrekciós rétegre, akkor az első korrekciós rétegen történt változtatást látjuk is az előnézeten. Ha azonban megjelenítjük az egyes korrekciós rétegekhez tartozó sárga maszkokat, azok változatlanok maradtak, nem változtak az expozíció-kompenzáció változtatásának hatására.
 
 ##### <a id="441112"></a> 4\.4\.1\.11\.2 Maszkok másolása a Helyi szerkesztés eszközei között
 
-Az egyes Helyi szerkesztés eszközök között átmásolva a maszkokat nem feltétlenül az eredetivel megegyező maszkot kapunk, amelyet szükséges lehet korrigálni. Ennek az az oka, hogy nem maga a maszk másolódik át, hanem csak a maszk előállításához szükséges paraméterek. Nézzük az ART csővezetékének a Helyi szerkesztés eszközeit tartalmazó részletet.
+A Helyi szerkesztés eszközei között átmásolva a maszkokat nem feltétlenül az eredetivel megegyező maszkot kapunk, ezért azokat szükséges lehet korrigálni. Ennek az az oka, hogy nem maga a maszk másolódik át, hanem csak a maszk előállításához szükséges paraméterek. Nézzük az ART csővezetékének a Helyi szerkesztés eszközeit tartalmazó részletet.
 
 25. **Szín/Tónus korrekció** - Lineáris RGB  
 26. **Simítás** - Lineáris RGB  
@@ -3834,31 +3916,31 @@ A Helyi szerkesztés eszközcsoportban található. Színek és tónusok korrekc
 
 ![](book-images/337.jpg)
 
-A Módnál választhatjuk ki a szerkesztőeszközök csoportjából azt az szerkesztőeszközt, amellyel dolgozni szeretnénk. A szerkesztőeszközök többsége CTL szkript, csak az első néhány (Standard, Észlelési, RGB csatornánként külön, HSL tényezők, LUT) nem az.
+A Módnál választhatjuk ki a szerkesztőeszközök csoportjából azt a szerkesztőeszközt, amellyel dolgozni szeretnénk. A szerkesztőeszközök többsége CTL szkript, csak az első néhány (Standard, Észlelési, RGB csatornánként külön, HSL tényezők, LUT) nem az.
 
 Tekintsük át a Módnál kiválasztható szerkesztőeszközöket.
 
 #### <a id="4421"></a> 4\.4\.2\.1 Standard és Észlelési
 
-A Helyi szerkesztés eszközcsoportban található Szín/Tónus korrekció eszközben a Módnál kiválasztható két eszközről van szó.
+A Helyi szerkesztés eszközcsoportban található Szín/Tónus korrekció eszközben a Módnál választhatjuk ki.
 
-Külön eszköz a Standard, és külön eszköz az Észlelési. Azért szerepelnek együtt, mert funkciójuk, és felhasználói felületük ugyanaz, az egyetlen különbség az, hogy a Standard lineáris RGB, az Észlelési pedig észlelési térben működik.
+A Standard és az Észlelési ugyanannak az eszköznek kétféle módját jelenti. A Standard lineáris RGB, az Észlelési pedig észlelési térben működik. A felhasználói felületük és a kezelőszerveik is közösek. Ez azt jelenti, hogy a beállítások megmaradnak, ha váltunk a Standard és az Észlelési Mód között.
 
-A Módnál választhatjuk ki a Standard vagy az Észlelési eszközt. Segítségével a színezet, a telítettség, a kontraszt, és a tónusok állíthatók be.
+Segítségével a színezet, a telítettség, a kontraszt, és a tónusok állíthatók be.
 
 ![](book-images/338.jpg)
 
-**Színezet-eltolás**: Eltolhatjuk a bemeneti kép színeit a Színkör színei szerint a csúszkán beállított fokkal (-180 ... +180).
+**Színezet-eltolás**: Eltolhatjuk a bemeneti kép színezetét a Színkör színei szerint a csúszkán beállított fokkal (-180 ... +180).
 
-**Telítettség - Bemenet**: A bemeneti kép telítettségét változtathatjuk a csúszka segítségével. A bemeneti telítettség csúszka a többi vezérlő (színárnyalat-eltolás, színkör stb.) előtt fejti ki hatását.
+**Telítettség - Bemenet**: A bemeneti kép telítettségét változtathatjuk a csúszka segítségével. A bemeneti telítettség csúszka a többi vezérlő (színezet-eltolás, színkör stb.) előtt fejti ki hatását.
 
-**Telítettség - Kimenet**: A kimeneti kép telítettségét változtathatjuk a csúszka segítségével. A kimeneti telítettség csúszka a többi vezérlő (színárnyalat-eltolás, színkör stb.) után fejti ki hatását.
+**Telítettség - Kimenet**: A kimeneti kép telítettségét változtathatjuk a csúszka segítségével. A kimeneti telítettség csúszka a többi vezérlő után fejti ki hatását.
 
 Azért van szükség Telítettség - Bemenet és Telítettség - Kimenet csúszkára is, mert a kapott eredmény bizonyos esetekben eltérő lehet.
 
-**Színkör**: Hozzáadja a bemeneti színekhez a színkörön beállított színt színezet és telítettség tekintetében.
+**Színkör**: Eltolja a bemeneti színeket a színkörön beállított színezet, és a színkörön beállított telítettség szerint.
 
-**Fehéregyensúly beállítása**: A Színkör mellett jobbra fent találjuk a "pipetta" gombot, amellyel a fehéregyensúlyt állíthatjuk be. Ha bekapcsoljuk a gombra kattintva ezt a funkciót, és az egérmutatót az előnézeti kép fölé állítjuk, akkor a Színkörön láthatjuk, hogy milyen korrekciót fog végezni az ART a fehéregyensúly beállításakor, ha az adott pontból veszünk mintát a pipettával. A fehéregyensúly beállításához egy semleges színű fehér vagy szürke területre kell kattintani az előnézeti képen a Ctrl billentyű nyomva tartása mellett. Kiválasztás nélkül a gombra történő ismételt kattintással, vagy az előnézeti képen jobb egérgombbal történő kattintással kapcsolhatjuk ki ezt a funkciót.
+**Fehéregyensúly beállítása**: A Színkör mellett jobbra fent találjuk a "pipetta" gombot, amellyel a fehéregyensúlyt állíthatjuk be. Ha bekapcsoljuk a gombra kattintva ezt a funkciót, és az egérmutatót az előnézet fölé állítjuk, akkor a Színkörön láthatjuk, hogy milyen korrekciót fog végezni az ART, amikor az adott pontból veszünk mintát a pipettával. A fehéregyensúly beállításához egy semleges színű fehér vagy szürke területre kell kattintani az előnézeten a Ctrl billentyű nyomva tartása mellett. Kiválasztás nélkül a gombra történő ismételt kattintással, vagy az előnézeten jobb egérgombbal történő kattintással kapcsolhatjuk ki ezt a funkciót.
 
 **Színek megváltoztatása színkörrel**: A Színkör középpontján lévő pontra kell kattintani, és az egérgomb nyomva tartása mellett a megfelelő irányba kell húzni a pontot. Ennek hatására eltolja a bemeneti színeket a kiválasztott szín irányába. Minél távolabbra húzzuk a pontot a középponttól, annál nagyobb lesz a telítettség.
 
@@ -3868,7 +3950,7 @@ Azért van szükség Telítettség - Bemenet és Telítettség - Kimenet csúszk
 
 ![](book-images/340.jpg)
 
-A Színkör alatt láthatunk két gombot, amelyekre kattintva vagy a Színkört, vagy a tónusgörbét jeleníthetjük meg.
+A Színkör alatt láthatunk két gombot, amelyekre kattintva vagy a Színkört, vagy a tónusgörbét jeleníthetjük meg. A tónusgörbe függetlenül működik a színkörtől, a képen mindkettő hatása érvényesül.
 
 A tónusgörbe a bemeneti képre kerül alkalmazásra. A görbét nem lehet közvetlenül szerkeszteni, ehelyett az alatta lévő csúszkákkal alakíthatjuk ki a tónusgörbe alakját. A görbe kezdetben egy átlós egyenes, amelynek semmi hatása sincs a képre.
 
@@ -3892,7 +3974,7 @@ Mindhárom színcsatornára külön tónusgörbét hozhatunk létre. A színcsat
 
 **Megfelelő csúszkák összekapcsolása**: Ha bekapcsoljuk, akkor a görbe alatti csúszkák egyszerre mindhárom színcsatorna görbéjét változtatják.
 
-**Fényerő mód**: Ha ezt bekapcsoljuk, akkor a görbék a képpontok világosságának megváltoztatására szolgálnak úgy, hogy megváltoztatják az egyes színcsatornák értékeit, miközben a színek nem változnak.
+**Fényerő mód**: Ha bekapcsoljuk, akkor a görbék a képpontok fényerejének megváltoztatására szolgálnak úgy, hogy megváltoztatják az egyes színcsatornák értékeit, miközben a színek nem változnak.
 
 A tónusgörbe a bemeneti képre kerül alkalmazásra. A görbét nem lehet közvetlenül szerkeszteni, ehelyett az alatta lévő csúszkákkal alakíthatjuk ki a görbe alakját. A görbe kezdetben egy átlós egyenes, amelynek semmi hatása sincs a képre.
 
@@ -3926,7 +4008,7 @@ A színkörök alatti csúszkákkal az adott tartomány világosságát változt
 
 A Helyi szerkesztés eszközcsoportban található Szín/Tónus korrekció eszközben a Módnál kiválasztható eszköz.
 
-Az ART a RawTherapee-tól örökölte a 3D LUT-ok (LUT = Look-Up Table) támogatását. Ezek támogatása a Filmszimuláció eszközben, és itt érhető el. Ilyen 3D LUT-okat tartalmaz a közösség által fejlesztett Hald CLUT LUT-gyűjtemény, amely különféle filmtípus szimulálására alkalmas. Az eszköz alkalmazása előtt valamilyen LUT-gyűjteménynek (pl. Hald CLUT) telepítve kell lennie.
+Az ART a RawTherapee-tól örökölte a 3D LUT-ok (LUT = Look-Up Table) támogatását. Ezek támogatása a Filmszimuláció eszközben, és itt érhető el. Ilyen 3D LUT-okat tartalmaz a közösség által fejlesztett Hald CLUT LUT-gyűjtemény, amely különféle filmtípus szimulálására alkalmas. Az eszköz alkalmazása előtt valamilyen LUT-gyűjteménynek telepítve kell lennie.
 
 ![](book-images/346.jpg)
 
@@ -3946,21 +4028,21 @@ A Helyi szerkesztés eszközcsoportban található Szín/Tónus korrekció eszk�
 
 Az Általánosított hiperbolikus nyújtás (Generalized Hyperbolic Stretch) CTL szkript lehetővé teszi a kép jobb megjelenítését. Lényegében S-görbe szerű görbét hoz létre.
 
-A nyújtás a tömörítés (összenyomás) ellentéte. Ha nyújtást alkalmazunk a kép bizonyos tónusain, akkor máshol szükségszerűen tömörítés fog történni. Például ha a középtónusoknál nyújtunk, akkor az árnyékoknál és a csúcsfényeknél tömörítés lesz.
+A nyújtás a tömörítés (összenyomás) ellentéte. Ha nyújtást alkalmazunk a kép bizonyos tónusain, akkor máshol szükségszerűen tömörítés fog történni. Például ha a középtónusoknál nyújtunk, akkor az árnyékoknál és a csúcsfényeknél tömörítés lesz. A nyújtás növeli a kontrasztot, a tömörítés csökkenti.
 
 ![](book-images/349.jpg)
 
-**Mód**: RGB, Telítettség, vagy Világosság lehet.
+**Mód**: RGB, Telítettség, vagy Fényerő lehet.
 
 **RGB**: Az R, G, és B színcsatornákra hat.
 
 **Telítettség**: a kép színeinek telítettségét befolyásolhatjuk.
 
-**Világosság**: A kép világosságára hat.
+**Fényerő**: A kép fényerejére, világosságára hat.
 
 **Nyújtási tényező (D)**: Ez a paraméter szabályozza a nyújtás mértékét. Ha a Nyújtási tényező nullára van állítva, akkor nincs nyújtás, azaz az eszköznek nincs hatása.
 
-**Helyi nyújtás intenzitása (b)**: A transzformáció alakjának módosításával szabályozza, hogy a nyújtás milyen mértékben koncentrálódjon a Szimmetriapont köré. A Helyi nyújtás intenzitása nulla értékénél a kontrasztot a Szimmetriaponttól lehető legtávolabbi tónusoktól veszi el, és a Szimmetriapont szomszédságába helyezi. Ha a Helyi nyújtás intenzitása 1, akkor a legtávolabbi tónusok kevésbé érintettek, és a kontrasztnövekedés közvetlenül a Szimmetriapontnál adódik hozzá. Tehát a kontraszt hozzáadása közvetlenül a Szimmetriapontra koncentrálódik. A Helyi nyújtás intenzitásának negatív értékei is megengedettek, amelyek akkor a leghasznosabbak, ha fényerő általános növelésére vagy csökkentésére van szükség anélkül, hogy drámai módon megváltozna a kép kontraszteloszlása.
+**Helyi nyújtás intenzitása (b)**: Azt szabályozza, hogy a nyújtás milyen mértékben koncentrálódjon a Szimmetriapont köré. A Helyi nyújtás intenzitása nulla értékénél a kontrasztot a Szimmetriaponttól lehető legtávolabbi tónusoktól veszi el, és a Szimmetriapont szomszédságába helyezi. Ha a Helyi nyújtás intenzitása 1, akkor a legtávolabbi tónusok kevésbé érintettek, és a kontrasztnövekedés közvetlenül a Szimmetriapontnál adódik hozzá. Tehát a kontraszt hozzáadása közvetlenül a Szimmetriapontra koncentrálódik. A Helyi nyújtás intenzitásának negatív értékei is megengedettek, amelyek akkor a leghasznosabbak, ha fényerő általános növelésére vagy csökkentésére van szükség anélkül, hogy drámai módon megváltozna a kép kontraszteloszlása.
 
 **Szimmetriapont (SP)**: meghatározza azt a középpontot, amely körül a nyújtást alkalmazásra kerül. A kontraszt szimmetrikusan oszlik el a Szimmetriaponthoz képest. Míg a Helyi nyújtás intenzitása meghatározza a nyújtás Szimmetriapont köré koncentráltságának mértékét, a Szimmetriapont meghatározza, hogy hol alkalmazzuk ezt a koncentráltságot. A Szimmetriapontot általában a hisztogram csúcs(ai) közelében kell elhelyezni, hogy ezt a szakaszt kiszélesítse, csökkentse a csúcs(oka)t, és itt adja hozzá a legnagyobb kontrasztot.
 
@@ -3990,7 +4072,7 @@ A Helyi szerkesztés eszközcsoportban található Szín/Tónus korrekció eszk�
 
 ![](book-images/350.jpg)
 
-Erősség: A kiemelés erősségét állíthatjuk be segítségével.
+**Erősség**: A kiemelés erősségét állíthatjuk be segítségével.
 
 Az eszköz hatását a mid.tif kép segítségével nézzük meg.
 
@@ -4025,11 +4107,13 @@ Ez egy tónusleképező eszköz. Szerkesztés közben többnyire "végtelen" tar
 
 **Középszürke skála fehér ponttal**: Ha nagy dinamikatartományú megjelenítőnk van, vagy nagy dinamikatartományú képet szeretnénk létrehozni, akkor ezt be kell jelölni. Ha a szokásos SDR képet szeretnénk létrehozni, akkor nem kell bejelölni.
 
-**Színtartomány tömörítése, Célterület**: Kiválaszthatjuk a színrendszert, amelybe tömöríteni szeretnénk. Akkor van igazán szerepe, ha a képet széles színtartományú (gamutú) eszközzel rögzítettük, és kisebb tartományú színtérbe kell tömöríteni a megjelenítéshez. Választhatjuk a Nincs lehetőséget, amikor nem történik tömörítés, vagy a Rec.2020, a Rec.709/sRGB, a DCI-P3, vagy az Adobe RGB egyikét. A szokásos SDR kép létrehozásához válasszuk a Rec.709/sRGB lehetőséget.
+**Színezet megőrzése**: A színezet megőrzésének mértéke.
+
+**Színtartomány tömörítése**
+
+**Célterület**: Kiválaszthatjuk a színrendszert, amelybe tömöríteni szeretnénk. Akkor van igazán szerepe, ha a képet széles színtartományú (gamutú) eszközzel rögzítettük, és kisebb tartományú színtérbe kell tömöríteni a megjelenítéshez. Választhatjuk a Nincs lehetőséget, amikor nem történik tömörítés, vagy a Rec.2020, a Rec.709/sRGB, a DCI-P3, vagy az Adobe RGB egyikét. A szokásos SDR kép létrehozásához válasszuk a Rec.709/sRGB lehetőséget.
 
 **Erősség**: A tömörítés erősségét szabályozhatjuk.
-
-**Színárnyalatok megőrzése**: A színárnyalatok megőrzésének mértéke.
 
 #### <a id="4428"></a> 4\.4\.2\.8 Csatornakeverő CTL szkript
 
@@ -4037,9 +4121,9 @@ A Helyi szerkesztés eszközcsoportban található Szín/Tónus korrekció eszk�
 
 ![](book-images/356.jpg)
 
-A csatornakeverővel a kép minden egyes képpontjához új R, G, és B értéket állítunk elő a képpont eredeti R, G, és B csatornaértékei, és a csúszkákon beállított százalékos értékek segítségével.
+A csatornakeverővel a kép minden egyes képpontjához új R, G, és B értéket állítunk elő a képpont eredeti R, G, és B csatornaértékei, és a csúszkákon beállított értékek segítségével.
 
-A csatornakeverőn három részt figyelhetünk meg: Vörös, Zöld, és Kék. Például a Vörös részen az adott képponthoz új Vörös (R) csatorna értéket hozunk létre a képpont eredeti RGB értékeiből. A Vörös, Zöld, és Kék csúszkával azt állíthatjuk be, hogy a képpont eredeti R, G, és B értékei milyen arányban alkossák a képpont új R értékét. A Zöld és a Kék részen hasonló módon állíthatjuk elő a képpont új G, és B értékét.
+A csatornakeverőn három részt figyelhetünk meg: Vörös, Zöld, és Kék. Például a Vörös részen az adott képponthoz új Vörös (R) csatorna értéket hozhatunk létre a képpont eredeti RGB értékeiből. A Vörös, Zöld, és Kék csúszkával azt állíthatjuk be, hogy a képpont eredeti R, G, és B értékei milyen arányban alkossák a képpont új R értékét. A Zöld és a Kék részen hasonló módon állíthatjuk elő a képpont új G, és B értékét.
 
 Megfigyelhetjük, hogy
 
@@ -4083,7 +4167,7 @@ A fekete-fehérré történő átalakítás arról is szól, hogy a különböz�
 
 ![](book-images/360.jpg)
 
-Ha kiválasztjuk ezt a szkriptet, akkor a képet fekete-fehérré alakítja, az előnézeti kép is fekete-fehér lesz. A **Vörös**, **Zöld** és **Kék** csúszkával azt befolyásolhatjuk, hogy a színes kép egyes színei milyen világosságú szürke árnyalatként jelenjenek meg a fekete-fehér képen.
+Ha kiválasztjuk ezt a szkriptet, akkor a képet fekete-fehérré alakítja, az előnézet is fekete-fehér lesz. A **Vörös**, **Zöld** és **Kék** csúszkával azt befolyásolhatjuk, hogy a színes kép egyes színei milyen világosságú szürke árnyalatként jelenjenek meg a fekete-fehér képen.
 
 #### <a id="44213"></a> 4\.4\.2\.13 Filmfedettség CTL szkript
 
@@ -4105,6 +4189,46 @@ Előre iránynál ha növeljük a Kitevő értékét, akkor a csúcsfények irá
 
 Meg kell találni azt az Előre/Fordított választást, azt a Kitevő és Kiegyenlítés értéket, amely a legkedvezőbb képet eredményezi. Először válasszunk irányt, utána változtassunk a Kitevőn, és állítsuk be azt a Kiegyenlítés értéket, amelynél a legjobban tetszik a kép. A két csúszkán addig változtatgassunk, amíg el nem érjük a legjobb eredményt. A csúszkák hatását a Hisztogramon megfigyeljük.
 
+Nézzük meg a hatását a mid.tif kép segítségével. Először az Előre irányt nézzük meg.
+
+![](book-images/487.jpg)
+
+A fenti ábrán a kiindulási helyzetet láthatjuk.
+
+![](book-images/488.jpg)
+
+A Kitevőt 3-ra állítottam. A tónusok tömörítése egy bizonyos érték köré történik. A kontraszt nagyon lecsökkent. Ez jól látható a világosság hisztogramon is.
+
+![](book-images/489.jpg)
+
+A Kiegyenlítés csúszkát minél nagyobb értékre állítottam, annál inkább növekszik a kontraszt (szélesedik  az árnyalattartomány a hisztogramon is), nyújtás történt. A legvilágosabb tónusok kevéssé változtak a csúszka hatására.
+
+![](book-images/490.jpg)
+
+A Kitevőt 6-ra állítottam. A tónusok tömörítése továbbra is ugyanazon érték köré történik, most már a tömörítés mértéke sokkal nagyobb, a kontraszt sokkal kisebb.
+
+![](book-images/491.jpg)
+
+A Kiegyenlítés csúszkát minél nagyobb értékre állítottam, annál inkább növekszik a kontraszt (szélesedik  az árnyalattartomány a hisztogramon is). A legvilágosabb tónusok kevéssé változtak a csúszka hatására.
+
+Nézzük meg, mi történik, ha a Fordított lehetőséget választjuk.
+
+![](book-images/492.jpg)
+
+A Kitevőt 3-ra állítottam. A tónusok nyújtása egy bizonyos érték körül történik. A kontraszt nagyon megnövekedett. Ez jól látható a világosság hisztogramon is. A sötét tónusoknál és a csúcsfényeknél egyaránt vágás történt (a színválasztókon látható).
+
+![](book-images/493.jpg)
+
+A Kiegyenlítés csúszkát minél nagyobb értékre állítottam, annál inkább csökken a kontraszt (keskenyedik  az árnyalattartomány a hisztogramon is), tömörítés történik. A legvilágosabb tónusok kevéssé változtak a csúszka hatására, ott továbbra is vágás történik. A legsötétebb tónusoknál már nincs vágás.
+
+![](book-images/494.jpg)
+
+A Kitevőt 6-ra állítottam. A tónusok nyújtása továbbra is egy bizonyos érték körül történik. A kontraszt még jobban megnövekedett. Ez jól látható a világosság hisztogramon is. Már csak 4-5 sávon nem történt vágás (a színválasztókon látható).
+
+![](book-images/495.jpg)
+
+A Kiegyenlítés csúszkát minél nagyobb értékre állítottam, annál inkább csökken a kontraszt (keskenyedik  az árnyalattartomány a hisztogramon is), tömörítés történik. A legvilágosabb tónusok kevéssé változtak a csúszka hatására, az utolsó négy sávban továbbra is vágás történik. A legsötétebb tónusoknál már nincs vágás.
+
 #### <a id="44215"></a> 4\.4\.2\.15 Kiegyenlítő CTL szkriptek
 
 A Helyi szerkesztés eszközcsoportban található Szín/Tónus korrekció eszközben a Módnál kiválasztható CTL szkriptek.
@@ -4115,15 +4239,15 @@ Grafikus kiegyenlítő szkriptek:
 
 -   Grafikus kiegyenlítő színezet szerint
 -   Grafikus kiegyenlítő telítettség szerint
--   Grafikus kiegyenlítő világosság szerint
+-   Grafikus kiegyenlítő fényerő szerint
 
 Csúszkákkal szabályozható kiegyenlítő szkriptek:
 
 -   Kiegyenlítő színezet szerint
 -   Kiegyenlítő telítettség szerint
--   Kiegyenlítő világosság szerint
+-   Kiegyenlítő fényerő szerint
 
-A "színezet szerint", a "telítettség szerint", és a "világosság szerint" kitétel a szkriptek elnevezésében arra a bemenő paraméterre utal, amely szerint tudjuk változtatni a kimenő paraméterek értékeit. A grafikus kiegyenlítőknél a kimenő paraméterek a HSL színrendszer szerinti **Színezet** (Hue), **Telítettség** (Saturation), és **Világosság** (Lightness). A háromféle grafikus szkript mindegyikében három kiegyenlítőgörbe-szerkesztőt találunk a háromféle kimenő paraméter szerint. A Kiegyenlítő színezet szerint, és a Kiegyenlítő telítettség szerint, csúszkákkal szabályozható szkriptnél a változtatható kimenő paraméter a Színezet, a Telítettség, és a Világosság, míg a Kiegyenlítő világosság szerint szkriptnél a Világosság, a Telítettség, és az Élénkség. A csúszkákkal szabályozható szkriptek mindegyikénél választhatunk a kimenő paraméterek közül.
+A "színezet szerint", a "telítettség szerint", és a "fényerő szerint" kitétel a szkriptek elnevezésében arra a bemenő tulajdonságra utal, amely szerint tudjuk változtatni a kimenő tulajdonságok értékeit. A grafikus kiegyenlítőknél a kimenő tulajdonságok a HSL színrendszer szerinti **Színezet** (Hue), **Telítettség** (Saturation), és **Világosság** (Lightness). A háromféle grafikus szkript mindegyikében három kiegyenlítőgörbe-szerkesztőt találunk a háromféle kimenő tulajdonság szerint, mindhárom görbét akár egyidejűleg is alkalmazhatjuk.
 
 Ez elsőre bonyolultnak tűnhet, de nem az. Például valamelyik "telítettség szerint" szkript segítségével megváltoztathatjuk a bemenő kép valamely telítettségtartományba eső képpontjainak színezetét, telítettségét, vagy világosságát. Vagy valamely "színezet szerint" szkript segítségével a bemenő kép bizonyos színezetű képpontjainak megváltoztathatjuk a színezetét, telítettségét, vagy világosságát.
 
@@ -4131,7 +4255,7 @@ A grafikus kiegyenlítők univerzálisabbak, jobban használhatók a csúszkákk
 
 ![](book-images/363.jpg)
 
-A fenti ábrán a Grafikus kiegyenlítő színezet szerint szkript görbeszerkesztője látható. Ehhez teljesen hasonló a másik kettő grafikus szkript is, csak az alul látható bemenő paraméterben különböznek (színezet helyett telítettség, illetve világosság). A fenti ábrán a grafikon alatt a bemenő paraméterként szereplő színskála látható, ennek segítségével választhatjuk ki, hogy milyen színezetű képpontok színezetét, telítettségét, illetve világosságát szeretnénk megváltoztatni.
+A fenti ábrán a Grafikus kiegyenlítő színezet szerint szkript görbeszerkesztője látható. Ehhez teljesen hasonló a másik kettő grafikus szkript is, csak az alul látható bemenő tulajdonságban különböznek (színezet helyett telítettség, illetve fényerő). A fenti ábrán a grafikon alatt a bemenő tulajdonságként szereplő színskála látható, ennek segítségével választhatjuk ki, hogy milyen színezetű képpontok színezetét, telítettségét, illetve világosságát szeretnénk megváltoztatni.
 
 Ezekben a grafikus kiegyenlítőkben háromféle görbeszerkesztő található, a Csatornánál választhatunk közülük. Az egyes szerkesztők neve a fejlécükben látható: ezek a HSL színrendszer csatornái, azaz H, S, L. A fejlécükre kattintva választhatunk az egyes görbeszerkesztők között. Mindegyik görbeszerkesztőt a fejlécénél az ábrán látható módon lenyithatjuk, és a Ki(kapcsolt), valamint a Kiegyenlítő közül választhatunk. Láthatjuk, hogy alapértelmezés szerint egyik sincs kikapcsolt állapotban.
 
@@ -4149,33 +4273,33 @@ A fenti ábrán a Grafikus kiegyenlítő telítettség szerint szkript görbesze
 
 ![](book-images/366.jpg)
 
-A fenti ábrán a Grafikus kiegyenlítő világosság szerint szkript görbeszerkesztőjét láthatjuk. Az alul látható tónusskála segítségével választhatunk tónust. Ahol a görbe a középső vízszintes vonalhoz képest magasabban halad, ott az alul látható tónusú részletek a képen világosabbak lesznek, ha alacsonyabban, akkor sötétebbek.
+A fenti ábrán a Grafikus kiegyenlítő fényerő szerint szkript görbeszerkesztőjét láthatjuk. Az alul látható tónusskála segítségével választhatunk tónust. Ahol a görbe a középső vízszintes vonalhoz képest magasabban halad, ott az alul látható tónusú részletek a képen világosabbak lesznek, ha alacsonyabban, akkor sötétebbek.
 
-Nézzük meg röviden a nem grafikus kiegyenlítőket is.
+Nézzük meg röviden a csúszkákkal szabályozható kiegyenlítőket is.
+
+A csúszkákkal szabályozható Kiegyenlítő színezet szerint, és Kiegyenlítő telítettség szerint szkriptnél a kimenő tulajdonság Színezet, Telítettség, és Világosság lehet, míg a Kiegyenlítő fényerő szerint szkriptnél Világosság, Telítettség, és Élénkség. A csúszkákkal szabályozható szkriptek mindegyikénél csak egy kimenő tulajdonságot választhatunk. Ha ugyanannál a szkriptnél többféle kimenő tulajdonságot is meg szeretnénk változtatni, akkor azt több korrekciós rétegen tehetjük meg.
 
 ![](book-images/367.jpg)
 
 A fenti ábrán a Kiegyenlítő színezet szerint szkript kezelőfelületét láthatjuk.
 
-Felül kiválaszthatjuk a Célt, vagyis a megváltoztatandó kimenő paramétert, amely Színezet, Telítettség, és Világosság lehet.
+Felül kiválaszthatjuk a Célt, vagyis a megváltoztatandó kimenő tulajdonságot, amely Színezet, Telítettség, és Világosság lehet.
 
-A színezet-skála hat tartományra van osztva, mégpedig Vörös, Bíborvörös, Kék, Cián, Zöld, és Sárga. A csúszkákkal az adott színezetű területek kiválasztott célparaméterét változtathatjuk meg a csúszka elmozdítása szerinti mértékben. Például ha Célként a Telítettséget választottuk, akkor a Kék csúszkával a kék színű területek telítettségét a csúszka jobbra történő elmozdításával növelhetjük, balra történő elmozdításával csökkenthetjük.
+A színezet-skála hat tartományra van osztva, mégpedig Vörös, Bíborvörös, Kék, Cián, Zöld, és Sárga. A csúszkákkal az adott színezetű területek kiválasztott céltulajdonságát változtathatjuk meg a csúszka elmozdítása szerinti mértékben. Például ha Célként a Telítettséget választottuk, akkor a Kék csúszkával a kék színű területek telítettségét a csúszka jobbra történő elmozdításával növelhetjük, balra történő elmozdításával csökkenthetjük.
 
 ![](book-images/368.jpg)
 
 A fenti ábrán a Kiegyenlítő telítettség szerint szkript kezelőfelületét láthatjuk.
 
-Felül kiválaszthatjuk a Célt, vagyis a megváltoztatandó kimenő paramétert, amely Színezet, Telítettség, és Világosság lehet.
+Felül kiválaszthatjuk a Célt, vagyis a megváltoztatandó kimenő tulajdonságot, amely Színezet, Telítettség, és Világosság lehet.
 
-A lehetséges telítettség-értékek öt tartományra van osztva. A Természetes a legkevésbé telített, a Tiszta a legtelítettebb színeket jelenti. A csúszkákkal az adott telítettségű területek kiválasztott célparaméterét változtathatjuk meg a csúszka elmozdítása szerinti mértékben. Például ha Célként a Telítettséget választottuk, akkor az Átlagos csúszkával a közepesen telített színű területek telítettségét a csúszka jobbra történő elmozdításával növelhetjük, balra történő elmozdításával csökkenthetjük.
+A lehetséges telítettség-értékek öt tartományra van osztva. A Természetes a legkevésbé telített, a Tiszta a legtelítettebb színeket jelenti. A csúszkákkal az adott telítettségű területek kiválasztott céltulajdonságát változtathatjuk meg a csúszka elmozdítása szerinti mértékben. Például ha Célként a Telítettséget választottuk, akkor az Átlagos csúszkával a közepesen telített színű területek telítettségét a csúszka jobbra történő elmozdításával növelhetjük, balra történő elmozdításával csökkenthetjük.
 
 ![](book-images/369.jpg)
 
-A fenti ábrán a Kiegyenlítő világosság szerint szkript kezelőfelületét láthatjuk. Ez egy tónuskiegyenlítő, majdnem megegyezik az Expozíció eszközcsoportban található Tónuskiegyenlítő eszközzel.
+A fenti ábrán a Kiegyenlítő fényerő szerint szkript kezelőfelületét láthatjuk. Felül kiválaszthatjuk a Célt, vagyis a megváltoztatandó kimenő paramétert, amely Világosság, Telítettség, és Élénkség lehet. Az Élénkség abban különbözik a Telítettségtől, hogy erőteljesebben változtatja a kevésbé telített színek telítettségét, mint a már eleve telített színekét. A csúszkákkal az adott fényerejű (világosságú) területek kiválasztott céltulajdonságát változtathatjuk meg a csúszka elmozdítása szerinti mértékben. A Feketék a legsötétebb, a Fehérek a legvilágosabb területeket jelképezik. Például ha Célként a Telítettséget választottuk, akkor a Középtónusok csúszkával a középtónusok telítettségét a csúszka jobbra történő elmozdításával növelhetjük, balra történő elmozdításával csökkenthetjük.
 
-Felül kiválaszthatjuk a Célt, vagyis a megváltoztatandó kimenő paramétert, amely Világosság, Telítettség, és Élénkség lehet. Az Élénkség abban különbözik a Telítettségtől, hogy erőteljesebben változtatja a kevésbé telített színek telítettségét, mint a már eleve telített színekét. A csúszkákkal az adott világosságú területek kiválasztott célparaméterét változtathatjuk meg a csúszka elmozdítása szerinti mértékben. A Feketék a legsötétebb, a Fehérek a legvilágosabb területeket jelképezik. Például ha Célként a Telítettséget választottuk, akkor a Középtónusok csúszkával a középtónusok telítettségét a csúszka jobbra történő elmozdításával növelhetjük, balra történő elmozdításával csökkenthetjük.
-
-A Pivot (középtónusok eltolása) csúszkával azt állíthatjuk be, hogy mely világosságtartományt tekintsen középtónusnak. Más szavakkal a kiegyenlítőt a kép sajátosságaihoz igazíthatjuk. Mást kell középtónusnak tekinteni egy olyan képen, amely elsősorban sötét tónusokat tartalmaz, mint egy főleg világos tónusokat tartalmazó kép esetén.
+A Pivot (középtónusok eltolása) csúszkával azt állíthatjuk be, hogy mely világosságtartományt tekintsen középtónusnak, mely tónustartomány tulajdonságát lehessen a Középtónusok csúszkával állítani. Más szavakkal a kiegyenlítőt a kép sajátosságaihoz igazíthatjuk. Mást kell középtónusnak tekinteni egy olyan képen, amely elsősorban sötét tónusokat tartalmaz, mint egy főleg világos tónusokat tartalmazó kép esetén.
 
 #### <a id="44216"></a> 4\.4\.2\.16 Kivonó színkeverés CTL szkript
 
@@ -4209,7 +4333,7 @@ A poszterizációként ismert hatást valósíthatjuk meg segítségével. A tó
 
 **Színcsatornánkénti bitek száma**: Minél kisebb értéket állítunk be, annál poszterszerűbb lesz a kép.
 
-#### <a id="44219"></a> 4\.4\.2\.19 Színárnyalat világosság szerint CTL szkript
+#### <a id="44219"></a> 4\.4\.2\.19 Színezés fényerő szerint CTL szkript
 
 A Helyi szerkesztés eszközcsoportban található Szín/Tónus korrekció eszközben a Módnál kiválasztható CTL szkript.
 
@@ -4233,13 +4357,13 @@ Ez egy roppant hasznos és népszerű eljárás. Ugyanilyen nevű szerkesztőesz
 
 **Élénkség**: Segítségével élénkséget adhatunk hozzá a képhez, vagy annak egy részéhez. A csúszka a színességet növeli úgy, hogy a kisebb színességű területeken erőteljesebben növeli a színességet, mint a nagyobb színességű területeken.
 
-**Kontraszt**: A világosságot változtatja állandó színezet és színesség mellett. Leginkább maszkokkal célszerű használni, a kép globális kontrasztjának beállításához esetleg egyéb eszközök jobbak lehetnek.
+**Kontraszt**: A kontrasztot változtatja állandó színezet és színesség mellett. Leginkább maszkokkal célszerű használni, a kép globális kontrasztjának beállításához esetleg egyéb eszközök jobbak lehetnek.
 
-**Lineáris színesség korrekció**: A színesség mértékét a bemeneti értékével arányosan változtatja, állandó színárnyalat és világosság mellett. Lehetőség van globálisan (a teljes árnyalatterjedelemre) alkalmazni, illetve külön az árnyékokra, a középtónusokra, és a csúcsfényekre.
+**Lineáris színesség korrekció**: A színesség mértékét változtatja, állandó színezet és világosság mellett. Lehetőség van globálisan (a teljes árnyalatterjedelemre) alkalmazni, illetve külön az árnyékokra, a középtónusokra, és a csúcsfényekre.
 
-**Észlelési telítettség korrekció**: A színesség és a világosság mértékét a bemeneti értékekkel arányosan változtatja az észlelési színtérben, állandó színárnyalat mellett. Lehetőség van globálisan (a teljes árnyalatterjedelemre) alkalmazni, illetve külön az árnyékokra, a középtónusokra, és a csúcsfényekre.
+**Észlelési telítettség korrekció**: A telítettséget változtatja az észlelési színtérben, állandó színezet mellett. Lehetőség van globálisan alkalmazni, illetve külön az árnyékokra, a középtónusokra, és a csúcsfényekre.
 
-**Észlelési ragyogás korrekció**: A színesség és a világosság mértékét a bemeneti értékekkel arányosan változtatja az észlelési színtérben, állandó színárnyalat mellett, és a telítettségre merőleges irányban. Az expozíció-kompenzációhoz hasonló hatású. Lehetőség van globálisan (a teljes árnyalatterjedelemre) alkalmazni, illetve külön az árnyékokra, a középtónusokra, és a csúcsfényekre.
+**Észlelési ragyogás korrekció**: A ragyogást (színességet és világosságot) változtatja az észlelési színtérben, állandó színárnyalat mellett. Az expozíció-kompenzációhoz hasonló hatású. Lehetőség van globálisan alkalmazni, illetve külön az árnyékokra, a középtónusokra, és a csúcsfényekre.
 
 #### <a id="44221"></a> 4\.4\.2\.21 Színkeverés CTL szkript
 
@@ -4283,7 +4407,7 @@ Ha a kimeneti fájlt egy másik szoftverben szeretnénk feldolgozni, akkor vála
 4. Sárga oldal
 5. Bíborvörös oldal
 
-Nézzük a fenti ábrát. A fekete háromszög jelöli ki az sRGB színrendszerben ábrázolható színek határait. A háromszög csúcsainál láthatjuk az elsődleges színeket, a vöröset, a zöldet, és a kéket. Az elsődleges színek által meghatározott háromszögön kívüli színek az sRGB színrendszerben nem jeleníthetők meg. Feltételezzük, hogy vannak háromszögön kívüli színeink is, mert a fényképet nagy színtartományú fényképezőgéppel készítettük. A zöld és a kék elsődlegesek keverékéből származik a cián szín, ezért a háromszögnek a kék és zöld csúcsát összekötő oldala a Cián oldal. Ehhez hasonlóan látható az ábrán Sárga és a Bíborvörös oldal is. A cián oldalnál bejelöltem a Küszöb paramétert. A **Küszöb** a tartomány szélétől a tartományon belül kijelölt sáv határát adja meg, amely sávba tömöríteni kell a **Korlát** paraméterrel kijelölt tartományból (sávból) a színeket. Az ábrán kék nyíl jelzi, illetve a kék vonal mutatja a Küszöb által meghatározott sáv határát a háromszög oldala mentén. A háromszögben a kék vonaltól a háromszög belseje felé eső színek változatlanok maradnak. A Küszöb paraméter értéke századrészben van megadva. ha például értéke 0,8, az tekinthető 80%-nak is, és a háromszög oldalánál lévő belső sáv 20% széles lesz (tehát 100%-ból ki kell vonni). A Korlát paraméter egy, a háromszögön kívüli sávot határoz meg, amelynek belsejében lévő színeket kell tömöríteni a háromszög belsejében, a Küszöb által meghatározott sávba. A korlát a sávnak a háromszög oldalától mért szélességét adja meg. A sávon kívüli színek nem kerülnek tömörítésre.
+Nézzük a fenti ábrát. A fekete háromszög jelöli ki az sRGB színrendszerben ábrázolható színek határait. A háromszög csúcsainál láthatjuk az elsődleges színeket, a vöröset, a zöldet, és a kéket. Az elsődleges színek által meghatározott háromszögön kívüli színek az sRGB színrendszerben nem jeleníthetők meg. Feltételezzük, hogy vannak háromszögön kívüli színeink is, mert a fényképet nagy színtartományú fényképezőgéppel készítettük. A zöld és a kék elsődlegesek keverékéből származik a cián szín, ezért a háromszögnek a kék és zöld csúcsát összekötő oldala a Cián oldal. Ehhez hasonlóan látható az ábrán Sárga és a Bíborvörös oldal is. A cián oldalnál bejelöltem a Küszöb paramétert. A **Küszöb** a tartomány szélétől a tartományon belül kijelölt sáv határát adja meg, amely sávba tömöríteni kell a **Korlát** paraméterrel kijelölt tartományból (sávból) a színeket. Az ábrán kék nyíl jelzi, illetve a kék vonal mutatja a Küszöb által meghatározott sáv határát a háromszög oldala mentén. A háromszögben a kék vonaltól a háromszög belseje felé eső színek változatlanok maradnak. A Küszöb paraméter értéke századrészben van megadva. ha például értéke 0,8, az tekinthető 80%-nak is, és a háromszög oldalánál lévő belső sáv 20% széles lesz (tehát 100%-ból ki kell vonni). A Korlát paraméter egy, a háromszögön kívüli sávot határoz meg, amelynek belsejében lévő színeket kell tömöríteni a háromszög belsejében, a Küszöb által meghatározott sávba. A Korlát a sávnak a háromszög oldalától mért szélességét adja meg. A Korláton kívüli színek nem kerülnek tömörítésre.
 
 Az ábrán csak a cián oldalnál jelöltem be a Küszöböt és a Korlátot, de ehhez teljesen hasonlóan lehetne ábrázolni a háromszög másik két oldalánál is. A Cián, Sárga, és Bíborvörös oldalra vonatkozó Küszöb és Korlát paraméterek külön-külön állíthatók, ezért eltérő értékűek lehetnek. Ha például a bíborvöröset és a sárgát egy kicsit jobban szeretnénk védeni, mint a ciánt, akkor a ciánnál egy kicsit magasabbra állíthatjuk a Küszöböt
 
@@ -4302,7 +4426,7 @@ Az eljárás eredeti angol elnevezése Tetrahedral Color Warping, amelynek HSL f
 3. Kék
 4. Cián
 5. Sárga
-6. Bíborvörös
+6. Bíborvörös (bíbor)
 7. D65 (6500 K) fehér pont
 
 A fenti ábrán a CIE 1931 YXZ színtér diagramja látható, amelyen ábrázolva van az sRGB színtér színtartománya, amely a fekete háromszög területe. Meg van jelölve a három elsődleges szín a vörös, a zöld, és a kék, valamint a cián, a sárga, és a bíborvörös másodlagos színek, és a D65 (6500 K) fehér pont.
@@ -4311,9 +4435,9 @@ A fenti ábrán a CIE 1931 YXZ színtér diagramja látható, amelyen ábrázolv
 
 A csúszkák segítségével minden egyes fentebb felsorolt színezet HSL paraméterei módosíthatók, azaz a **Színezetük**, **Telítettségük**, és a **Világosságuk**.
 
-A **Fekete** **Színezete**, **Telítettsége** módosítható, és a **Kiegyenlítés/Kiemelés** csúszkával az árnyékokat világosíthatjuk és sötétíthetjük.
+A **Feketének** **Színezete**, és **Telítettsége** módosítható, és a **Kiegyenlítés/Kiemelés** csúszkával az árnyékokat világosíthatjuk és sötétíthetjük.
 
-A **Fehér** **Színezete** és **Telítettsége** módosítható.
+A **Fehérnek** **Színezete** és **Telítettsége** módosítható.
 
 A színezetet a színkör szerint fokban lehet megadni.
 
@@ -4330,7 +4454,7 @@ Az eljárás eredeti angol elnevezése Tetrahedral Color Warping, amelynek RGB f
 3. Kék
 4. Cián
 5. Sárga
-6. Bíborvörös
+6. Bíborvörös (bíbor)
 7. D65 (6500 K) fehér pont
 
 A fenti ábrán a CIE 1931 YXZ színtér diagramja látható, amelyen ábrázolva van az sRGB színtér színtartománya, amely a fekete háromszög területe. Meg van jelölve a három elsődleges szín a vörös, a zöld, és a kék, valamint a cián, a sárga, és a bíborvörös másodlagos színek, és a D65 (6500 K) fehér pont.
@@ -4343,11 +4467,11 @@ A csúszkák segítségével minden egyes fentebb felsorolt színárnyalat, vala
 
 A Helyi szerkesztés eszközcsoportban található Szín/Tónus korrekció eszközben a Módnál kiválasztható CTL szkript.
 
-A tónusgörbe a bemenő és a kimenő világosságértékek között hoz létre kapcsolatot a görbe segítségével.
+A tónusgörbe a bemenő és a kimenő világosságértékek között hoz létre kapcsolatot görbe segítségével.
 
 ![](book-images/383.jpg)
 
-Ez egy teljesen szokásos tónusgörbe.
+Ez egy teljesen szokványos tónusgörbe.
 
 ### <a id="443"></a> 4\.4\.3 Simítás
 
@@ -4363,7 +4487,7 @@ A legtöbb Módnál választhatunk csatornát.
 
 **RGB**: Az RGB komponensekre alkalmazza.
 
-**Fénysűrűség**: A fénysűrűség csatornára (a részletekre és az élekre) alkalmazza, a színek megőrzése mellett.
+**Fényerő**: A fényerő csatornára (a részletekre és az élekre) alkalmazza, a színek megőrzése mellett.
 
 **Színezet**: a színinformációkra alkalmazza, a fényerő megőrzése mellett.
 
@@ -4401,9 +4525,9 @@ A Ragyogás hatás (Glowing effect) nevű módszert valósítja meg.
 
 **Sugár**: A ragyogás mennyisége.
 
-**Iterációk**: Szabályozza a ragyogó hatás terjedését.
+**Iterációk**: Végrehajtások száma. Szabályozza a ragyogó hatás terjedését.
 
-**Csökkenés**: Szabályozza, hogy mennyire hirtelen múljon el a ragyogó hatás.
+**Csökkenés**: Szabályozza, hogy mennyire hirtelen szűnjön meg a ragyogó hatás.
 
 #### <a id="4434"></a> 4\.4\.3\.4 Nem helyi eszközök
 
@@ -4459,7 +4583,7 @@ Utánozza egy idealizált objektív elmosását.
 
 ![](book-images/395.jpg)
 
-Nagymértékű elmosódást állítottam be a Sugár csúszkával, és ötlamellás rekeszt a Rekeszlamellák csúszkával. Megjelent a képen az ötszög alakú rekesz képe, több példányban is. Nagyobb Sugár beállításával a rekesz képe is nagyobb lesz. A Szög csúszkával el lehet fordítani rekeszlamellák ötszög alakú képét.
+Nagymértékű elmosódást állítottam be a Sugár csúszkával, és ötlamellás rekeszt a Rekeszlamellák csúszkával. Megjelent a képen az ötszög alakú rekesz képe, több példányban is. Nagyobb Sugár beállításával a rekesz képe is nagyobb lesz. A Szög csúszkával el lehet fordítani a rekeszlamellák ötszög alakú képét.
 
 #### <a id="4438"></a> 4\.4\.3\.8 Zaj hozzáadása
 
@@ -4515,7 +4639,7 @@ Próbáljunk állítani mindhárom csúszkán, és találjuk meg a számunkra le
 
 ## <a id="45"></a> 4\.5 Különleges hatások eszközcsoport
 
-Egyéb, a többi csoportba nem besorolható globális szerkesztőeszközök találhatók ebben a csoportban.
+Egyéb, speciális célra használható globális szerkesztőeszközök találhatók ebben a csoportban.
 
 A csoport szerkesztőeszközei:
 
@@ -4525,12 +4649,12 @@ A csoport szerkesztőeszközei:
 -   Peremsötétedés szűrő
 -   Átmenetes szűrő
 -   Homály eltávolítása
--   Filmszemcse eszköz
--   Filmnegatív eszköz
+-   Filmszemcse
+-   Filmnegatív
 
 ### <a id="451"></a> 4\.5\.1 Fekete-fehér
 
-A Különleges hatások eszközcsoportban található. Színes képet fekete-fehér képpé alakíthatunk segítségével.
+A Különleges hatások eszközcsoportban található. Színes képet fekete-fehérré alakíthatunk segítségével.
 
 A fekete-fehérré alakítás a színekről is szól. Ez a fekete-fehér negatív filmes fotózás idején is így volt. A negatív film nem egyformán volt érzékeny a különféle színekre, ezért bizonyos színű fénysugarak jóval erősebb feketedést okoztak, mint ami a valóságos világosságukból következett volna (főleg kezdetben, amikor még csak ortokromatikus filmek voltak). A fotósok a fekete-fehér negatív filmre történő fényképezéskor gyakran színszűrőket használtak, amelyek megváltoztatták a film bizonyos színekre történő feketedésének mértékét. Ennek legismertebb példája a sárga színű színszűrő, amely kiszűri a kék színű fényt, ezért az ég kékje a negatívon világosabb lett (kevésbé feketedett), a pozitív papírképen pedig sötétebb lett. Ennek hatására a kék égen lévő világos felhők sokkal jobban kiemelkedtek.
 
@@ -4552,7 +4676,7 @@ Az előre definiált értékek az alábbi táblázatban láthatók.
 | Tájkép | 66,0 | 24,0 | 10,0 |
 | Portré | 49,1 | 40,0 | 10,9 |
 | Alacsony érzékenység | 27,0 | 27,0 | 46,0 |
-| Nagy érzékenység | 30,0 | 28,0 | 42,0 |
+| Magas érzékenység | 30,0 | 28,0 | 42,0 |
 | Pankromatikus | 33,3 | 33,3 | 33,3 |
 | Hiper pankromatikus | 41,0 | 25,0 | 34,0 |
 | Ortokromatikus | 0,0 | 42,0 | 58,0 |
@@ -4560,17 +4684,17 @@ Az előre definiált értékek az alábbi táblázatban láthatók.
 | Relatív RGB | 0,0 | 42,0 | 58,0 |
 | Infravörös | -28,0 | 139,9 | -11,9 |
 
-A Vörös, Zöld, és Kék csúszkákkal utólag korrigálhatunk, azonban óvatosan járjunk el, mert a negatív értékek könnyen műtermékeket, vagy szokatlan viselkedést okozhatnak. A csúszkák a fekete-fehér átalakításkor alkalmazott RGB csatornák arányainak megváltoztatására szolgálnak. A csúszkák értéktartománya -100 és +200 százalék között van. A levágott csúcsfények elkerülése érdekében a három csatorna összege nem haladhatja meg a 100%-ot, de speciális effektusok hozhatók létre az elvileg kötetlen beállításokkal.
+A Vörös, Zöld, és Kék csúszkákkal utólag korrigálhatunk, azonban óvatosan járjunk el, mert a negatív értékek könnyen műtermékeket, vagy szokatlan viselkedést okozhatnak. A csúszkák a fekete-fehér átalakításkor alkalmazott RGB csatornák arányainak megváltoztatására szolgálnak. A csúszkák értéktartománya -100 és +200 százalék között állítható. A levágott csúcsfények elkerülése érdekében a három csatorna összege nem haladhatja meg a 100%-ot, de speciális effektusok hozhatók létre az elvileg kötetlen beállításokkal.
 
 **Színszűrő**: Egy legördülő listából választhatunk különféle színű színszűrők közül.
 
 ![](book-images/404.jpg)
 
-A kiválasztott szűrő hatása meg is jelenik az előnézeti képen. Az "infravörös" Előre beállított lehetőség választása után a színszűrő választásának lehetősége nem jelenik meg, de ha valamelyik színcsatorna csúszkájának értékét módosítjuk, ismét választhatunk színszűrőt.
+A kiválasztott szűrő hatása meg is jelenik az előnézeten. Az "infravörös" Előre beállított lehetőség választása után a színszűrő választásának lehetősége nem jelenik meg, de ha valamelyik színcsatorna csúszkájának értékét módosítjuk, ismét választhatunk színszűrőt.
 
 **Gamma korrekció**: A középszürke pontot állíthatjuk be a csúszkák segítségével, ha szükséges.
 
-**Színezet**: Ez két csúszka egybeépítve. A felső csúszkával állíthatjuk be a fekete-fehér kép színárnyalatát, az alsó csúszkával a szín telítettségét. A két csúszka közötti színes sáv is két részre van osztva, felül mutatja a felső csúszkához tartozó színárnyalatokat, alul pedig azt mutatja, hogy a színtelítettséget lehet állítani az alsó csúszka segítségével. Az alábbi ábrán láthatjuk a Színezet beállításának hatását.
+**Színezés**: Ez két csúszka egybeépítve. A felső csúszkával  a fekete-fehér kép színezetét állíthatjuk be, az alsó csúszkával a telítettségét. A két csúszka közötti színes sáv is két részre van osztva, felül mutatja a felső csúszkához tartozó színezeteket, alul pedig mutatja a kiválasztott színezet telítettségskáláját. Az alábbi ábrán láthatjuk a Színezés hatását.
 
 ![](book-images/405.jpg)
 
@@ -4578,7 +4702,7 @@ A kiválasztott szűrő hatása meg is jelenik az előnézeti képen. Az "infrav
 
 A Különleges hatások eszközcsoportban található. Úgy alakíthatjuk át a képet, mintha nem digitális fényképezőgéppel, hanem egy bizonyos konkrét filmtípust használva, filmes fényképezőgéppel készült volna. Itt van lehetőségünk a Szigmoid tónusleképező használatára is.
 
-Az ART a RawTherapee-től örökölte a 3D LUT-ok (LUT = Look-Up Table) támogatását. Ezek támogatása ebben az eszközben, és a Helyi szerkesztés csoportban található Szín/Tónus korrekció eszközben érhető el. Különféle filmtípusok szimulálására alkalmas 3D LUT-okat tartalmaz a közösség által fejlesztett Hald CLUT gyűjtemény. Az eszköz alkalmazása előtt valamilyen LUT-gyűjteménynek (pl. Hald CLUT) telepítve kell lennie, egyébként csak a Szigmoid tónusleképezőt használhatjuk.
+Az ART a RawTherapee-től örökölte a 3D LUT-ok (LUT = Look-Up Table) támogatását. Ezek támogatása ebben az eszközben, és a Helyi szerkesztés csoportban található Szín/Tónus korrekció eszközben érhető el. Különféle filmtípusok szimulálására alkalmas 3D LUT-okat tartalmaz a közösség által fejlesztett Hald CLUT gyűjtemény. Az eszköz alkalmazása előtt valamilyen LUT-gyűjteménynek telepítve kell lennie, egyébként csak a Szigmoid tónusleképezőt használhatjuk.
 
 ![](book-images/346.jpg)
 
@@ -4594,7 +4718,7 @@ Számos fekete-fehér és színes filmtípus, és egyéb kreatív lehetőségek 
 
 **Erősség**: Az Erősség csúszkával a kiválasztott LUT hatásának erősségét (lényegében az átlátszatlanságot) állíthatjuk be.
 
-#### <a id="4521"></a> 4\.5\.2\.1 Szigmoid CTL szkript
+#### <a id="4521"></a> 4\.5\.2\.1 Szigmoid tónusleképező CTL szkript
 
 A Filmszimuláció szerkesztőeszközben választható ki. Nem véletlenül került ide a Szigmoid CTL szkript, mert a Filmszimuláció a csővezeték vége felé (36.) helyezkedik el, és a Szigmoid CTL szkript segítségével a kép végső tónusait állíthatjuk be. A Szigmoid eljárás egy S-görbe szerű tónusleképezést hajt végre. Úgy bővíthetjük vagy szűkíthetjük a téma dinamikatartományát, hogy az illeszkedjen a monitor (vagy egyéb megjelenítő) dinamikus tartományához.
 
@@ -4602,31 +4726,33 @@ A Filmszimuláció szerkesztőeszközben választható ki. Nem véletlenül ker�
 
 A fenti ábrán láthatjuk az eszköz kezelőszerveit.
 
-**Kontraszt**: Az S-görbe két végénél a tónusok tömörítése történik. A kontraszt növelése növeli a görbe meredekségét, egyúttal az egyenes szakasz végeinél (az árnyékoknál és a csúcsfényeknél) agresszívabb, hirtelenebb bekövetkező tömörítést eredményez. A magasabb értékek alacsonyabb expozíciót igényelnek a kijelző fehér szintjének eléréséhez, és az árnyékok sötétebbé válnak. A kisebb értékek nagyobb dinamikatartomány megjelenítését teszik lehetővé.
+**Kontraszt**: Az S-görbe két végénél a tónusok tömörítése történik. A kontraszt növelése növeli a görbe meredekségét, egyúttal az egyenes szakasz végeinél (az árnyékoknál és a csúcsfényeknél) agresszívabb, hirtelenebb bekövetkező tömörítést eredményez. A magasabb értékek alacsonyabb expozíciót igényelnek a kijelző fehér szintjének eléréséhez, és az árnyékok sötétebbé válnak. Az alacsonyabb értékek nagyobb dinamikatartomány megjelenítését teszik lehetővé.
 
 **Ferdeség**: Eltolja a tömörítést az árnyékok vagy a csúcsfények felé. A Ferdeség segítségével el lehet tolni a kontrasztot az árnyékokból a csúcsfényekbe, vagy fordítva anélkül, hogy a középszürke árnyalatok kontrasztja megváltozna. A pozitív Ferdeség elsimítja az árnyékokat és tömöríti a csúcsfényeket. A negatív Ferdeség sötétebb árnyékokat és tompább csúcsfényeket hoz létre.
 
 **Fehér pont**: A fehér pontot lehet beállítani segítségével.
 
-**Egyedi elsődlegesek használata**: Ha nincs bejelölve, akkor a munkaprofilt (színteret) használja. Ha engedélyezve van, csak akkor aktivizálódnak az alatta lévő beállítási lehetőségek.
+**Egyedi elsődlegesek használata**: Ha nincs bejelölve, akkor a munkaprofilt (színteret) használja. Ha engedélyezve van, csak akkor aktivizálódik az alatta lévő hat csúszka.
 
-**Alap elsődlegesek**: Kiválaszthatjuk a korrekciók alapjául szolgáló elsődlegesek készletét, azaz választhatunk a Rec. 2020 és a Rec. 709/sRGB színtér közül. Ez biztosítja, hogy ha a Színek/Színkezelés eszközben megváltoztatjuk az alapértelmezett Rec. 2020 munkaprofilt másra, akkor is az itt kiválasztott színtérrel történik meg a korrekció.
+**Alap elsődlegesek**: Kiválaszthatjuk a korrekciók alapjául szolgáló elsődlegesek készletét, azaz választhatunk a Rec. 2020 és a Rec. 709/sRGB színtér közül. Ez biztosítja, hogy ha a Színek/Színkezelés eszközben megváltoztatjuk az alapértelmezett Rec. 2020 munkaprofilt, akkor is az itt kiválasztott színtérrel történik meg a korrekció.
 
 Az eszköz a szigmoid görbét minden egyes RGB csatornára külön-külön alkalmazza.
 
 **Csillapítás**: Az R, G, és B színcsatornára külön-külön be lehet állítani a csillapítás értékét. A csillapítás csökkenti a Vörös/Zöld/Kék elsődlegesek tisztaságát, mielőtt a feldolgozás a szigmoid görbével megkezdődne. (**Tisztaság**: A pixel színének távolsága a fehér ponttól az xy színsíkban. A nulla tisztaság azt jelenti, hogy a fény akromatikus. A nagy tisztaság azt jelenti, hogy a fény lézerszerű, monokróm, vagyis egyetlen hullámhosszú fényből áll.) A csillapítás alkalmazásával elkerülhető például a poszterizáció.
 
-**Forgatás**: Az elsődleges színek bizonyos mértékű elforgatását lehet beállítani színcsatornánként. Ez befolyásolja azt az "útvonalat", amely mentén a színárnyalat változik a fehérhez közeledve.
+**Forgatás**: Az elsődleges színek bizonyos mértékű elforgatását lehet beállítani színcsatornánként. Ez befolyásolja azt az "útvonalat", amely mentén a színárnyalat változik a fehérhez közeledve. Egyszerűbben mondva eltolja a színeket.
 
 **Tisztaság helyreállítása**: Segítségével valamennyit visszanyerhetünk az eredeti tisztaságból a szigmoid görbe színcsatornánkénti alkalmazása után. A 100-as értéknél az összes csillapítás visszaáll, ezáltal a középső tartomány értékei az eredeti tisztaságuk közelében vannak. A 0 érték egyáltalán nem állítja vissza a tisztaságot, tehát minél nagyobb csillapítást alkalmazunk, annál kisebb a tisztaság a végső képen. A forgatások mindig visszaállnak, függetlenül a csúszka értékétől. Ha a csúszka értéke 0, akkor a modul kimenete garantáltan a kiválasztott Alap elsődleges tartományon belül marad.
+
+**Erősség**: A hatás erősségét állíthatjuk be segítségével.
 
 A szigmoid görbe a középtónusok körül változik, ezért használata előtt be kell állítani expozíció-kompenzáció segítségével a középtónusok világosságát.
 
 ![](book-images/409.jpg)
 
-A fenti ábrán megfigyelhetjük a Kontraszt és a Ferdeség csúszkák hatását. A fenti ábrák a szigmoid matematikai függvény hatásának bemutatására szolgáló weblapról származnak. A görbéket tónusgörbéknek képzeljük el. Az L paraméter változtatása hatását tekintve megfelel a Kontraszt változtatásának, a t paraméter hatása pedig a Ferdeségnek. Az ábrán a felső sor a Kontraszt, az alsó sor a Ferdeség hatását mutatja.
+A fenti ábrán megfigyelhetjük a Kontraszt és a Ferdeség csúszkák hatását. Ezek a szigmoid matematikai függvény hatásának bemutatására szolgáló weblapról származnak. A görbéket tónusgörbéknek képzeljük el. Az L paraméter változtatása hatását tekintve megfelel a Kontraszt változtatásának, a t paraméter hatása pedig a Ferdeségnek. Az ábrán a felső sor a Kontraszt, az alsó sor a Ferdeség hatását mutatja.
 
-A felső sorban mindegyik görbénél a t értéke 0,6, ezért mindegyik grafikonnál az L értékétől függően a (0,6;0,5) koordinátájú pont körül változik a görbe. A (0,6;0,5) koordinátájú pontot az ábra felső sorában piros ponttal jelöltem. Az alsó sorban láthatjuk, hogy a t értékének változtatása eltolja azt a pontot, amely körül a görbe változik, ezért változik a görbe alakja, meredeksége.
+A felső sorban mindegyik görbénél a t értéke 0,6, ezért mindegyik grafikonnál az L értékétől függetlenül a (0,6;0,5) koordinátájú pont körül változik a görbe. A (0,6;0,5) koordinátájú pontot az ábra felső sorában piros ponttal jelöltem. Az L értéke a görbe meredekségét befolyásolja. Az alsó sorban láthatjuk, hogy a t értékének változtatása eltolja azt a pontot, amely körül a görbe változik, ezért változik a görbe alakja, meredeksége.
 
 ### <a id="453"></a> 4\.5\.3 Lágy fény
 
@@ -4642,11 +4768,11 @@ A Különleges hatások eszközcsoportban található. Ezzel az eszközzel szán
 
 ![](book-images/411.jpg)
 
-Az eszköz fejléce alatt látható gombra kattintva az előnézeti képen megjelenik a peremsötétedés szűrő hatásának középpontja egy kis fehér kör formájában. A gombra történő ismételt kattintással a középpont nem lesz látható az előnézeti képen. Ha az előnézeti képen a kis körön kívül jobb egérgombbal kattintunk, akkor is kikapcsoljuk a középpont megjelenítését.
+Az eszköz fejléce alatt látható gombra kattintva az előnézeten megjelenik a peremsötétedés szűrő hatásának középpontja egy kis fehér kör formájában. A gombra történő ismételt kattintással a középpont nem lesz látható az előnézeten. Ha az előnézeten a kis körön kívül jobb egérgombbal kattintunk, akkor is kikapcsoljuk a középpont megjelenítését.
 
 ![](book-images/412.jpg)
 
-A hatás középpontját az egérrel az előnézeti kép tetszőleges pontjára húzhatjuk. A középpont mozgatására például akkor lehet szükség, ha Kivágást alkalmazunk.
+A hatás középpontját az egérrel az előnézet tetszőleges pontjára húzhatjuk. A középpont mozgatására például akkor lehet szükség, ha Kivágást alkalmazunk.
 
 **Erősség**: A szűrő által okozott sötétedés/világosodás mértéke a képsarkokban, fényértékben megadva. A pozitív értékek sötétítik, a negatívak világosítják a képmező széleit.
 
@@ -4660,21 +4786,21 @@ A hatás középpontját az egérrel az előnézeti kép tetszőleges pontjára 
 
 ### <a id="455"></a> 4\.5\.5 Átmenetes szűrő
 
-A Különleges hatások eszközcsoportban található. Ezzel az eszközzel egy átmenetes semleges szürke szűrőt hozhatunk létre. A hatás olyan lesz, mintha felvételkor használtunk volna egy ilyen szűrőt. Az átmenetes semleges szürke szűrőt tájképek készítésekor használjuk, célja az égbolt sötétítése azért, hogy ne legyen túl világos, kiégett a képen. Ezen kívül bármilyen egyéb célra is használhatjuk.
+A Különleges hatások eszközcsoportban található. Ezzel az eszközzel átmenetes semleges szürke szűrőt hozhatunk létre. A hatás olyan lesz, mintha felvételkor használtunk volna egy ilyen szűrőt. Az átmenetes semleges szürke szűrőt tájképek készítésekor használjuk, célja az égbolt sötétítése azért, hogy ne legyen túl világos, kiégett a képen. Ezen kívül bármilyen egyéb célra is használhatjuk.
 
 ![](book-images/413.jpg)
 
-Az eszköz fejléce alatt látható gombbal be/kikapcsolhatjuk a szűrő szerkesztőjét. A szerkesztő megjelenítését az előnézeti kép szerkesztőeszközön kívüli részén jobb egérgombbal történő kattintással is kikapcsolhatjuk.
+Az eszköz fejléce alatt látható gombbal be/kikapcsolhatjuk a szűrő szerkesztőjét. A szerkesztő megjelenítését az előnézet szerkesztőeszközön kívüli részén jobb egérgombbal történő kattintással is kikapcsolhatjuk.
 
 ![](book-images/414.jpg)
 
-A hatás középpontja az egérrel az előnézeti kép kívánt helyére húzható.
+A hatás középpontja az egérrel az előnézet kívánt helyére húzható.
 
 ![](book-images/415.jpg)
 
 ![](book-images/416.jpg)
 
-Az átmenet a vízszintes vagy függőleges középvonal "megfogásával" elforgatható.
+Az átmenet a vízszintes vagy függőleges középvonal megfogásával elforgatható.
 
 ![](book-images/417.jpg)
 
@@ -4698,7 +4824,7 @@ A Különleges hatások eszközcsoportban található. Csökkenti a távlati hom
 
 ![](book-images/419.jpg)
 
-**Mód**: RGB és Fénysűrűség közül választhatunk. RGB az alapértelmezett. A Mód befolyásolja a hozzáadott telítettség mértékét. RGB módban több telítettséget ad hozzá, mint Fénysűrűség módban.
+**Mód**: RGB és Fényerő közül választhatunk. RGB az alapértelmezett. A Mód befolyásolja a hozzáadott telítettség mértékét. RGB módban több telítettséget ad hozzá, mint Fényerő módban.
 
 **Erősség**: Alapértelmezett a görbe bekapcsolt állapota, de akár ki is kapcsolhatjuk. Ha kikapcsoljuk, akkor nem történik homályeltávolítás, és a Mód állapota sem számít, azonban a Feketepont-korrekció működik. Ha bekapcsoljuk, akkor az ábra szerinti kiegyenlítőgörbe-szerkesztő jelenik meg. Alul a tónusskálát látjuk. A görbe alapértelmezett állapota egy vízszintes egyenes, amely a középvonaltól feljebb helyezkedik el (ahogyan a fenti ábrán látható), amely nem semleges állapot, hanem homály eltávolítása történik. A semleges állapotot a középvonalon elhelyezkedő vízszintes egyenes jelentené. A középvonal helyét a görbeszerkesztőben egy fekete vízszintes vonal jelzi. Az ábra szerint a középvonaltól feljebb elhelyezkedő vízszintes egyenes miatt egyenletesen erősséggel távolítja el a homályt a teljes tónustartományban. A görbe felfelé húzása erősíti a homály eltávolítását. Ha a görbét a középvonal alá húzzuk, akkor homályt adhatunk a képhez.
 
@@ -4736,7 +4862,7 @@ A Különleges hatások eszközcsoportban található. Szemcsés zajt ad a képh
 
 ### <a id="458"></a> 4\.5\.8 Filmnegatív
 
-A Különleges hatások eszközcsoportban található. Lefényképezett színes negatív feldolgozására használható. Színes negatív- és diafilmjeink digitalizálását hagyományos módon filmszkennerrel végezhetjük el, azonban a jó minőségű filmszkennerek nagyon drágák, és nagyon lassú működésűek. Meglévő vázunkhoz és objektívünkhöz jóval olcsóbban vásárolhatunk olyan előtétet, amellyel lefényképezhetjük negatív vagy pozitív filmkockáinkat. Ez a módszer olcsó, gyors, azonban utófeldolgozást igényel. Kisfilmhez, annak információtartalmát is figyelembe véve bőven elég egy közepes (pl. 12 MP-es) váz, objektívnek legjobb egy makroobjektív.
+A Különleges hatások eszközcsoportban található. Lefényképezett színes negatív feldolgozására használható. Színes negatív- és diafilmjeink digitalizálását hagyományos módon filmszkennerrel végezhetjük el, azonban a jó minőségű filmszkennerek nagyon drágák, és nagyon lassú működésűek. Meglévő vázunkhoz és objektívünkhöz jóval olcsóbban vásárolhatunk olyan előtétet, amellyel lefényképezhetjük negatív vagy pozitív filmkockáinkat. Ez a módszer olcsó, gyors, azonban utófeldolgozást igényel. Kisfilmhez, annak információtartalmát is figyelembe véve, bőven elég egy közepes (pl. 12 MP-es) váz, objektívnek legjobb egy makroobjektív.
 
 ![](book-images/425.jpg)
 
@@ -4751,11 +4877,11 @@ A színes negatív filmek barnás alapszínnel rendelkeznek, amelyet a feldolgoz
 
 ![](book-images/427.jpg)
 
-Ha bekapcsoljuk (aktiváljuk) az eszközt, az előnézeti kép pozitív képre vált.
+Ha bekapcsoljuk (aktiváljuk) az eszközt, az előnézet pozitív képre vált.
 
-**Válasszon semleges helyeket**: Erre a gombra kattintva egy "pipettával" próbálhatunk két semleges színű, különböző világosságú területet keresni az előnézeti képen. A kiválasztott helyekre kell kattintani, melynek hatására a kép színei megváltoznak, és a Vörös arány, Kék arány csúszkák értéke megváltozik. Ezután finomíthatjuk a színeket a csúszkákkal.
+**Válasszon semleges helyeket**: Erre a gombra kattintva egy "pipettával" próbálhatunk két semleges színű, különböző világosságú területet keresni az előnézeten. A kiválasztott helyekre kell kattintani, melynek hatására a kép színei megváltoznak, és a Vörös arány, Kék arány csúszkák értéke is megváltozik. Ezután finomíthatjuk a színeket a csúszkákkal.
 
-**Referenciakitevő**: A zöld csatornára alkalmazott kitevő. Ennek az értéknek a megváltoztatása megváltoztatja a kép általános kontrasztját anélkül, hogy megváltoztatná a színeit. Az alapértelmezett érték egy átlagos kontrasztú negatívhoz jó. Nagyon halvány, vagy rosszul exponált negatív esetén ezt az értéket meg kell növelni. Nagyon nagy kontrasztú negatív esetén a konvertált pozitív kép elérheti a vágást, ezért ezt az értéket csökkenteni kell.
+**Referenciakitevő**: A zöld csatornára alkalmazott kitevő. Ennek az értéknek a megváltoztatása megváltoztatja a kép általános kontrasztját anélkül, hogy megváltoztatná a színeit. Az alapértelmezett érték egy átlagos kontrasztú negatívhoz jó. Nagyon halvány, vagy rosszul exponált negatív esetén az értéket meg kell növelni. Nagyon nagy kontrasztú negatív esetén a konvertált pozitív kép elérheti a vágást, ezért csökkenteni kell az értéken.
 
 **Vörös arány**: A vörös csatorna kitevőjének a referenciakitevőhöz viszonyított aránya. Ez az együttható azt jelzi, hogy a vörös csatorna átviteli görbéje mennyire "hajlott" a zöld átviteli görbéhez képest. Ennek az értéknek a módosítása megváltoztatja a korrekció színjellemzőit, miközben megtartja a kép általános kontrasztját.
 
@@ -4800,13 +4926,13 @@ Az Átalakítás eszközcsoportban található. Segítségével a képből kivá
 
 A **Balról** és **Felülről** mezőkben megadhatjuk a kivágás bal felső sarkának koordinátáját, a **Szélesség** és **Magasság** mezőkben pedig a kivágott terület szélességét és magasságát. Ezeket képpontban kell megadni.
 
-**Arány rögzítése**: Ha ezt bejelöljük, akkor megőrzi az eredeti, vagy a kiválasztott oldalarányt. Ha nincs bejelölve ez az opció, akkor a kivágás négy oldala egymástól függetlenül húzható az egérrel az előnézeti képen.
+**Arány rögzítése**: Ha ezt bejelöljük, akkor megőrzi az eredeti, vagy a kiválasztott oldalarányt. Ha nincs bejelölve ez az opció, akkor a kivágás négy oldala egymástól függetlenül húzható az egérrel az előnézeten.
 
-**Kiválasztás**: Ha rákattintunk erre a gombra, akkor az előnézeti képen az egérrel beállíthatjuk a kivágást. Az egérrel húzhatjuk a kivágás oldalait a beállításhoz. Miután rákattintottunk, a gomb felirata Kész-re vált, és ha végeztünk a kivágás területének beállításával, akkor ismét erre a gombra kell kattintanunk.
+**Kiválasztás**: Ha rákattintunk erre a gombra, akkor az előnézeten az egérrel beállíthatjuk a kivágást. Az egérrel húzhatjuk a kivágás oldalait a beállításhoz. Miután rákattintottunk, a gomb felirata Kész-re vált, és ha végeztünk a kivágás területének beállításával, akkor ismét erre a gombra kell kattintanunk.
 
 ![](book-images/430.jpg)
 
-A **Kész** gombra történő kattintás után az előnézeti képen csak a kivágott képrészlet lesz látható, és a kiválasztott segédvonal is eltűnik. A teljes képet és a segédvonalakat a Kiválaszt gombra történő ismételt kattintással jeleníthetjük meg.
+A **Kész** gombra történő kattintás után az előnézeten csak a kivágott képrészlet lesz látható, és a kiválasztott segédvonal is eltűnik. A teljes képet és a segédvonalakat a Kiválaszt gombra történő ismételt kattintással jeleníthetjük meg.
 
 ![](book-images/431.jpg)
 
@@ -4818,7 +4944,7 @@ Mellette a lenyíló listából kiválaszthatjuk, hogy a kiválasztott oldalará
 
 ![](book-images/433.jpg)
 
-**Segédvonalak típusa**: Számos segédvonal közül választhatunk, amely a kivágás beállításának ideje alatt az előnézeti kép felett jelenik meg, segítve a kép komponálását.
+**Segédvonalak típusa**: Számos segédvonal közül választhatunk, amely a kivágás beállításának ideje alatt az előnézet felett jelenik meg, segítve a kép komponálását.
 
 **Visszaállítás**: A gombra kattintva az előzőleg létrehozott kivágás törlődik.
 
@@ -4860,7 +4986,7 @@ Nézzük meg röviden a nyomtatóhoz kapcsolódó DPI és PPI értéket.
 
 **A nyomtató DPI értéke**: Ennek abszolút semmi köze a digitális képhez vagy annak felbontásához. A nyomtatók pici tintafoltok segítségével hozzák létre a képet a papíron. A DPI jelentése Dot Per Inch ((festék)pontok száma inchenként), azaz a nyomat egy inch (25,4 mm) hosszúságára eső festékpontok száma. Ez nem digitális képpontot jelent, hanem azt, hogy a nyomtató a nyomtatott kép oldalhosszának minden inch-nyi hosszán hány festékpontot helyez el. Tehát a tintapontok sűrűségéről van szó, azt is mondhatjuk, hogy a nyomtató felbontásáról. A tintasugaras nyomtatók felbontása általában 300 és 720 DPI közé esik, a lézernyomtatók és speciális fotónyomtatók felbontása meghaladhatja akár a 2400 DPI -t is. A nyomtató nagyobb felbontása jobb minőséget, a részletek finomabb visszaadásának lehetőségét jelenti.
 
-A nyomaton, azaz a papíron valójában nincsenek képpontok. A digitális kép egy adott képpontjának megfelelő helyen a nyomaton elvileg a képpont színével megegyező pici terület található. Emiatt az egyszerűség, szemléletesség érdekében esetleg úgy képzelhetjük el, mintha a nyomaton ott lennének a négyzet alakú képpontok. A valóságban azonban a nyomaton a képpontok nem különülnek el egymástól.
+A nyomaton, azaz a papíron valójában nincsenek képpontok. A digitális kép egy adott képpontjának megfelelő helyen elvileg a képpont színével megegyező pici terület található. Emiatt az egyszerűség, szemléletesség érdekében esetleg úgy képzelhetjük el, mintha a nyomaton ott lennének a négyzet alakú képpontok. A valóságban azonban a nyomaton a képpontok nem különülnek el egymástól.
 
 A **PPI** (Pixel Per Inch, azaz képpontok száma inchenként). Ezt a fogalmat kétféle értelemben használjuk:
 
@@ -4869,7 +4995,7 @@ A **PPI** (Pixel Per Inch, azaz képpontok száma inchenként). Ezt a fogalmat k
 
 ### <a id="463"></a> 4\.6\.3 Kimenet élesítése
 
-Az Átalakítás eszközcsoportban található. A csővezeték legvégén helyezkedik el. Elsődleges célja a Kivágás eszköz alkalmazása utáni élesítés. Kivágás után érdemes kissé élesíteni. Természetesen nemcsak Kivágás után lehet használni, mindenki tetszése szerint használhatja. Hatása legalább 100% nagyítással nézve figyelhető meg jól az előnézeti képen.
+Az Átalakítás eszközcsoportban található. A csővezeték legvégén helyezkedik el. Elsődleges célja a Kivágás eszköz alkalmazása utáni élesítés. Kivágás után érdemes kissé élesíteni. Természetesen nemcsak Kivágás után lehet használni, mindenki tetszése szerint használhatja. Hatása legalább 100% nagyítással nézve figyelhető meg jól az előnézeten.
 
 ![](book-images/439.jpg)
 
@@ -4905,12 +5031,12 @@ Az Átalakítás eszközcsoportban, azon belül a Geometria alcsoportban találh
 
 **Fok**: A csúszkán beállított fokkal elforgathatjuk a képet. Ezzel korrigálhatjuk például a horizont helyzetét, vagy egy torony ferdeségét.
 
-**Vízszintes vonal kijelölése**: A gomb megnyomása után kijelölhetünk egy, a valóságban vízszintes vagy függőleges vonalat az előnézeti képen, és az ART úgy fordítja el a képet, hogy a kijelölés a képen is vízszintes vagy függőleges legyen.
+**Vízszintes vonal kijelölése**: A gomb megnyomása után kijelölhetünk egy, a valóságban vízszintes vagy függőleges vonalat az előnézeten, és az ART úgy fordítja el a képet, hogy a kijelölés a képen is vízszintes vagy függőleges legyen.
 
 ![](book-images/74.jpg)  
 *A fényképet a szerző készítette*
 
-Rá kell kattintani a Forgatás eszközben lévő Vízszintes vonal kijelölése gombra, vagy az előnézeti kép feletti eszköztáron a fenti ábrán balról a nyolcadik gombra. Az egérmutatóval rá kell állni a horizont egy pontjára, le kell nyomni az egérgombot, nyomva kell tartani, végig kell húzni a vonalat a horizont mentén, majd a végét pontosan a horizontra illesztve fel kell engedni az egérgombot. Ekkor azonnal megtörténik a kép elforgatása.
+Rá kell kattintani a Forgatás eszközben lévő Vízszintes vonal kijelölése gombra, vagy az előnézet feletti eszköztáron a fenti ábrán balról a nyolcadik gombra. Az egérmutatóval rá kell állni a horizont egy pontjára, le kell nyomni az egérgombot, nyomva kell tartani, végig kell húzni a vonalat a horizont mentén, majd a végét pontosan a horizontra illesztve fel kell engedni az egérgombot. Ekkor azonnal megtörténik a kép elforgatása.
 
 ![](book-images/75.jpg)  
 *A fényképet a szerző készítette*
@@ -4921,7 +5047,7 @@ A horizont vízszintes lett. Függőleges objektum esetén teljesen hasonlóan m
 
 Az Átalakítás eszközcsoportban, azon belül a Geometria alcsoportban található. Segítségével korrigálhatjuk a perspektivikus torzítást.
 
-A perspektivikus torzítás fogalma főleg az épületfotózáshoz kapcsolódik. Nem optikai értelemben vett torzításról van szó, hanem inkább a megszokott látványtól való eltérésről, amely nagy látószögű objektív használatakor fordul elő leginkább. Amikor egy nagy, magas épületet, például templomot fényképezünk, legtöbbször kénytelenek vagyunk nagy látószögű objektívet használni, hogy a templom beleférjen a képbe. Ha vízszintesen (a templomtoronyra merőlegesen) tartanánk a fényképezőgépet, akkor nem lépne fel perspektivikus torzítás. A perspektivikus torzítás a nézőpontnak, a fényképezés irányának a következménye.
+A perspektivikus torzítás fogalma főleg az épületfotózáshoz kapcsolódik. Nem optikai értelemben vett torzításról van szó, hanem inkább a megszokott látványtól való eltérésről, amely nagy látószögű objektív használatakor fordul elő leginkább. Amikor egy nagy, magas épületet, például templomot fényképezünk, legtöbbször kénytelenek vagyunk nagy látószögű objektívet használni azért, hogy a templom beleférjen a képbe. Ha vízszintesen (a templomtoronyra merőlegesen) tartanánk a fényképezőgépet, akkor nem lépne fel perspektivikus torzítás. A perspektivikus torzítás a nézőpontnak, a fényképezés irányának a következménye.
 
 ![](book-images/443.jpg)
 
@@ -4931,13 +5057,13 @@ A Perspektívakorrekció eszköz manuális korrekciós beállításokat és hat�
 
 **Nyírás**: Ezzel a csúszkával az átlós torzítást korrigálhatjuk.
 
-**Szög**: Ezzel a csúszkával elforgathatjuk a képet úgy, hogy az ART figyelembe veszi az Automatikus kitöltés/Automatikus kivágás beállítását.
+**Szög**: Ezzel a csúszkával elforgathatjuk a képet.
 
-**Képarány beállítása**: A kép helyes oldalarányának beállítása.
+**Oldalarány beállítása**: A kép helyes oldalarányának beállítása.
 
 **Fókusztávolság**: Az objektív fizikai gyújtótávolsága. Ha ez szerepel a metaadatok között, akkor automatikusan beállítja.
 
-**Vágási tényező (Crop faktor)**: A fényképezőgép kivágási szorzótényezője (crop faktor). A vágási tényező értéke full frame váz esetén 1, Canon APS-C váz esetén 1,6, egyéb APS-C esetén 1,5, M4/3 esetén 2. Ezen kívül minden egyéb vágást (pl. digitális zoom) is figyelembe kell venni. Ha a program meg tudja állapítani a metaadatokból, akkor automatikusan beállításra kerül.
+**Vágási tényező (Crop faktor)**: A fényképezőgép kivágási szorzótényezője (crop faktor). A vágási tényező értéke full-frame váz esetén 1, Canon APS-C esetén 1,6, egyéb APS-C esetén 1,5, M4/3 esetén 2. Ezen kívül minden egyéb vágást (pl. digitális zoom) is figyelembe kell venni. Ha a program meg tudja állapítani a metaadatokból, akkor automatikusan beállításra kerül.
 
 Ha az objektív fizikai gyújtótávolsága nem ismert, csak az ekvivalens gyújtótávolsága, akkor a Fókusztávolságnál állítsuk be az ekvivalens gyújtótávolságot, a Vágási tényezőnél pedig 1-et.
 
@@ -4963,9 +5089,9 @@ A vezérlővonal végein lévő vezérlőpontot az **egérrel megfogva** korrig�
 
 Egy vezérlővonalat rajta **jobb egérgombbal** kattintva törölhetünk.
 
-Az összes vezérlővonalat a **kuka gomb**ra történő kattintással törölhetjük. Csak akkor működik, ha a szerkesztést bekapcsoltuk a ceruza gombbal.
+Az összes vezérlővonalat a **kuka gombra** történő kattintással törölhetjük. Csak akkor működik, ha a szerkesztést bekapcsoltuk a ceruza gombbal.
 
-A **pipa gomb**ra kattintva a létrehozott vagy módosított vezérlővonalak alkalmazásra kerülnek. Csak akkor működik, ha a szerkesztést bekapcsoltuk a ceruza gombbal.
+A **pipa gombra** kattintva a létrehozott vagy módosított vezérlővonalak alkalmazásra kerülnek. Csak akkor működik, ha a szerkesztést bekapcsoltuk a ceruza gombbal.
 
 ### <a id="465"></a> 4\.6\.5 Objektív alcsoport
 
@@ -4984,7 +5110,7 @@ Az alapötlet az, hogy ha létrehozunk egy adatbázist vagy profilfájlt, amely 
 
 Az objektívkorrekciós adatokat tartalmazó fájlt nevezzük Objektívkorrekciós profilnak, angolul Lens correction profile, ebből eredően a fájl kiterjesztése .lcp. Létezik egy **Lensfun** nevű, közösség által fejlesztett adatbázis is, amely sokféle objektívhez tartalmazza a korrekciós adatokat. Ezt az ART tartalmazza.
 
-Ha egy objektív kétféle (pl. full frame és APS-C) érzékelőméretű vázhoz is használható, akkor nem mindegy, hogy mely érzékelőméretre vonatkoznak a Lensfun adatbázisban vagy az LCP fájlban lévő korrekciós adatok. Ilyenkor a megfelelő érzékelőméretre vonatkozó profilt kell használni.
+Ha egy objektív kétféle (pl. full-frame és APS-C) érzékelőméretű vázhoz is használható, akkor nem mindegy, hogy mely érzékelőméretre vonatkoznak a Lensfun adatbázisban vagy az LCP fájlban lévő korrekciós adatok. Ilyenkor a megfelelő érzékelőméretre vonatkozó profilt kell használni.
 
 Bizonyos esetekben a nyers fájlba ágyazott metaadatok is tartalmazhatnak objektívkorrekciós adatokat. Ha az ART a metaadatokban talál korrekciós adatokat, akkor azokat automatikusan alkalmazza.
 
@@ -4994,7 +5120,7 @@ Nem feltétlenül állnak rendelkezésre mindhárom probléma korrigálásához 
 
 Ha bejelöljük az Automatikusan adatbázisból lehetőséget, akkor a Lensfun adatbázisban próbálja megkeresni a vázat és az objektívet a korrekciós adatok elérése céljából. Ehhez a nyers fájl metaadataiba ágyazott váznevet és objektívnevet használja. Ha megtalálta, akkor az ábrán láthatóhoz hasonlóan megjeleníti a váz és az objektív típusát. Az ábrán az ART automatikusan nem jelölte be a Kromatikus aberráció korrigálását, azonban ebben az esetben az objektívprofilban rendelkezésre áll, ezért be tudjuk jelölni.
 
-Ha automatikusan nem találta meg az ART a Lensfun adatbázisban a váz vagy az objektív típusát, akkor a Manuálisan adatbázisból lehetőséget választva magunk is megkereshetjük és kiválaszthatjuk. Akkor nem találja meg automatikusan, ha a váz és/vagy az objektív megnevezése eltér a metaadatokban és az adatbázisban, vagy egyáltalán nincsenek adatok a vázhoz és/vagy az objektívhez a Lensfun adatbázisban.
+Ha automatikusan nem találta meg az ART a Lensfun adatbázisban a váz vagy az objektív típusát, akkor a Manuálisan adatbázisból lehetőséget választva magunk is megkereshetjük és kiválaszthatjuk. Akkor nem találja meg automatikusan, ha a váz és/vagy az objektív megnevezése eltér a metaadatokban és/vagy az adatbázisban, vagy egyáltalán nincsenek adatok a vázhoz és/vagy az objektívhez a Lensfun adatbázisban.
 
 ![](book-images/447.jpg)
 
@@ -5010,17 +5136,17 @@ Az Átalakítás eszközcsoportban, azon belül az Objektív alcsoportban talál
 
 **Erősség**: Az Erősség csúszkával manuális korrekciót végezhetünk. A negatív értékek a hordó torzítást, a pozitívak pedig a párna torzítást korrigálják.
 
-Ha aktiváljuk az Átalakítás eszközcsoportban lévő Kivágás eszközt, a Segédvonalak típusánál a Rács lehetőséget választjuk, és megnyomjuk a Kiválasztás gombot, akkor rácsot helyezhetünk el az előnézeti kép elé, amely segíthet a torzításkorrekció beállításában. A rácsot a Kivágás eszközben a Kész gombra kattintva, vagy a Kivágás eszköz kikapcsolásával tüntethetjük el.
+Ha aktiváljuk az Átalakítás eszközcsoportban lévő Kivágás eszközt, a Segédvonalak típusánál a Rács lehetőséget választjuk, és megnyomjuk a Kiválasztás gombot, akkor rácsot helyezhetünk el az előnézet elé, amely segíthet a torzításkorrekció beállításában. A rácsot a Kivágás eszközben a Kész gombra kattintva, vagy a Kivágás eszköz kikapcsolásával tüntethetjük el.
 
 #### <a id="4653"></a> 4\.6\.5\.3 Kromatikusaberráció-korrekció
 
 Az Átalakítás eszközcsoportban, azon belül az Objektív alcsoportban található. A Színrekonstrukció után fejti ki hatását. (A RAW eszközcsoportban lévő hasonló eszköz pedig a Színrekonstrukció előtt.)
 
-Színhiba (kromatikus aberráció) korrigálására szolgál. A világos területek melletti sötét élek mentén jelennek meg színes szegély formájában a színhibák. Színhibát például az égbolt előtt lévő faágak mellett láthatunk.
+Színhiba (kromatikus aberráció) korrigálására szolgál. A világos területek melletti sötét élek mentén jelennek meg színes szegély formájában a színhibák. Színhibát például az égbolt előtt lévő faágak mellett láthatunk. A színhibáknak ezt a fajtáját oldalirányú színhibának nevezzük.
 
 ![](book-images/449.jpg)
 
-A színhiba korrigálását ajánlatos legalább 100%-ra nagyított előnézeti képen, vagy Részletablakban megfigyelni.
+A színhiba korrigálását ajánlatos legalább 100%-ra nagyított előnézeten, vagy Részletablakban megfigyelni.
 
 A nem túl nagy mértékű színhiba jól javítható, de azért a javíthatóságnak van határa. Ezt vegyük figyelembe.
 
@@ -5038,7 +5164,7 @@ A Vörös és a Kék csúszkával kell korrigálni, a legkevesebb színhiba tal�
 
 #### <a id="4654"></a> 4\.6\.5\.4 Peremsötétedés-korrekció
 
-Az Átalakítás eszközcsoportban, azon belül az Objektív alcsoportban található. Ez az eszköz kifejezetten az objektív által okozott peremsötétedés korrekciójára szolgál, kreatív célokra a Különleges hatások eszközcsoportban található Peremsötétedés szűrő eszközt kell használni.
+Az Átalakítás eszközcsoportban, azon belül az Objektív alcsoportban található. Kifejezetten az objektív által okozott peremsötétedés korrekciójára szolgál, kreatív célokra a Különleges hatások eszközcsoportban található Peremsötétedés szűrő eszközt kell használni.
 
 ![](book-images/452.jpg)
 
@@ -5063,11 +5189,11 @@ Az ART felismeri, hogy a szerkesztett nyers fájl milyen színmátrixot alkalmaz
 A csoport szerkesztőeszközei:
 
 -   (Bayer mátrix) Színrekonstrukció
--   (Bayer mátrix) Raw fekete pont
+-   (Bayer mátrix) Raw fekete pontok
 -   (Bayer mátrix) Előfeldolgozás
 -   (Bayer mátrix) Kromatikusaberráció-korrekció
 -   (X-Trans mátrix) Színrekonstrukció
--   (X-Trans mátrix) Raw fekete pont
+-   (X-Trans mátrix) Raw fekete pontok
 -   Raw Nyereség/Fehér pont
 -   Előfeldolgozás
 -   Dark-Frame
@@ -5083,7 +5209,7 @@ Ebben az alcsoportban Bayer-féle színszűrővel ellátott képérzékelővel r
 
 A Raw eszközcsoportban, azon belül az Érzékelő Bayer Mátrixszal alcsoportban található.
 
-Ennek az eszköznek a hatása csak 1:1 vagy annál nagyobb nagyítás mellett látható. Nagyítsuk 1:1-re az előnézeti képet, vagy helyezzünk el néhány Részletablakot az előnézeti képen (az előnézeti kép alatt található a gombja).
+Ennek az eszköznek a hatása csak 1:1 vagy annál nagyobb nagyítás mellett látható jól. Nagyítsuk 1:1-re az előnézetet, vagy helyezzünk el néhány Részletablakot az előnézeten.
 
 A képérzékelő színeket nem lát. Azt a műveletet (módszert), amikor a hiányos színinformációkból helyreállítjuk a képpontok színinformációit, Színrekonstrukciónak nevezzük. Ennek során jön létre a színes kép a nyers fájl adataiból, és ezen a képen fejtik ki hatásukat egymás után a szerkesztőeszközök.
 
@@ -5091,11 +5217,11 @@ Ezt az eljárást angolul legtöbbször demosaicing-nek nevezik, magyar elnevez�
 
 ![](book-images/454.jpg)
 
-Az ART számos Színrekonstrukció-algoritmust kínál, amelyek mindegyike saját jellemzőkkel rendelkezik.
+Az ART számos Színrekonstrukció-algoritmust kínál, amelyek mindegyike egymástól eltérő jellemzőkkel rendelkezik.
 
 ![](book-images/455.jpg)
 
-Mivel a színrekonstrukció által keletkezett kép képezi az alapot, amelyen a szerkesztőeszközök kifejtik hatásukat, a Színrekonstrukció-algoritmus kiválasztása jelentős hatással lehet a végeredményre, különösen közelről nézve a képet. A különböző Színrekonstrukció-algoritmusok közötti különbség leglátványosabban a finom részletek megjelenítésében, és a labirintusszerű minták formájában jelentkező műtermékek láthatóságában jelentkezik. Legalább 100%-os nagyítással kell néznünk az előnézeti képet, hogy az egyes algoritmusok eltéréseit megfigyelhessük.
+Mivel a színrekonstrukció által keletkezett kép képezi az alapot, amelyen a szerkesztőeszközök kifejtik hatásukat, a Színrekonstrukció-algoritmus kiválasztása jelentős hatással lehet a végeredményre, különösen közelről nézve a képet. A különböző Színrekonstrukció-algoritmusok közötti különbség leglátványosabban a finom részletek megjelenítésében, és a labirintusszerű minták formájában jelentkező műtermékek láthatóságában jelentkezik. Legalább 100%-os nagyítással kell néznünk az előnézetet, hogy az egyes algoritmusok eltéréseit megfigyelhessük.
 
 Az ART-ban rendelkezésre álló Színrekonstrukciós eljárások a következők:
 
@@ -5105,7 +5231,7 @@ Az ART-ban rendelkezésre álló Színrekonstrukciós eljárások a következők
 
 **LMMSE és IGV**: Ezek nagyon zajos, magas ISO értékkel készült képeknél ajánlottak. Megakadályozzák a hamis labirintusminták megjelenését, és megakadályozzák, hogy a kép elmosottnak tűnjön a nagy zajcsökkentés miatt. Az IGV emellett meglehetősen hatékony a moiré minták mérséklésében is.
 
-**AMaZE+Bilinear**: Kétféle algoritmust is alkalmaz egymás után, minden bizonnyal jobb, mint az AMaZE önmagában. Nem lehet róla információt találni.
+**AMaZE+Bilinear**: Kétféle algoritmust is alkalmaz egymás után, minden bizonnyal jobb, mint az AMaZE önmagában. Nem lehet információt találni a kétféle algoritmus együttes hatásáról.
 
 **RCD+Bilinear**: Erről sem lehet információt találni, azonban Andy Astbury, aki szaktekintélynek számít, általános célra az RCD+Bilinear eljárást ajánlja az ART-hoz alapértelmezett eljárásként.
 
@@ -5141,7 +5267,7 @@ Többféle rendellenesség kezelésére alkalmas eszköz.
 
 ![](book-images/457.jpg)
 
-**Vonalzaj szűrő**: A vonalzaj vízszintes vagy függőleges sávként jelenik meg, amely leginkább zajos képeken látható. Ezt az elemi érzékelőkhöz kapcsolódó elektronikában lévő zaj okozza, amely soronként vagy oszloponként olvassa ki az egyes elemi érzékelők értékét. Ezt lehet csökkenteni a csúszka segítségével.
+**Vonalzaj szűrő**: A vonalzaj vízszintes vagy függőleges sávként jelenik meg, amely leginkább zajos képeken látható. Ezt az elemi érzékelőkhöz kapcsolódó elektronikában keletkező zaj okozza, amely soronként vagy oszloponként olvassa ki az egyes elemi érzékelők értékét. Ezt lehet csökkenteni a csúszka segítségével.
 
 ![](book-images/458.jpg)
 
@@ -5195,9 +5321,13 @@ A Módszer az alábbiak egyike lehet.
 
 **Nincs (érzékelőmintázatot mutat)**: Nem történik színrekonstrukció. Ez hasznos lehet a diagnosztikához, de nem használható fotózáshoz.
 
-**3-menetes**: Ez az algoritmus egymás után három menetet futtat a képen, ami élesebb eredményhez vezet, azonban a minőségkülönbség csak alacsony ISO-értékű fényképeken látható. Lassabb, mint az 1-menetes.
+**3-menetes (Markesteijn)**: Ez az algoritmus egymás után három menetet futtat a képen, ami élesebb eredményhez vezet, azonban a minőségkülönbség csak alacsony ISO-értékű fényképeken látható. Lassabb, mint az 1-menetes.
 
-**1-menetes**: Gyorsabb, mint a 3-menetes, de némileg gyengébb a minősége, azonban a minőségkülönbség csak alacsony ISO-értékű fényképeken látható. Ha a gyorsaság problémát jelent, akkor ez a módszer nagy ISO érzékenységű felvételeknél használható, észrevehető minőségbeli különbség nélkül.
+**1-menetes (Markesteijn)**: Gyorsabb, mint a 3-menetes, de némileg gyengébb a minősége, azonban a minőségkülönbség csak alacsony ISO-értékű fényképeken látható. Ha a gyorsaság problémát jelent, akkor ez a módszer nagy ISO érzékenységű felvételeknél használható, észrevehető minőségbeli különbség nélkül.
+
+**3-menetes+Gyors**:  Kétféle módszert alkalmaz egymás után.
+
+**1-menetes+Gyors**:  Kétféle módszert alkalmaz egymás után.
 
 A módszerek közül a legjobb minőséget a 3-menetes (Markesteijn) módszer adja.
 
@@ -5225,9 +5355,9 @@ Ne foglalkozzunk vele. Várhatóan legfeljebb diagnosztikai célra kellhet haszn
 
 A Raw eszközcsoportban található. Elnyomja a Forró és Halott képpontokat úgy, hogy lecseréli őket a környékbeli képpontok átlagára.
 
-A "forró pixelek" fényes és telített apró pontokként jelennek meg a képen. Mindegyik annak az eredménye, hogy az érzékelőn egy elemi érzékelő a kelleténél nagyobb jelet ad le. Az, hogy az érzékelőn lévő egyetlen elemi érzékelő megfelel-e a feldolgozott fotó egyetlen képpontjának, a választott Színrekonstrukció módszertől (és egyéb tényezőktől) függ. A legtöbb módszer (például az AMaZE) esetén nincs közvetlen kapcsolat az elemi érzékelők és a képpontok között, így a forró pixelek nem csak egypixeles pontként jelenhetnek meg, hanem apró 3x3-as pixelkeresztként, vagy valamivel nagyobb foltként is megjelenhetnek. A forró pixelek jelenléte teljesen normális jelenség minden fényképezőgépben, de nappali fotózás során általában nem találkozhatunk velük. Minél hosszabb az expozíció, annál nagyobb az esélye annak, hogy forró pixelek jelennek meg, és annál nagyobb a számuk is. Általában két másodpercnél hosszabb expozíció esetén jelentkezik ez a probléma.
+A "forró pixelek" fényes és telített apró pontokként jelennek meg a képen. Mindegyik annak az eredménye, hogy az érzékelőn egy elemi érzékelő a kelleténél nagyobb jelet ad le. Az, hogy az érzékelőn lévő egyetlen elemi érzékelő megfelel-e a feldolgozott fotó egyetlen képpontjának, a választott Színrekonstrukció módszertől (és egyéb tényezőktől) függ. A legtöbb módszer (például az AMaZE) esetén nincs közvetlen kapcsolat az elemi érzékelők és a képpontok között, így a forró pixelek nemcsak egypixeles pontként jelenhetnek meg, hanem apró 3x3-as pixelkeresztként, vagy valamivel nagyobb foltként is. A forró pixelek jelenléte teljesen normális jelenség minden fényképezőgépben, de nappali fotózás során általában nem találkozhatunk velük. Minél hosszabb az expozíció, annál nagyobb az esélye annak, hogy forró pixelek jelennek meg, és annál nagyobb a számuk is. Általában két másodpercnél hosszabb záridő esetén jelentkezik ez a probléma.
 
-A "halott pixelek" fekete pontként (vagy keresztként vagy foltként) jelennek meg. Ezek a szenzoron lévő elhalt (működésképtelen) elemi érzékelők következménye, és az expozíciós időnek nincs befolyása arra, hogy megjelennek-e vagy sem. Ha egy elemi érzékelő halott, minden fotón ugyanazon a helyen lesz látható az elhalt pixel.
+A "halott pixelek" fekete pontként (vagy keresztként vagy foltként) jelennek meg. Ezek a szenzoron lévő elhalt (működésképtelen) elemi érzékelők következményei, és a záridőnek nincs befolyása arra, hogy megjelennek-e vagy sem. Ha egy elemi érzékelő halott, akkor minden fotón ugyanazon a helyen lesz látható az elhalt pixel.
 
 ![](book-images/466.jpg)
 
@@ -5239,9 +5369,9 @@ A "halott pixelek" fekete pontként (vagy keresztként vagy foltként) jelennek 
 
 ### <a id="475"></a> 4\.7\.5 Dark-Frame
 
-A Raw eszközcsoportban található. Egy Dark-frame (sötét felvétel) kivonásával csökkenthetjük a különböző eredetű (pl. termikus) zajokat, amelyek hosszú záridővel készült felvételeknél észlelünk. Legalább 1 másodperces záridő tekinthető hosszú záridőnek. A magas ISO miatt bekövetkező zajokra hatástalan, a Forró pixeleket azonban eltünteti.
+A Raw eszközcsoportban található. Egy Dark-frame (sötét felvétel) kivonásával csökkenthetjük a különböző eredetű (pl. termikus) zajokat, amelyeket hosszú záridővel készült felvételeknél észlelhetünk. Legalább 1 másodperces záridő tekinthető hosszú záridőnek. A magas ISO miatt bekövetkező zajokra hatástalan, a Forró pixeleket azonban eltünteti.
 
-A módszer lényege az, hogy amikor hosszú záridejű felvételt készítünk, akkor közvetlenül utána ugyanolyan beállításokkal készítünk egy vagy több **nyers (raw) formátumú** felvételt (Dark-Frame-et) úgy, hogy az objektívsapkát az objektívre helyezzük. A legjobb 4-6 darab Dark-Frame képet készíteni. Ilyen módon lefényképezzük például a képmező termikus zaj miatti egyenetlenségeit, és ha a Dark-Frame-e(ke)t kivonjuk a képből, akkor zajmentesebb képet kapunk. Azért kell mindjárt a felvételek után közvetlenül elkészíteni a Dark-Frame képeket, hogy a képérzékelő és a körülötte lévő elektronika ugyanolyan hőmérsékletű legyen. A Dark-Frame felvételek elkészítésekor Manuál (M) módot kell használni, mert így felhelyezett objektívsapkával is ugyanolyan beállításokkal tudjuk elkészíteni a referenciaképe(ke)t, mint amilyenekkel az "éles" képek készültek.
+A módszer lényege az, hogy amikor hosszú záridővel készítünk felvételt, akkor közvetlenül utána ugyanolyan beállításokkal készítünk egy vagy több **nyers (raw) formátumú** felvételt (Dark-Frame-et) úgy, hogy az objektívsapkát az objektívre helyezzük. A legjobb 4-6 darab Dark-Frame képet készíteni. Ilyen módon lefényképezzük például a képmező termikus zaj miatti egyenetlenségeit, és ha a Dark-Frame-e(ke)t kivonjuk a képből, akkor zajmentesebb képet kapunk. Azért kell mindjárt a felvételek után közvetlenül elkészíteni a Dark-Frame képeket, hogy a képérzékelő és a körülötte lévő elektronika ugyanolyan hőmérsékletű legyen, mint a képek elkészítésekor. A Dark-Frame felvételek elkészítésekor Manuál (M) módot kell használni, mert így felhelyezett objektívsapkával is ugyanolyan beállításokkal tudjuk elkészíteni a referenciaképe(ke)t, mint amilyenekkel az "éles" képek készültek.
 
 ![](book-images/467.jpg)
 
@@ -5251,7 +5381,7 @@ Használata előtt a Beállítások Képfeldolgozás lapjának Könyvtárak rés
 
 **Fájl**: manuálisan kiválaszthatunk egy Dark-Frame felvételt, amelyet kivon a szerkesztett képből.
 
-**Automatikus kiválasztás**: Automatikusan választja a ki a legjobban illeszkedő felvételt (fényképezőgép gyártója > típusa > ISO > záridő > dátum sorrendben választ) a metaadatok alapján. Ha egynél több, pontosan azonos tulajdonságú felvételt talál, akkor ezek átlagát használja, amely sokkal kevesebb zajt eredményez.
+**Automatikus kiválasztás**: Automatikusan választja a ki a legjobban illeszkedő Dark-Frame felvételt (fényképezőgép gyártója > típusa > ISO > záridő > dátum sorrendben választ) a metaadatok alapján. Ha egynél több, pontosan azonos tulajdonságú felvételt talál, akkor ezek átlagát alkalmazza, amely sokkal kevesebb zajt eredményez.
 
 ### <a id="476"></a> 4\.7\.6 Flat-Field
 
@@ -5321,7 +5451,7 @@ Fix gyújtótávolságú objektív esetén mindössze néhány különböző rek
 
 Ha kis eltérés van az egyes esetek között, akkor nem feltétlenül kell minden esetről referenciafájlt készíteni. Például a fenti objektívnél a 35 mm és az 55 mm gyújtótávolságú esetek majdnem megegyeznek egymással peremsötétedés tekintetében, ezért esetleg az 55 mm-es képek elhagyhatók, és használhatjuk helyettük a 35 mm-es képsorozatot. Véleményem szerint azonban nem érdemes ezen időt spórolni.
 
-Ha elektronikus objektívet használunk, akkor a fájlnév közömbös, mivel az ART automatikusan megtalálja a helyes referenciafájlt. Ha azonban olyan manuális objektívet használunk, amely nem rögzíti a metaadatok között a rekeszértéket és a gyújtótávolságot, akkor magunknak kell manuálisan kiválasztani a megfelelő fájlt. Emiatt át kell nevezni a referenciafájlokat úgy, hogy később is be tudjuk azonosítani a készítés körülményeit. Véleményem szerint ezt érdemes megtennünk elektronikus objektívek esetében is, mert ha manuálisan kell választanunk a referenciafájlok között, akkor nem fogjuk tudni, hogy például az IMG\_1258.CR2 nevű referenciafájl milyen objektívvel, milyen gyújtótávolsággal, milyen rekeszértékkel, és milyen vázzal készült.
+Ha elektronikus objektívet használunk, akkor a fájlnév közömbös, mivel az ART automatikusan megtalálja a helyes referenciafájlt. Ha azonban olyan manuális objektívet használunk, amely nem rögzíti a metaadatok között az objektív típusát, a rekeszértéket és a gyújtótávolságot, akkor magunknak kell manuálisan kiválasztani a megfelelő fájlt. Emiatt át kell nevezni a referenciafájlokat úgy, hogy később is be tudjuk azonosítani a készítés körülményeit. Véleményem szerint ezt érdemes megtennünk elektronikus objektívek esetében is, mert ha manuálisan kell választanunk a referenciafájlok között, akkor nem fogjuk tudni, hogy például az IMG\_1258.CR2 nevű referenciafájl milyen objektívvel, milyen gyújtótávolsággal, milyen rekeszértékkel, és milyen vázzal készült.
 
 Követhetjük például az alábbi elnevezési mintát:
 
@@ -5359,7 +5489,7 @@ A fenti ábrán azt láthatjuk, hogy pontosan egyező referenciafájlt talált. 
 
 A fenti ábrán azt láthatjuk, hogy a legközelebb eső referenciafájlt választotta. Az objektív típusa, a beállított rekesznyílás egyezik (f/5,6), a beállított gyújtótávolság 40 mm, azonban az ART a 35 mm-es gyújtótávolsághoz tartozó referenciafájlt választotta. Ez helyes választás volt, mert csak 35 mm-es és 55 mm-es referenciafájl állt rendelkezésre, és a 35 mm közelebb áll a beállított 40 mm-hez, mint az 55 mm.
 
-**Beágyazva a metaadatokba**: Ha az objektív flat-field korrekciós paraméterei elérhetők a kép metaadataiból, ez a lehetőség kiválasztható.
+**Beágyazva a metaadatokba**: Ha az objektív flat-field korrekciós paraméterei elérhetők a kép metaadataiból, akkor ez a lehetőség kiválasztható.
 
 ![](book-images/475.jpg)
 
@@ -5367,14 +5497,14 @@ A referenciafájl nyers adataiból létrehozott referenciaképen elmosást kell 
 
 Az **Elmosás típusa** az alábbi négyféle lehet:
 
--   **Terület**: Ez az alapértelmezett, és általában ez a leghasznosabb beállítás. A referenciaképen az elmosást minden irányban egyformán alkalmazza. Jól használható például a peremsötétedés korrekciójához.
+-   **Terület**: Ez az alapértelmezett, és általában ez a leghasznosabb beállítás. A referenciaképen az elmosást minden irányban egyformán alkalmazza. Jól használható például peremsötétedés korrekciójához.
 -   **Függőleges**: Csak függőleges irányban alkalmazza az elmosást.
 -   **Vízszintes**: Csak vízszintes irányban alkalmazza az elmosást.
 -   **Függőleges + Vízszintes**: Egymás után vízszintesen majd függőlegesen alkalmazza az elmosást azért, hogy egyaránt korrigálja a vízszintes és a függőleges egyenetlenségeket.
 
 A függőleges és vízszintes fogalma a nyers fájlban az érzékelő tájolásával függ össze, ami egy váz esetén mindig ugyanaz, függetlenül attól, hogy a fényképezőgépet vízszintesen vagy függőlegesen tartottuk-e fényképezés közben. Az fényképezőgép-típusonként változó lehet, hogy az érzékelő adatait fekvő vagy álló formátumban tárolja-e, így ha függőleges vagy vízszintes módot szeretnénk használni, meg kell vizsgálni, hogy melyik irány a megfelelő ahhoz a váztípushoz.
 
-**Elmosódási sugár**: Ez a csúszka szabályozza a referenciafájl adataiból létrehozott referenciakép elmosásának a mértékét. A 32-es alapértelmezett érték általában elegendő ahhoz, hogy megszabaduljunk a nyers adatok képzaj miatti változásaitól. Ha ezt nem tennénk, akkor esetleg a referenciafájl képzaja miatti egyenetlenség is meglátszódhatna a korrigált képen. Az elmosódási sugár 0-ra állítása kihagyja a elmosási folyamatot, és lehetővé teszi az érzékelőn lévő por vagy egyéb szennyeződés hatásának korrigálását az éppen szerkesztett képen. Ez azonban csak akkor valódi lehetőség, ha a fényképek elkészülte után közvetlenül, még a váz kikapcsolása előtt elkészítjük a referenciafájlt. A váz be/kikapcsolásakor ugyanis a legtöbb váz megpróbálja a port eltávolítani a képérzékelőről, ezért ha később készítenénk referenciafájlt, az nem a képeink készítésekor fennálló állapotot tükrözné.
+**Elmosódási sugár**: Ez a csúszka szabályozza a referenciafájl adataiból létrehozott referenciakép elmosásának a mértékét. A 32-es alapértelmezett érték általában elegendő ahhoz, hogy megszabaduljunk a nyers adatok képzaj miatti változásaitól. Ha ezt nem tennénk, akkor esetleg a referenciafájl képzaja miatti egyenetlenség is meglátszódhatna a korrigált képen. Az elmosódási sugár 0-ra állítása kihagyja a elmosási folyamatot, és lehetővé teszi az érzékelőn lévő por vagy egyéb szennyeződés hatásának korrigálását az éppen szerkesztett képen. Ez azonban csak akkor valódi lehetőség, ha az "éles" fényképek elkészülte után közvetlenül, még a váz kikapcsolása előtt elkészítjük a referenciafájlt. A váz be/kikapcsolásakor ugyanis a legtöbb váz megpróbálja a port eltávolítani a képérzékelőről, ezért ha később készítenénk referenciafájlt, az nem a képeink készítésekor fennálló állapotot tükrözné.
 
 **Vágásvezérlés**: A referenciakép alkalmazása a korrekció miatt az éppen szerkesztett kép majdnem túlexponált területeinek túlzott expozícióját okozhatja. A Vágásvezérlés csúszkával megakadályozhatjuk, hogy a referenciakép hatása a szerkesztett képen vágást okozzon. A szerkesztett kép azon területei, amelyeken már az egyenletes képmező referenciakép alkalmazása előtt vágás történt, elszíneződhetnek. Ezért ha a szerkesztett fénykép túlexponált területeket tartalmaz, jobb, ha nem használjuk a Vágásvezérlés csúszkát.
 
@@ -5406,15 +5536,15 @@ Csak azok az Exif adatok fognak bekerülni a mentett képbe, amely előtt pipa v
 
 Az gombok funkciója balról jobbra:
 
-1\. Összes kijelölése.
+1\. Összes kijelölése
 
-2\. Összes kijelölés törlése.
+2\. Összes kijelölés törlése
 
-3\. Hozzáadás/Szerkesztés.
+3\. Hozzáadás/Szerkesztés
 
-4\. A kijelölt adatokat az eredeti értékükre állítja.
+4\. A kijelölt adatokat eredeti értékükre állítja
 
-5\. Minden adatot az eredeti értékre állít.
+5\. Minden adatot az eredeti értékre állít
 
 **IPTC lap**:
 
@@ -5422,19 +5552,19 @@ Az IPTC metaadatok további információkat tartalmaznak a képről.
 
 ![](book-images/479.jpg)
 
-Az IPTC-t általában a kép részletes leírására használják. Nagyon sok képadatbázis-szoftver létezik, amely a képekben elmentett információkat használja fel például a leíró mezők kitöltésére. Például IPTC mezőket is használhatunk, amikor megpróbáljuk eladni a képeinket. A legtöbb online képértékesítő cég szoftvere támogatja az IPTC címkéket, és elolvassa azokat, amikor feltöltjük a képeinket a weboldalukon keresztül.
+Az IPTC-t általában a kép részletes leírására használják. Nagyon sok képadatbázis-szoftver létezik, amely a képekben elmentett információkat használja fel például a leíró mezők kitöltésére. Például IPTC mezőket is használhatunk, amikor megpróbáljuk eladni a képeinket. A legtöbb online képértékesítő cég szoftvere támogatja az IPTC címkéket, és elolvassa azokat, amikor feltöltjük képeinket weboldalukon keresztül.
 
 ![](book-images/480.jpg)
 
 Az gombok funkciói balról jobbra:
 
-1\. Visszaállítás az alapértelmezett profilra.
+1\. Visszaállítás az alapértelmezett profilra
 
-2\. A képfájlba ágyazott IPTC adatok visszaállítása.
+2\. A képfájlba ágyazott IPTC adatok visszaállítása
 
-3\. IPTC beállítások vágólapra másolása.
+3\. IPTC beállítások vágólapra másolása
 
-4\. IPTC beállítások beillesztése a vágólapról.
+4\. IPTC beállítások beillesztése a vágólapról
 
 **Megjegyzések lap**:
 
