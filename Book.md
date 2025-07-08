@@ -8,7 +8,7 @@
 If you spot errors, inconsistencies, unclear sentences, and so on, consider reporting them as issues on GitHub.
 The more people will contribute and proof-read the material, the more useful it will become for the community!
 
-The original Hungarian version of the book can be found [here](BookHungarian).
+The original Hungarian version of the book can be found [here](https://bykyny.hu/art-book-01.html).
 
 ## Table of Contents
 
