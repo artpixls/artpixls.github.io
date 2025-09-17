@@ -1,16 +1,22 @@
-# Adding Support for Custom (non-raw) Image Formats
+# Adding Support for Custom Image Formats
 
 Since version 1.6, ART provides the ability to add reading and writing support
-for additional (non-raw) image formats via a simple plugin mechanism.
+for additional image formats via a simple plugin mechanism.
 
 Similarly to [User Commands](Usercommands), the mechanism is based on interacting with external programs defined using configuration files,
-where an external handler is a program that converts to/from files in one of the supported formats (tiff, png or jpeg).
+where an external handler is a program that converts to/from files in one of the supported formats.
+
+Until version 1.25.8, only non-raw image formats could be added.
+Starting from version 1.25.9, it is now possible to add also support
+for external raw decoders.
 
 ## How to define custom image handlers
 
 Image handlers are simple text files in the same syntax used by the `arp` sidecar files (but with `.txt` extension), 
 placed in the `imageio` subdirectory directory of ART config folder (typically `$HOME/.config/ART` on Linux and `%LOCALAPPDATA%\ART` on Windows),
-that must comply with the following specifications:
+that must comply with the specifications below.
+
+### Non-raw formats
 
 - They must contain a single group of options, called `[ART ImageIO]`
 
@@ -23,7 +29,7 @@ that must comply with the following specifications:
     * `ReadCommand`: the command used for loading images of the given type. The path can be either absolute or relative to the current directory; the command can also contain extra arguments (the input files will be appended to the list of arguments); The command will be called with the following arguments:
 
         - `input_file`: path to the image to read
-        - `output_file`: path to the tiff file to generate.
+        - `output_file`: path to the file to generate.
         - `width_hint`: (optional), a *hint* about the desired image width. This can be used to optimize the reading, assuming that the image will be resized to be at most `width_hint` pixels wide. If absent or zero, then the image is needed at its maximum resolution. The command is free to ignore the hint and always return the fullsize image.
         - `height_hint`: (optional), analogous to `width_hint` above.
 
@@ -47,6 +53,27 @@ that must comply with the following specifications:
     * `SaveFormat`: an alphanumeric unique identifier for the command used for save operations. By default, this is the same as `Extension`. Having a separate `SaveFormat` allows to define multiple savers for the same file extension, e.g. to support different saving modes.
 
     * `SaveProfile`: path to a (partial) `.arp` profile to be applied automatically before saving in the format being defined. This can be used e.g. to force a specific output profile when saving in the format being defined. If not absolute, the path will be interpreted relative to the directory containing the `.txt` file.
+
+### Raw formats
+
+- They must contain a single group of options, called `[ART RAWImageIO]`
+
+- They must include the following mandatory definitions:
+
+    * `Extension`: the (case-insensitive) file extension of the image type handled.
+
+    * `ReadCommand`: the command used for decoding raw images of the given type. The path can be either absolute or relative to the current directory; the command can also contain extra arguments (the input files will be appended to the list of arguments); The command will be called with the following arguments:
+
+        - `input_file`: path to the image to read
+        - `output_file`: path to the file to generate.
+
+      The command is expected to produce an `output_file` in [DNG](https://helpx.adobe.com/camera-raw/digital-negative.html) format.
+
+- Furthermore, they can also include the following optional definitions:
+
+    * `Make`: the name of the camera manufacturer producing the images that should be decoded with this handler, as stored in the exif metadata (case insensitive).
+
+    * `Model`: the name of the camera model producing the images that should be decoded with this handler, as stored in the exif metadata (case insensitive).
 
 **NOTE**: you should also add the appropriate extension to the preferences (in Preferences -> File Browser -> Parsed Extensions) in order for ART to show the pictures in the file browser.
 
@@ -225,6 +252,26 @@ fi
 ```
 
 (**NOTE:** this assumes that you have a version of ImageMagick that is properly configured to handle WebP and EXR, of course.)
+
+## Raw decoder example
+
+Here is an example using the free [GPR tools](https://github.com/gopro/gpr) to decode GPR files of recent GoPro cameras.
+We first define the handler (let's call it `raw-gpr.txt`) and put it in `$HOME/.config/imageio`:
+
+```txt
+[ART RAWImageIO]
+Extension=gpr
+ReadCommand=python3 ./load_gpr_raw.py
+```
+
+The handler uses the following `load_gpr_raw.py` Python script, which in turn calls `gpr_tools` from the link above to perform the conversion to DNG (the script assumes that the `gpr_tools` executable is in the path:
+
+```python
+import subprocess, sys
+
+subprocess.run(['gpr_tools', '-i', sys.argv[1], '-o', sys.argv[2]], check=True)
+```
+
 
 ## A repository for custom image handlers
 
