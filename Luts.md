@@ -219,9 +219,9 @@ void ART_main(varying float r, varying float g, varying float b,
 }
 ```
 
-Finally, using the `@ART-lut` tag it is possible to specify whether the CTL script should be applied to every pixel of the input image, or whether it should be used to precompute a 3dLUT that is then applied to the image. 
+Using the `@ART-lut` tag it is possible to specify whether the CTL script should be applied to every pixel of the input image, or whether it should be used to precompute a 3dLUT that is then applied to the image. 
 
-Using `@ART-lut` can significantly improve performance, but it might cause
+The use of `@ART-lut` can significantly improve performance, but it might cause
 artifacts for scripts that compute functions that are hard to approximate with
 a look-up table. By default, if no tag is present, ART will apply the CTL
 script to each pixel of the image on export, and it will use intermediate
@@ -237,6 +237,32 @@ where `<lut-dim>` is an integer specifying the dimension of the intermediate
 3dLUT. The special value `-1` means that 3dLUTs are never used for this
 script, neither on export nor for previews.
 
+Finally, it is possible to define different presets for the script by using the `@ART-preset` tag. The format is the following:
+
+```
+// @ART-preset: [<preset-name>, <gui-name>, <preset-dictionary>]
+```
+
+where:
+
+- `<preset-name>` is a string, defining the (unique) name for the preset;
+
+- `<gui-name>` is the name as shown in the GUI;
+
+- `<preset-dictionary>` is a dictionary mapping parameter names to
+  parameter values for the preset. Note that not all parameters need
+  to be specified in the dictionary: in that case, applying the preset
+  will only affect the parameters that are specified, and leave the
+  other ones unchanged.
+
+A script can have zero or more preset lines. If present, they must
+occur after the definition of parameters (with the `@ART-param` tag).
+Continuing the example above, here are some possible preset definitions:
+
+```C
+// @ART-preset: ["full", "A full preset", {"param_float" : 0.4, "param_int" : -3, "param_bool" : false, "param_choice" : 1}]
+// @ART-preset: ["partial", "A partial preset", {"param_float" : 0.4, "param_int" : -3}]
+```
 
 ## Example
 
