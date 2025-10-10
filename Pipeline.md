@@ -39,7 +39,7 @@
   Soft light                           | RGB gamma 2.2 bounded |
   Local contrast                       | LAB                   |
   Black and white                      | RGB gamma 2.2 bounded | Gamma 2.2 used for tint, otherwise user controllable
-  Film grain                           | LAB                   |
+  Film grain                           | Linear RGB            |
   Crop                                 |                       |
   Resize                               |                       |
   Post-resize sharpening               | Linear RGB            |
