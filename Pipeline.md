@@ -32,7 +32,7 @@
   Texture boost                        | Linear RGB            | Short description [here](https://discuss.pixls.us/t/ive-finally-tried-art-and-it-is-amazing/20482/14)
   Log encoding                         | Linear RGB            | Short description [here](https://discuss.pixls.us/t/ive-finally-tried-art-and-it-is-amazing/20482/14)
   Saturation/vibrance                  | Linear RGB            |
-  Film simulation                      | RGB                   | Linear unbounded for [CLF LUTs](Luts), Bounded with gamma depending on the LUT (typically 2.2) for HaldCLUTs
+  Film simulation                      | RGB                   | Linear unbounded for [CLF LUTs and CTL scripts](Luts), Bounded with gamma depending on the LUT (typically 2.2) for HaldCLUTs
   Tone curve                           | Linear RGB            | Also DCP look table (if selected)
   RGB curves                           | Linear RGB bounded    |
   LAB adjustments                      | LAB                   |
