@@ -26,7 +26,7 @@ title: Documentation
 
 - [User commands](Usercommands)
 
-- [Adding support for custom (non-raw) image formats](Customformats)
+- [Adding support for custom image formats](Customformats)
 
 - [Adding watermarks on export](Watermark)
 
